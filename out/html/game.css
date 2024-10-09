@@ -520,33 +520,33 @@ table {
 
 /* Styles for parties */
 .seat.kpd {
-    fill: #8B0000;
+    fill: #5B76C3;
 }
 .seat.spd {
-    fill: #E3000F;
+    fill: #D3B231;
     stroke: #000;
     stroke-width: 1.5px;
 }
 .seat.ddp {
-    fill: #DCCA4A;
+    fill: #EF5F09;
 }
 .seat.z {
-    fill: #000;
+    fill: #E46E6E;
 }
 .seat.bvp {
-    fill: #69A2BE;
+    fill: #E46E6E;
 }
 .seat.dvp {
-    fill: #D5AC27;
+    fill: #1B9621;
 }
 .seat.other {
     fill: #909090;
 }
 .seat.dnvp {
-    fill: #3F7BC1;
+    fill: #D3312E;
 }
 .seat.nsdap {
-    fill: #954B00;
+    fill: #7A4525;
 }
 .seat.sapd {
     fill: #C40000;
