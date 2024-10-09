@@ -1,0 +1,54 @@
+title: Section Huvisgalch
+is-pinned-card: true
+tags: advisor, neorevisionist
+card-image: img/portraits/Section.png
+view-if: section_advisor = 1
+new-page: true 
+
+= Section Huvisgalch
+
+Section Huvisgalch is a strange advisor, having come from far to the east from the steppes of Mongolia after a falling out with the ruling Mongolian People's revolutionary Party.
+
+- @organizing
+- @iron_front_buildup
+- @support_peoples_party
+- @build_peoples_party
+- @root: Return to main
+
+@organizing
+title: Organizing workers
+subtitle: Improve our standing among the workers.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; workers_spd += 4*(1-dissent); workers_spd += 3*(1-dissent) if wtb_adopted == 1; labor_strength += 2;
+
+We have increased our organizing among the workers.
+
+@iron_front_buildup
+title: Build up the Iron Front
+subtitle: Increase our propaganda measures to recruit more members into the Reichsbanner. 
+choose-if: advisor_action_timer == 0 and iron_front_formed
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed == 0 : The Iron Front has not yet been formed. ?]
+on-arrival: advisor_action_timer = 6; rb_strength += 200*workers_spd/(workers_spd+workers_kpd+workers_nsdap+workers_z+workers_dnvp+workers_other);
+
+We have recruited more members into the Reichsbanner.
+
+@support_peoples_party
+title: Build support for a People's Party
+subtitle: Can we expand our party beyond the industrial working class?
+view-if: peoples_party = 0
+choose-if: peoples_party_support <= 4 and advisor_action_timer = 0 and peoples_party == 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if peoples_party_support > 4: There is already substantial support for a People's Party. ?]
+on-arrival: advisor_action_timer = 6; peoples_party_support += 1
+
+We are building up support for the idea of a People's Party.
+
+@build_peoples_party
+title: Building a People's Party
+subtitle: Can we expand our party beyond the industrial working class?
+view-if: peoples_party == 0
+choose-if: peoples_party_support >= 3 and advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if peoples_party_support < 3: There is not enough support for this policy within the party. ?]
+on-arrival: advisor_action_timer = 6;
+go-to: peoples_party
+

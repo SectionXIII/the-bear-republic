@@ -1,0 +1,45 @@
+title: Sprout Nachtingale
+is-pinned-card: true
+tags: advisor
+card-image: img/portraits/Sprout.png
+view-if: sprout_advisor = 1
+new-page: true 
+
+= Sprout Nachtingale
+
+A new face within the non-aligned wing of the SPD, Nachtingale has served represent a force of her own amongst both conservative and progressive women.
+
+- @calm_down
+- @womens_rights_
+- @organizing_women_sprout
+- @root: Return to main
+
+@calm_down
+title: Calm down the furor.
+subtitle: Look at this cat!
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 6; left_dissent -= 5; labor_dissent -= 5; center_dissent -= 15; reformist_dissent -= 15; neorevisionist_dissent -= 5;
+
+Nachtingale has a special talent, whether she knows it or not, of defusing even the most tense situations with her charm.
+
+@womens_rights_
+title: Women's rights
+subtitle: Enact policy with regards to women's rights.
+choose-if: advisor_action_timer = 0 and spd_in_government
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not currently in government. ?]
+on-arrival: advisor_action_timer = 6; womens_rights_timer -= 10
+go-to: womens_rights
+
+@organizing_women_sprout
+title: Organizing women
+subtitle: Nachtingale's strategies are aimed at more "traditional" women.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: womens_rights += 1; workers_spd += 4*(1-dissent); rural_spd += 4*(1-dissent); old_middle_spd += 4*(1-dissent); advisor_action_timer = 6
+
+Nachtingale's strategies for organizing women are aimed at working-class housewives, and acknowledge women's traditional household roles. We argue that our economic welfare programs will improve the livelihoods of women and their families.
+
+[? if spd_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
+
+
