@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
+        parties = ['spring', 'pass', 'progressive', 'tandist', 'business', 'expansionist', 'grizzly', 'independent'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0'};
+        partyColors = {'spring': 'D3B231', 'pass': '5B76C3', 'progress': 'E46E6E', 'tandist': 'E46E6E', 'business': '1B9621', 'expansionist': 'D3312E', 'grizzly': '7A4525', 'other': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'kpd': 'KPD', 'ddp': 'DDP', 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others'};
+        partyNames = {'spring': 'Long Spring', 'pass': 'Silver Pass', 'progressive': 'Progressive', 'tandist': 'Tandist', 'business': 'Business', 'expansionist': 'Expansionist', 'grizzly': 'Grizzly', 'independent': 'Independents'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
