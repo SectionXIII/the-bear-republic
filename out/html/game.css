@@ -523,18 +523,18 @@ table {
     fill: #5B76C3;
 }
 .seat.spring {
-    fill: #D3B231;
+    fill: #b18f07;
     stroke: #000;
     stroke-width: 1.5px;
 }
 .seat.progressive {
-    fill: #EF5F09;
+    fill: #fb8b4a;
 }
 .seat.tandist {
     fill: #E46E6E;
 }
 .seat.tandist_right {
-    fill: #E46E6E;
+    fill: #efb3b3;
 }
 .seat.business {
     fill: #1B9621;
