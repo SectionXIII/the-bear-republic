@@ -34,7 +34,7 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-LOng Spring: [+ spd_r +]%
+Long Spring: [+ spd_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 Tandist + Tandist Right: [+ z_r +]%
@@ -67,17 +67,17 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 = Inter-party Relations
 
 
-Z: [+ z_relation : relationships +]
+Tandist: [+ z_relation : relationships +]
 
-DDP: [+ ddp_relation : relationships +]
+Progressive: [+ ddp_relation : relationships +]
 
-DVP: [+ dvp_relation : relationships +]
+Business: [+ dvp_relation : relationships +]
 
-KPD: [+ kpd_relation : relationships +]
+Silver Pass: [+ kpd_relation : relationships +]
 
-DNVP: [+ dnvp_relation : relationships +]
+Barons: [+ dnvp_relation : relationships +]
 
-NSDAP: [+ nsdap_relation : relationships +]
+Grizzly: [+ nsdap_relation : relationships +]
 
 = Internal Factions of the SPD
 
@@ -128,23 +128,23 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 (if the election were to be held now):
 
-SPD: [+ spd_votes +]%
+Long Spring: [+ spd_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-Z + BVP: [+ z_votes +]%
+Tandist + Tandist Right: [+ z_votes +]%
 
-KPD: [+ kpd_votes +]%
+Silver Pass: [+ kpd_votes +]%
 
-DDP: [+ ddp_votes +]%
+Progressive: [+ ddp_votes +]%
 
-DVP: [+ dvp_votes +]%
+Business: [+ dvp_votes +]%
 
-DNVP: [+ dnvp_votes +]%
+Barons: [+ dnvp_votes +]%
 
-NSDAP: [+ nsdap_votes +]%
+Grizzly: [+ nsdap_votes +]%
 
-Others: [+ other_votes +]%
+Independent: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
