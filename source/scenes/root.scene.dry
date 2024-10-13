@@ -106,7 +106,7 @@ Q.business_relation = 35;
 Q.barons_relation = 10;
 Q.grizzly_relation = 0;
 
-Q.pass_leader = "Morris;
+Q.pass_leader = "Morris";
 // alternative is Brock Throckmorton as party leader
 Q.pass_party_leader = "Morris";
 Q.tandist_leader = "Tibbet";
