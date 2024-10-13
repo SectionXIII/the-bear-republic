@@ -57,10 +57,10 @@ Q.neorevisionist_strength = 5;
 Q.neorevisionist_dissent = 10;
 
 // secret events...
-Q.unions_independent = 0;
-Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
+Q.frontier_independent = 0;
+Q.mutant_resign = 0;
+Q.urban_split = 0;
+Q.intelligentsia_resigned = 0;
 
 // have we discovered neorevisionism?
 Q.neorevisionism = 0;
@@ -98,21 +98,21 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
-Q.kpd_relation = 25;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
-// DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.NSDAP_relation = 0;
+Q.tandist_relation = 50;
+Q.pass_relation = 25;
+Q.progressive_relation = 60;
+Q.business_relation = 35;
+// Barons and Grizzly are invariably hostile
+Q.barons_relation = 10;
+Q.grizzly_relation = 0;
 
-Q.kpd_leader = "Thälmann";
-// alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
-// party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
-Q.nsdap_leader = "Hitler";
+Q.pass_leader = "Morris;
+// alternative is Brock Throckmorton as party leader
+Q.pass_party_leader = "Morris";
+Q.tandist_leader = "Tibbet";
+// party leader - can be Ruiz or de la Cruz. Ruiz will be more friendly to the Spring.
+Q.tandist_party_leader = "Ruiz";
+Q.grizzly_leader = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
