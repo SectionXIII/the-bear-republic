@@ -164,7 +164,7 @@ data = [
     {
         "id": "pass",
         "legend": "Pass",
-        "name": "Silver Pass",
+        "name": "Pass Party",
         "seats": Math.round(Q.kpd_r*5),
     }
 ];
@@ -252,11 +252,11 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#b18f07; outline: 2px; outline-style: solid;'> </div> !} **Long Spring:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#f7f735; outline: 2px; outline-style: solid;'> </div> !} **Long Spring:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#5B76C3'> </div> !} Silver Pass: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#5B76C3'> </div> !} Pass Party: {!</td><td>!} [+ kpd_r +]% {!</td><td>!} [+ str_change_kpd +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#EF5F09'> </div> !} Progressive: {!</td><td>!} [+ ddp_r +]% {!</td><td>!} [+ str_change_ddp +] {!</td></tr>!}
 

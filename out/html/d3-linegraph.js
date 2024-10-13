@@ -19,10 +19,10 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
         parties = ['spring', 'pass', 'progressive', 'tandist', 'business', 'barons', 'grizzly', 'independent'];
     }
     if (!partyColors) {
-        partyColors = {'spring': '#D3B231', 'pass': '#5B76C3', 'progressive': '#EF5F09', 'tandist': '#E46E6E', 'business': '#1B9621', 'barons': '#D3312E', 'grizzly': '#7A4525', 'independent': '#a0a0a0'};
+        partyColors = {'spring': '#f7f735', 'pass': '#5B76C3', 'progressive': '#EF5F09', 'tandist': '#E46E6E', 'business': '#1B9621', 'barons': '#D3312E', 'grizzly': '#7A4525', 'independent': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'spring': 'Long Spring', 'pass': 'Silver Pass', 'progressive': 'Progressive', 'tandist': 'Tandist', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independents'};
+        partyNames = {'spring': 'Long Spring', 'pass': 'Pass Party', 'progressive': 'Progressive', 'tandist': 'Tandist', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independents'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;

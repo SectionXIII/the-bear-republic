@@ -39,7 +39,7 @@ Long Spring: [+ spd_r +]%
 # 1928: 15, 1930: 15, 1932: 
 Tandist Bloc: [+ z_r +]%
 # 1928: 10, 1930: 13
-Silver Pass: [+ kpd_r +]%
+Pass Party: [+ kpd_r +]%
 # 1928: 5, 1930: 4 (as DstP)
 Progressive: [+ ddp_r +]%
 # 1928: 9, 1930: 5
@@ -73,7 +73,7 @@ Progressive: [+ ddp_relation : relationships +]
 
 Business: [+ dvp_relation : relationships +]
 
-Silver Pass: [+ kpd_relation : relationships +]
+Pass Party: [+ kpd_relation : relationships +]
 
 Barons: [+ dnvp_relation : relationships +]
 
@@ -134,7 +134,7 @@ Long Spring: [+ spd_votes +]%
 
 Tandist Bloc: [+ z_votes +]%
 
-Silver Pass: [+ kpd_votes +]%
+Pass Party: [+ kpd_votes +]%
 
 Progressive: [+ ddp_votes +]%
 
@@ -150,9 +150,9 @@ Independent: [+ other_votes +]%
 
 Urban Workers: Long Spring: [+ workers_spd_normalized +]%, Z: [+ workers_z_normalized +]%, KPD: [+ workers_kpd_normalized +]%, DDP: [+ workers_ddp_normalized +]%, DVP: [+ workers_dvp_normalized +]%; DNVP: [+ workers_dnvp_normalized +]%, NSDAP: [+ workers_nsdap_normalized +]%, Others: [+ workers_other_normalized +]% [? if sapd_formed: SAPD: [+ workers_sapd_normalized +]% ?]
 
-New Middle Class: Long Spring: [+ new_middle_spd_normalized +]%, Z: [+ new_middle_z_normalized +]%, KPD: [+ new_middle_kpd_normalized +]%, DDP: [+ new_middle_ddp_normalized +]%, DVP: [+ new_middle_dvp_normalized +]%; DNVP: [+ new_middle_dnvp_normalized +]%, NSDAP: [+ new_middle_nsdap_normalized +]%, Others: [+ new_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_normalized +]% ?]
+Middle Class: Long Spring: [+ new_middle_spd_normalized +]%, Z: [+ new_middle_z_normalized +]%, KPD: [+ new_middle_kpd_normalized +]%, DDP: [+ new_middle_ddp_normalized +]%, DVP: [+ new_middle_dvp_normalized +]%; DNVP: [+ new_middle_dnvp_normalized +]%, NSDAP: [+ new_middle_nsdap_normalized +]%, Others: [+ new_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_normalized +]% ?]
 
-Old Middle Class: Long Spring: [+ old_middle_spd_normalized +]%, Z: [+ old_middle_z_normalized +]%, KPD: [+ old_middle_kpd_normalized +]%, DDP: [+ old_middle_ddp_normalized +]%, DVP: [+ old_middle_dvp_normalized +]%; DNVP: [+ old_middle_dnvp_normalized +]%, NSDAP: [+ old_middle_nsdap_normalized +]%, Others: [+ old_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_normalized +]% ?]
+Military: Long Spring: [+ old_middle_spd_normalized +]%, Z: [+ old_middle_z_normalized +]%, KPD: [+ old_middle_kpd_normalized +]%, DDP: [+ old_middle_ddp_normalized +]%, DVP: [+ old_middle_dvp_normalized +]%; DNVP: [+ old_middle_dnvp_normalized +]%, NSDAP: [+ old_middle_nsdap_normalized +]%, Others: [+ old_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_normalized +]% ?]
 
 Frontier Folk: Long Spring: [+ rural_spd_normalized +]%, Z: [+ rural_z_normalized +]%, KPD: [+ rural_kpd_normalized +]%, DDP: [+ rural_ddp_normalized +]%, DVP: [+ rural_dvp_normalized +]%; DNVP: [+ rural_dnvp_normalized +]%, NSDAP: [+ rural_nsdap_normalized +]%, Others: [+ rural_other_normalized +]% [? if sapd_formed: SAPD: [+ rural_sapd_normalized +]% ?]
 
