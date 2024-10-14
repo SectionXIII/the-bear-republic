@@ -216,7 +216,7 @@ Q.military_qol = 100;
 Q.middle_qol = 100;
 
 Q.classes = ['workers', 'military', 'middle', 'rural', 'unemployed', 'follower'];
-Q.parties = ['spring, 'pass', 'tandist', 'tandist_right', 'progressive', 'business', 'barons', 'grizzly', 'independent'];
+Q.parties = ['spring', 'pass', 'tandist', 'tandist_right', 'progressive', 'business', 'barons', 'grizzly', 'independent'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
