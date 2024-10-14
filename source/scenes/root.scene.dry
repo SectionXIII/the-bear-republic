@@ -226,6 +226,7 @@ Q.sapd_formed = 0;
 Q.workers_spring = 60;
 Q.workers_pass = 20;
 Q.workers_tandist = 5;
+Q.workers_tandist_right = 0;
 Q.workers_progressive = 0;
 Q.workers_business = 0;
 Q.workers_barons = 5;
@@ -234,7 +235,8 @@ Q.workers_independent = 10;
 
 Q.military_spring = 5;
 Q.military_pass = 0;
-Q.military_tandist = 25;
+Q.military_tandist = 10;
+Q.military_tandist_right = 15;
 Q.military_progressive = 10;
 Q.military_business = 25;
 Q.military_barons = 0;
@@ -244,6 +246,7 @@ Q.military_independent = 15;
 Q.middle_spring = 5;
 Q.middle_pass = 20;
 Q.middle_tandist = 10;
+Q.middle_tandist_right = 0;
 Q.middle_progressive = 15;
 Q.middle_business = 25;
 Q.middle_barons = 0;
@@ -253,15 +256,17 @@ Q.middle_independent = 15;
 Q.rural_spring = 20;
 Q.rural_pass = 0;
 Q.rural_tandist = 5;
+Q.rural_tandist_right = 15;
 Q.rural_progressive = 0;
 Q.rural_business = 5;
-Q.rural_barons = 45;
+Q.rural_barons = 35;
 Q.rural_grizzly = 5;
 Q.rural_independent = 20;
 
 Q.unemployed_spring = 35;
 Q.unemployed_pass = 55;
 Q.unemployed_tandist = 0;
+Q.unemployed_tandist_right = 0;
 Q.unemployed_progressive = 0;
 Q.unemployed_business = 0;
 Q.unemployed_barons = 5;
@@ -270,7 +275,8 @@ Q.unemployed_independent = 0;
 
 Q.follower_spring = 15;
 Q.follower_pass = 0;
-Q.follower_tandist = 70;
+Q.follower_tandist = 60;
+Q.follower_tandist_right = 10;
 Q.follower_progressive = 0;
 Q.follower_business = 0;
 Q.follower_barons = 0;
@@ -286,7 +292,8 @@ Q.follower_independent = 12;
 // They did not have a CDU/CSU-style relationship.
 Q.spring_r = 26;
 Q.pass_r = 9;
-Q.tandist_r = 17;
+Q.tandist_r = 10;
+Q.tandist_r = 7;
 Q.progressive_r = 6;
 Q.business_r = 10;
 Q.barons_r = 20;
@@ -296,7 +303,8 @@ Q.independent_r = 9;
 // diff from prev
 Q.old_spring_r = 26;
 Q.old_pass_r = 9;
-Q.old_tandist_r = 17;
+Q.old_tandist_r = 10;
+Q.old_tandist_r = 7;
 Q.old_progressive_r = 6;
 Q.old_business_r = 10;
 Q.old_barons_r = 20;
@@ -558,9 +566,9 @@ new-page: true
 
  - The Republic Archives, 2280
 
-This is a game of fictional alternate history. While lore accuracy is a major concern, keep in mind that this is a game, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes. (Those that are actual mistakes and not just things I made up for the sake of the game, anywho.)
+This is a game of fictional alternate history. While lore accuracy is a major concern, keep in mind that this is a game, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes,
 
-For more information on the politics and government of the German Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
+(Those that are actual mistakes and not just things I made up for the sake of the game, anywho.)
 
 - @1928_easy: Begin (easy difficulty)
 - @1928_main: Begin (normal difficulty)
