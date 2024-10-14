@@ -256,19 +256,19 @@ go-to: coalition_menu
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#bcbcbc'> </div> !} Pass Party: {!</td><td>!} [+ pass_r +]% {!</td><td>!} [+ str_change_pass +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8f8b8b'> </div> !} Pass Party: {!</td><td>!} [+ pass_r +]% {!</td><td>!} [+ str_change_pass +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#EF5F09'> </div> !} Progressive: {!</td><td>!} [+ progressive_r +]% {!</td><td>!} [+ str_change_progressive +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#ff3f3f'> </div> !} Tandist: {!</td><td>!} [+ tandist_minus_right_r +]% {!</td><td>!} [+ str_change_tandist +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#424bff'> </div> !} Tandist: {!</td><td>!} [+ tandist_minus_right_r +]% {!</td><td>!} [+ str_change_tandist +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#efb3b3'> </div> !} Tandist Right: {!</td><td>!} [+ tandist_right_r +]% {!</td><td>!} [+ str_change_tandist_right +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#6becf8'> </div> !} Tandist Right: {!</td><td>!} [+ tandist_right_r +]% {!</td><td>!} [+ str_change_tandist_right +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#1B9621'> </div> !} Business: {!</td><td>!} [+ business_r +]% {!</td><td>!} [+ str_change_business +] {!</td></tr>!}
  
 {!<tr><td><div class="box" style='background-color:#4b4b4b'> </div> !} Independent: {!</td><td>!} [+ independent_r +] % {!</td><td>!} [+ str_change_independent +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#820705'> </div> !} Barons: {!</td><td>!} [+ barons_r +]% {!</td><td>!} [+ str_change_barons +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#bb1a18'> </div> !} Barons: {!</td><td>!} [+ barons_r +]% {!</td><td>!} [+ str_change_barons +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#7A4525'> </div> !} Grizzly: {!</td><td>!} [+ grizzly_r +]% {!</td><td>!} [+ str_change_grizzly +] {!</td></tr>!}
 {!</table>!}

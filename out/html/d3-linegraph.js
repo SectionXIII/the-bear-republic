@@ -19,7 +19,7 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
         parties = ['spring', 'pass', 'progressive', 'tandist', 'business', 'barons', 'grizzly', 'independent'];
     }
     if (!partyColors) {
-        partyColors = {'spring': '#f7f735', 'pass': '#bcbcbc', 'progressive': '#EF5F09', 'tandist': '#ff3f3f', 'business': '#1B9621', 'barons': '#820705', 'grizzly': '#7A4525', 'independent': '#4b4b4b'};
+        partyColors = {'spring': '#f7f735', 'pass': '#8f8b8b', 'progressive': '#EF5F09', 'tandist': '#ff3f3f', 'business': '#1B9621', 'barons': '#bb1a18', 'grizzly': '#7A4525', 'independent': '#4b4b4b'};
     }
     if (!partyNames) {
         partyNames = {'spring': 'Long Spring', 'pass': 'Pass Party', 'progressive': 'Progressive', 'tandist': 'Tandist', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independents'};

@@ -520,7 +520,7 @@ table {
 
 /* Styles for parties */
 .seat.pass {
-    fill: #bcbcbc;
+    fill: #8f8b8b;
 }
 .seat.spring {
     fill: #f7f735;
@@ -531,10 +531,10 @@ table {
     fill: #fa6914;
 }
 .seat.tandist {
-    fill: #ff3f3f;
+    fill: #424bff;
 }
 .seat.tandist_right {
-    fill: #f37896;
+    fill: #6becf8;
 }
 .seat.business {
     fill: #1B9621;
@@ -543,7 +543,7 @@ table {
     fill: #4b4b4b;
 }
 .seat.barons {
-    fill: #820705;
+    fill: #bb1a18;
 }
 .seat.grizzly {
     fill: #7A4525;

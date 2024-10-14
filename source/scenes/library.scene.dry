@@ -458,19 +458,19 @@ if (d3 && window) {
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div></td> <td> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#bcbcbc'> </div></td> <td>!} Pass Party: {!</td><td>!} [+ pass_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8f8b8b'> </div></td> <td>!} Pass Party: {!</td><td>!} [+ pass_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#EF5F09'> </div></td><td>!} Progressive: {!</td><td>!} [+ progressive_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#ff3f3f'> </div></td><td>!} Tandist: {!</td><td>!} [+ tandist_minus_right_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#424bff'> </div></td><td>!} Tandist: {!</td><td>!} [+ tandist_minus_right_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#f37896'> </div></td><td>!} Tandist Right: {!</td><td>!} 3% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#6becf8'> </div></td><td>!} Tandist Right: {!</td><td>!} 3% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#1B9621'> </div></td><td>!} Business: {!</td><td>!} [+ business_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#4b4b4b'> </div></td><td>!} Independent: {!</td><td>!} [+ independent_r +] % {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#820705'> </div></td><td>!} Barons: {!</td><td>!} [+ barons_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#bb1a18'> </div></td><td>!} Barons: {!</td><td>!} [+ barons_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#7A4525'> </div></td><td>!} Grizzly: {!</td><td>!} [+ grizzly_r +]% {!</td></tr>!}
 {!</table>!}
