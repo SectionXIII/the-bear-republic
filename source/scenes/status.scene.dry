@@ -34,22 +34,22 @@ Speaker: [+ chancellor +] ([+ chancellor_party +])
 Congress composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-Long Spring: [+ spd_r +]%
+Long Spring: [+ spring_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-Tandist Bloc: [+ z_r +]%
+Tandist Bloc: [+ tandist_r +]%
 # 1928: 10, 1930: 13
-Pass Party: [+ kpd_r +]%
+Pass Party: [+ pass_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-Progressive: [+ ddp_r +]%
+Progressive: [+ progressive_r +]%
 # 1928: 9, 1930: 5
-Business: [+ dvp_r +]%
+Business: [+ business_r +]%
 # 1928: 14, 1930: 7
-Barons: [+ dnvp_r +]%
+Barons: [+ barons_r +]%
 # 1928: 3, 1930: 18
-Grizzly: [+ nsdap_r +]%
+Grizzly: [+ grizzly_r +]%
 # 1928: 9, 1930: 10
-Independent: [+ other_r +]%
+Independent: [+ independent_r +]%
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
@@ -67,27 +67,27 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 = Inter-party Relations
 
 
-Tandist: [+ z_relation : relationships +]
+Tandist: [+ tandist_relation : relationships +]
 
-Progressive: [+ ddp_relation : relationships +]
+Progressive: [+ progressive_relation : relationships +]
 
-Business: [+ dvp_relation : relationships +]
+Business: [+ business_relation : relationships +]
 
-Pass Party: [+ kpd_relation : relationships +]
+Pass Party: [+ pass_relation : relationships +]
 
-Barons: [+ dnvp_relation : relationships +]
+Barons: [+ barons_relation : relationships +]
 
-Grizzly: [+ nsdap_relation : relationships +]
+Grizzly: [+ grizzly_relation : relationships +]
 
 = Internal Factions of the Long Sprng
 
-Urbanite strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+Urbanite strength: [+ urban_strength : strength +], dissent: [+ urban_dissent : dissent +]
 
-Mutant strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+Mutant strength: [+ mutant_strength : strength +], dissent: [+ mutant_dissent : dissent +]
 
-Frontier strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+Frontier strength: [+ frontier_strength : strength +], dissent: [+ frontier_dissent : dissent +]
 
-Intelligentsia strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+Intelligentsia strength: [+ intelligentsia_strength : strength +], dissent: [+ intelligentsia_dissent : dissent +]
 
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
@@ -128,36 +128,36 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 (if the election were to be held now):
 
-Long Spring: [+ spd_votes +]%
+Long Spring: [+ springvotes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-Tandist Bloc: [+ z_votes +]%
+Tandist Bloc: [+ tandist_votes +]%
 
-Pass Party: [+ kpd_votes +]%
+Pass Party: [+ pass_votes +]%
 
-Progressive: [+ ddp_votes +]%
+Progressive: [+ progressive_votes +]%
 
-Business: [+ dvp_votes +]%
+Business: [+ business_votes +]%
 
-Barons: [+ dnvp_votes +]%
+Barons: [+ barons_votes +]%
 
-Grizzly: [+ nsdap_votes +]%
+Grizzly: [+ grizzly_votes +]%
 
-Independent: [+ other_votes +]%
+Independent: [+ independent_votes +]%
 
 **Detailed results for each demographic**
 
-**Urban Workers:** Long Spring: [+ workers_spd_normalized +]%, Tandist: [+ workers_z_normalized +]%, Pass Party: [+ workers_kpd_normalized +]%, Progressive: [+ workers_ddp_normalized +]%, Business: [+ workers_dvp_normalized +]%, Barons: [+ workers_dnvp_normalized +]%, Grizzly: [+ workers_nsdap_normalized +]%, Independent: [+ workers_other_normalized +]%, [? if sapd_formed: SAPD: [+ workers_sapd_normalized +]% ?]
+**Urban Workers:** Long Spring: [+ workers_spring_normalized +]%, Tandist: [+ workers_tandist_normalized +]%, Pass Party: [+ workers_pass_normalized +]%, Progressive: [+ workers_progressive_normalized +]%, Business: [+ workers_business_normalized +]%, Barons: [+ workers_barons_normalized +]%, Grizzly: [+ workers_grizzly_normalized +]%, Independent: [+ workers_independent_normalized +]%, [? if sapd_formed: SAPD: [+ workers_sapd_normalized +]% ?]
 
-**Middle Class:** Long Spring: [+ new_middle_spd_normalized +]%, Tandist: [+ new_middle_z_normalized +]%, Pass Party: [+ new_middle_kpd_normalized +]%, Progressive: [+ new_middle_ddp_normalized +]%, Business: [+ new_middle_dvp_normalized +]%; Barons: [+ new_middle_dnvp_normalized +]%, Grizzly: [+ new_middle_nsdap_normalized +]%, Independent: [+ new_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_normalized +]% ?]
+**Middle Class:** Long Spring: [+ middle_spring_normalized +]%, Tandist: [+ middle_tandist_normalized +]%, Pass Party: [+ middle_pass_normalized +]%, Progressive: [+ middle_progressive_normalized +]%, Business: [+ middle_business_normalized +]%; Barons: [+ middle_barons_normalized +]%, Grizzly: [+ middle_grizzly_normalized +]%, Independent: [+ middle_independent_normalized +]% [? if sapd_formed: SAPD: [+ middle_sapd_normalized +]% ?]
 
-**Military:** Long Spring: [+ old_middle_spd_normalized +]%, Tandist: [+ old_middle_z_normalized +]%, Pass Party: [+ old_middle_kpd_normalized +]%, Progressive: [+ old_middle_ddp_normalized +]%, Business: [+ old_middle_dvp_normalized +]%; Barons: [+ old_middle_dnvp_normalized +]%, Grizzly: [+ old_middle_nsdap_normalized +]%, Independent: [+ old_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_normalized +]% ?]
+**Military:** Long Spring: [+ military_spring_normalized +]%, Tandist: [+ military_tandist_normalized +]%, Pass Party: [+ military_pass_normalized +]%, Progressive: [+ military_progressive_normalized +]%, Business: [+ military_business_normalized +]%; Barons: [+ military_barons_normalized +]%, Grizzly: [+ military_grizzly_normalized +]%, Independent: [+ military_independent_normalized +]% [? if sapd_formed: SAPD: [+ military_sapd_normalized +]% ?]
 
-**Frontier Folk:** Long Spring: [+ rural_spd_normalized +]%, Tandist: [+ rural_z_normalized +]%, Pass Party: [+ rural_kpd_normalized +]%, Progressive: [+ rural_ddp_normalized +]%, Business: [+ rural_dvp_normalized +]%; Barons: [+ rural_dnvp_normalized +]%, Grizzly: [+ rural_nsdap_normalized +]%, Independent: [+ rural_other_normalized +]% [? if sapd_formed: SAPD: [+ rural_sapd_normalized +]% ?]
+**Frontier Folk:** Long Spring: [+ rural_spring_normalized +]%, Tandist: [+ rural_tandist_normalized +]%, Pass Party: [+ rural_pass_normalized +]%, Progressive: [+ rural_progressive_normalized +]%, Business: [+ rural_business_normalized +]%; Barons: [+ rural_barons_normalized +]%, Grizzly: [+ rural_grizzly_normalized +]%, Independent: [+ rural_independent_normalized +]% [? if sapd_formed: SAPD: [+ rural_sapd_normalized +]% ?]
 
-**Unemployed:** Long Spring: [+ unemployed_spd_normalized +]%, Tandist: [+ unemployed_z_normalized +]%, Pass Party: [+ unemployed_kpd_normalized +]%, Progressive: [+ unemployed_ddp_normalized +]%, Business: [+ unemployed_dvp_normalized +]%; Barons: [+ unemployed_dnvp_normalized +]%, Grizzly: [+ unemployed_nsdap_normalized +]%, Independent: [+ unemployed_other_normalized +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_normalized +]% ?]
+**Unemployed:** Long Spring: [+ unemployed_spring_normalized +]%, Tandist: [+ unemployed_tandist_normalized +]%, Pass Party: [+ unemployed_pass_normalized +]%, Progressive: [+ unemployed_progressive_normalized +]%, Business: [+ unemployed_business_normalized +]%; Barons: [+ unemployed_barons_normalized +]%, Grizzly: [+ unemployed_grizzly_normalized +]%, Independent: [+ unemployed_independent_normalized +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_normalized +]% ?]
 
-**Follower:** Long Spring: [+ catholics_spd_normalized +]%, Tandist: [+ catholics_z_normalized +]%, Pass Party: [+ catholics_kpd_normalized +]%, Progressive: [+ catholics_ddp_normalized +]%, Business: [+ catholics_dvp_normalized +]%; Barons: [+ catholics_dnvp_normalized +]%, Grizzly: [+ catholics_nsdap_normalized +]%, Independent: [+ catholics_other_normalized +]% [? if sapd_formed: SAPD: [+ catholics_sapd_normalized +]% ?]
+**Follower:** Long Spring: [+ follower_spring_normalized +]%, Tandist: [+ follower_tandist_normalized +]%, Pass Party: [+ follower_pass_normalized +]%, Progressive: [+ follower_progressive_normalized +]%, Business: [+ follower_business_normalized +]%; Barons: [+ follower_barons_normalized +]%, Grizzly: [+ follower_grizzly_normalized +]%, Independent: [+ follower_independent_normalized +]% [? if sapd_formed: SAPD: [+ follower_sapd_normalized +]% ?]
 
 **Support for the Republic: [+ pro_republic +]%**
