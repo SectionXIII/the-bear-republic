@@ -268,7 +268,7 @@ go-to: coalition_menu
  
 {!<tr><td><div class="box" style='background-color:#4b4b4b'> </div> !} Independent: {!</td><td>!} [+ independent_r +] % {!</td><td>!} [+ str_change_independent +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#820705'> </div> !} Barons: {!</td><td>!} [+ baron_r +]% {!</td><td>!} [+ str_change_barons +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#820705'> </div> !} Barons: {!</td><td>!} [+ barons_r +]% {!</td><td>!} [+ str_change_barons +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#7A4525'> </div> !} Grizzly: {!</td><td>!} [+ grizzly_r +]% {!</td><td>!} [+ str_change_grizzly +] {!</td></tr>!}
 {!</table>!}
