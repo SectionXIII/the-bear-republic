@@ -328,7 +328,7 @@ Q.tandist_in_government = 1;
 Q.progressive_in_government = 0;
 Q.business_in_government = 1;
 Q.barons_in_government = 1;
-Q.kpd_in_government = 0;
+Q.pass_in_government = 0;
 Q.grizzly_in_government = 0;
 
 Q.in_right_coalition = 0;
