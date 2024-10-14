@@ -335,7 +335,7 @@ Dissent: [+ neorevisionist_dissent : dissent +]
 @figures
 title: Figures and Charts
 go-to: menu
-on-arrival: z_minus_bvp_r = z_r - 3;
+on-arrival: tandist_minus_right_r = z_r - 3;
 on-display: {!
 data = [
     {
@@ -462,7 +462,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#EF5F09'> </div></td><td>!} Progressive: {!</td><td>!} [+ progressive_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#ff3f3f'> </div></td><td>!} Tandist: {!</td><td>!} [+ z_minus_bvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ff3f3f'> </div></td><td>!} Tandist: {!</td><td>!} [+ tandist_minus_right_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#f37896'> </div></td><td>!} Tandist Right: {!</td><td>!} 3% {!</td></tr>!}
 
