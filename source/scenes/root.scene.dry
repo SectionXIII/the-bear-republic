@@ -293,7 +293,7 @@ Q.follower_independent = 12;
 Q.spring_r = 26;
 Q.pass_r = 9;
 Q.tandist_r = 10;
-Q.tandist_r = 7;
+Q.tandist_right_r = 7;
 Q.progressive_r = 6;
 Q.business_r = 10;
 Q.barons_r = 20;
@@ -304,7 +304,7 @@ Q.independent_r = 9;
 Q.old_spring_r = 26;
 Q.old_pass_r = 9;
 Q.old_tandist_r = 10;
-Q.old_tandist_r = 7;
+Q.old_tandist_right_r = 7;
 Q.old_progressive_r = 6;
 Q.old_business_r = 10;
 Q.old_barons_r = 20;
@@ -339,11 +339,12 @@ Q.barons_in_government = 1;
 Q.pass_in_government = 0;
 Q.grizzly_in_government = 0;
 
+
 Q.in_right_coalition = 0;
 // Weimar coalition = Long Spring + Tandist + Progressive
 Q.in_weimar_coalition = 0;
-// Grand coalition = Long Spring + Tandist + BVP + Progressive + Business
-// also includes the "new grand coalition" of spring + Tandist + BVP + Progressive + Business + Independent
+// Grand coalition = Long Spring + Tandist + Tandist Right + Progressive + Business
+// also includes the "new grand coalition" of spring + Tandist + Tandist Right + Progressive + Business + Independent
 Q.in_grand_coalition = 0;
 // Popular front = Long Spring + Pass Party + Tandist + Progressive
 Q.in_popular_front = 0;

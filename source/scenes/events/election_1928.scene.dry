@@ -262,7 +262,7 @@ go-to: coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#ff3f3f'> </div> !} Tandist: {!</td><td>!} [+ tandist_minus_right_r +]% {!</td><td>!} [+ str_change_tandist +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#efb3b3'> </div> !} Tandist Right: {!</td><td>!} [+ tandist_right_r +]% {!</td><td>!} +7 {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#efb3b3'> </div> !} Tandist Right: {!</td><td>!} [+ tandist_right_r +]% {!</td><td>!} [+ str_change_tandist_right +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#1B9621'> </div> !} Business: {!</td><td>!} [+ business_r +]% {!</td><td>!} [+ str_change_business +] {!</td></tr>!}
  
