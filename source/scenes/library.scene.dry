@@ -72,22 +72,22 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-Long Spring: [+ spd_r +]%
+Long Spring: [+ spring_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-Tandist Bloc: [+ z_r +]%
+Tandist Bloc: [+ tandist_r +]%
 # 1928: 10, 1930: 13
-Pass Party: [+ kpd_r +]%
+Pass Party: [+ pass_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-Progressive: [+ ddp_r +]%
+Progressive: [+ progressive_r +]%
 # 1928: 9, 1930: 5
-Business: [+ dvp_r +]%
+Business: [+ business_r +]%
 # 1928: 14, 1930: 7
-Barons: [+ dnvp_r +]%
+Barons: [+ barons_r +]%
 # 1928: 3, 1930: 18
-Grizzly: [+ nsdap_r +]%
+Grizzly: [+ grizzly_r +]%
 # 1928: 9, 1930: 10
-Independent: [+ other_r +]%
+Independent: [+ independent_r +]%
 
 Long Spring position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
@@ -162,44 +162,44 @@ go-to: menu
 **Projected election results** (if the election were to be held now):
 
 # 1928: 30, 1930: 25, 1932: 22
-Long Spring: [+ spd_votes +]%
+Long Spring: [+ spring_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
 # 1928: 15, 1930: 15, 1932: 
-Tandist Bloc: [+ z_votes +]%
+Tandist Bloc: [+ tandist_votes +]%
 
 # 1928: 10, 1930: 13
-Pass Party: [+ kpd_votes +]%
+Pass Party: [+ pass_votes +]%
 
 # 1928: 5, 1930: 4 (as DstP)
-Progressive: [+ ddp_votes +]%
+Progressive: [+ progressive_votes +]%
 
 # 1928: 9, 1930: 5
-Business: [+ dvp_votes +]%
+Business: [+ business_votes +]%
 
 # 1928: 14, 1930: 7
-Barons: [+ dnvp_votes +]%
+Barons: [+ barons_votes +]%
 
 # 1928: 3, 1930: 18
-Grizzly: [+ nsdap_votes +]%
+Grizzly: [+ grizzly_votes +]%
 
 # 1928: 9, 1930: 10
-Independent: [+ other_votes +]%
+Independent: [+ independent_votes +]%
 
 **Detailed results for each demographic**
 
-Urban Workers: Long Spring: [+ workers_spd_normalized +]%, Tandist: [+ workers_z_normalized +]%, Pass Party: [+ workers_kpd_normalized +]%, Progressive: [+ workers_ddp_normalized +]%, Business: [+ workers_dvp_normalized +]%; Barons: [+ workers_dnvp_normalized +]%, Grizzly: [+ workers_nsdap_normalized +]%, Independent: [+ workers_other_normalized +]% [? if sapd_formed: SAPD: [+ workers_sapd_normalized +]% ?]
+Urban Workers: Long Spring: [+ workers_spring_normalized +]%, Tandist: [+ workers_tandist_normalized +]%, Pass Party: [+ workers_pass_normalized +]%, Progressive: [+ workers_progressive_normalized +]%, Business: [+ workers_business_normalized +]%; Barons: [+ workers_barons_normalized +]%, Grizzly: [+ workers_grizzly_normalized +]%, Independent: [+ workers_independent_normalized +]% [? if sapd_formed: SAPD: [+ workers_sapd_normalized +]% ?]
 
-New Middle Class: Long Spring: [+ new_middle_spd_normalized +]%, Tandist: [+ new_middle_z_normalized +]%, Pass Party: [+ new_middle_kpd_normalized +]%, Progressive: [+ new_middle_ddp_normalized +]%, Business: [+ new_middle_dvp_normalized +]%; Barons: [+ new_middle_dnvp_normalized +]%, Grizzly: [+ new_middle_nsdap_normalized +]%, Independent: [+ new_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_normalized +]% ?]
+New Middle Class: Long Spring: [+ middle_spring_normalized +]%, Tandist: [+ middle_tandist_normalized +]%, Pass Party: [+ middle_pass_normalized +]%, Progressive: [+ middle_progressive_normalized +]%, Business: [+ middle_business_normalized +]%; Barons: [+ middle_barons_normalized +]%, Grizzly: [+ middle_grizzly_normalized +]%, Independent: [+ middle_independent_normalized +]% [? if sapd_formed: SAPD: [+ middle_sapd_normalized +]% ?]
 
-Old Middle Class: Long Spring: [+ old_middle_spd_normalized +]%, Tandist: [+ old_middle_z_normalized +]%, Pass Party: [+ old_middle_kpd_normalized +]%, Progressive: [+ old_middle_ddp_normalized +]%, Business: [+ old_middle_dvp_normalized +]%; Barons: [+ old_middle_dnvp_normalized +]%, Grizzly: [+ old_middle_nsdap_normalized +]%, Independent: [+ old_middle_other_normalized +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_normalized +]% ?]
+Old Middle Class: Long Spring: [+ military_spring_normalized +]%, Tandist: [+ military_tandist_normalized +]%, Pass Party: [+ military_pass_normalized +]%, Progressive: [+ military_progressive_normalized +]%, Business: [+ military_business_normalized +]%; Barons: [+ military_barons_normalized +]%, Grizzly: [+ military_grizzly_normalized +]%, Independent: [+ military_independent_normalized +]% [? if sapd_formed: SAPD: [+ military_sapd_normalized +]% ?]
 
-Frontier Folk: Long Spring: [+ rural_spd_normalized +]%, Tandist: [+ rural_z_normalized +]%, Pass Party: [+ rural_kpd_normalized +]%, Progressive: [+ rural_ddp_normalized +]%, Business: [+ rural_dvp_normalized +]%; Barons: [+ rural_dnvp_normalized +]%, Grizzly: [+ rural_nsdap_normalized +]%, Independent: [+ rural_other_normalized +]% [? if sapd_formed: SAPD: [+ rural_sapd_normalized +]% ?]
+Frontier Folk: Long Spring: [+ rural_spring_normalized +]%, Tandist: [+ rural_tandist_normalized +]%, Pass Party: [+ rural_pass_normalized +]%, Progressive: [+ rural_progressive_normalized +]%, Business: [+ rural_business_normalized +]%; Barons: [+ rural_barons_normalized +]%, Grizzly: [+ rural_grizzly_normalized +]%, Independent: [+ rural_independent_normalized +]% [? if sapd_formed: SAPD: [+ rural_sapd_normalized +]% ?]
 
-Unemployed: Long Spring: [+ unemployed_spd_normalized +]%, Tandist: [+ unemployed_z_normalized +]%, Pass Party: [+ unemployed_kpd_normalized +]%, Progressive: [+ unemployed_ddp_normalized +]%, Business: [+ unemployed_dvp_normalized +]%; Barons: [+ unemployed_dnvp_normalized +]%, Grizzly: [+ unemployed_nsdap_normalized +]%, Independent: [+ unemployed_other_normalized +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_normalized +]% ?]
+Unemployed: Long Spring: [+ unemployed_spring_normalized +]%, Tandist: [+ unemployed_tandist_normalized +]%, Pass Party: [+ unemployed_pass_normalized +]%, Progressive: [+ unemployed_progressive_normalized +]%, Business: [+ unemployed_business_normalized +]%; Barons: [+ unemployed_barons_normalized +]%, Grizzly: [+ unemployed_grizzly_normalized +]%, Independent: [+ unemployed_independent_normalized +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_normalized +]% ?]
 
-Follower: Long Spring: [+ catholics_spd_normalized +]%, Tandist: [+ catholics_z_normalized +]%, Pass Party: [+ catholics_kpd_normalized +]%, Progressive: [+ catholics_ddp_normalized +]%, Business: [+ catholics_dvp_normalized +]%; Barons: [+ catholics_dnvp_normalized +]%, Grizzly: [+ catholics_nsdap_normalized +]%, Independent: [+ catholics_other_normalized +]% [? if sapd_formed: SAPD: [+ catholics_sapd_normalized +]% ?]
+Follower: Long Spring: [+ follower_spring_normalized +]%, Tandist: [+ follower_tandist_normalized +]%, Pass Party: [+ follower_pass_normalized +]%, Progressive: [+ follower_progressive_normalized +]%, Business: [+ follower_business_normalized +]%; Barons: [+ follower_barons_normalized +]%, Grizzly: [+ follower_grizzly_normalized +]%, Independent: [+ follower_independent_normalized +]% [? if sapd_formed: SAPD: [+ follower_sapd_normalized +]% ?]
 
 @parties
 go-to: menu
@@ -342,7 +342,7 @@ data = [
         "id": "pass",
         "legend": "Pass Party",
         "name": "Pass Party",
-        "seats": Q.kpd_r*5,
+        "seats": Q.pass_r*5,
     }];
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
@@ -357,49 +357,49 @@ data = data.concat([
         "id": "spring",
         "legend": "Long Spring",
         "name": "Long Spring",
-        "seats": Q.spd_r*5,
+        "seats": Q.spring_r*5,
     },
     {
         "id": "progressive",
         "legend": "Progressive",
         "name": "Progressive",
-        "seats": Q.ddp_r*5,
+        "seats": Q.progressive_r*5,
     },
     {
         "id": "tandist",
-        "legend": "Center",
-        "name": "Center",
-        "seats": (Q.z_r - 3)*5,
+        "legend": "Tandist",
+        "name": "Tandist",
+        "seats": (Q.tandist_r - 3)*5,
     },
     {
-        "id": "bvp",
-        "legend": "BVP",
-        "name": "BVP",
+        "id": "tandist_right",
+        "legend": "Tandist Right",
+        "name": "Tandist Right",
         "seats": 3*5,
     },
     {
         "id": "business",
         "legend": "Business",
         "name": "Business",
-        "seats": Q.dvp_r*5,
+        "seats": Q.business_r*5,
     },
     {
         "id": "independent",
         "legend": "Independent",
         "name": "Independent",
-        "seats": Q.other_r*5,
+        "seats": Q.independent_r*5,
     },
     {
         "id": "barons",
         "legend": "Barons",
         "name": "Barons",
-        "seats": Q.dnvp_r*5,
+        "seats": Q.barons_r*5,
     },
     {
         "id": "grizzly",
         "legend": "Grizzly",
         "name": "Grizzly",
-        "seats": Q.nsdap_r*5,
+        "seats": Q.grizzly_r*5,
     },
 ]);
 if (d3 && window) {
@@ -454,25 +454,25 @@ if (d3 && window) {
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-{!<tr><td><div class="box" style='background-color:#f7f735; outline: 2px; outline-style: solid;'> </div></td><td>!} **Long Spring:** {!</td><td>!} **[+ spd_r +]%** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#f7f735; outline: 2px; outline-style: solid;'> </div></td><td>!} **Long Spring:** {!</td><td>!} **[+ spring_r +]%** {!</td></tr>!}
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div></td> <td> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#bcbcbc'> </div></td> <td>!} Pass Party: {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#bcbcbc'> </div></td> <td>!} Pass Party: {!</td><td>!} [+ pass_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#EF5F09'> </div></td><td>!} Progressive: {!</td><td>!} [+ ddp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#EF5F09'> </div></td><td>!} Progressive: {!</td><td>!} [+ progressive_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#ff3f3f'> </div></td><td>!} Tandist: {!</td><td>!} [+ z_minus_bvp_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#f37896'> </div></td><td>!} Tandist Right: {!</td><td>!} 3% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#1B9621'> </div></td><td>!} Business: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#1B9621'> </div></td><td>!} Business: {!</td><td>!} [+ business_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#4b4b4b'> </div></td><td>!} Independent: {!</td><td>!} [+ other_r +] % {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#4b4b4b'> </div></td><td>!} Independent: {!</td><td>!} [+ independent_r +] % {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#820705'> </div></td><td>!} Barons: {!</td><td>!} [+ dnvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#820705'> </div></td><td>!} Barons: {!</td><td>!} [+ barons_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#7A4525'> </div></td><td>!} Grizzly: {!</td><td>!} [+ nsdap_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#7A4525'> </div></td><td>!} Grizzly: {!</td><td>!} [+ grizzly_r +]% {!</td></tr>!}
 {!</table>!}
 
 = Election history
