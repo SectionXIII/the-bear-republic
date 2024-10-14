@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spring', 'pass', 'progressive', 'tandist', 'business', 'barons', 'grizzly', 'independent'];
+        parties = ['spring', 'pass', 'progressive', 'tandist', 'tandist_right', 'business', 'barons', 'grizzly', 'independent'];
     }
     if (!partyColors) {
-        partyColors = {'spring': '#f7f735', 'pass': '#8f8b8b', 'progressive': '#EF5F09', 'tandist': '#ff3f3f', 'business': '#1B9621', 'barons': '#bb1a18', 'grizzly': '#7A4525', 'independent': '#4b4b4b'};
+        partyColors = {'spring': '#f7f735', 'pass': '#8f8b8b', 'progressive': '#EF5F09', 'tandist': '#ff3f3f', 'tandist_right': '#2b30bb', 'business': '#1B9621', 'barons': '#bb1a18', 'grizzly': '#7A4525', 'independent': '#4b4b4b'};
     }
     if (!partyNames) {
-        partyNames = {'spring': 'Long Spring', 'pass': 'Pass Party', 'progressive': 'Progressive', 'tandist': 'Tandist', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independents'};
+        partyNames = {'spring': 'Long Spring', 'pass': 'Pass Party', 'progressive': 'Progressive', 'tandist': 'Tandist', 'tandist_right': 'Tandist Right', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independents'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
