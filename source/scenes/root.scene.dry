@@ -361,7 +361,7 @@ Q.in_minority_government = 0;
 // if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
 Q.coalition_dissent = 0;
 // dissent from the KPD, in a popular front or left front government
-Q.kpd_coalition_dissent = 0;
+Q.pass_coalition_dissent = 0;
 
 // does the SPD tolerate the government even if it is not a participant?
 Q.spring_toleration = 0;
@@ -372,21 +372,21 @@ Q.minority_government = 0;
 // ministries - which parties control the ministries?
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
-Q.foreign_minister = 'Streseman';
+Q.foreign_minister = 'Thomas';
 Q.foreign_minister_party = 'Business';
-Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'Barons';
-Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'Barons';
-Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
+Q.interior_minister = 'Pitts';
+Q.interior_minister_party = 'Tandist Right';
+Q.justice_minister = 'Shaffer';
+Q.justice_minister_party = 'Tandist';
+Q.labor_minister = 'Bridges';
+Q.labor_minister_party = 'Tandist';
 Q.reichswehr_minister = 'Groener';
-Q.reichswehr_minister_party = 'I';
-Q.economic_minister = 'Curtius';
+Q.reichswehr_minister_party = 'Independent';
+Q.economic_minister = 'Watts';
 Q.economic_minister_party = 'Business';
-Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
-Q.agriculture_minister = 'Schiele';
+Q.finance_minister = 'Lester';
+Q.finance_minister_party = 'Tandist';
+Q.agriculture_minister = 'Kim';
 Q.agriculture_minister_party = 'Barons';
 
 // Events: what has occurred?
@@ -401,32 +401,44 @@ Q.judicial_reform = 0;
 Q.bureaucratic_reform = 0;
 Q.military_reform = 0;
 Q.womens_rights = 0;
+
 // level of welfare relative to 1928 (can go negative)
 Q.welfare = 0;
+
 // level of support for farmers
 Q.agricultural_policy = 0;
 Q.land_reform = 0;
+
 // works-creation programs (i.e. WTB-plan) - how much have they implemented?
 Q.works_program = 0;
 Q.wtb_implemented = 0;
+
 // Relations with the Western countries (France, UK).
 Q.west_relation = 0;
+
 // Relations with the Eastern countries (Poland, Czechoslovakia)
 Q.east_relation = 0;
+
 // Relations with the Soviet Union
 Q.soviet_relation = 0;
+
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
+
 // reparations vs baseline: young plan is -1.
 Q.reparations = 0;
 Q.reparations_negotiation = 0;
+
 // nationalization_progress is part of the left economic plan.
 Q.nationalization_progress = 0;
+
 // socializations is part of the economic democracy card.
 Q.socializations = 0;
 Q.nationalize_budget = 4;
+
 // have there been any factory takeovers?
 Q.factory_takeovers = 0;
+
 // progress on the moderate economic plan
 Q.moderate_plan_progress = 0;
 
