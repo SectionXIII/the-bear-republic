@@ -128,7 +128,7 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 (if the election were to be held now):
 
-Long Spring: [+ springvotes +]%
+Long Spring: [+ spring_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
