@@ -53,7 +53,6 @@ Wels is the long-time chairman of the SPD. He is a gifted organizer and a member
 - @faction_support_
 - @plan
 - @carry_out_policy
-- @depression
 - @root: Return to main
 
 @clear_agenda
@@ -336,13 +335,6 @@ on-arrival: advisor_action_timer = 6; workers_spd += 4*(1-dissent); workers_spd 
 
 We have increased our organizing among the workers.
 
-@depression
-title: Addressing the economic crisis
-subtitle: Formulate a plan to get us out of this mess.
-choose-if: advisor_action_timer <= 0 and wtb_adopted = 0 and black_thursday_seen
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if wtb_adopted > 0 : We have already adopted the WTB-Plan. ?]
-on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; labor_strength += 1
-
 @iron_front_buildup
 title: Build up the Iron Front
 subtitle: Increase our propaganda measures to recruit more members into the Reichsbanner. 
@@ -504,13 +496,3 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 choose-if: advisor_action_timer <= 0 and wtb_adopted and spd_in_government and wtb_implemented <= 1
 on-arrival: advisor_action_timer = 6; economic_policy_timer -= 12
 go-to: economic_policy
-
-
-@depression
-title: Addressing the economic crisis
-subtitle: Formulate a plan to get us out of the economic crisis.
-choose-if: advisor_action_timer <= 0 and wtb_adopted == 0 and black_thursday_seen == 1 and wtb_support <= 3
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if wtb_adopted > 0 : We have already adopted the WTB-Plan. ?]
-on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; labor_strength += 1
-
-The WTB-plan, named for its primary supporters Woytinsky, Tarnow, and Baade, has been adopted as the unions' plan for getting us out of the depression. Woytinsky canvasses in favor of this policy through the SPD and the unions.
