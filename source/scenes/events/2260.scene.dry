@@ -1,4 +1,4 @@
-title: 1934
+title: 2260
 subtitle: A new year 
 on-arrival: {!
 // increase NSDAP vote share 
@@ -7,14 +7,14 @@ if (Q.works_program && Q.works_program >= 2) {
     Q.unemployed -= 1;
     Q.inflation += 1
 }
-Q.sa_strength += 50;
-Q.sh_strength += 50;
-Q.sa_militancy += 0.025;
-Q.old_middle_nsdap += 3;
-Q.rural_nsdap += 2;
-Q.unemployed_nsdap += 2;
+Q.sa_strength += 10;
+Q.sh_strength += 10;
+Q.sa_militancy += 0.01;
+Q.old_middle_nsdap += 1;
+Q.rural_nsdap += 1;
+Q.unemployed_nsdap += 1;
 if (Q.old_demographics) {
-    Q.catholics_z += 2;
+    Q.catholics_z += 1;
 }
 if (!Q.works_program) {
     Q.unemployed += 6; 
@@ -43,7 +43,7 @@ if (!Q.works_program) {
 }
 !}
 tags: event
-view-if: year = 1933 and month = 1 
+view-if: year = 2260 and month = 1 
 priority: 2
 max-visits: 1
 

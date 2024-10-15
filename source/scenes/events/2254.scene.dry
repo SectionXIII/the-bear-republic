@@ -1,4 +1,4 @@
-title: 1929
+title: 2254
 subtitle: A new year
 on-arrival: {!
 Q.unemployed += 3;
@@ -19,7 +19,7 @@ Q.rural_nsdap += 10;
 Q.unemployed_nsdap += 18;
 !}
 tags: event
-view-if: year = 1929 and month = 1
+view-if: year = 2254 and month = 1
 priority: 2
 max-visits: 1
 

@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 2253;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -73,11 +73,11 @@ Q.nazi_urgency = 0;
 Q.radicalization = 0;
 // Support for the WTB plan and proto-Keynesian works creation plans in general
 Q.wtb_support = 0;
-// Support for Pacifism within the SPD relative to 1928
+// Support for Pacifism within the Long Spring relative to 2253
 Q.pacifism = 0;
-// Support for democratic reform within the SPD relative to 1928
+// Support for democratization within the Long Spring relative too 2253
 Q.democratization = 0;
-// Support for a communist coalition relative to 1928
+// Support for a communist coalition relative to 2253
 Q.communist_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
 // 1 - WTB plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalization of industries)
@@ -124,7 +124,7 @@ Q.spd_prussia = 1;
 Q.prussian_government = "SPD";
 
 // The array of forces - paramilitary groups
-// Number of members in 1928 (in thousands)
+// Number of members in 2253 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
 Q.rb_strength = 2000;
 Q.rb_militancy = 0.01;
@@ -201,14 +201,14 @@ Q.follower = 30;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
-// income for industrial workers in reichsmarks/year - 1928 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
+// income for industrial workers in reichsmarks/year - 2253 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
 Q.income = 1600;
 // what about incomes for different classes? rural workers? middle-class workers?
 
-// inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
+// inflation (in %; 2253: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
 Q.inflation = 2.9;
 
-// quality of life (as % of 1928 - currently unused - should be welfare-adjusted.)
+// quality of life (as % of 2253 - currently unused - should be welfare-adjusted.)
 Q.workers_qol = 100;
 Q.rural_qol = 100;
 Q.unemployed_qol = 100;
@@ -284,12 +284,9 @@ Q.follower_grizzly = 0;
 Q.follower_independent = 12;
 
 
-// Current Reichstag composition
-// % of Reichstag in Jan 1928
-// source: wikipedia
-// note: the Z figures also include the BVP (Bavarian people's party)
-// since they were ideologically similar, but they were separate parties.
-// They did not have a CDU/CSU-style relationship.
+// Current Congress composition
+// % of NCR Congress in Jan 2253
+// source: it came to me in a dream
 Q.spring_r = 26;
 Q.pass_r = 9;
 Q.tandist_r = 10;
@@ -402,7 +399,7 @@ Q.bureaucratic_reform = 0;
 Q.military_reform = 0;
 Q.womens_rights = 0;
 
-// level of welfare relative to 1928 (can go negative)
+// level of welfare relative to 2253 (can go negative)
 Q.welfare = 0;
 
 // level of support for farmers
@@ -442,7 +439,7 @@ Q.factory_takeovers = 0;
 // progress on the moderate economic plan
 Q.moderate_plan_progress = 0;
 
-// Tax rates relative to 1928 baseline
+// Tax rates relative to 2253 baseline
 Q.lower_tax_rates = 0;
 Q.upper_tax_rates = 0;
 
@@ -502,7 +499,7 @@ Q.n_elections = 0;
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
-Q.next_election_year = 1928;
+Q.next_election_year = 2253;
 Q.next_election_month = 5;
 Q.next_election_time = 5;
 // government affairs timers
@@ -583,20 +580,20 @@ This is a game of fictional alternate history. While lore accuracy is a major co
 
 (Those that are actual mistakes and not just things I made up for the sake of the game, anywho.)
 
-- @1928_easy: Begin (easy difficulty)
-- @1928_main: Begin (normal difficulty)
-- @1928_hard: Begin (hard difficulty)
-- @1928_historical: Begin (historical mode)
+- @2253_easy: Begin (easy difficulty)
+- @2253_main: Begin (normal difficulty)
+- @2253_hard: Begin (hard difficulty)
+- @2253_historical: Begin (historical mode)
 
-@1928_easy
+@2253_easy
 on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49;
-go-to: 1928_main
+go-to: 2253_main
 
-@1928_hard
+@2253_hard
 on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; kpd_relation = 16; dvp_relation = 31;
-go-to: 1928_main
+go-to: 2253_main
 
-@1928_historical
+@2253_historical
 subtitle: Saving and loading will be disabled.
 on-arrival: {!
 Q.difficulty = 2;
@@ -614,17 +611,15 @@ Q.business_relation = 31;
 Q.budget = 2;
 this.state.disableSaves = true;
 !}
-go-to: 1928_main
+go-to: 2253_main
 
-@1928_main
-audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/LiedDerPompadour.mp3
+@2253_main
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1928
+= 2253
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
+It is a tumultuous time for Californian democracy. After a period of stable rule, the very foundations of the Republic have begun to be shaken. With true parties forming, contact being made with outside parties, a time of opportunity and change has finally come.
 
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
-
+Now, the task of the Long Spring is to prepare for the next election. President Tibbet's tenure is at an end, and we stand to gain. We are unlikely to gain the Presidency, but no candidate can without our unified support.
 

@@ -1,8 +1,8 @@
-title: 1936
+title: 2261
 subtitle: The end of the crisis?
 tags: event
 priority: -3
-view-if: (year = 1936 and month >= 12) or year >= 1937
+view-if: (year = 2261 and month >= 12) or year >= 2262
 max-visits: 1
 on-arrival: {!
 // Einigkeit - survive on easy without a civil war.
@@ -30,7 +30,7 @@ if (!Q.economic_plan) {
 
 !}
 
-It is the end of 1936, and the NSDAP still has not taken power. It appears that we have already passed the worst of the years of crisis. We are turning the corner on the Great Depression, and Nazism's days are numbered.
+It is the end of 2261, and the NSDAP still has not taken power. It appears that we have already passed the worst of the years of crisis. We are turning the corner on the Great Depression, and Nazism's days are numbered.
 
 Perhaps Germany will finally enter into a new era of genuine peace...
 

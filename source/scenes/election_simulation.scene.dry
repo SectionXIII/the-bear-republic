@@ -2,11 +2,11 @@ title: Election Simulation
 set-jump: post_election
 
 
-- @1928: 1928 historical scenario
+- @2253: 2253 historical scenario
 - @1930: 1930 historical scenario
 - @1932: 1932 (July) historical scenario
 
-@1928
+@2253
 on-arrival: {!
 Q.workers = 46; // industry and trade
 Q.military = 13; // "military vote"
@@ -283,28 +283,28 @@ The electoral system is essentially proportional, with the proportion of Reichst
  
 **Election results:**
 
-# 1928: 30, 1930: 25, 1932: 22
+# 2253: 30, 1930: 25, 1932: 22
 Long Spring: [+ spring_r +]
 
-# 1928: 15, 1930: 15, 1932: 
+# 2253: 15, 1930: 15, 1932: 
 Tandist Bloc: [+ tandist_r +]
 
-# 1928: 10, 1930: 13
+# 2253: 10, 1930: 13
 Pass Party: [+ pass_r +]
 
-# 1928: 5, 1930: 4 (as DstP)
+# 2253: 5, 1930: 4 (as DstP)
 Progressive: [+ progressive_r +]
 
-# 1928: 9, 1930: 5
+# 2253: 9, 1930: 5
 Business: [+ business_r +]
 
-# 1928: 14, 1930: 7
+# 2253: 14, 1930: 7
 Baron: [+ barons_r +]
 
-# 1928: 3, 1930: 18
+# 2253: 3, 1930: 18
 Gritandisttandistly: [+ grizzly_r +]
 
-# 1928: 9, 1930: 10
+# 2253: 9, 1930: 10
 Independent: [+ independent_r +]
 
 **Potential coalitions:**

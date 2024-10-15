@@ -1,4 +1,4 @@
-title: 1931
+title: 2256
 subtitle: A new year 
 on-arrival: {!
 // increase NSDAP vote share 
@@ -44,7 +44,7 @@ if (!Q.works_program) {
 }
 !}
 tags: event
-view-if: year = 1931 and month = 1 
+view-if: year = 2256 and month = 1 
 priority: 2
 max-visits: 1
 
