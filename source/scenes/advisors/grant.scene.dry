@@ -1,0 +1,40 @@
+title: George Grant
+is-pinned-card: true
+tags: advisor, frontier
+card-image: img/portraits/georgegrant.jpg
+view-if: grant_advisor = 1
+new-page: true
+
+= George Grant
+
+Grant is a former Ranger and anti-slavery activist with a burning hatred for Vault City, he is one of the Long Spring's most dedicated members and a founding figure. His newspaper, the Californian Eye, is one of the party's largest mouthpieces.
+
+- @military_affairs
+- @rural_campaign
+- @media_
+- @root: Return to main
+
+@military_affairs
+title: Military affairs
+subtitle: We can set our military policy.
+choose-if: advisor_action_timer == 0 and spd_in_government and reichswehr_minister_party == "SPD"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not in government. ?][? if reichswehr_minister_party != "SPD": The SPD does not have the Reichswehr ministry. ?]
+on-arrival: advisor_action_timer = 6;
+go-to: military_policy
+
+@rural_campaign
+title: Rural Campaign
+subtitle: Try to campaign among the rural populace.
+choose-if: advisor_action_timer == 0 and rural_policy > 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if rural_policy == 0 : We have not enacted any rural policies. ?]
+on-arrival: advisor_action_timer = 6; rural_spd += 5*(1-dissent); peoples_party_support += 1
+
+We have increased our campaigning among farmers and the rural populace.
+
+@media_
+title: Media
+subtitle: Manage our party's newspapers and media.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; media_timer -= 6
+go-to: media
