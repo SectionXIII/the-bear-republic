@@ -35,7 +35,6 @@ Congress composition:
 
 # 2253: 30, 1930: 25, 1932: 22
 Long Spring: [+ spring_r +]%
-[? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 2253: 15, 1930: 15, 1932: 
 Tandist Bloc: [+ tandist_r +]%
 # 2253: 10, 1930: 13
@@ -130,8 +129,6 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 Long Spring: [+ spring_votes +]%
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
-
 Tandist Bloc: [+ tandist_votes +]%
 
 Pass Party: [+ pass_votes +]%
@@ -148,16 +145,16 @@ Independent: [+ independent_votes +]%
 
 **Detailed results for each demographic**
 
-**Urban Workers:** Long Spring: [+ workers_spring_normalized +]%, Tandist: [+ workers_tandist_normalized +]%, Pass Party: [+ workers_pass_normalized +]%, Progressive: [+ workers_progressive_normalized +]%, Business: [+ workers_business_normalized +]%, Barons: [+ workers_barons_normalized +]%, Grizzly: [+ workers_grizzly_normalized +]%, Independent: [+ workers_independent_normalized +]%, [? if sapd_formed: SAPD: [+ workers_sapd_normalized +]% ?]
+**Urban Workers:** Long Spring: [+ workers_spring_normalized +]%, Tandist: [+ workers_tandist_normalized +]%, Pass Party: [+ workers_pass_normalized +]%, Progressive: [+ workers_progressive_normalized +]%, Business: [+ workers_business_normalized +]%, Barons: [+ workers_barons_normalized +]%, Grizzly: [+ workers_grizzly_normalized +]%, Independent: [+ workers_independent_normalized +]%
 
-**Middle Class:** Long Spring: [+ middle_spring_normalized +]%, Tandist: [+ middle_tandist_normalized +]%, Pass Party: [+ middle_pass_normalized +]%, Progressive: [+ middle_progressive_normalized +]%, Business: [+ middle_business_normalized +]%; Barons: [+ middle_barons_normalized +]%, Grizzly: [+ middle_grizzly_normalized +]%, Independent: [+ middle_independent_normalized +]% [? if sapd_formed: SAPD: [+ middle_sapd_normalized +]% ?]
+**Middle Class:** Long Spring: [+ middle_spring_normalized +]%, Tandist: [+ middle_tandist_normalized +]%, Pass Party: [+ middle_pass_normalized +]%, Progressive: [+ middle_progressive_normalized +]%, Business: [+ middle_business_normalized +]%; Barons: [+ middle_barons_normalized +]%, Grizzly: [+ middle_grizzly_normalized +]%, Independent: [+ middle_independent_normalized +]%
 
-**Military:** Long Spring: [+ military_spring_normalized +]%, Tandist: [+ military_tandist_normalized +]%, Pass Party: [+ military_pass_normalized +]%, Progressive: [+ military_progressive_normalized +]%, Business: [+ military_business_normalized +]%; Barons: [+ military_barons_normalized +]%, Grizzly: [+ military_grizzly_normalized +]%, Independent: [+ military_independent_normalized +]% [? if sapd_formed: SAPD: [+ military_sapd_normalized +]% ?]
+**Military:** Long Spring: [+ military_spring_normalized +]%, Tandist: [+ military_tandist_normalized +]%, Pass Party: [+ military_pass_normalized +]%, Progressive: [+ military_progressive_normalized +]%, Business: [+ military_business_normalized +]%; Barons: [+ military_barons_normalized +]%, Grizzly: [+ military_grizzly_normalized +]%, Independent: [+ military_independent_normalized +]% 
 
-**Frontier Folk:** Long Spring: [+ rural_spring_normalized +]%, Tandist: [+ rural_tandist_normalized +]%, Pass Party: [+ rural_pass_normalized +]%, Progressive: [+ rural_progressive_normalized +]%, Business: [+ rural_business_normalized +]%; Barons: [+ rural_barons_normalized +]%, Grizzly: [+ rural_grizzly_normalized +]%, Independent: [+ rural_independent_normalized +]% [? if sapd_formed: SAPD: [+ rural_sapd_normalized +]% ?]
+**Frontier Folk:** Long Spring: [+ rural_spring_normalized +]%, Tandist: [+ rural_tandist_normalized +]%, Pass Party: [+ rural_pass_normalized +]%, Progressive: [+ rural_progressive_normalized +]%, Business: [+ rural_business_normalized +]%; Barons: [+ rural_barons_normalized +]%, Grizzly: [+ rural_grizzly_normalized +]%, Independent: [+ rural_independent_normalized +]% 
 
-**Unemployed:** Long Spring: [+ unemployed_spring_normalized +]%, Tandist: [+ unemployed_tandist_normalized +]%, Pass Party: [+ unemployed_pass_normalized +]%, Progressive: [+ unemployed_progressive_normalized +]%, Business: [+ unemployed_business_normalized +]%; Barons: [+ unemployed_barons_normalized +]%, Grizzly: [+ unemployed_grizzly_normalized +]%, Independent: [+ unemployed_independent_normalized +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_normalized +]% ?]
+**Unemployed:** Long Spring: [+ unemployed_spring_normalized +]%, Tandist: [+ unemployed_tandist_normalized +]%, Pass Party: [+ unemployed_pass_normalized +]%, Progressive: [+ unemployed_progressive_normalized +]%, Business: [+ unemployed_business_normalized +]%; Barons: [+ unemployed_barons_normalized +]%, Grizzly: [+ unemployed_grizzly_normalized +]%, Independent: [+ unemployed_independent_normalized +]% 
 
-**Follower:** Long Spring: [+ follower_spring_normalized +]%, Tandist: [+ follower_tandist_normalized +]%, Pass Party: [+ follower_pass_normalized +]%, Progressive: [+ follower_progressive_normalized +]%, Business: [+ follower_business_normalized +]%; Barons: [+ follower_barons_normalized +]%, Grizzly: [+ follower_grizzly_normalized +]%, Independent: [+ follower_independent_normalized +]% [? if sapd_formed: SAPD: [+ follower_sapd_normalized +]% ?]
+**Follower:** Long Spring: [+ follower_spring_normalized +]%, Tandist: [+ follower_tandist_normalized +]%, Pass Party: [+ follower_pass_normalized +]%, Progressive: [+ follower_progressive_normalized +]%, Business: [+ follower_business_normalized +]%; Barons: [+ follower_barons_normalized +]%, Grizzly: [+ follower_grizzly_normalized +]%, Independent: [+ follower_independent_normalized +]%
 
 **Support for the Republic: [+ pro_republic +]%**

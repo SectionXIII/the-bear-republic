@@ -478,7 +478,7 @@ title: Paul Levi
 subtitle: Paul Levi is a former KPD leader who was purged for criticizing Communist policies.
 is-card: true
 card-image: img/portraits/LeviPaul.jpg
-view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and left_split = 0
+view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and urban_departure = 0
 on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
@@ -502,7 +502,7 @@ title: Kurt Rosenfeld
 subtitle: Kurt Rosenfeld is a lawyer, anti-militarist activist, and Reichstag member.
 is-card: true
 card-image: img/portraits/RosenfeldKurt.jpg
-view-if: rosenfeld_advisor = 0 and n_advisors < 3 and left_split = 0
+view-if: rosenfeld_advisor = 0 and n_advisors < 3 and urban_departure = 0
 on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
@@ -514,7 +514,7 @@ title: Max Seydewitz
 subtitle: Max Seydewitz is a former leader of the youth wing, current supporter of the left wing of the SPD, and advocates for class struggle.
 is-card: true
 card-image: img/portraits/SeydewitzMax.jpg
-view-if: seydewitz_advisor = 0 and n_advisors < 3 and left_split = 0
+view-if: seydewitz_advisor = 0 and n_advisors < 3 and urban_departure = 0
 on-arrival: seydewitz_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: left_advisor
@@ -527,7 +527,7 @@ subtitle: Arcanestomper is a longtime organizer and leader within the CPA.
 is-card: true
 card-image: img/portraits/Arcanestomper.png
 tags: left_advisor
-view-if: arcanestomper_advisor = 0 and n_advisors < 3 and left_split = 0
+view-if: arcanestomper_advisor = 0 and n_advisors < 3 and urban_departure = 0
 on-arrival: arcanestomper_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 
@@ -539,7 +539,7 @@ subtitle: Azel Amaling is a man with a storied past, chequered present, and brig
 is-card: true
 card-image: img/portraits/Azel.png
 tags: left_advisor
-view-if: azel_advisor = 0 and n_advisors < 3 and left_split = 0
+view-if: azel_advisor = 0 and n_advisors < 3 and urban_departure = 0
 on-arrival: azel_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 
@@ -551,7 +551,7 @@ subtitle: The single best analyst and an advocate of trans rights, the Masked Re
 is-card: true
 card-image: img/portraits/TMR.png
 tags: left_advisor
-view-if: tmr_advisor = 0 and n_advisors < 3 and left_split = 0
+view-if: tmr_advisor = 0 and n_advisors < 3 and urban_departure = 0
 on-arrival: tmr_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 
@@ -566,7 +566,7 @@ subtitle: Theodor Leipart is the leader of the ADGB, the German Trade Union Fede
 is-card: true
 card-image: img/portraits/LeipartTheodor.jpg
 tags: labor_advisor
-view-if: leipart_advisor = 0 and n_advisors < 3 and unions_independent = 0
+view-if: leipart_advisor = 0 and n_advisors < 3 and frontier_independent = 0
 on-arrival: leipart_advisor = 1; n_advisors += 1; labor_strength += 5
 go-to: advisor_menu
 
@@ -590,7 +590,7 @@ subtitle: Wladimir Woytinsky is a former Russian Menshevik who is now the lead t
 is-card: true
 card-image: img/portraits/WoytinskyWladimir.jpg
 tags: labor_advisor
-view-if: woytinsky_advisor = 0 and n_advisors < 3 and unions_independent = 0
+view-if: woytinsky_advisor = 0 and n_advisors < 3 and frontier_independent = 0
 on-arrival: woytinsky_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
@@ -602,7 +602,7 @@ subtitle: Spore Theodore Red is a former bushranger, Labor MP, and leading desig
 is-card: true
 card-image: img/portraits/Spore.jpg
 tags: labor_advisor
-view-if: spore_advisor = 0 and n_advisors < 3 and unions_independent = 0
+view-if: spore_advisor = 0 and n_advisors < 3 and frontier_independent = 0
 on-arrival: spore_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 
@@ -614,7 +614,7 @@ subtitle: Delramur Gyldholm is a Danish Socialdemokratiet that has since emigrat
 is-card: true
 card-image: img/portraits/Delramur.jpg
 tags: labor_advisor
-view-if: delramur_advisor = 0 and n_advisors < 3 and unions_independent = 0
+view-if: delramur_advisor = 0 and n_advisors < 3 and frontier_independent = 0
 on-arrival: delramur_advisor = 1; n_advisors += 1; labor_strength += 3
 go-to: advisor_menu
 

@@ -57,10 +57,10 @@ Q.neorevisionist_strength = 5;
 Q.neorevisionist_dissent = 10;
 
 // secret events...
-Q.labor_independent = 0;
-Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
+Q.frontier_independent = 0;
+Q.mutant_resign = 0;
+Q.urban_departure = 0;
+Q.intelligentsia_resigned = 0;
 
 // have we discovered neorevisionism?
 Q.neorevisionism = 0;
@@ -190,14 +190,15 @@ Q.capital_strike_progress = 0;
 Q.budget = 5;
 
 // Proportion of different social groups
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 48; // industry and trade
+// source: I happened across an oily blackstone upon the hollows of the earth which revealed the truth of the demographic situation of the New Californian Republic circa 2253 to me and nothing else.
+Q.workers = 25; // industry and trade
 Q.military = 13; // "military vote"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
 Q.middle = 14; // "general middle class"
 Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
+Q.tribal = 11; // 
 Q.unemployed = 2.2;
-Q.follower = 30;
+Q.follower = 18; // politically active follower supporters
+Q.mutant = 17; // the mutant portion of the NCR, mostly covering the ghoul population of the the Necropolis, the nomadic super mutant population, and the minority of mutants in the other big cities
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -214,12 +215,11 @@ Q.rural_qol = 100;
 Q.unemployed_qol = 100;
 Q.military_qol = 100;
 Q.middle_qol = 100;
+Q.tribal_qol = 100;
+Q.mutant_qol = 100;
 
-Q.classes = ['workers', 'military', 'middle', 'rural', 'unemployed', 'follower'];
+Q.classes = ['workers', 'military', 'middle', 'rural', 'tribal', 'unemployed', 'follower', 'mutant'];
 Q.parties = ['spring', 'pass', 'tandist', 'tandist_right', 'progressive', 'business', 'barons', 'grizzly', 'independent'];
-
-// TODO: add 'sapd' later on
-Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -263,6 +263,16 @@ Q.rural_barons = 35;
 Q.rural_grizzly = 5;
 Q.rural_independent = 20;
 
+Q.tribal_spring = 30;
+Q.tribal_pass = 0;
+Q.tribal_tandist = 60;
+Q.tribal_tandist_right = 0;
+Q.tribal_progressive = 10;
+Q.tribal_business = 0;
+Q.tribal_barons = 0;
+Q.tribal_grizzly = 0;
+Q.tribal_independent = 0;
+
 Q.unemployed_spring = 35;
 Q.unemployed_pass = 55;
 Q.unemployed_tandist = 0;
@@ -283,13 +293,23 @@ Q.follower_barons = 0;
 Q.follower_grizzly = 0;
 Q.follower_independent = 12;
 
+Q.mutant_spring = 80;
+Q.mutant_pass = 0;
+Q.mutant_tandist = 0;
+Q.mutant_tandist_right = 0;
+Q.mutant_progressive = 0;
+Q.mutant_business = 0;
+Q.mutant_barons = 0;
+Q.mutant_grizzly = 0;
+Q.mutant_independent = 0;
+
 
 // Current Congress composition
 // % of NCR Congress in Jan 2253
 // source: it came to me in a dream
-Q.spring_r = 26;
-Q.pass_r = 9;
-Q.tandist_r = 10;
+Q.spring_r = 20;
+Q.pass_r = 10;
+Q.tandist_r = 15;
 Q.tandist_right_r = 7;
 Q.progressive_r = 6;
 Q.business_r = 10;
@@ -298,19 +318,15 @@ Q.grizzly_r = 3;
 Q.independent_r = 9;
 
 // diff from prev
-Q.old_spring_r = 26;
-Q.old_pass_r = 9;
-Q.old_tandist_r = 10;
+Q.old_spring_r = 20;
+Q.old_pass_r = 10;
+Q.old_tandist_r = 15;
 Q.old_tandist_right_r = 7;
 Q.old_progressive_r = 6;
 Q.old_business_r = 10;
 Q.old_barons_r = 20;
 Q.old_grizzly_r = 3;
 Q.old_independent_r = 9;
-
-// sapd isn't formed yet, but it may be formed
-Q.sapd_r = 0;
-Q.old_sapd_r = 0;
 
 // for changing the DDP's name to the DStP
 Q.ddp_name = "DDP";

@@ -73,7 +73,6 @@ Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
 Long Spring: [+ spring_r +]%
-[? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
 Tandist Bloc: [+ tandist_r +]%
 # 1928: 10, 1930: 13
@@ -164,8 +163,6 @@ go-to: menu
 # 1928: 30, 1930: 25, 1932: 22
 Long Spring: [+ spring_votes +]%
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
-
 # 1928: 15, 1930: 15, 1932: 
 Tandist Bloc: [+ tandist_votes +]%
 
@@ -189,17 +186,17 @@ Independent: [+ independent_votes +]%
 
 **Detailed results for each demographic**
 
-Urban Workers: Long Spring: [+ workers_spring_normalized +]%, Tandist: [+ workers_tandist_normalized +]%, Pass Party: [+ workers_pass_normalized +]%, Progressive: [+ workers_progressive_normalized +]%, Business: [+ workers_business_normalized +]%; Barons: [+ workers_barons_normalized +]%, Grizzly: [+ workers_grizzly_normalized +]%, Independent: [+ workers_independent_normalized +]% [? if sapd_formed: SAPD: [+ workers_sapd_normalized +]% ?]
+Urban Workers: Long Spring: [+ workers_spring_normalized +]%, Tandist: [+ workers_tandist_normalized +]%, Pass Party: [+ workers_pass_normalized +]%, Progressive: [+ workers_progressive_normalized +]%, Business: [+ workers_business_normalized +]%; Barons: [+ workers_barons_normalized +]%, Grizzly: [+ workers_grizzly_normalized +]%, Independent: [+ workers_independent_normalized +]% 
 
-New Middle Class: Long Spring: [+ middle_spring_normalized +]%, Tandist: [+ middle_tandist_normalized +]%, Pass Party: [+ middle_pass_normalized +]%, Progressive: [+ middle_progressive_normalized +]%, Business: [+ middle_business_normalized +]%; Barons: [+ middle_barons_normalized +]%, Grizzly: [+ middle_grizzly_normalized +]%, Independent: [+ middle_independent_normalized +]% [? if sapd_formed: SAPD: [+ middle_sapd_normalized +]% ?]
+New Middle Class: Long Spring: [+ middle_spring_normalized +]%, Tandist: [+ middle_tandist_normalized +]%, Pass Party: [+ middle_pass_normalized +]%, Progressive: [+ middle_progressive_normalized +]%, Business: [+ middle_business_normalized +]%; Barons: [+ middle_barons_normalized +]%, Grizzly: [+ middle_grizzly_normalized +]%, Independent: [+ middle_independent_normalized +]% 
 
-Old Middle Class: Long Spring: [+ military_spring_normalized +]%, Tandist: [+ military_tandist_normalized +]%, Pass Party: [+ military_pass_normalized +]%, Progressive: [+ military_progressive_normalized +]%, Business: [+ military_business_normalized +]%; Barons: [+ military_barons_normalized +]%, Grizzly: [+ military_grizzly_normalized +]%, Independent: [+ military_independent_normalized +]% [? if sapd_formed: SAPD: [+ military_sapd_normalized +]% ?]
+Old Middle Class: Long Spring: [+ military_spring_normalized +]%, Tandist: [+ military_tandist_normalized +]%, Pass Party: [+ military_pass_normalized +]%, Progressive: [+ military_progressive_normalized +]%, Business: [+ military_business_normalized +]%; Barons: [+ military_barons_normalized +]%, Grizzly: [+ military_grizzly_normalized +]%, Independent: [+ military_independent_normalized +]% 
 
-Frontier Folk: Long Spring: [+ rural_spring_normalized +]%, Tandist: [+ rural_tandist_normalized +]%, Pass Party: [+ rural_pass_normalized +]%, Progressive: [+ rural_progressive_normalized +]%, Business: [+ rural_business_normalized +]%; Barons: [+ rural_barons_normalized +]%, Grizzly: [+ rural_grizzly_normalized +]%, Independent: [+ rural_independent_normalized +]% [? if sapd_formed: SAPD: [+ rural_sapd_normalized +]% ?]
+Frontier Folk: Long Spring: [+ rural_spring_normalized +]%, Tandist: [+ rural_tandist_normalized +]%, Pass Party: [+ rural_pass_normalized +]%, Progressive: [+ rural_progressive_normalized +]%, Business: [+ rural_business_normalized +]%; Barons: [+ rural_barons_normalized +]%, Grizzly: [+ rural_grizzly_normalized +]%, Independent: [+ rural_independent_normalized +]%
 
-Unemployed: Long Spring: [+ unemployed_spring_normalized +]%, Tandist: [+ unemployed_tandist_normalized +]%, Pass Party: [+ unemployed_pass_normalized +]%, Progressive: [+ unemployed_progressive_normalized +]%, Business: [+ unemployed_business_normalized +]%; Barons: [+ unemployed_barons_normalized +]%, Grizzly: [+ unemployed_grizzly_normalized +]%, Independent: [+ unemployed_independent_normalized +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_normalized +]% ?]
+Unemployed: Long Spring: [+ unemployed_spring_normalized +]%, Tandist: [+ unemployed_tandist_normalized +]%, Pass Party: [+ unemployed_pass_normalized +]%, Progressive: [+ unemployed_progressive_normalized +]%, Business: [+ unemployed_business_normalized +]%; Barons: [+ unemployed_barons_normalized +]%, Grizzly: [+ unemployed_grizzly_normalized +]%, Independent: [+ unemployed_independent_normalized +]%
 
-Follower: Long Spring: [+ follower_spring_normalized +]%, Tandist: [+ follower_tandist_normalized +]%, Pass Party: [+ follower_pass_normalized +]%, Progressive: [+ follower_progressive_normalized +]%, Business: [+ follower_business_normalized +]%; Barons: [+ follower_barons_normalized +]%, Grizzly: [+ follower_grizzly_normalized +]%, Independent: [+ follower_independent_normalized +]% [? if sapd_formed: SAPD: [+ follower_sapd_normalized +]% ?]
+Follower: Long Spring: [+ follower_spring_normalized +]%, Tandist: [+ follower_tandist_normalized +]%, Pass Party: [+ follower_pass_normalized +]%, Progressive: [+ follower_progressive_normalized +]%, Business: [+ follower_business_normalized +]%; Barons: [+ follower_barons_normalized +]%, Grizzly: [+ follower_grizzly_normalized +]%, Independent: [+ follower_independent_normalized +]%
 
 @parties
 go-to: menu
@@ -226,8 +223,6 @@ Current relations: [+ dnvp_relation : relationships +]
 **KPD** - *Kommunistische Partei Deutschlands* (German Communist Party) - a radical left-wing offshoot of the Long Spring that emerged in the aftermath of the German Revolution of 1918, they follow the path of Moscow, opposing parliamentary democracy in favor of a Soviet-style revolution.
 
 Current relations: [+ kpd_relation : relationships +]
-
-[? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Germany) - a party recently formed in a split from the SPD, the SAPD is essentially an agglomeration of various left-wing splinter groups between the SPD and KPD. ?]
 
 **NSDAP** - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist German Worker's Party, or Nazis) - a far-right nationalist and antisemitic party. Led by Adolf Hitler, they attempted a coup in 1923, and were banned for it, but have since been legalized.
 
@@ -344,14 +339,7 @@ data = [
         "name": "Pass Party",
         "seats": Q.pass_r*5,
     }];
-if (Q.sapd_formed && Q.sapd_r) {
-    data.push({
-            "id": "sapd",
-            "legend": "SAPD",
-            "name": "SAPD",
-            "seats": Math.round(Q.sapd_r*5),
-            });
-}
+
 data = data.concat([
     {
         "id": "spring",
@@ -420,8 +408,8 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'spring': '#f7f735', 'pass': '#8B0000', 'progressive': '#DCCA4A', 'tandist': '#000', 'business': '#D5AC27', 'barons': '#3f7bc1', 'grizzly': '#954B00', 'independent': '#4b4b4b', 'sapd': '#c40000'},
-            {'spring': 'Long Spring', 'pass': 'Pass Party', 'progressive': 'Progressive', 'tandist': 'Tandist Bloc', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independent', 'sapd': 'SAPD'});
+            {'spring': '#f7f735', 'pass': '#8B0000', 'progressive': '#DCCA4A', 'tandist': '#000', 'business': '#D5AC27', 'barons': '#3f7bc1', 'grizzly': '#954B00', 'independent': '#4b4b4b'},
+            {'spring': 'Long Spring', 'pass': 'Pass Party', 'progressive': 'Progressive', 'tandist': 'Tandist Bloc', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independent'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     d3.select("#election_history").datum(Q.election_records).call(lines);
@@ -431,8 +419,8 @@ if (d3 && window) {
     if (!Q.historical_mode) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'spring': '#f7f735', 'pass': '#8B0000', 'progressive': '#DCCA4A', 'tandist': '#000', 'business': '#D5AC27', 'barons': '#3f7bc1', 'grizzly': '#954B00', 'independent': '#4b4b4b', 'sapd': '#c40000'},
-            {'spring': 'Long Spring', 'pass': 'Pass Party', 'progressive': 'Progressive', 'tandist': 'Tandist Bloc', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independent', 'sapd': 'SAPD'});
+            {'spring': '#f7f735', 'pass': '#8B0000', 'progressive': '#DCCA4A', 'tandist': '#000', 'business': '#D5AC27', 'barons': '#3f7bc1', 'grizzly': '#954B00', 'independent': '#4b4b4b'},
+            {'spring': 'Long Spring', 'pass': 'Pass Party', 'progressive': 'Progressive', 'tandist': 'Tandist Bloc', 'business': 'Business', 'barons': 'Barons', 'grizzly': 'Grizzly', 'independent': 'Independent'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -455,8 +443,6 @@ if (d3 && window) {
 
 {!<table>!}
 {!<tr><td><div class="box" style='background-color:#f7f735; outline: 2px; outline-style: solid;'> </div></td><td>!} **Long Spring:** {!</td><td>!} **[+ spring_r +]%** {!</td></tr>!}
-
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div></td> <td> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
 {!<tr><td><div class="box" style='background-color:#8f8b8b'> </div></td> <td>!} Pass Party: {!</td><td>!} [+ pass_r +]% {!</td></tr>!}
 
