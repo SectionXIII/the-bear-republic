@@ -101,7 +101,7 @@ Q.hitler_right_coalition = Q.tandist_r + Q.barons_r + Q.grizzly_r;
 Q.progressive_coalition = Q.spring_r + Q.pass_r + Q.progressive_r;
 
 //if (Q.pass_relation >= 30) {
- //   Q.weimar_coalition += Q.sapd_r;
+//   Q.weimar_coalition += Q.sapd_r;
 //}
 
 Q.leverage = Q.spring_r;
