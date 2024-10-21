@@ -1,6 +1,6 @@
 title: Name of the Advisor
 is-pinned-card: true
-tags: (advisor, etc)
+tags: tags for categorization
 card-image: img/portraits/jaystillman.jpg
 view-if: template_advisor = 1
 new-page: true
