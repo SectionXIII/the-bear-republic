@@ -1,0 +1,42 @@
+title: Name of the Advisor
+is-pinned-card: true
+tags: (advisor, etc)
+card-image: img/portraits/jaystillman.jpg
+view-if: template_advisor = 1
+new-page: true
+
+= Title of the advisor selection screen
+
+Loc and flavor here
+
+- @action1
+- @action2
+- @action3
+- @root: Return to main
+
+@action1
+title: Action title
+subtitle: Smaller title, best used to expand on what the title actually does
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: Effects of the action
+
+Localization and fluff here
+
+@action2
+title: Action title
+subtitle: Smaller title, best used to expand on what the title actually does
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: Effects of the action
+
+Localization and fluff here
+
+@action3
+title: Action title
+subtitle: Smaller title, best used to expand on what the title actually does
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: Effects of the action
+
+Localization and fluff here
