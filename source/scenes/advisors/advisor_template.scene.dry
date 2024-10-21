@@ -19,7 +19,7 @@ title: Action title
 subtitle: Smaller title, best used to expand on what the title actually does
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: Effects of the action
+on-arrival:
 
 Localization and fluff here
 
@@ -28,7 +28,7 @@ title: Action title
 subtitle: Smaller title, best used to expand on what the title actually does
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: Effects of the action
+on-arrival:
 
 Localization and fluff here
 
@@ -37,6 +37,6 @@ title: Action title
 subtitle: Smaller title, best used to expand on what the title actually does
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: Effects of the action
+on-arrival:
 
 Localization and fluff here
