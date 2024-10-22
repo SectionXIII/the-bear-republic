@@ -307,9 +307,9 @@ Q.mutant_independent = 0;
 // Current Congress composition
 // % of NCR Congress in Jan 2253
 // source: it came to me in a dream
-Q.spring_r = 20;
+Q.spring_r = 16;
 Q.pass_r = 10;
-Q.tandist_r = 15;
+Q.tandist_r = 19;
 Q.tandist_right_r = 7;
 Q.progressive_r = 6;
 Q.business_r = 10;
@@ -318,9 +318,9 @@ Q.grizzly_r = 3;
 Q.independent_r = 9;
 
 // diff from prev
-Q.old_spring_r = 20;
+Q.old_spring_r = 16;
 Q.old_pass_r = 10;
-Q.old_tandist_r = 15;
+Q.old_tandist_r = 19;
 Q.old_tandist_right_r = 7;
 Q.old_progressive_r = 6;
 Q.old_business_r = 10;
@@ -422,6 +422,9 @@ Q.welfare = 0;
 Q.agricultural_policy = 0;
 Q.land_reform = 0;
 
+// level of support for tribals
+Q.tribal_policy = 0;
+
 // works-creation programs (i.e. WTB-plan) - how much have they implemented?
 Q.works_program = 0;
 Q.wtb_implemented = 0;
@@ -459,13 +462,18 @@ Q.moderate_plan_progress = 0;
 Q.lower_tax_rates = 0;
 Q.upper_tax_rates = 0;
 
+// Mutant rights and scare scale
+Q.mutant_rights = 0;
+Q.mutant_acceptance = 0;
+Q.mutant_scare = 0;
+
 Q.electoral_threshold = 0;
 
 // our conduct in the government, and the conduct of our coalition opponents.
 // did the SPD vote against the previous government in a vote of no confidence?
-Q.spd_no_confidence = 0;
+Q.spring_no_confidence = 0;
 // was the last SPD government taken down in a vote of no confidence by right-wing coalition partners?
-Q.no_confidence_against_spd = 0;
+Q.no_confidence_against_spring = 0;
 
 // Advisors/Leaders
 Q.n_advisors = 3;
@@ -547,28 +555,26 @@ Q.kpd_ultimatum_timer = 0;
 // all the initial advisors
 Q.stillman_advisor = 1; // Jay Stillman
 Q.hide_advisor = 1; // Solomon Hide
-// okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
-Q.crispien_advisor = 0; // Arthur Crispien
 Q.grant_advisor = 1; // George Grant
 
-// left advisors
+// Urbanite advisors
 Q.sender_advisor = 0; // Toni Sender
 Q.levi_advisor = 0; // Paul Levi
 Q.levi_dead = 0;
 Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
 Q.seydewitz_advisor = 0; // Max Seydewitz
 
-// centrist alternate advisors
+// Mutant alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
-// Reformist advisors
+// Intelligentsia advisors
 Q.severing_advisor = 0; // Carl Severing
 Q.braun_advisor = 0; // Otto Braun
 Q.juchacz_advisor = 0; // Marie Juchacz
 Q.baade_advisor = 0; // Fritz Baade
 
-// Labor advisors
+// Frontier advisors
 Q.leipart_advisor = 0; // Theodor Leipart
 Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
 Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)

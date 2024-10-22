@@ -8,16 +8,16 @@ set-jump: post_election
 
 @2253
 on-arrival: {!
-Q.workers = 46; // industry and trade
+Q.workers = 25; // industry and trade
 Q.military = 13; // "military vote"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.middle = 14; // "middle class"
+Q.middle = 14; // "general middle class"
 Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.follower = 30;
+Q.tribal = 11; // 
+Q.unemployed = 2.2;
+Q.follower = 18; // politically active follower supporters
+Q.mutant = 17; // the mutant portion of the NCR, mostly covering the ghoul population of the the Necropolis, the nomadic super mutant population, and the minority of mutants in the other big cities
 
-Q.classes = ['workers', 'military', 'middle', 'rural', 'unemployed', 'follower'];
+Q.classes = ['workers', 'military', 'middle', 'rural', 'tribal', 'unemployed', 'follower', 'mutant'];
 Q.parties = ['spring', 'pass', 'tandist', 'progressive', 'business', 'barons', 'grizzly', 'independent'];
 
 // Support for party by social group
@@ -58,6 +58,16 @@ Q.rural_barons = 45;
 Q.rural_grizzly = 5;
 Q.rural_independent = 10;
 
+Q.tribal_spring = 30;
+Q.tribal_pass = 0;
+Q.tribal_tandist = 60;
+Q.tribal_tandist_right = 0;
+Q.tribal_progressive = 10;
+Q.tribal_business = 0;
+Q.tribal_barons = 0;
+Q.tribal_grizzly = 0;
+Q.tribal_independent = 0;
+
 Q.unemployed_spring = 25;
 Q.unemployed_pass = 55;
 Q.unemployed_tandist = 1;
@@ -75,22 +85,34 @@ Q.follower_business = 5;
 Q.follower_barons = 5;
 Q.follower_grizzly = 0;
 Q.follower_independent = 10;
+
+Q.mutant_spring = 80;
+Q.mutant_pass = 0;
+Q.mutant_tandist = 0;
+Q.mutant_tandist_right = 0;
+Q.mutant_progressive = 0;
+Q.mutant_business = 0;
+Q.mutant_barons = 0;
+Q.mutant_grizzly = 0;
+Q.mutant_independent = 0;
+
 !}
 go-to: election_algorithm
 set-jump: post_election
 
 @1930
 on-arrival: {!
-Q.workers = 46; // industry and trade
+Q.workers = 25; // industry and trade
 Q.military = 13; // "military vote"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.middle = 14; // "middle class"
+Q.middle = 14; // "general middle class"
 Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 20;
-Q.follower = 30;
+Q.tribal = 11; // 
+Q.unemployed = 2.2;
+Q.follower = 18; // politically active follower supporters
+Q.mutant = 17; // the mutant portion of the NCR, mostly covering the ghoul population of the the Necropolis, the nomadic super mutant population, and the minority of mutants in the other big cities
 
-Q.classes = ['workers', 'military', 'middle', 'rural', 'unemployed', 'follower'];
+
+Q.classes = ['workers', 'military', 'middle', 'rural', 'tribal', 'unemployed', 'follower', 'mutant'];
 Q.parties = ['spring', 'pass', 'tandist', 'progressive', 'business', 'barons', 'grizzly', 'independent'];
 
 // Support for party by social group
@@ -131,6 +153,16 @@ Q.rural_barons = 20;
 Q.rural_grizzly = 25;
 Q.rural_independent = 15;
 
+Q.tribal_spring = 30;
+Q.tribal_pass = 0;
+Q.tribal_tandist = 60;
+Q.tribal_tandist_right = 0;
+Q.tribal_progressive = 10;
+Q.tribal_business = 0;
+Q.tribal_barons = 0;
+Q.tribal_grizzly = 0;
+Q.tribal_independent = 0;
+
 Q.unemployed_spring = 20;
 Q.unemployed_pass = 50;
 Q.unemployed_tandist = 0;
@@ -148,6 +180,16 @@ Q.follower_business = 5;
 Q.follower_barons = 5;
 Q.follower_grizzly = 10;
 Q.follower_independent = 5;
+
+Q.mutant_spring = 80;
+Q.mutant_pass = 0;
+Q.mutant_tandist = 0;
+Q.mutant_tandist_right = 0;
+Q.mutant_progressive = 0;
+Q.mutant_business = 0;
+Q.mutant_barons = 0;
+Q.mutant_grizzly = 0;
+Q.mutant_independent = 0;
 
 Q.spring_r = 25;
 Q.pass_r = 10;
@@ -230,6 +272,16 @@ Q.follower_business = 5;
 Q.follower_barons = 5;
 Q.follower_grizzly = 10;
 Q.follower_independent = 5;
+
+Q.mutant_spring = 80;
+Q.mutant_pass = 0;
+Q.mutant_tandist = 0;
+Q.mutant_tandist_right = 0;
+Q.mutant_progressive = 0;
+Q.mutant_business = 0;
+Q.mutant_barons = 0;
+Q.mutant_grizzly = 0;
+Q.mutant_independent = 0;
 
 Q.spring_r = 25;
 Q.pass_r = 10;

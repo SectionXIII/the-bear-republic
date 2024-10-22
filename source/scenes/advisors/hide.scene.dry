@@ -9,19 +9,19 @@ new-page: true
 
 Solomon Hide is an intelligent, well educated first generation Supermutant. The founder of the Long Spring, a leading figure of both the Mutant faction as well as the party, he works tirelessly to keep the Sping from fraying.
 
-- @coalition
+- @mutant_rights
 - @party_discipline
 - @snap_election
 - @root: Return to main
 
-@coalition
-title: Negotiating with the Coalition
-subtitle: Braun can improve our relationships with our centrist and center-right coalition partners in Prussia as well as in the Reichstag.
-choose-if: advisor_action_timer <= 0 and (spd_prussia or in_weimar_coalition or in_grand_coalition or in_popular_front)
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if not spd_prussia : The SPD does not control the Prussian government. ?]
-on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if spring_in_government = 1 and coalition_dissent > 0; tandist_relation += 6; progressive_relation += 6; business_relation += 2; business_relation += 3 if in_grand_coalition
+@mutant_rights
+title: Mutant Rights
+subtitle: Solomon continues his mutant outreach program.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: mutant_spring += 6*(1-dissent); mutant_rights += 1; mutant_acceptance += 1; mutant_scare -= 1;
 
-We have improved our relations with the [? if in_grand_coalition : Center (Zentrum) Party, DDP, and DVP, ?][? if not in_grand_coalition: Center (Zentrum) Party and DDP, ?] and reduced tensions with the coalition.
+As a supermutant himself, Solomon Hide is well aware of the systemic discrimination currently entrenched within the NCR. Using his position as a founder of the Long Spring and a 'good' supermutant, he pushes more initiatives to help his fellows and ghouls alike.
 
 @party_discipline
 title: Party Discipline

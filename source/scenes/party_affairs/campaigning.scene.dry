@@ -15,8 +15,10 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @middle: The middle class of bureaucrats, shopkeepers, and small time merchants.
 - @military: The new military class of fulltime soldiers and officers.
 - @rural: Rural workers and small farmers, who have felt neglected by us in the past.
+- @tribal: The tribal peoples of New California's periphery, long ignored by most except for the Tandist movement.
 - @unemployed: The unemployed.
 - @follower: Followers, who typically support the Tandist parties.
+- @mutant: Mutants of the wasteland, both ghoul and super. facing discrimination just for their 
 - @root: We either don't want to or cannot campaign right now.
 - @easy_discard
 
@@ -51,6 +53,14 @@ unavailable-subtitle: Not enough resources.
 on-arrival: rural_spring += 6*(1-dissent); rural_spring -= 3 if peoples_party == 0; resources -= 1; peoples_party_support += 1; rural_spring += 3*(1-dissent) if rural_policy >= 2
 
 We have increased our campaigning among farmers. [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?][? if peoples_party > 0: As a people's party, we have an easier time increasing support among farmers than before. ?][? if rural_policy >= 2 : Our rural policies have made it easier for us to build support among farmers. ?]
+
+@tribal
+subtitle: -1 resources.
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: tribal_spring += 6*(1-dissent); resources -= 1; rural_spring += 3*(1-dissent) if tribal_policy >= 2
+
+We have increased our campaigning amongt the tribes of New California.
 
 @unemployed
 subtitle: -1 resources

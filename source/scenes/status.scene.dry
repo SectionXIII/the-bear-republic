@@ -153,8 +153,12 @@ Independent: [+ independent_votes +]%
 
 **Frontier Folk:** Long Spring: [+ rural_spring_normalized +]%, Tandist: [+ rural_tandist_normalized +]%, Pass Party: [+ rural_pass_normalized +]%, Progressive: [+ rural_progressive_normalized +]%, Business: [+ rural_business_normalized +]%; Barons: [+ rural_barons_normalized +]%, Grizzly: [+ rural_grizzly_normalized +]%, Independent: [+ rural_independent_normalized +]% 
 
+**Tribal:**Long Spring: [+ tribal_spring_normalized +]%, Tandist: [+ tribal_tandist_normalized +]%, Pass Party: [+ tribal_pass_normalized +]%, Progressive: [+ tribal_progressive_normalized +]%, Business: [+ tribal_business_normalized +]%; Barons: [+ tribal_barons_normalized +]%, Grizzly: [+ tribal_grizzly_normalized +]%, Independent: [+ tribal_independent_normalized +]% 
+
 **Unemployed:** Long Spring: [+ unemployed_spring_normalized +]%, Tandist: [+ unemployed_tandist_normalized +]%, Pass Party: [+ unemployed_pass_normalized +]%, Progressive: [+ unemployed_progressive_normalized +]%, Business: [+ unemployed_business_normalized +]%; Barons: [+ unemployed_barons_normalized +]%, Grizzly: [+ unemployed_grizzly_normalized +]%, Independent: [+ unemployed_independent_normalized +]% 
 
 **Follower:** Long Spring: [+ follower_spring_normalized +]%, Tandist: [+ follower_tandist_normalized +]%, Pass Party: [+ follower_pass_normalized +]%, Progressive: [+ follower_progressive_normalized +]%, Business: [+ follower_business_normalized +]%; Barons: [+ follower_barons_normalized +]%, Grizzly: [+ follower_grizzly_normalized +]%, Independent: [+ follower_independent_normalized +]%
+
+**Mutant:** Long Spring: [+ mutant_spring_normalized +]%, Tandist: [+ mutant_tandist_normalized +]%, Pass Party: [+ mutant_pass_normalized +]%, Progressive: [+ mutant_progressive_normalized +]%, Business: [+ mutant_business_normalized +]%; Barons: [+ mutant_barons_normalized +]%, Grizzly: [+ mutant_grizzly_normalized +]%, Independent: [+ mutant_independent_normalized +]%
 
 **Support for the Republic: [+ pro_republic +]%**
