@@ -77,4 +77,10 @@ unavailable-subtitle: Not enough resources.
 view-if: peoples_party == 1
 on-arrival: follower_spring += 6*(1-dissent); resources -= 1
 
-We have increased our campaigning among the Followers.
+@mutant
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: mutant_spring += 6*(1-dissent); resources -= 1
+
+We have increased our campaigning among the Mutant population.
