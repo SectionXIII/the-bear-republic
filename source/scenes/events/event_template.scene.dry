@@ -17,25 +17,25 @@ Fluff and localization go here
 - @option4: Title 4
 
 @option1
-on-arrival: +[+ dues +]
+on-arrival: resources += dues
 
 fluff fluff fluff here
 
 @option2
-on-arrival: +[+ dues +]
+on-arrival: resources += dues
 
 Fluff fluff fluff
 
 @option3
 choose-if: // Set conditions for this option
 unavailable-subtitle: The text explaining why it's not available
-on-arrival: +[+ dues +]
+on-arrival: resources += dues
 
 Fluff fluff fluff
 
 @option4
 choose-if: # Set conditions for this option
 unavailable-subtitle: The text explaining why it's not available
-on-arrival: +[+ dues +]
+on-arrival: resources += dues
 
 fluff fluff fluff
