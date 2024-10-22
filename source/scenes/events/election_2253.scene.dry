@@ -168,14 +168,6 @@ data = [
         "seats": Math.round(Q.pass_r*5),
     }
 ];
-# if (Q.sapd_formed && Q.sapd_r) {
-#    data.push({
-#            "id": "sapd",
-#            "legend": "SAPD",
-#            "name": "SAPD",
-#            "seats": Math.round(Q.sapd_r*5),
-#            });
-#}
 data = data.concat([
     {
         "id": "spring",
@@ -244,6 +236,7 @@ if (window && d3) {
     d3.select("#reichstag").datum(data).call(parliament);
 }
 !}
+
 go-to: coalition_menu
 
 **Election results:**
