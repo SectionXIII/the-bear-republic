@@ -26,14 +26,16 @@ on-arrival: resources += dues
 Fluff fluff fluff
 
 @option3
-choose-if: # Set conditions for this option
+choose-if: mutant_strength >= 0
+# Set conditions for this option
 unavailable-subtitle: The text explaining why it's not available
 on-arrival: resources += dues
 
 Fluff fluff fluff
 
 @option4
-choose-if: # Set conditions for this option
+choose-if: mutant_strength >= 5
+# Set conditions for this option
 unavailable-subtitle: The text explaining why it's not available
 on-arrival: resources += dues
 
