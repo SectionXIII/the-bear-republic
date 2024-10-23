@@ -200,7 +200,7 @@ Q.unemployed = 2.2;
 Q.follower = 15; // politically active follower supporters
 Q.mutant = 14; // the mutant portion of the NCR, mostly covering the ghoul population of the the Necropolis, the nomadic super mutant population, and the minority of mutants in the other big cities
 
-// unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
+// unemployment: Initial gold crash - 13.3, Second phase - 22.7, Third phase - 34.3, Fourth phase - 43.8 (same source as above)
 
 // income for industrial workers in reichsmarks/year - 2253 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
 Q.income = 1600;
@@ -233,14 +233,14 @@ Q.workers_barons = 5;
 Q.workers_grizzly = 0;
 Q.workers_independent = 10;
 
-Q.military_spring = 5;
+Q.military_spring = 0;
 Q.military_pass = 0;
 Q.military_tandist = 10;
 Q.military_tandist_right = 15;
 Q.military_progressive = 10;
 Q.military_business = 10;
 Q.military_barons = 15;
-Q.military_grizzly = 10;
+Q.military_grizzly = 15;
 Q.military_independent = 15;
 
 Q.middle_spring = 5;
@@ -259,15 +259,15 @@ Q.rural_tandist = 5;
 Q.rural_tandist_right = 15;
 Q.rural_progressive = 0;
 Q.rural_business = 5;
-Q.rural_barons = 35;
+Q.rural_barons = 50;
 Q.rural_grizzly = 5;
-Q.rural_independent = 20;
+Q.rural_independent = 5;
 
-Q.tribal_spring = 30;
+Q.tribal_spring = 5;
 Q.tribal_pass = 0;
 Q.tribal_tandist = 60;
 Q.tribal_tandist_right = 0;
-Q.tribal_progressive = 10;
+Q.tribal_progressive = 35;
 Q.tribal_business = 0;
 Q.tribal_barons = 0;
 Q.tribal_grizzly = 0;
@@ -291,11 +291,11 @@ Q.follower_progressive = 0;
 Q.follower_business = 0;
 Q.follower_barons = 0;
 Q.follower_grizzly = 0;
-Q.follower_independent = 12;
+Q.follower_independent = 5;
 
-Q.mutant_spring = 80;
+Q.mutant_spring = 70;
 Q.mutant_pass = 0;
-Q.mutant_tandist = 0;
+Q.mutant_tandist = 10;
 Q.mutant_tandist_right = 0;
 Q.mutant_progressive = 20;
 Q.mutant_business = 0;
