@@ -223,13 +223,13 @@ Q.parties = ['spring', 'pass', 'tandist', 'tandist_right', 'progressive', 'busin
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spring = 60;
+Q.workers_spring = 35;
 Q.workers_pass = 20;
-Q.workers_tandist = 5;
-Q.workers_tandist_right = 0;
-Q.workers_progressive = 0;
-Q.workers_business = 0;
-Q.workers_barons = 5;
+Q.workers_tandist = 15;
+Q.workers_tandist_right = 5;
+Q.workers_progressive = 5;
+Q.workers_business = 10;
+Q.workers_barons = 0;
 Q.workers_grizzly = 0;
 Q.workers_independent = 10;
 
@@ -239,16 +239,16 @@ Q.military_tandist = 10;
 Q.military_tandist_right = 15;
 Q.military_progressive = 10;
 Q.military_business = 10;
-Q.military_barons = 15;
-Q.military_grizzly = 15;
-Q.military_independent = 15;
+Q.military_barons = 5;
+Q.military_grizzly = 35;
+Q.military_independent = 5;
 
 Q.middle_spring = 5;
 Q.middle_pass = 20;
 Q.middle_tandist = 10;
 Q.middle_tandist_right = 0;
-Q.middle_progressive = 15;
-Q.middle_business = 25;
+Q.middle_progressive = 5;
+Q.middle_business = 35;
 Q.middle_barons = 0;
 Q.middle_grizzly = 5;
 Q.middle_independent = 15;
@@ -258,9 +258,9 @@ Q.rural_pass = 0;
 Q.rural_tandist = 5;
 Q.rural_tandist_right = 15;
 Q.rural_progressive = 0;
-Q.rural_business = 5;
-Q.rural_barons = 50;
-Q.rural_grizzly = 5;
+Q.rural_business = 0;
+Q.rural_barons = 60;
+Q.rural_grizzly = 0;
 Q.rural_independent = 5;
 
 Q.tribal_spring = 5;
@@ -286,8 +286,8 @@ Q.unemployed_independent = 0;
 Q.follower_spring = 15;
 Q.follower_pass = 0;
 Q.follower_tandist = 60;
-Q.follower_tandist_right = 10;
-Q.follower_progressive = 0;
+Q.follower_tandist_right = 5;
+Q.follower_progressive = 5;
 Q.follower_business = 0;
 Q.follower_barons = 0;
 Q.follower_grizzly = 0;
