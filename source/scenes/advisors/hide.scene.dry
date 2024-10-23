@@ -10,8 +10,8 @@ new-page: true
 Solomon Hide is an intelligent, well educated first generation Supermutant. The founder of the Long Spring, a leading figure of both the Mutant faction as well as the party, he works tirelessly to keep the Sping from fraying.
 
 - @mutant_rights
+- @strengthen_road_warden
 - @party_discipline
-- @snap_election
 - @root: Return to main
 
 @mutant_rights
@@ -23,18 +23,17 @@ on-arrival: mutant_spring += 6*(1-dissent); mutant_rights += 1; mutant_acceptanc
 
 As a supermutant himself, Solomon Hide is well aware of the systemic discrimination currently entrenched within the NCR. Using his position as a founder of the Long Spring and a 'good' supermutant, he pushes more initiatives to help his fellows and ghouls alike.
 
+@strengthen_road_warden
+title: Strengthen the Road Wardens
+subtitle: Shift weapons and supermutants to the Wardens.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: road_warden_strength += 100; road_warden_militancy += 0.05;
+
 @party_discipline
 title: Party Discipline
-subtitle: Reduce dissent across the party.
+subtitle: Reduce dissent across the Spring.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; left_dissent -= 5; labor_dissent -= 10; center_dissent -= 10; reformist_dissent -= 10; neorevisionist_dissent -= 5
+on-arrival: advisor_action_timer = 6; urban_dissent -= 10; frontier_dissent -= 10; mutant_dissent -= 15; intelligentsia_dissent -= 10; neorevisionist_dissent -= 5
 
 We have enforced party discipline to reduce dissent across all factions.
-
-@snap_election
-title: Snap Election
-subtitle: Call a snap election.
-unavailable-subtitle: [? if chancellor != "Braun" and president != "Braun" : Braun must be Chancellor or President. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if president = "Braun" and presidential_powers : We have removed this power from the president with a constitutional reform. ?]
-choose-if: advisor_action_timer == 0 and (chancellor == "Braun" or (president == "Braun" and not presidential_powers))
-on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; 

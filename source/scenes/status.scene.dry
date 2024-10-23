@@ -143,6 +143,8 @@ Grizzly: [+ grizzly_votes +]%
 
 Independent: [+ independent_votes +]%
 
+---
+
 **Detailed results for each demographic**
 
 **Urban Workers:** Long Spring: [+ workers_spring_normalized +]%, Tandist: [+ workers_tandist_normalized +]%, Pass Party: [+ workers_pass_normalized +]%, Progressive: [+ workers_progressive_normalized +]%, Business: [+ workers_business_normalized +]%, Barons: [+ workers_barons_normalized +]%, Grizzly: [+ workers_grizzly_normalized +]%, Independent: [+ workers_independent_normalized +]%

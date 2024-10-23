@@ -117,12 +117,6 @@ Q.grizzly_leader = "Nara";
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
 
-
-// Does the SPD lead in Prussia?
-Q.spd_prussia = 1;
-// Options: spd, z, dnvp, papen, nsdap
-Q.prussian_government = "SPD";
-
 // The array of forces - paramilitary groups
 // Number of members in 2253 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
@@ -481,10 +475,10 @@ Q.n_advisors = 3;
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
 Q.timers = ['advisor_action', 'confronting_grizzly', 'crisis_program',
-            'fundraising', 'ideology',
+            'fundraising', 'ideology', 'mutant_rights',
             'inter_party_relationships', 'international_relations',
             'iron_front', 'media', 'enemies',
-            'party_organizations', 'rally', 'reichsbanner',
+            'party_organizations', 'rally', 'road_warden',
             'shuffle_leadership', 'streetfighting', 'peoples_party',
             'party_disunity',
             // govt
@@ -498,7 +492,7 @@ Q.timers = ['advisor_action', 'confronting_grizzly', 'crisis_program',
             // events
             'emergency_cuts', 'unemployment_insurance',
             'sa_ban', 'sh_ban',
-            'kpd_policy', 'kpd_ultimatum', 'popular_front_dispute',
+            'passpolicy', 'pass_ultimatum', 'popular_front_dispute',
             'high_inflation', 'banking_crisis'];
 Q.advisor_action_timer = 0;
 // party affairs timers
@@ -513,7 +507,7 @@ Q.media_timer = 0;
 Q.enemies_timer = 0;
 Q.party_organizations_timer =  0;
 Q.rally_timer = 0;
-Q.reichsbanner_timer = 0;
+Q.road_warden_timer = 0;
 Q.shuffle_leadership_timer = 0;
 Q.streetfighting_timer = 0;
 Q.peoples_party_timer = 0;
@@ -559,36 +553,22 @@ Q.grant_advisor = 1; // George Grant
 
 // Urbanite advisors
 Q.sender_advisor = 0; // Toni Sender
-Q.levi_advisor = 0; // Paul Levi
-Q.levi_dead = 0;
-Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
-Q.seydewitz_advisor = 0; // Max Seydewitz
+
 
 // Mutant alternate advisors
-Q.pfulf_advisor = 0; // Antonie Pfülf
-Q.breitscheid_advisor = 0; // Rudolf Breitscheid
+
 
 // Intelligentsia advisors
-Q.severing_advisor = 0; // Carl Severing
-Q.braun_advisor = 0; // Otto Braun
-Q.juchacz_advisor = 0; // Marie Juchacz
-Q.baade_advisor = 0; // Fritz Baade
+
 
 // Frontier advisors
-Q.leipart_advisor = 0; // Theodor Leipart
-Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
-Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
+
 
 // Revisionist advisors
-Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
 
-Q.leber_advisor = 0; // Julius Leber (post-1930)
-Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 
 // Nonfactional advisors
-Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
-Q.radbruch_advisor = 0; // Gustav Radbruch
-Q.stampfer_advisor = 0; // Friedrich Stampfer
+
 !}
 set-bg: img/NCR_Map.png
 new-page: true
@@ -597,7 +577,7 @@ new-page: true
 
  - The Republic Archives, 2280
 
-This is a game of fictional alternate history. While lore accuracy is a major concern, keep in mind that this is a game, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes,
+This is a game of fictional alternate history. While lore accuracy is a concern, keep in mind that this is a game, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes,
 
 (Those that are actual mistakes and not just things I made up for the sake of the game, anywho.)
 
