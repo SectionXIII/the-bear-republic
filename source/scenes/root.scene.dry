@@ -191,14 +191,14 @@ Q.budget = 5;
 
 // Proportion of different social groups
 // source: I happened across an oily blackstone upon the hollows of the earth which revealed the truth of the demographic situation of the New Californian Republic circa 2253 to me and nothing else.
-Q.workers = 25; // industry and trade
-Q.military = 13; // "military vote"
-Q.middle = 14; // "general middle class"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-Q.tribal = 11; // 
+Q.workers = 20; // industry and trade
+Q.military = 10; // "military vote"
+Q.middle = 11; // "general middle class"
+Q.rural = 22; // agriculture and forestry employment... but many of those are proletarians so...
+Q.tribal = 8; // 
 Q.unemployed = 2.2;
-Q.follower = 18; // politically active follower supporters
-Q.mutant = 17; // the mutant portion of the NCR, mostly covering the ghoul population of the the Necropolis, the nomadic super mutant population, and the minority of mutants in the other big cities
+Q.follower = 15; // politically active follower supporters
+Q.mutant = 14; // the mutant portion of the NCR, mostly covering the ghoul population of the the Necropolis, the nomadic super mutant population, and the minority of mutants in the other big cities
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
