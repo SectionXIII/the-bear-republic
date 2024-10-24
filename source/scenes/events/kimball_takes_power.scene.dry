@@ -1,17 +1,17 @@
-title: Hitler takes power.
+title: Kimball takes power.
 subtitle: The beginning of the end.
-view-if: chancellor == "Hitler" or president == "Hitler" or chancellor_party == "NSDAP"
+view-if: chancellor == "Kimball" or president == "Kimball" or chancellor_party == "Grizzly"
 on-arrival: spd_in_government = 0
 tags: event
 new-page: true
 
-[? if hitler_deported and president != "Hitler" and chancellor != "Hitler": The first act that Chancellor [+ chancellor +] takes upon assuming office is bringing Adolf Hitler back to Germany, and giving him citizenship and an official cabinet position. ?]
+[? if kimball_demoted and president != "Kimball" and chancellor != "Kimball": The first act that Chancellor [+ chancellor +] takes upon assuming office is inviting Aaron Kimball into government, and giving him an official cabinet position. ?]
 
-Hitler has promised a campaign of revenge against the socialists, and the Nazis have already spilled much blood on the streets. In his published manifesto, he promises a campaign of unspeakable horror against our Jews, and endless wars of violent expansion that will ruin all of Europe.
+Kimball has promised a campaign of revenge against the raiders of the Mojave and wars of expansion to push the boundaries of the Republic to the farthest reaches. A military man and popular, he will have little trouble rallying support for his wars to come.
 
 What are we to do now?
 
-- @fight: We will fight on the streets to prevent Hitler from taking power.
+- @fight: We will fight on the streets to prevent Kimball from taking power.
 - @give_up: We will vote against the nazis in the Reichstag.
 
 
