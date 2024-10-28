@@ -181,7 +181,7 @@ Q.throckmorton_votes = 0;
 Q.kimball_votes += Q.grizzly_normalized;
 Q.ruiz_votes += Q.independent_normalized;
 Q.ruiz_votes += Q.tandist_right_normalized;
-# Q.ruiz_votes += Q.baron_normalized;
+Q.ruiz_votes += Q.baron_normalized;
 
 if (Q.hide_campaign) {
     Q.hide_votes += Q.spring_normalized;
@@ -246,6 +246,7 @@ Q.hide_plurality = (Q.hide_votes >= Q.ruiz_votes && Q.hide_votes >= Q.kimball_vo
 // If no candidate gets above 50%, then there's a second round. In the second round, a plurality wins. 
 Q.election_round += 1;
 !}
+
 go-to: ruiz_wins if ruiz_majority == 1; throckmorton_wins if throckmorton_majority == 1; kimball_wins if kimball_majority == 1; hide_wins if hide_majority == 1; no_majority_round1 if any_majority == 0 and election_round == 1; round2_results if election_round >= 2
 
 Results:

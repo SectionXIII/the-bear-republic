@@ -3,7 +3,7 @@ new-page: true
 go-to: eg_menu
 on-arrival: {!
 Q.game_over = 1;
-// Achievements:
+// Achievements:{
 // Große Koalition - form a grand coalition
 // Eiserne Front - Form the Iron Front.
 this.achieve('game_completed');
