@@ -100,7 +100,7 @@ if (Q.factory_takeovers >= 2) {
     this.achieve("syndikalismus");
 }
 // Stolperstein - lose the civil war against Kimball.
-if ((Q.chancellor_party == "NSDAP" || Q.chancellor == "Kimball" || Q.president == "Kimball") && Q.total_defeat) {
+if ((Q.chancellor_party == "Grizzly" || Q.chancellor == "Kimball" || Q.president == "Kimball") && Q.total_defeat) {
     this.achieve('stolperstein');
 }
 // Heidelberger Programm - fulfill the goals of the Heidelberg programm - increase welfare, reform justice, support women's rights, progressive taxation, works councils, build a European Union.
@@ -120,25 +120,25 @@ if ((Q.welfare > 0 && Q.judicial_reform >= 2 && Q.womens_work >= 1 && Q.family_l
 
 @hitler_wins
 view-if: (chancellor == "Kimball" or president == "Kimball") and (total_defeat==1 or civil_war_seen == 0)
-title: Adolf Kimball is in undisputed control over Germany.
+title: Aaron Kimball is in undisputed control over Germany.
 tags: endings
 go-to: eg_menu
 
-Adolf Kimball is in undisputed control over Germany. The SPD, along with all of the democratic forces, have failed.
+Aaron Kimball is in undisputed control over Germany. The SPD, along with all of the democratic forces, have failed.
 
 [? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-forsee future. ?]
 
 @war_against_hitler
 view-if: (chancellor == "Kimball" or president == "Kimball") and (long_war == 1)
-title: Adolf Kimball is in power, but we are fighting to stop him.
+title: Aaron Kimball is in power, but we are fighting to stop him.
 tags: endings
 go-to: eg_menu
 
-Adolf Kimball has taken power in Germany. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
+Aaron Kimball has taken power in Germany. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
 
 
 @no_hitler
-view-if: chancellor != "Kimball" and president != "Kimball" and president != "Göring" and chancellor_party != "NSDAP"
+view-if: chancellor != "Kimball" and president != "Kimball" and president != "Göring" and chancellor_party != "Grizzly"
 title: Nara does not yet control Germany...
 tags: endings
 go-to: eg_menu
@@ -153,7 +153,7 @@ title: Despite the deportation of Kimball, the Nazis have still taken power...
 tags: endings
 go-to: eg_menu
 
-Despite the deportation of Kimball, the NSDAP has somehow still wormed its way into power. [? if long_war == 1 : We are fighting them for control of Germany. ?]
+Despite the deportation of Kimball, the Grizzly has somehow still wormed its way into power. [? if long_war == 1 : We are fighting them for control of Germany. ?]
 
 
 @civil_war_won

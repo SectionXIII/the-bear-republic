@@ -22,7 +22,7 @@ Many are calling for us to support the Tandist candidate Maxine Ruiz, despite he
 
 
 - @support_ruiz: Support Ruiz (T).
-- @support_braun: Run Otto Hide of the Long Spring.
+- @support_hide: Run Otto Hide of the Long Spring.
 - @support_throckmorton: Support Throckmorton of the Pass Party.
 
 @support_ruiz
@@ -33,16 +33,16 @@ Despite her grudge with the Brotherhood, Ruiz is a forward thinking candidate an
 
 - @final_election: The final vote...
 
-# @support_braun
-# subtitle: This will cost us 2 resources.
-# choose-if: resources >= 2
-# unavailable-subtitle: Not enough resources.
-# on-arrival: resources -= 2; hide_campaign = 1
-# go-to: hide_campaign
+@support_hide
+subtitle: This will cost us 2 resources.
+choose-if: resources >= 2
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 2; hide_campaign = 1
+go-to: hide_campaign
 
-# It takes effort to run a somewhat unexpected campaign. First, Hide has to be convinced to run. He himself had supported voting for Ruiz, and it takes a good deal of prodding to convince him of his destiny.
+It takes effort to run a somewhat unexpected campaign. First, Hide has to be convinced to run. He himself had supported voting for Ruiz, and it takes a good deal of prodding to convince him of his destiny.
 
-# The miniscule remnants of the Democratic Party (now called the German State Party) will likely support us. Who else will? Can we convince the Tandist camp to support Hide? What about the Communists?
+The miniscule remnants of the Democratic Party (now called the German State Party) will likely support us. Who else will? Can we convince the Tandist camp to support Hide? What about the Communists?
 
 
 @support_throckmorton
@@ -52,7 +52,7 @@ unavailable-subtitle: [? if pass_relation < 50 : We do not have good enough rela
 Supporting Throckmorton is rather unpopular in our party, even if the Passers accept our support. Are we sure?
 
 - @support_throckmorton_2: Yes, we will support Throckmorton, despite the Frontier's pleas against it.
-- @support_braun: Support Hide instead.
+- @support_hide: Support Hide instead.
 - @support_ruiz: Support Ruiz instead.
 
 @support_throckmorton_2
