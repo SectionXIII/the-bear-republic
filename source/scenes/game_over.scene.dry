@@ -88,7 +88,7 @@ if (Q.spd_in_government && ((Q.nationalization_progress >= 2 && Q.economic_democ
     this.achieve('raterepublik');
 }
 // Polykrise - survive both a fascist coup and a capital strike.
-if (Q.march_on_berlin_seen && Q.capital_strike_seen && Q.chancellor != "Hitler" && Q.president != "Hitler" && !Q.total_defeat) {
+if (Q.march_on_berlin_seen && Q.capital_strike_seen && Q.chancellor != "Kimball" && Q.president != "Kimball" && !Q.total_defeat) {
     this.achieve("polykrise");
 }
 // Wirtschaftsexperiment - implement two different economic plans.
@@ -99,8 +99,8 @@ if ((Q.nationalization_progress >= 1 && Q.wtb_implemented >= 1) || (Q.wtb_implem
 if (Q.factory_takeovers >= 2) {
     this.achieve("syndikalismus");
 }
-// Stolperstein - lose the civil war against Hitler.
-if ((Q.chancellor_party == "NSDAP" || Q.chancellor == "Hitler" || Q.president == "Hitler") && Q.total_defeat) {
+// Stolperstein - lose the civil war against Kimball.
+if ((Q.chancellor_party == "NSDAP" || Q.chancellor == "Kimball" || Q.president == "Kimball") && Q.total_defeat) {
     this.achieve('stolperstein');
 }
 // Heidelberger Programm - fulfill the goals of the Heidelberg programm - increase welfare, reform justice, support women's rights, progressive taxation, works councils, build a European Union.
@@ -119,41 +119,41 @@ if ((Q.welfare > 0 && Q.judicial_reform >= 2 && Q.womens_work >= 1 && Q.family_l
 
 
 @hitler_wins
-view-if: (chancellor == "Hitler" or president == "Hitler") and (total_defeat==1 or civil_war_seen == 0)
-title: Adolf Hitler is in undisputed control over Germany.
+view-if: (chancellor == "Kimball" or president == "Kimball") and (total_defeat==1 or civil_war_seen == 0)
+title: Adolf Kimball is in undisputed control over Germany.
 tags: endings
 go-to: eg_menu
 
-Adolf Hitler is in undisputed control over Germany. The SPD, along with all of the democratic forces, have failed.
+Adolf Kimball is in undisputed control over Germany. The SPD, along with all of the democratic forces, have failed.
 
 [? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-forsee future. ?]
 
 @war_against_hitler
-view-if: (chancellor == "Hitler" or president == "Hitler") and (long_war == 1)
-title: Adolf Hitler is in power, but we are fighting to stop him.
+view-if: (chancellor == "Kimball" or president == "Kimball") and (long_war == 1)
+title: Adolf Kimball is in power, but we are fighting to stop him.
 tags: endings
 go-to: eg_menu
 
-Adolf Hitler has taken power in Germany. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
+Adolf Kimball has taken power in Germany. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
 
 
 @no_hitler
-view-if: chancellor != "Hitler" and president != "Hitler" and president != "Göring" and chancellor_party != "NSDAP"
+view-if: chancellor != "Kimball" and president != "Kimball" and president != "Göring" and chancellor_party != "NSDAP"
 title: Nara does not yet control Germany...
 tags: endings
 go-to: eg_menu
 
-Hitler does not yet control Germany. [? if chancellor == "Papen" : However, Chancellor Papen's authoritarianism and far-right politics are paving the way for Hitler, or someone like him, to take power. ?] [? if chancellor == "Schleicher" : However, Chancellor Schleicher's authoritarianism and scheming is paving the way for Hitler, or someone like him, to take power. ?][? if resist_coup == 1 and republic_victory == 0 and long_war == 0 and coup_victory == 0 : Given our defeat in the Prussian coup, the far-right appears to be ascendant. ?][? if chancellor == "Brüning" : However, Chancellor Brüning's austerity policies and the continuation of the depression are paving the way for Hitler, or someone like him, to take power. ?]
+Kimball does not yet control Germany. [? if chancellor == "Papen" : However, Chancellor Papen's authoritarianism and far-right politics are paving the way for Kimball, or someone like him, to take power. ?] [? if chancellor == "Schleicher" : However, Chancellor Schleicher's authoritarianism and scheming is paving the way for Kimball, or someone like him, to take power. ?][? if resist_coup == 1 and republic_victory == 0 and long_war == 0 and coup_victory == 0 : Given our defeat in the Prussian coup, the far-right appears to be ascendant. ?][? if chancellor == "Brüning" : However, Chancellor Brüning's austerity policies and the continuation of the depression are paving the way for Kimball, or someone like him, to take power. ?]
 
-[? if kimball_demoted == 1 : We have deported Hitler back to Austria. Hopefully he will never return. ?]
+[? if kimball_demoted == 1 : We have deported Kimball back to Austria. Hopefully he will never return. ?]
 
 @nsdap_win
 view-if: chancellor == "Goebbels" or president == "Göring"
-title: Despite the deportation of Hitler, the Nazis have still taken power...
+title: Despite the deportation of Kimball, the Nazis have still taken power...
 tags: endings
 go-to: eg_menu
 
-Despite the deportation of Hitler, the NSDAP has somehow still wormed its way into power. [? if long_war == 1 : We are fighting them for control of Germany. ?]
+Despite the deportation of Kimball, the NSDAP has somehow still wormed its way into power. [? if long_war == 1 : We are fighting them for control of Germany. ?]
 
 
 @civil_war_won
@@ -235,11 +235,11 @@ Unemployment levels have fallen substantially! This is a success of our economic
 
 @unemployment_high
 title: Unemployment is still too high.
-view-if: unemployed >= 30 and (chancellor != "Hitler" and president != "Hitler") and (total_defeat == 0) and long_war == 0
+view-if: unemployed >= 30 and (chancellor != "Kimball" and president != "Kimball") and (total_defeat == 0) and long_war == 0
 tags: endings
 go-to: eg_menu
 
-Unemployment is still at dangerously high levels. Even though Hitler is not in power, the situation is ripe for instability and extremism.
+Unemployment is still at dangerously high levels. Even though Kimball is not in power, the situation is ripe for instability and extremism.
 
 
 @emergency_government
@@ -333,7 +333,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
 
-[? if game_achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
+[? if game_achievement_deport_hitler : **Der österreichische Gefreiter** - deported Kimball ?]
 
 [? if game_achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
 
@@ -349,7 +349,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if game_achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
 
-[? if game_achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+[? if game_achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Kimball in one playthrough on at least normal difficulty. ?]
 
 [? if game_achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
 
@@ -426,7 +426,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
 
-[? if achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
+[? if achievement_deport_hitler : **Der österreichische Gefreiter** - deported Kimball ?]
 
 [? if achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
 
@@ -442,7 +442,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
 
-[? if achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+[? if achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Kimball in one playthrough on at least normal difficulty. ?]
 
 [? if achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
 
@@ -517,7 +517,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_versohnler: **Versöhnler** - the Conciliators lead the KPD. ?]
 
-[? if not achievement_deport_hitler : **Der österreichische Gefreiter** - deported Hitler ?]
+[? if not achievement_deport_hitler : **Der österreichische Gefreiter** - deported Kimball ?]
 
 [? if not achievement_wirtschaftspolitik: **Wirtschaftspolitik** - enact an economic plan. ?]
 
@@ -533,7 +533,7 @@ go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 [? if not achievement_women_reichsbanner: **Mädchen in Uniform** - a woman's place is in the Reichsbanner. ?]
 
-[? if not achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Hitler in one playthrough on at least normal difficulty. ?]
+[? if not achievement_bruder_zur_sonne: **Brüder, zur Sonne, zur Freiheit** - reduce unemployment, pause reparations, increase women's rights, elect Otto Braun president, and deport Kimball in one playthrough on at least normal difficulty. ?]
 
 [? if not achievement_die_rote_fahne: **Die Rote Fahne** - join the KPD in their May Day march. ?]
 
