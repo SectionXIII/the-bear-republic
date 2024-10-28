@@ -3,9 +3,6 @@ new-page: true
 go-to: eg_menu
 on-arrival: {!
 Q.game_over = 1;
-// Achievements:{
-    None for Now
-}
 }
 
 = End
