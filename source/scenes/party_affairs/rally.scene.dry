@@ -9,7 +9,7 @@ go-to: main_rally; sa_disrupt if sa_strength > 180
 
 @sa_disrupt
 
-The Nazi SA has disrupted our rally! Their street troops are preventing us from meeting.
+The Grizzly Veterans have disrupted our rally! Their street troops are preventing us from meeting.
 
 - @police_protect: Call the police to protect our rally.
 - @rb_protect: Use the Reichsbanner to protect our rally.
@@ -53,26 +53,26 @@ The SA have won this show of strength.
 
 Mass rallies are a common feature of social democratic life, especially in the lead-up to an election. What is the primary theme of this rally?
 
-- @class_struggle: The class struggle of the proletariat against the bourgeoisie.
+- @urban_struggle: The class struggle of the urban poor against their oppressors.
 - @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
-- @democracy: Expanding our nascent democracy and defending it against dictatorship and fascism.
+- @democracy: Expanding our nascent democracy and defending it against dictatorship and despotism.
 - @pacifism: Opposing war, nationalism, and militarism at all costs.
-- @wtb: Support the WTB plan!
+- @wtb: Support the Industrial Plan!
 - @local: A mixture of various local and national concerns that resonate most with the audience.
 - @easy_discard
 
-@class_struggle
-on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent) if urban_strength > intelligentsia_strength; workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; urban_strength += 5; urban_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2;
+@urban_struggle
+on-arrival: workers_spring += 4*(1-dissent); unemployed_spring += 3*(1-dissent) if urban_strength > intelligentsia_strength; workers_spring += 4*(1-dissent) if nationalization_progress > 0; unemployed_spring += 3*(1-dissent) if nationalization_progress > 0; urban_strength += 5; urban_dissent -= 5; military_spring -= 3; middle_spring -= 2;
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
 @welfare
-on-arrival: workers_spd += 3*(1-dissent); workers_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 4*(1-dissent) if welfare > 1; intelligentsia_strength += 3; labor_strength += 4; intelligentsia_dissent -= 3; labor_dissent -= 3;
+on-arrival: workers_spring += 3*(1-dissent); workers_spring += 3*(1-dissent) if welfare > 0; unemployed_spring += 3*(1-dissent) if welfare > 0; unemployed_spring += 4*(1-dissent) if welfare > 1; intelligentsia_strength += 3; labor_strength += 4; intelligentsia_dissent -= 3; labor_dissent -= 3;
 
 The reformist message appeals to the organized workers, whose benefits are the accomplishments of social democracy. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
 
 @democracy
-on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); workers_spd += 4*(1-dissent) if democratization >= 3; unemployed_spd += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; new_middle_spd += 4*(1-dissent) if democratization >= 3 
+on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); workers_spring += 4*(1-dissent) if democratization >= 3; unemployed_spring += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; middle_spring += 4*(1-dissent) if democratization >= 3 
 
 Our speakers defend the republican system and rail against the monarchists and authoritarians who threaten it.
 
@@ -80,21 +80,21 @@ Our speakers defend the republican system and rail against the monarchists and a
 [? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, the workers are enthusiastic about our message. ?]
 
 @pacifism
-on-arrival: pacifism += 1; nationalism -= 2*(1 - dissent); workers_spd += 4*(1 - dissent) if pacifism >= 3; unemployed_spd += 3*(1-dissent) if pacifism >= 3; nationalism -= 3*(1-dissent) if pacifism >= 3; new_middle_spd += 4*(1-dissent) if pacifism >= 3
+on-arrival: pacifism += 1; nationalism -= 2*(1 - dissent); workers_spring += 4*(1 - dissent) if pacifism >= 3; unemployed_spring += 3*(1-dissent) if pacifism >= 3; nationalism -= 3*(1-dissent) if pacifism >= 3; middle_spring += 4*(1-dissent) if pacifism >= 3
 
 Our speakers denounce the military establishment and all the spending entering that black hole. Some adventurous speakers question the responsibility of the military elites in organizing the Great War.
 
 [? if pacifism < 3 : Given the volume of nationalist indoctrination in our society, it is difficult to argue so vehemently against the military. ?]
-[? if pacifism >= 3 : Since we have consistently made pacifism a theme of our campaign, the workers are enthusiastic about our message. ?]
+[? if pacifism >= 3 : Since we have consistently made pacifism a theme of our campaign, our supporters are enthusiastic about our message. ?]
 
 @wtb
 view-if: wtb_adopted = 1
-on-arrival: industrialization_support += 1; workers_spd += 6*(1-dissent); unemployed_spd += 6*(1-dissent); rural_spd += 3*(1-dissent); new_middle_spd += 3*(1-dissent); old_middle_spd += 3*(1-dissent);
+on-arrival: industrialization_support += 1; workers_spring += 6*(1-dissent); unemployed_spring += 6*(1-dissent); rural_spring += 3*(1-dissent); middle_spring += 3*(1-dissent); military_spring += 3*(1-dissent);
 
-The WTB plan has become a popular rallying cry for our party. The workers are eager to go back to work, and that is exactly what the plan promises.
+The Industrial Plan has become a popular rallying cry for our party. The workers are eager to go back to work, and that is exactly what the plan promises.
 
 
 @local
-on-arrival: workers_spd += 3*(1-dissent); old_middle_spd += 1*(1-dissent); new_middle_spd += 2*(1-dissent); unemployed_spd += 3*(1-dissent);
+on-arrival: workers_spring += 3*(1-dissent); military_spring += 1*(1-dissent); middle_spring += 2*(1-dissent); unemployed_spring += 3*(1-dissent);
 
 Our speakers have gauged the mood and are speaking to the issues that seem to most affect the workers in this moment.
