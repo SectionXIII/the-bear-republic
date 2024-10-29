@@ -51,7 +51,7 @@ The secretive Brotherhood of Steel were allies of the Republic in the past, but 
 
 @enclave
 subtitle: -4 resources
-choose-if: resources >= 4; and enclave_seen = 1;
+choose-if: resources >= 4 and enclave_seen = 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 4
 
