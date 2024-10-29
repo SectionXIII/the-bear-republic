@@ -1,24 +1,24 @@
-title: Neorevisionism: a new idea
+title: Old World Blues: a old new idea
 new-page: true
 is-card: true
 card-image: img/portraits/MierendorffCarlo.jpg
-view-if: grizzly_urgency > 1 and neorevisionism == 0 and (nsdap_r >= 5 or nsdap_normalized >= 0.10)
+view-if: enclave_seen >= 1 and enclave_contacted >= 0
 on-arrival: shuffle_leadership_timer = 0;
 tags: party_affairs
 frequency: 200
 max-visits: 1
 
-= Neorevisionism: A New Idea
+= Old World Blues: An old answer to a new problem
 
-Several young socialists, led by Carlo Mierendorff, are calling for a "new revisionism" in response to the Nazi threat. This political tendency calls for a mass movement in favor of democracy in order to counter the Nazi and Communist movements, and to update our rhetoric and imagery to appeal to emotion and not just reason.
+With the inclusion of old Enclave remnants and their ideas, some members of the Long Spring have started to see the old world with rose tinted glasses. Wistful sighs, odes to a paradise lost, and other such expressions of admiration for America's mytholigized past has swept through our ranks, creating a new undercurrent of worship of pre-war America. Should we accept these new ideas?
 
 #- @shuffle_leadership: It's time to change our advisors to take into account new ideas.
-- @support_neo: Support the neorevisionist movement.
+- @support_owb: Support the old worlder movement.
 - @no_new_ideas: We don't need new ideas.
 - @easy_discard
 
-@support_neo
-on-arrival: old_worlder_strength += 20; grizzly_urgency += 1; neorevisionism = 1; peoples_party_support += 2
+@support_owb
+on-arrival: old_worlder_strength += 20; grizzly_urgency += 1; old_world_blues = 1; peoples_party_support += 2
 
 We support the new leaders, and start using new-style propaganda techniques in our campaigns. The results are uncertain so far...
 
@@ -29,4 +29,4 @@ We support the new leaders, and start using new-style propaganda techniques in o
 @no_new_ideas
 on-arrival: old_worlder_strength -= 5; mutant_strength += 5; neorevisionism = -1
 
-We do not need these new ideas; they seem to imitate too closely those of the Nazis and Communists.
+We do not need these new ideas; they seem to imitate too closely those of Enclave and Brotherhood.
