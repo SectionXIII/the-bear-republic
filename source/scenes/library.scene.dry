@@ -222,7 +222,7 @@ Current relations: [+ dnvp_relation : relationships +]
 
 **KPD** - *Kommunistische Partei Deutschlands* (German Communist Party) - a radical left-wing offshoot of the Long Spring that emerged in the aftermath of the German Revolution of 1918, they follow the path of Moscow, opposing parliamentary democracy in favor of a Soviet-style revolution.
 
-Current relations: [+ kpd_relation : relationships +]
+Current relations: [+ pass_relation : relationships +]
 
 **NSDAP** - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist German Worker's Party, or Nazis) - a far-right nationalist and antisemitic party. Led by Adolf Hitler, they attempted a coup in 1923, and were banned for it, but have since been legalized.
 

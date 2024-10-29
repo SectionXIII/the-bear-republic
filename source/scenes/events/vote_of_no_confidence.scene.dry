@@ -34,7 +34,7 @@ Fine. We no longer control the government of Prussia. The vote has been called o
 
 @austerity
 view-if: welfare >= 0
-on-arrival: coalition_dissent = 0; workers_spd -= 10; umemployed_spd -= 10; workers_kpd += 7; workers_nsdap += 3; unemployed_kpd += 5; unemployed_nsdap += 5; urban_dissent += 15; center_dissent += 10; labor_dissent += 15; intelligentsia_dissentt += 5; welfare -= 2; budget += 1; unemployed += 3; kpd_coalition_dissent += 1; kpd_relation -= 10 if in_popular_front
+on-arrival: coalition_dissent = 0; workers_spd -= 10; umemployed_spd -= 10; workers_kpd += 7; workers_nsdap += 3; unemployed_kpd += 5; unemployed_nsdap += 5; urban_dissent += 15; center_dissent += 10; labor_dissent += 15; intelligentsia_dissentt += 5; welfare -= 2; budget += 1; unemployed += 3; kpd_coalition_dissent += 1; pass_relation -= 10 if in_popular_front
 
 Fine. We enacted a massive austerity program to cut welfare, in order to maintain the stability of our coalition. The vote has been called off.
 
@@ -47,10 +47,10 @@ on-arrival: resources -= 3; coalition_dissent -= 1;
 By transferring resources to our coalition partners, we can reduce their dissent against our policies. This is a crude, but effective solution.
 
 @support_kpd
-choose-if: (in_grand_coalition and communist_coalition >= 3 and kpd_relation >= 50 and kpd_r >= dvp_r) or (in_republican_coalition and kpd_relation >= 50 and kpd_r >= z_r and communist_coalition >= 3)
+choose-if: (in_grand_coalition and communist_coalition >= 3 and pass_relation >= 50 and kpd_r >= dvp_r) or (in_republican_coalition and pass_relation >= 50 and kpd_r >= z_r and communist_coalition >= 3)
 view-if: tried_supporting_kpd = 0
 on-arrival: tried_supporting_kpd = 1
-unavailable-subtitle: [? if communist_coalition < 3 : The KPD won't take part in parliamentary government. ?] [? if kpd_relation < 50 : The KPD is not friendly enough with us. ?] [? if (in_grand_coalition and kpd_r < dvp_r) or (in_republican_coalition and kpd_r < z_r): The KPD does not have enough votes. ?] [? if in_popular_front : We are already in a Popular Front with the KPD. ?]
+unavailable-subtitle: [? if communist_coalition < 3 : The KPD won't take part in parliamentary government. ?] [? if pass_relation < 50 : The KPD is not friendly enough with us. ?] [? if (in_grand_coalition and kpd_r < dvp_r) or (in_republican_coalition and kpd_r < z_r): The KPD does not have enough votes. ?] [? if in_popular_front : We are already in a Popular Front with the KPD. ?]
 
 If the Communists abstain, then we essentially can maintain a minority government[? if president=="Hindenburg":, although it would be very difficult to make policy without the support of President Hindenburg, which we do not have ?]. If this happens, then we will own a massive debt to the KPD. This could lead to broader cooperation in the future, for better or for worse.
 
@@ -58,7 +58,7 @@ If the Communists abstain, then we essentially can maintain a minority governmen
 - @let_it_happen: Never mind. Let the vote happen.
 
 @support_kpd_2
-on-arrival: communist_coalition += 1; workers_kpd += 3; kpd_relation += 5
+on-arrival: communist_coalition += 1; workers_kpd += 3; pass_relation += 5
 go-to: support_kpd_weimar if in_republican_coalition; support_kpd_grand if in_grand_coalition
 
 # TODO: this can form an infinite loop

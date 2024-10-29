@@ -586,11 +586,11 @@ This is a game of fictional alternate history. While lore accuracy is a concern,
 - @2253_historical: Begin (historical mode)
 
 @2253_easy
-on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_relation = 29; tandist_relation = 54; business_relation = 49;
+on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; pass_relation = 29; tandist_relation = 54; business_relation = 49;
 go-to: 2253_main
 
 @2253_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; intelligentsia_dissentt = 25; urban_dissent = 30; labor_dissent = 25; center_dissent = 25; tandist_relation = 41; kpd_relation = 16; business_relation = 31;
+on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; intelligentsia_dissentt = 25; urban_dissent = 30; labor_dissent = 25; center_dissent = 25; tandist_relation = 41; pass_relation = 16; business_relation = 31;
 go-to: 2253_main
 
 @2253_historical

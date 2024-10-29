@@ -1,7 +1,7 @@
 title: KPD Party Conference
 subtitle: The KPD chooses their new central committee - will the Wittorf Affair have an influence on their choice?
 new-page: true
-view-if: kpd_relation >= 50 and wittorf_soviet_union = 1 and year = 1929 and month >= 6 and month <= 8
+view-if: pass_relation >= 50 and wittorf_soviet_union = 1 and year = 1929 and month >= 6 and month <= 8
 max-visits: 1
 on-arrival: kpd_party_conference_seen = 1
 tags: event
@@ -18,9 +18,9 @@ After our discussion with the Soviets, we are inclined to believe that Stalin is
 
 @conciliator_success
 title: The Conciliators are the new leadership of the KPD.
-choose-if: (levi_advisor or rosenfeld_advisor) and (left_strength >= intelligentsia_strength) and (kpd_relation >= 50) 
+choose-if: (levi_advisor or rosenfeld_advisor) and (left_strength >= intelligentsia_strength) and (pass_relation >= 50) 
 unavailable-subtitle: [?  if not levi_advisor and not rosenfeld_advisor: Our party leadership is not left-wing enough. ?] [? if left_strength < intelligentsia_strength: The Comintern doubts our commitment to socialism. ?]
-on-arrival: kpd_party_leader = "Conciliators"; communist_coalition += 3; kpd_relation += 10*(1-dissent); left_strength += 5; urban_dissent -= 8
+on-arrival: kpd_party_leader = "Conciliators"; communist_coalition += 3; pass_relation += 10*(1-dissent); left_strength += 5; urban_dissent -= 8
 achievement: versohnler
 
 With our support, the Conciliators have won the leadership contest! The new leadership is a group of Conciliators, including Arthur Ewert, Hugo Eberlein, and Ernst Meyer. Thälmann remains, but largely as a figurehead only, it seems. We hope that the new leadership will be more inclined towards cooperation.
