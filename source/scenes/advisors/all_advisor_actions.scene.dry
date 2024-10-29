@@ -442,7 +442,7 @@ on-arrival: urban_dissent -= 8; urban_strength += 8
 
 Vorwärts prints editorials in support of urbanite positions.
 
-@support_center
+@support_mutant
 on-arrival: mutant_dissent -= 8; mutant_strength += 8
 
 Vorwärts prints editorials in support of mutant positions.

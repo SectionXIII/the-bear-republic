@@ -64,6 +64,9 @@ Q.intelligentsia_resigned = 0;
 // have we discovered old world blues?
 Q.old_world_blues = 0;
 
+// Have we heard rumors of the Enclave?
+Q.enclave_seen = 0;
+
 // crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;
 // grizzly_urgency indicates how seriously the SPD takes the nazis - scale from 0 to 10.
