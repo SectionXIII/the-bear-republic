@@ -210,7 +210,7 @@ subtitle: Breitscheid is one of our contacts with international socialist partie
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer == 0
 on-arrival: advisor_action_timer = 6; international_relations_timer -= 12;
-go-to: international_relations
+# go-to: international_relations
 
 @breitscheid_foreign
 title: Foreign Policy
