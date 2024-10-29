@@ -61,7 +61,7 @@ Mass rallies are a common feature of social democratic life, especially in the l
 - @local: A mixture of various local and national concerns that resonate most with the audience.
 - @easy_discard
 
-@class_struggle
+@urban_struggle
 on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent) if urban_strength > intelligentsia_strength; workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; urban_strength += 5; urban_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2;
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
@@ -88,7 +88,7 @@ Our speakers denounce the military establishment and all the spending entering t
 [? if pacifism >= 3 : Since we have consistently made pacifism a theme of our campaign, our supporters are enthusiastic about our message. ?]
 
 @wtb
-view-if: wtb_adopted = 1
+view-if: industrial_adopted = 1
 on-arrival: industrialization_support += 1; workers_spring += 6*(1-dissent); unemployed_spring += 6*(1-dissent); rural_spring += 3*(1-dissent); middle_spring += 3*(1-dissent); military_spring += 3*(1-dissent);
 
 The Industrial Plan has become a popular rallying cry for our party. The workers are eager to go back to work, and that is exactly what the plan promises.

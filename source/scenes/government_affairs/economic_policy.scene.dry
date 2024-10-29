@@ -59,7 +59,7 @@ The economy is doing better, finally. Even the bourgeois parties are beginning t
 title: Implement the WTB plan.
 subtitle: -[+ wtb_budget +] budget. [? if wtb_budget == 3 : Our pro-labor policies have reduced the cost of the plan. ?]
 unavailable-subtitle: Unemployment is low enough that the time for the WTB-Plan has passed.
-view-if: budget >= wtb_budget and wtb_implemented == 0 and wtb_adopted == 1
+view-if: budget >= wtb_budget and wtb_implemented == 0 and industrial_adopted == 1
 choose-if: unemployed > 8
 on-arrival: budget -= wtb_budget; works_program += 1; unemployed -= 4; workers_spd += 8*(1-dissent); unemployed_spd += 8*(1-dissent); wtb_implemented += 1; kpd_coalition_dissent += 1; pass_relation -= 5 if in_popular_front or in_left_front; inflation += 2
 achievement: wirtschaftspolitik
@@ -72,7 +72,7 @@ We have started to enact the WTB plan. Money is beginning to flow through the ec
 title: Implement the WTB plan.
 subtitle: -[+ wtb_budget +] budget - we will enter deficit spending. [? if wtb_budget == 3 : Our pro-labor policies have reduced the cost of the plan. ?]
 unavailable-subtitle: Unemployment is low enough that the time for the WTB-Plan has passed.
-view-if: budget < wtb_budget and wtb_implemented == 0 and wtb_adopted == 1
+view-if: budget < wtb_budget and wtb_implemented == 0 and industrial_adopted == 1
 choose-if: unemployed > 8
 on-arrival: coalition_dissent += 1; coalition_dissent += 1 if historical_mode; coalition_dissent += 1 if chancellor == "Brüning"; works_program += 1; budget -= wtb_budget; unemployed -= 4; workers += 3; workers_spd += 8*(1-dissent); unemployed_spd += 8*(1-dissent); capital_strike_progress += 1; wtb_implemented += 1; kpd_coalition_dissent += 1; pass_relation -= 5 if in_popular_front or in_left_front; inflation += 3
 achievement: wirtschaftspolitik

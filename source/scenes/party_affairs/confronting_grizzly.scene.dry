@@ -62,7 +62,7 @@ go-to: if_end
 go-to: if_end
 
 @wtb
-view-if: wtb_adopted == 1
+view-if: industrial_adopted == 1
 go-to: if_end
 
 @all
