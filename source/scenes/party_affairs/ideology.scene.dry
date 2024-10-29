@@ -37,7 +37,7 @@ if (Q.ideology && Q.ideology != "mutant") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "mutant"; mutant_strength += 10; mutant_strength -= 10
+on-departure: ideology = "mutant"; mutant_strength += 10; mutant_dissent -= 10
 
 Seeking to integrate and harness the natural strengths of his fellow mutants, Solomon Hide preaches his teachings to any who will listen.
 

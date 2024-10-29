@@ -593,7 +593,7 @@ on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; pass_r
 go-to: 2253_main
 
 @2253_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; intelligentsia_dissent = 25; urban_dissent = 30; labor_dissent = 25; mutant_strength = 25; tandist_relation = 41; pass_relation = 16; business_relation = 31;
+on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; intelligentsia_dissent = 25; urban_dissent = 30; labor_dissent = 25; mutant_dissent = 25; tandist_relation = 41; pass_relation = 16; business_relation = 31;
 go-to: 2253_main
 
 @2253_historical

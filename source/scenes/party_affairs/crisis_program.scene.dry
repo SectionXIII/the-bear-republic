@@ -27,7 +27,7 @@ Meanwhile, moderates and reformists draw up proposals for a limited plan of job 
 
 @support_centrist
 subtitle: Let the depression play itself out.
-on-arrival: mutant_strength += 5; mutant_strength -= 5; labor_dissent += 10; industrialization_support -= 1; urban_dissent += 10;
+on-arrival: mutant_strength += 5; mutant_dissent -= 5; labor_dissent += 10; industrialization_support -= 1; urban_dissent += 10;
 
 Woytinsky and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with bourgeois austerity? On the other hand, the centrists criticize Woytinsky for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
 
@@ -37,8 +37,8 @@ Our policy course is currently that nothing can be done to alleviate the depress
 @support_labor
 subtitle: Call for increased public works and fiscal stimulus.
 unavailable-subtitle: The Labor faction is not strong enough.
-choose-if: historical_mode == 0 or (labor_strength >= urban_strength and labor_strength >= mutant_strength and labor_strength >= intelligentsia_strength)
-on-arrival: mutant_strength += 10; urban_dissent += 5; labor_strength += 5; industrialization_support += 1;
+choose-if: historical_mode == 0 or (labor_strength >= left_strength and labor_strength >= mutant_strength and labor_strength >= intelligentsia_strength)
+on-arrival: mutant_dissent += 10; urban_dissent += 5; labor_strength += 5; industrialization_support += 1;
 go-to: plan_adopted if industrialization_support >= 3; plan_support if industrialization_support < 3
 
 @plan_support
@@ -48,15 +48,15 @@ Our support of the WTB plan alienates the orthodox Marxists of the Centrist fact
 We have not yet convinced the party to formally adopt the plan. More work needs to be done.
 
 @plan_adopted
-on-arrival: wtb_adopted = 1; labor_dissent -= 15; intelligentsia_dissent -= 10; labor_strength += 10; mutant_strength -= 10; mutant_strength += 20; urban_dissent += 5; economic_plan = 1
+on-arrival: wtb_adopted = 1; labor_dissent -= 15; intelligentsia_dissent -= 10; labor_strength += 10; mutant_strength -= 10; mutant_dissent += 20; urban_dissent += 5; economic_plan = 1
 
 With our hard work, we have finally convinced the majority of the party to adopt the WTB plan! [? if spring_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?][? if spring_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
 
 @support_left
 subtitle: Call for mass nationalizations and the transformation of the economy.
 unavailable-subtitle: The Left faction is not strong enough.
-choose-if: historical_mode == 0 or (urban_strength >= labor_strength and urban_strength >= mutant_strength and urban_strength >= intelligentsia_strength)
-on-arrival: urban_strength += 10; intelligentsia_dissent += 5; labor_dissent += 5; nationalization_support += 2
+choose-if: historical_mode == 0 or (left_strength >= labor_strength and left_strength >= mutant_strength and left_strength >= intelligentsia_strength)
+on-arrival: left_strength += 10; intelligentsia_dissent += 5; labor_dissent += 5; nationalization_support += 2
 go-to: support_left_progress if nationalization_support < 3; adopt_left if nationalization_support >= 3
 
 @support_left_progress
@@ -66,14 +66,14 @@ We attempt to convince the party to support a program of mass nationalizations i
 We have not yet formally adopted the plan. More work needs to be done.
 
 @adopt_left
-on-arrival: urban_strength += 15; urban_dissent -= 10; intelligentsia_dissent += 10; old_worlder_dissent += 8; labor_dissent += 6; nationalization_adopted = 1; coup_progress += 1; economic_plan = 3; pass_relation += 5*(1-dissent)
+on-arrival: left_strength += 15; urban_dissent -= 10; intelligentsia_dissent += 10; old_worlder_dissent += 8; labor_dissent += 6; nationalization_adopted = 1; coup_progress += 1; economic_plan = 3; pass_relation += 5*(1-dissent)
 
 With our hard work, we have convinced the majority of the party to adopt the socialist economic plan! [? if spring_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic or Finance ministries. ?] Bourgeois opposition is likely to be fierce. [? if spring_in_government == 0 : It might be difficult to enact the plan, given present conditions. ?]
 
 @support_moderate
 subtitle: Call for a limited program of job creation without deficit spending.
 unavailable-subtitle: The Reformist faction is not strong enough.
-choose-if: historical_mode == 0 or (intelligentsia_strength >= urban_strength and intelligentsia_strength >= mutant_strength and intelligentsia_strength >= labor_strength)
+choose-if: historical_mode == 0 or (intelligentsia_strength >= left_strength and intelligentsia_strength >= mutant_strength and intelligentsia_strength >= labor_strength)
 on-arrival: moderate_plan_support += 1; intelligentsia_strength += 8; intelligentsia_dissent -= 5; urban_dissent += 6; labor_dissent += 5
 go-to: adopt_moderate if moderate_plan_support >= 2; support_moderate_progress if moderate_plan_support < 2
 

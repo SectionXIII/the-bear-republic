@@ -34,18 +34,45 @@ tags: remove_advisor
 
 # mutants here
 
-@remove_hide
-title: Remove Hide
-view-if: hide_advisor = 1
+@remove_hilferding
+title: Remove Hilferding
+view-if: hilferding_advisor = 1
+on-arrival: hilferding_advisor = 0; mutant_strength += 5; n_advisors -= 1
 tags: remove_advisor
-on-arrival: hide_advisor = 0; mutant_strength -= 5; n_advisors -= 1
+go-to: rm_main
+
+Hilferding has been removed as an advisor. The Centrist faction disapproves.
+
+@remove_wels
+title: Remove Wels
+view-if: wels_advisor = 1
+tags: remove_advisor
+on-arrival: wels_advisor = 0; mutant_strength += 5; n_advisors -= 1
 go-to: rm_main
 
 Wels has been removed as an advisor. The Centrist faction disapproves.
 
+@remove_muller
+title: Remove Müller
+view-if: muller_advisor = 1
+tags: remove_advisor
+on-arrival: muller_advisor = 0; mutant_strength += 5; n_advisors -= 1
+go-to: rm_main
+
+Müller has been removed as an advisor. The Centrist faction disapproves.
 
 
-# intelligentsia here
+@remove_breitscheid
+title: Remove Breitscheid
+view-if: breitscheid_advisor = 1
+tags: remove_advisor
+on-arrival: breitscheid_advisor = 0; mutant_strength += 5; n_advisors -= 1
+go-to: rm_main
+
+Breitscheid has been removed as an advisor. The Centrist faction disapproves.
+
+# reformists
+
 
 @remove_severing
 title: Remove Severing
@@ -56,9 +83,35 @@ go-to: rm_main
 
 Severing has been removed as an advisor. The Reformist faction disapproves.
 
+@remove_braun
+title: Remove Braun
+view-if: braun_advisor = 1
+tags: remove_advisor
+on-arrival: braun_advisor = 0; intelligentsia_dissent += 5; n_advisors -= 1
+go-to: rm_main
+
+Braun has been removed as an advisor. The Reformist faction disapproves.
+
+@remove_juchacz
+title: Remove Juchacz
+view-if: juchacz_advisor = 1
+tags: remove_advisor
+on-arrival: juchacz_advisor = 0; intelligentsia_dissent += 5; n_advisors -= 1
+go-to: rm_main
+
+Juchacz has been removed as an advisor. The Reformist faction disapproves.
+
+@remove_pfulf
+title: Remove Pfülf
+view-if: pfulf_advisor = 1
+tags: remove_advisor
+on-arrival: pfulf_advisor = 0; intelligentsia_dissent += 5; n_advisors -= 1
+go-to: rm_main
+
+Pfülf has been removed as an advisor. The Reformist faction disapproves.
 
 
-# frontier here
+# labor
 
 @remove_leipart
 title: Remove Leipart
@@ -270,7 +323,7 @@ subtitle: Paul Levi is a former KPD leader who was purged for criticizing Commun
 is-card: true
 card-image: img/portraits/LeviPaul.jpg
 view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: levi_advisor = 1; n_advisors += 1; urban_strength += 5
+on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: urban_advisor
 
@@ -282,7 +335,7 @@ subtitle: Toni Sender is an anti-war and womens' rights advocate, and Reichstag 
 is-card: true
 card-image: img/portraits/SenderToni.jpg
 view-if: sender_advisor = 0 and n_advisors < 3
-on-arrival: sender_advisor = 1; n_advisors += 1; urban_strength += 5
+on-arrival: sender_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: urban_advisor
 
@@ -294,7 +347,7 @@ subtitle: Kurt Rosenfeld is a lawyer, anti-militarist activist, and Reichstag me
 is-card: true
 card-image: img/portraits/RosenfeldKurt.jpg
 view-if: rosenfeld_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: rosenfeld_advisor = 1; n_advisors += 1; urban_strength += 5
+on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: urban_advisor
 
@@ -306,7 +359,7 @@ subtitle: Max Seydewitz is a former leader of the youth wing, current supporter 
 is-card: true
 card-image: img/portraits/SeydewitzMax.jpg
 view-if: seydewitz_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: seydewitz_advisor = 1; n_advisors += 1; urban_strength += 5
+on-arrival: seydewitz_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 tags: urban_advisor
 
@@ -319,7 +372,7 @@ is-card: true
 card-image: img/portraits/Arcanestomper.png
 tags: urban_advisor
 view-if: arcanestomper_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: arcanestomper_advisor = 1; n_advisors += 1; urban_strength += 5
+on-arrival: arcanestomper_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 
 Arcanestomper is now an advisor.
@@ -331,7 +384,7 @@ is-card: true
 card-image: img/portraits/Azel.png
 tags: urban_advisor
 view-if: azel_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: azel_advisor = 1; n_advisors += 1; urban_strength += 5
+on-arrival: azel_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 
 Azel Amaling is now an advisor.
@@ -343,7 +396,7 @@ is-card: true
 card-image: img/portraits/TMR.png
 tags: urban_advisor
 view-if: tmr_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: tmr_advisor = 1; n_advisors += 1; urban_strength += 5
+on-arrival: tmr_advisor = 1; n_advisors += 1; left_strength += 5
 go-to: advisor_menu
 
 The Masked Reader is now an advisor.

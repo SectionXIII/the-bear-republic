@@ -61,13 +61,13 @@ Mass rallies are a common feature of social democratic life, especially in the l
 - @local: A mixture of various local and national concerns that resonate most with the audience.
 - @easy_discard
 
-@urban_struggle
-on-arrival: workers_spring += 4*(1-dissent); unemployed_spring += 3*(1-dissent) if urban_strength > intelligentsia_strength; workers_spring += 4*(1-dissent) if nationalization_progress > 0; unemployed_spring += 3*(1-dissent) if nationalization_progress > 0; urban_strength += 5; urban_dissent -= 5; military_spring -= 3; middle_spring -= 2;
+@class_struggle
+on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent) if urban_strength > intelligentsia_strength; workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; urban_strength += 5; urban_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2;
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
 @welfare
-on-arrival: workers_spring += 3*(1-dissent); workers_spring += 3*(1-dissent) if welfare > 0; unemployed_spring += 3*(1-dissent) if welfare > 0; unemployed_spring += 4*(1-dissent) if welfare > 1; intelligentsia_strength += 3; labor_strength += 4; intelligentsia_dissent -= 3; labor_dissent -= 3;
+on-arrival: workers_spd += 3*(1-dissent); workers_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 4*(1-dissent) if welfare > 1; intelligentsia_strength += 3; labor_strength += 4; intelligentsia_dissent -= 3; labor_dissent -= 3;
 
 The reformist message appeals to the organized workers, whose benefits are the accomplishments of social democracy. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
 
