@@ -1,7 +1,7 @@
 title: Kimball takes power.
 subtitle: The beginning of the end.
 view-if: chancellor == "Kimball" or president == "Kimball" or chancellor_party == "Grizzly"
-on-arrival: spd_in_government = 0
+on-arrival: spring_in_government = 0
 tags: event
 new-page: true
 

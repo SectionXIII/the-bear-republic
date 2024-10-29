@@ -88,7 +88,7 @@ Otto Braun has been elected as President of Germany. He had never desired to be 
 
 @spd_victorious
 title: SPD still in government
-view-if: spd_in_government == 1 and chancellor_party == "SPD" and total_defeat == 0 and long_war == 0
+view-if: spring_in_government == 1 and chancellor_party == "SPD" and total_defeat == 0 and long_war == 0
 tags: endings
 go-to: eg_menu
 

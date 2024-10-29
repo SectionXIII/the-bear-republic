@@ -92,8 +92,8 @@ We have gained +[+ dues +] resources.
 @agriculture
 title: Agricultural Policy
 subtitle: Baade is the Minister of Agriculture.
-choose-if: advisor_action_timer <= 0 and spd_in_government and agriculture_minister_party == "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not in government. ?][? if agriculture_minister_party != "SPD": The SPD does not have the Agriculture Ministry. ?]
+choose-if: advisor_action_timer <= 0 and spring_in_government and agriculture_minister_party == "SPD"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if agriculture_minister_party != "SPD": The SPD does not have the Agriculture Ministry. ?]
 on-arrival: advisor_action_timer = 6; agricultural_policy_timer -= 6
 go-to: agricultural_policy
 
@@ -193,7 +193,7 @@ title: Negotiating with the Coalition
 subtitle: Braun can improve our relationships with our centrist and center-right coalition partners in Prussia as well as in the Reichstag.
 choose-if: advisor_action_timer <= 0 and (in_republican_coalition or in_grand_coalition or in_popular_front)
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if spd_in_government = 1 and coalition_dissent > 0; tandist_relation += 6; ddp_relation += 6; business_relation += 2; business_relation += 3 if in_grand_coalition
+on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if spring_in_government = 1 and coalition_dissent > 0; tandist_relation += 6; ddp_relation += 6; business_relation += 2; business_relation += 3 if in_grand_coalition
 
 We have improved our relations with the [? if in_grand_coalition : Center (Zentrum) Party, DDP, and DVP, ?][? if not in_grand_coalition: Center (Zentrum) Party and DDP, ?] and reduced tensions with the coalition.
 
@@ -215,8 +215,8 @@ go-to: international_relations
 @breitscheid_foreign
 title: Foreign Policy
 subtitle: As Foreign Minister, Breitscheid can set our foreign policy.
-unavailable-subtitle: [? if not spd_in_government: The SPD is not in government. ?] [? if foreign_minister_party != "SPD" : The SPD does not control the Foreign Ministry. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-choose-if: advisor_action_timer == 0 and spd_in_government and foreign_minister_party == "SPD"
+unavailable-subtitle: [? if not spring_in_government: The SPD is not in government. ?] [? if foreign_minister_party != "SPD" : The SPD does not control the Foreign Ministry. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government and foreign_minister_party == "SPD"
 on-arrival: advisor_action_timer = 6; foreign_policy_timer -= 8;
 go-to: foreign_policy
 
@@ -233,7 +233,7 @@ We have reduced the strength of the dissident factions in the party.
 title: Defending Toleration
 subtitle: Hilferding supports cooperation with the bourgeois parties.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_toleration: The SPD is not in toleration. ?]
-choose-if: spd_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
+choose-if: spring_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; urban_dissent -= 10; neorevisionist_dissent -= 8; center_dissent -= 5
 
 We have reduced dissent among the anti-toleration factions.
@@ -241,16 +241,16 @@ We have reduced dissent among the anti-toleration factions.
 @finance_ministry_
 title: Fiscal Policy
 subtitle: As Finance Minister, Hilferding can enact tax policies.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : SPD not in government: ?] [? if finance_minister_party != "SPD" : The SPD does not control the finance ministry. ?]
-choose-if: advisor_action_timer == 0 and spd_in_government == 1 and finance_minister_party == "SPD"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spring_in_government = 0 : SPD not in government: ?] [? if finance_minister_party != "SPD" : The SPD does not control the finance ministry. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government == 1 and finance_minister_party == "SPD"
 on-arrival: advisor_action_timer = 6; fiscal_policy_timer -= 6
 go-to: fiscal_policy
 
 @economic_democracy_
 title: Economic Democracy
 subtitle: Enact policies to build a more democratic economy.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : SPD not in government: ?] [? if labor_minister_party != "SPD" or (finance_minister_party != "SPD" and economic_minister_party != "SPD") : We do not have the necessary government ministers. ?]
-choose-if: advisor_action_timer == 0 and spd_in_government == 1 and (economic_minister_party == "SPD" or finance_minister_party == "SPD") and (labor_minister_party == "SPD")
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spring_in_government = 0 : SPD not in government: ?] [? if labor_minister_party != "SPD" or (finance_minister_party != "SPD" and economic_minister_party != "SPD") : We do not have the necessary government ministers. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government == 1 and (economic_minister_party == "SPD" or finance_minister_party == "SPD") and (labor_minister_party == "SPD")
 on-arrival: advisor_action_timer = 6; economic_democracy_timer -= 10
 go-to: economic_democracy
 
@@ -284,8 +284,8 @@ Leber helps us to rally the people in defense of democracy.
 @military_affairs
 title: Military affairs
 subtitle: We can set our military policy.
-choose-if: advisor_action_timer == 0 and spd_in_government and reichswehr_minister_party == "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not in government. ?][? if reichswehr_minister_party != "SPD": The SPD does not have the Reichswehr ministry. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government and reichswehr_minister_party == "SPD"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if reichswehr_minister_party != "SPD": The SPD does not have the Reichswehr ministry. ?]
 on-arrival: advisor_action_timer = 6;
 go-to: military_policy
 
@@ -356,16 +356,16 @@ We have begun a propaganda campaign to warn our members away from the Nazis.
 @womens_rights_
 title: Women's rights
 subtitle: Enact policy with regards to women's rights.
-choose-if: advisor_action_timer = 0 and spd_in_government
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not currently in government. ?]
+choose-if: advisor_action_timer = 0 and spring_in_government
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not currently in government. ?]
 on-arrival: advisor_action_timer = 6; womens_rights_timer -= 10
 go-to: womens_rights
 
 @judiciary_
 title: Judicial Affairs
 subtitle: Enact judicial reforms.
-choose-if: advisor_action_timer = 0 and spd_in_government and justice_minister_party = "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not currently in government. ?][? if justice_minister_party != "SPD" : We do not have the Justice Ministry. ?]
+choose-if: advisor_action_timer = 0 and spring_in_government and justice_minister_party = "SPD"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not currently in government. ?][? if justice_minister_party != "SPD" : We do not have the Justice Ministry. ?]
 on-arrival: advisor_action_timer = 6; judiciary_timer -= 6
 go-to: judiciary
 
@@ -373,8 +373,8 @@ go-to: judiciary
 @constitutional_reform_
 title: Constitutional Reform
 subtitle: Pursue reforms of the inadequate Weimar Constitution.
-choose-if: advisor_action_timer = 0 and spd_in_government and justice_minister_party = "SPD" and neorevisionism and ((in_republican_coalition) or (in_spd_majority) or (in_left_front) or (in_popular_front))
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not currently in government. ?] [? if justice_minister_party != "SPD" : We do not have the Justice Ministry. ?] [? if not neorevisionism: We do not have ideological support for constitutional reform yet - new ideas are needed. ?] [? if not ((in_republican_coalition) or (in_spd_majority) or (in_left_front) or (in_popular_front)) : Our current governing coalition will not support constitutional reforms. ?]
+choose-if: advisor_action_timer = 0 and spring_in_government and justice_minister_party = "SPD" and neorevisionism and ((in_republican_coalition) or (in_spd_majority) or (in_left_front) or (in_popular_front))
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not currently in government. ?] [? if justice_minister_party != "SPD" : We do not have the Justice Ministry. ?] [? if not neorevisionism: We do not have ideological support for constitutional reform yet - new ideas are needed. ?] [? if not ((in_republican_coalition) or (in_spd_majority) or (in_left_front) or (in_popular_front)) : Our current governing coalition will not support constitutional reforms. ?]
 on-arrival: advisor_action_timer = 6
 go-to: constitutional_reform
 
@@ -390,8 +390,8 @@ We have reduced dissent among the party's factions.
 @police_affairs
 title: Police affairs 
 subtitle: We can set our police policy. 
-choose-if: advisor_action_timer == 0 and spd_in_government and interior_minister_party == "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The SPD is not in government. ?][? if interior_minister_party != "SPD": The SPD does not have the Interior ministry. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government and interior_minister_party == "SPD"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if interior_minister_party != "SPD": The SPD does not have the Interior ministry. ?]
 on-arrival: advisor_action_timer = 6; police_timer -= 6
 go-to: police
 
@@ -474,7 +474,7 @@ go-to: crisis_program.plan_adopted
 @carry_out_policy
 title: Carry out the economic plan.
 subtitle: If we are in government, we can carry out a public works program such as the WTB-Plan.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if wtb_adopted == 0 : We have not yet adopted an economic plan. ?][? if spd_in_government == 0 : The SPD is not in government. ?][? if works_program >= 2 : We have already started implementing the plan. ?]
-choose-if: advisor_action_timer <= 0 and wtb_adopted and spd_in_government and wtb_implemented <= 1
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if wtb_adopted == 0 : We have not yet adopted an economic plan. ?][? if spring_in_government == 0 : The SPD is not in government. ?][? if works_program >= 2 : We have already started implementing the plan. ?]
+choose-if: advisor_action_timer <= 0 and wtb_adopted and spring_in_government and wtb_implemented <= 1
 on-arrival: advisor_action_timer = 6; economic_policy_timer -= 12
 go-to: economic_policy

@@ -300,6 +300,7 @@ on-arrival: {!
 // set congress proportion to votes
 Q.spring_r = Q.spring_votes;
 Q.tandist_r = Q.tandist_votes;
+Q.tandist_right_r = Q.tandist_right_votes;
 Q.pass_r = Q.pass_votes;
 Q.progressive_r = Q.progressive_votes;
 Q.business_r = Q.business_votes;
