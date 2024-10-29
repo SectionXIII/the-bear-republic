@@ -5,7 +5,7 @@ view-if: iron_front_formed == 1 and iron_front_timer = 0
 on-arrival: iron_front_timer = 7; month_actions += 1; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
 card-image: img/iron_front.png
 frequency: 200
-tags: party_affairs, antifascism
+tags: party_affairs, antiracism
 
 = The Iron Front
 
@@ -48,8 +48,8 @@ The WTB-Plan is the rallying point for the entire SPD and its affiliated organiz
 
 @antisemitism
 title: Rally against antisemitism and in defense of Jewish Germans.
-view-if: confronting_antisemitism > 1
-on-arrival: nationalism -= 4*(1-dissent); pro_republic += 3*(1-dissent); confronting_antisemitism += 1; workers_nsdap -= 4*(1-dissent); unemployed_nsdap -= 4*(1-dissent);
+view-if: confronting_mutant_racism > 1
+on-arrival: nationalism -= 4*(1-dissent); pro_republic += 3*(1-dissent); confronting_mutant_racism += 1; workers_nsdap -= 4*(1-dissent); unemployed_nsdap -= 4*(1-dissent);
 
 # TODO
 The Nazis and other far-right political movements are increasingly turning their hatred against the Jewish community of Germany. The Iron Front rallies in defense of individual Jews and the broader community against violence.
