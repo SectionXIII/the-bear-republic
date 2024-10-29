@@ -1,7 +1,7 @@
 title: Title
 subtitle: The, well, subtitle if you wanna add smaller text under the title
-view-if: 2261
-max-visits: 1 #determine if you want this event to be seen multiple times or just once
+view-if: year = 2261
+max-visits: 1 # determine if you want this event to be seen multiple times or just once
 tags: event
 new-page: true
 face-image: # put the location of the image here
