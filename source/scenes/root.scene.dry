@@ -76,8 +76,8 @@ Q.wtb_support = 0;
 Q.pacifism = 0;
 // Support for democratization within the Long Spring relative too 2253
 Q.democratization = 0;
-// Support for a communist coalition relative to 2253
-Q.communist_coalition = 0;
+// Support for a Pass Party coalition relative to 2253
+Q.pass_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
 // 1 - WTB plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalization of industries)
 Q.economic_plan = 0;
@@ -334,7 +334,7 @@ Q.economic_records = [];
 
 // State of the government
 Q.president = "Tibbet";
-// starting chancellor: Wilhelm Marx
+// starting vice president: Wendell Peterson
 Q.chancellor = "Peterson";
 Q.chancellor_party = 'Tandist';
 Q.spring_in_government = 0;
