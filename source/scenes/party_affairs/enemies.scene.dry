@@ -31,7 +31,7 @@ on-arrival: enemies = "far right"; left_strength += 5; urban_dissent -= 5; worke
 Attacking the far right is popular among the entire party, although the left considers the status quo parties to be just as dangerous, while the right is critical of our lack of response to the Pass Party. Our coalition partners are also skeptical of our lack of commitment to anti-populism.
 
 @grizzly
-on-arrival: enemies = "NSDAP"; neorevisionist_strength += 5; grizzly_urgency += 1; workers_grizzly -= 4;
+on-arrival: enemies = "NSDAP"; old_worlder_strength += 5; grizzly_urgency += 1; workers_grizzly -= 4;
 
 [? if grizzly_urgency == 0 or grizzly_r < 10 : The Grizzlies is a tiny party right now, with more bark than bite. Many in our party are questioning our choices. ?][? if grizzly_urgency > 0 and grizzly_r >= 10 : The Grizzly militarists are the most urgent problem for us to deal with. ?]
 

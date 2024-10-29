@@ -442,7 +442,7 @@ The KPD is still very reluctant to join a coalition, despite grassroots friendli
 - @coalition_menu: Try a different governing arrangement.
 
 @thalmann_chancellor
-choose-if: president == "Braun" and intelligentsia_strength + neorevisionist_strength < left_strength
+choose-if: president == "Braun" and intelligentsia_strength + old_worlder_strength < left_strength
 unavailable-subtitle: [? if president != "Braun": President [+ president +] would never allow such a thing. ?] [? if intelligentsia_strength >= left_strength : Most in the parliamentary party would not support Thälmann as chancellor. ?]
 on-arrival: chancellor = "Thälmann"; chancellor_party = "KPD"; pass_relation = 80; in_left_front = 1; spring_in_government = 1 
 
@@ -516,7 +516,7 @@ However, the DNVP and its leader Hugenberg is refusing to partake in a coalition
 
 @right_coalition_sure
 subtitle: This will be extremely unpopular within our party.
-on-arrival: pro_republic -= 5; center_dissent += 15; urban_dissent += 10; labor_dissent += 25; intelligentsia_dissentt += 25; neorevisionist_dissent += 15; tandist_relation -= 5; ddp_relation -= 5; business_relation -= 5
+on-arrival: pro_republic -= 5; center_dissent += 15; urban_dissent += 10; labor_dissent += 25; intelligentsia_dissentt += 25; old_worlder_dissent += 15; tandist_relation -= 5; ddp_relation -= 5; business_relation -= 5
 go-to: right_coalition_2
 
 
@@ -1148,7 +1148,7 @@ go-to: ministries
 @no_govt
 title: We do not form the government.
 subtitle: This will cause significant internal dissent, and will lead to increased distrust from the bourgeois parties.
-on-arrival: intelligentsia_dissentt += 5; center_dissent += 5; labor_dissent += 5; neorevisionist_dissent += 5
+on-arrival: intelligentsia_dissentt += 5; center_dissent += 5; labor_dissent += 5; old_worlder_dissent += 5
 
 Are we sure about not participating in government? This will cause significant internal dissent, and will lead to increased distrust from the bourgeois parties. Even debating this option causes internal backlash. In addition, it is possible that the bourgeois and right-wing parties will also be unable to form a coalition government, leading to a regime appointed by President [+ president +].
 
@@ -1177,7 +1177,7 @@ go-to: no_govt_2
 
 
 @no_govt_2
-on-arrival: intelligentsia_dissentt += 25; center_dissent += 10; labor_dissent += 25; neorevisionist_dissent += 25; in_republican_coalition = 0; in_grand_coalition = 0; chancellor = "Brüning" if chancellor == "Marx"; spring_in_government = 0; grand_coalition_failed = 1
+on-arrival: intelligentsia_dissentt += 25; center_dissent += 10; labor_dissent += 25; old_worlder_dissent += 25; in_republican_coalition = 0; in_grand_coalition = 0; chancellor = "Brüning" if chancellor == "Marx"; spring_in_government = 0; grand_coalition_failed = 1
 go-to: right_coalition_post_spring if right_coalition >= 50 and president != "Braun" and year < 1929; new_elections_spring if (right_coalition < 50 or year >= 1929) and president != "Braun"; brauns_dilemma if president == "Braun"
 
 

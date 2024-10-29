@@ -42,7 +42,7 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['urban', 'mutant', 'frontier', 'intelligentsia', 'neorevisionist'];
+Q.factions = ['urban', 'mutant', 'frontier', 'intelligentsia', 'old worlder'];
 // should this be normalized to 100%?
 Q.urban_strength = 15;
 Q.urban_dissent = 20;
@@ -52,8 +52,8 @@ Q.frontier_strength = 25;
 Q.frontier_dissent = 5;
 Q.intelligentsia_strength = 25;
 Q.intelligentsia_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
+Q.old_worlder_strength = 5;
+Q.old_worlder_dissent = 10;
 
 // secret events...
 Q.frontier_independent = 0;
@@ -61,8 +61,8 @@ Q.mutant_resign = 0;
 Q.urban_departure = 0;
 Q.intelligentsia_resigned = 0;
 
-// have we discovered neorevisionism?
-Q.neorevisionism = 0;
+// have we discovered old world blues?
+Q.old_world_blues = 0;
 
 // crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
 Q.crisis_urgency = 0;

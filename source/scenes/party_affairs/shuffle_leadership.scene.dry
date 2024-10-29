@@ -230,7 +230,7 @@ The Masked Reader has been removed as an advisor. The Inn faction disapproves.
 title: Remove Mierendorff
 view-if: mierendorff_advisor = 1
 tags: remove_advisor
-on-arrival: mierendorff_advisor = 0; neorevisionist_dissent += 5; n_advisors -= 1
+on-arrival: mierendorff_advisor = 0; old_worlder_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Mierendorff has been removed as an advisor. The Neorevisionist faction disapproves.
@@ -239,7 +239,7 @@ Mierendorff has been removed as an advisor. The Neorevisionist faction disapprov
 title: Remove Leber
 view-if: leber_advisor = 1
 tags: remove_advisor
-on-arrival: leber_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: leber_advisor = 0; old_worlder_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Leber has been removed as an advisor. The Neorevisionist faction disapproves.
@@ -248,7 +248,7 @@ Leber has been removed as an advisor. The Neorevisionist faction disapproves.
 title: Remove Schumacher
 view-if: schumacher_advisor = 1
 tags: remove_advisor
-on-arrival: schumacher_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: schumacher_advisor = 0; old_worlder_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Schumacher has been removed as an advisor. The Neorevisionist faction disapproves.
@@ -257,7 +257,7 @@ Schumacher has been removed as an advisor. The Neorevisionist faction disapprove
 title: Remove Section
 view-if: section_advisor = 1
 tags: remove_advisor
-on-arrival: section_advisor = 0; neorevisionist_dissent += 3; n_advisors -= 1
+on-arrival: section_advisor = 0; old_worlder_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Section has been removed as an advisor. The Administrative faction disapproves.
@@ -629,7 +629,7 @@ subtitle: Carlo Mierendorff is one of the youngest members of the Reichstag, and
 is-card: true
 card-image: img/portraits/MierendorffCarlo.jpg
 view-if: mierendorff_advisor = 0 and n_advisors < 3
-on-arrival: mierendorff_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
+on-arrival: mierendorff_advisor = 1; n_advisors += 1; old_worlder_strength += 5
 go-to: advisor_menu
 tags: neorev_advisor
 
@@ -642,7 +642,7 @@ is-card: true
 card-image: img/portraits/SchumacherKurt.jpg
 tags: neorev_advisor
 view-if: schumacher_advisor = 0 and n_advisors < 3
-on-arrival: schumacher_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
+on-arrival: schumacher_advisor = 1; n_advisors += 1; old_worlder_strength += 5
 go-to: advisor_menu
 
 Kurt Schumacher is now an advisor.
@@ -653,7 +653,7 @@ subtitle: Julius Leber is a former Reichswehr officer who resigned in opposition
 is-card: true
 card-image: img/portraits/LeberJulius.jpg
 view-if: leber_advisor = 0 and n_advisors < 3
-on-arrival: leber_advisor = 1; n_advisors += 1; neorevisionist_strength += 5
+on-arrival: leber_advisor = 1; n_advisors += 1; old_worlder_strength += 5
 go-to: advisor_menu
 tags: neorev_advisor
 
@@ -665,7 +665,7 @@ subtitle: Section Huvisgalch is a former member of the MPRP and a true man of th
 is-card: true
 card-image: img/portraits/Section.png
 view-if: section_advisor = 0 and n_advisors < 3
-on-arrival: section_advisor = 1; n_advisors += 1; neorevisionist_strength += 10
+on-arrival: section_advisor = 1; n_advisors += 1; old_worlder_strength += 10
 go-to: advisor_menu
 tags: neorev_advisor
 

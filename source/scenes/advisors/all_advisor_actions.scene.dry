@@ -75,7 +75,7 @@ title: Party Discipline
 subtitle: Reduce dissent across the party.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; urban_dissent -= 5; labor_dissent -= 10; center_dissent -= 10; intelligentsia_dissentt -= 10; neorevisionist_dissent -= 5
+on-arrival: advisor_action_timer = 6; urban_dissent -= 5; labor_dissent -= 10; center_dissent -= 10; intelligentsia_dissentt -= 10; old_worlder_dissent -= 5
 
 We have enforced party discipline to reduce dissent across all factions.
 
@@ -225,7 +225,7 @@ title: Against Right and Left
 subtitle: As a Centrist, Hilferding seeks to steer a course between the party's factions.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 5; advisor_action_time = time; mutant_strength += 10; left_strength -= 5; labor_strength -= 5; neorevisionist_strength -= 5; center_dissent -= 10
+on-arrival: advisor_action_timer = 5; advisor_action_time = time; mutant_strength += 10; left_strength -= 5; labor_strength -= 5; old_worlder_strength -= 5; center_dissent -= 10
 
 We have reduced the strength of the dissident factions in the party.
 
@@ -234,7 +234,7 @@ title: Defending Toleration
 subtitle: Hilferding supports cooperation with the bourgeois parties.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_toleration: The SPD is not in toleration. ?]
 choose-if: spring_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; urban_dissent -= 10; neorevisionist_dissent -= 8; center_dissent -= 5
+on-arrival: advisor_action_timer = 6; urban_dissent -= 10; old_worlder_dissent -= 8; center_dissent -= 5
 
 We have reduced dissent among the anti-toleration factions.
 
@@ -277,7 +277,7 @@ title: Rally for democracy
 subtitle: Rally our party and the German people to defend democracy and freedom.
 choose-if: advisor_action_timer == 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; neorevisionist_strength += 5; intelligentsia_strength += 3; workers_spd += 4*(1-dissent) if democratization >= 4; new_middle_spd += 3*(1-dissent) if democratization >= 4
+on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; old_worlder_strength += 5; intelligentsia_strength += 3; workers_spd += 4*(1-dissent) if democratization >= 4; new_middle_spd += 3*(1-dissent) if democratization >= 4
 
 Leber helps us to rally the people in defense of democracy.
 
@@ -383,7 +383,7 @@ title: Left-Center Unity
 subtitle: Encourage cooperation between the left and center wings of the party.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; urban_dissent -= 10; labor_dissent -= 5; center_dissent -= 10; intelligentsia_dissentt -= 10; neorevisionist_dissent -= 5
+on-arrival: advisor_action_timer = 6; urban_dissent -= 10; labor_dissent -= 5; center_dissent -= 10; intelligentsia_dissentt -= 10; old_worlder_dissent -= 5
 
 We have reduced dissent among the party's factions.
 
@@ -431,37 +431,37 @@ on-arrival: advisor_action_timer = 6
 
 Which faction should we support?
 
-- @support_left: Left
-- @support_center: Center
-- @support_labor: Labor
-- @support_reform: Reformists
-- @support_neorev: Neorevisionists
+- @support_urban: Urbanite
+- @support_mutant: Mutant
+- @support_frontier: Frontier
+- @support_intelligentsia: Intelligentsia
+- @support_owb: Old Worlders
 
-@support_left
-on-arrival: urban_dissent -= 8; left_strength += 8
+@support_urban
+on-arrival: urban_dissent -= 8; urban_strength += 8
 
-Vorwärts prints editorials in support of Left positions.
+Vorwärts prints editorials in support of urbanite positions.
 
 @support_center
-on-arrival: center_dissent -= 8; mutant_strength += 8
+on-arrival: mutant_dissent -= 8; mutant_strength += 8
 
-Vorwärts prints editorials in support of centrist positions.
+Vorwärts prints editorials in support of mutant positions.
 
-@support_labor
-on-arrival: labor_dissent -= 8; labor_strength += 8
+@support_frontier
+on-arrival: frontier_dissent -= 8; frontier_strength += 8
 
-Vorwärts prints editorials in support of the policies of the trade unions.
+Vorwärts prints editorials in support of the policies of the frontier folk.
 
-@support_reform
+@support_intelligentsia
 on-arrival: intelligentsia_dissentt -= 8; intelligentsia_strength += 8;
 
-Vorwärts prints editorials in support of the reformist policies.
+Vorwärts prints editorials in support of the intelligentsia policies.
 
-@support_neorev
-view-if: neorevisionism
-on-arrival: neorevisionist_dissent -= 8; neorevisionist_strength += 8
+@support_owb
+view-if: old_world_blues
+on-arrival: old_worlder_dissent -= 8; old_worlder_strength += 8
 
-Vorwärts prints editorials in support of neorevisionist ideas.
+Vorwärts prints editorials in support of Old Worlder ideas.
 
 @plan
 title: Adopt the WTB-plan!

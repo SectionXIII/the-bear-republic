@@ -34,6 +34,6 @@ title: Party Discipline
 subtitle: Reduce dissent across the Spring.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; urban_dissent -= 10; frontier_dissent -= 10; mutant_dissent -= 15; intelligentsia_dissent -= 10; neorevisionist_dissent -= 5
+on-arrival: advisor_action_timer = 6; urban_dissent -= 10; frontier_dissent -= 10; mutant_dissent -= 15; intelligentsia_dissent -= 10; old_worlder_dissent -= 5
 
 We have enforced party discipline to reduce dissent across all factions.

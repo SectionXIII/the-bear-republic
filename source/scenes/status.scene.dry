@@ -88,7 +88,7 @@ Frontier strength: [+ frontier_strength : strength +], dissent: [+ frontier_diss
 
 Intelligentsia strength: [+ intelligentsia_strength : strength +], dissent: [+ intelligentsia_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+[? if old_world_blues > 0 : Neorevisionist strength: [+ old_worlder_strength : strength +], dissent: [+ old_worlder_dissent : dissent +] ?]
 
 
 @paramilitaries
