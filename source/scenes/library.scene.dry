@@ -205,7 +205,7 @@ go-to: menu
 
 **Z** - *Zentrumspartei* (Center Party) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the **BVP** (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
 
-Current relations: [+ z_relation : relationships +]
+Current relations: [+ tandist_relation : relationships +]
 
 # TODO: replace this with the german state party after 1930
 **DDP** - *Deutsche Demokratische Partei* (German Democratic Party) - a center-left liberal party, popular among the intelligensia and educated middle class. They have often been in coalitions with us. [? if year >= 1930 : They have recently renamed themselves the German State Party. ?]
@@ -214,7 +214,7 @@ Current relations: [+ ddp_relation : relationships +]
 
 **DVP** - *Deutsche Volkspartei* (German People's Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. We have occasionally been in coalitions.
 
-Current relations: [+ dvp_relation : relationships +]
+Current relations: [+ business_relation : relationships +]
 
 **DNVP** - *Deutschnationale Volkspartei* (German National People's Party) - a right-wing nationalist-conservative party, with authoritarian, monarchist, and racist elements. It is supported by the former aristocracy, rural landowners, and conservative Lutherans.
 
@@ -289,13 +289,13 @@ Many leftists are former members of the USPD (the left-wing, anti-war Independen
 
 Strength: [+ left_strength : strength +]
 
-Dissent: [+ left_dissent : dissent +]
+Dissent: [+ urban_dissent : dissent +]
 
 **Mutant**
 
 Centrists in the SPD are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
 
-Strength: [+ center_strength : strength +]
+Strength: [+ mutant_strength : strength +]
 
 Dissent: [+ center_dissent : dissent +]
 
@@ -311,9 +311,9 @@ Dissent: [+ labor_dissent : dissent +]
 
 Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if spd_prussia : They are dominant in the state government of Prussia. ?]
 
-Strength: [+ reformist_strength : strength +]
+Strength: [+ intelligentsia_strength : strength +]
 
-Dissent: [+ reformist_dissent : dissent +]
+Dissent: [+ intelligentsia_dissentt : dissent +]
 
 @neorevisionists
 go-to: menu

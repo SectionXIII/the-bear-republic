@@ -77,7 +77,7 @@ Breitscheid has been removed as an advisor. The Centrist faction disapproves.
 title: Remove Severing
 view-if: severing_advisor = 1
 tags: remove_advisor
-on-arrival: severing_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: severing_advisor = 0; intelligentsia_dissentt += 5; n_advisors -= 1
 go-to: rm_main
 
 Severing has been removed as an advisor. The Reformist faction disapproves.
@@ -86,7 +86,7 @@ Severing has been removed as an advisor. The Reformist faction disapproves.
 title: Remove Braun
 view-if: braun_advisor = 1
 tags: remove_advisor
-on-arrival: braun_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: braun_advisor = 0; intelligentsia_dissentt += 5; n_advisors -= 1
 go-to: rm_main
 
 Braun has been removed as an advisor. The Reformist faction disapproves.
@@ -95,7 +95,7 @@ Braun has been removed as an advisor. The Reformist faction disapproves.
 title: Remove Juchacz
 view-if: juchacz_advisor = 1
 tags: remove_advisor
-on-arrival: juchacz_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: juchacz_advisor = 0; intelligentsia_dissentt += 5; n_advisors -= 1
 go-to: rm_main
 
 Juchacz has been removed as an advisor. The Reformist faction disapproves.
@@ -104,7 +104,7 @@ Juchacz has been removed as an advisor. The Reformist faction disapproves.
 title: Remove Pfülf
 view-if: pfulf_advisor = 1
 tags: remove_advisor
-on-arrival: pfulf_advisor = 0; reformist_dissent += 5; n_advisors -= 1
+on-arrival: pfulf_advisor = 0; intelligentsia_dissentt += 5; n_advisors -= 1
 go-to: rm_main
 
 Pfülf has been removed as an advisor. The Reformist faction disapproves.
@@ -163,7 +163,7 @@ Delramur has been removed as an advisor. The Labor faction disapproves.
 title: Remove Levi
 view-if: levi_advisor = 1
 tags: remove_advisor
-on-arrival: levi_advisor = 0; left_dissent += 5; n_advisors -= 1
+on-arrival: levi_advisor = 0; urban_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Levi has been removed as an advisor. The Leftist faction disapproves.
@@ -172,7 +172,7 @@ Levi has been removed as an advisor. The Leftist faction disapproves.
 title: Remove Sender
 view-if: sender_advisor = 1
 tags: remove_advisor
-on-arrival: sender_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: sender_advisor = 0; urban_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Sender has been removed as an advisor. The Leftist faction disapproves.
@@ -181,7 +181,7 @@ Sender has been removed as an advisor. The Leftist faction disapproves.
 title: Remove Rosenfeld
 view-if: rosenfeld_advisor = 1
 tags: remove_advisor
-on-arrival: rosenfeld_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: rosenfeld_advisor = 0; urban_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Rosenfeld has been removed as an advisor. The Leftist faction disapproves.
@@ -190,7 +190,7 @@ Rosenfeld has been removed as an advisor. The Leftist faction disapproves.
 title: Remove Seydewitz
 view-if: seydewitz_advisor = 1
 tags: remove_advisor
-on-arrival: seydewitz_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: seydewitz_advisor = 0; urban_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Seydewitz has been removed as an advisor. The Leftist faction disapproves.
@@ -199,7 +199,7 @@ Seydewitz has been removed as an advisor. The Leftist faction disapproves.
 title: Remove Arcanestomper
 view-if: arcanestomper_advisor = 1
 tags: remove_advisor
-on-arrival: arcanestomper_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: arcanestomper_advisor = 0; urban_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Arcanestomper has been removed as an advisor. The Castle faction disapproves.
@@ -208,7 +208,7 @@ Arcanestomper has been removed as an advisor. The Castle faction disapproves.
 title: Remove Azel Amaling
 view-if: azel_advisor = 1
 tags: remove_advisor
-on-arrival: azel_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: azel_advisor = 0; urban_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 Azel Amaling has been removed as an advisor. The Castle faction disapproves.
@@ -217,7 +217,7 @@ Azel Amaling has been removed as an advisor. The Castle faction disapproves.
 title: Remove The Masked Reader
 view-if: tmr_advisor = 1
 tags: remove_advisor
-on-arrival: tmr_advisor = 0; left_dissent += 3; n_advisors -= 1
+on-arrival: tmr_advisor = 0; urban_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
 The Masked Reader has been removed as an advisor. The Inn faction disapproves.
@@ -428,7 +428,7 @@ is-card: true
 card-image: img/portraits/SeveringCarl.jpg
 tags: reformist_advisor
 view-if: severing_advisor = 0 and n_advisors < 3
-on-arrival: severing_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: severing_advisor = 1; n_advisors += 1; intelligentsia_strength += 5
 go-to: advisor_menu
 
 Carl Severing is now an advisor.
@@ -440,7 +440,7 @@ is-card: true
 card-image: img/portraits/BraunOtto.jpg
 tags: reformist_advisor
 view-if: braun_advisor = 0 and n_advisors < 3
-on-arrival: braun_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: braun_advisor = 1; n_advisors += 1; intelligentsia_strength += 5
 go-to: advisor_menu
 
 Otto Braun is now an advisor.
@@ -451,7 +451,7 @@ subtitle: Marie Juchacz is the founder of Worker's Welfare, a mutual-aid organiz
 is-card: true
 card-image: img/portraits/JuchaczMarie.jpg
 view-if: juchacz_advisor = 0 and n_advisors < 3
-on-arrival: juchacz_advisor = 1; n_advisors += 1; reformist_strength += 5
+on-arrival: juchacz_advisor = 1; n_advisors += 1; intelligentsia_strength += 5
 go-to: advisor_menu
 tags: reformist_advisor
 

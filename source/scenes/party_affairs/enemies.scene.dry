@@ -1,6 +1,6 @@
 title: Choosing Our Enemies
 new-page: true
-view-if: year <= 1930 and enemies_timer <= 0
+view-if: year <= 2256 and enemies_timer <= 0
 on-arrival: month_actions += 1; enemies_timer = 18
 max-visits: 3
 is-card: true
@@ -13,34 +13,34 @@ In our media and campaign materials, who should we consider as our main opponent
 
 [? if enemies != 0 : Previously, we had considered the [+ enemies +] as our prior enemies. Is a change of direction necessary? ?]
 
-- @anti_dem: The anti-democratic parties of the far right and left - the KPD, NSDAP, and DNVP.
-- @far_right: The far right - the NSDAP and DNVP.
-- @nsdap: The NSDAP alone.
-- @kpd: The KPD.
-- @bourgeois: The bourgeois parties - the Center and DVP.
+- @anti_dem: The anti-democratic parties of the militarist and populist factions - the Pass Party, Grizzly Party, and Baron puppets.
+- @militarists: The militarists - the Grizzly and Baron representatives.
+- @grizzly: The Grizzlies alone.
+- @pass: The Pass Party.
+- @status_quo: The status quo parties - the Tandists and Business representatives.
 - @easy_discard
 
 @anti_dem
-on-arrival: enemies = "anti-democratic parties"; center_strength += 5; reformist_strength += 5; left_dissent += 5; workers_kpd -= 2; workers_nsdap -= 2; workers_dnvp -= 2; kpd_relation -= 10
+on-arrival: enemies = "anti-democratic parties"; mutant_strength += 5; intelligentsia_strength += 5; urban_dissent += 5; workers_pass -= 2; workers_grizzly -= 2; workers_barons -= 2; pass_relation -= 10
 
-Attacking the far right and left is popular among all but the left wing of our party, who would prefer to be fighting the bourgeois parties. This might also hamper our ability to reconcile with the KPD in the future.
+Attacking the far right and left is popular among all but the left wing of our party, who would prefer to be fighting the status quo parties. This might also hamper our ability to reconcile with the Pass Party in the future.
 
-@far_right
-on-arrival: enemies = "far right"; left_strength += 5; left_dissent -= 5; workers_nsdap -= 3; workers_dnvp -= 3;
+@militarists
+on-arrival: enemies = "far right"; left_strength += 5; urban_dissent -= 5; workers_grizzly -= 3; workers_barons -= 3;
 
-Attacking the far right is popular among the entire party, although the left considers the bourgeois parties to be just as dangerous, while the right is critical of our lack of response to the KPD. Our bourgeois coalition partners are also skeptical of our lack of commitment to anti-communism.
+Attacking the far right is popular among the entire party, although the left considers the status quo parties to be just as dangerous, while the right is critical of our lack of response to the Pass Party. Our coalition partners are also skeptical of our lack of commitment to anti-populism.
 
-@nsdap
-on-arrival: enemies = "NSDAP"; neorevisionist_strength += 5; nazi_urgency += 1; workers_nsdap -= 4;
+@grizzly
+on-arrival: enemies = "NSDAP"; neorevisionist_strength += 5; grizzly_urgency += 1; workers_grizzly -= 4;
 
-[? if nazi_urgency == 0 or nsdap_r < 10 : The NSDAP is a tiny party right now, with more bark than bite. Many in our party are questioning our choices. ?][? if nazi_urgency > 0 and nsdap_r >= 10 : The Nazis are the most urgent problem for us to deal with. ?]
+[? if grizzly_urgency == 0 or grizzly_r < 10 : The Grizzlies is a tiny party right now, with more bark than bite. Many in our party are questioning our choices. ?][? if grizzly_urgency > 0 and grizzly_r >= 10 : The Grizzly militarists are the most urgent problem for us to deal with. ?]
 
-@kpd
-on-arrival: enemies = "KPD"; reformist_strength += 5; left_dissent += 8; reformist_dissent -= 5; kpd_relation -= 15; dvp_relation += 5; z_relation += 5; workers_kpd -= 4;
+@pass
+on-arrival: enemies = "Pass Party"; intelligentsia_strength += 5; urban_dissent += 8; intelligentsia_dissentt -= 5; pass_relation -= 15; business_relation += 5; tandist_relation += 5; workers_pass -= 4;
 
-Attacking the KPD is supported by all but the most left-wing socialists, and wins us some measure of approval among the bourgeois parties. However, If we are to reconcile with the KPD, this may not be the best choice.
+Attacking the Pass Party is supported by all but the most left-wing socialists, and wins us some measure of approval among the status_quo parties. However, If we are to reconcile with the Pass Party, this may not be the best choice.
 
-@bourgeois
-on-arrival: enemies = "bourgeois parties"; left_strength += 8; left_dissent -= 5; dvp_relation -= 5; z_relation -= 5; kpd_relation += 5; reformist_dissent += 8; workers_z -= 3; coalition_dissent += 1
+@status_quo
+on-arrival: enemies = "status_quo parties"; urban_strength += 8; urban_dissent -= 5; business_relation -= 5; tandist_relation -= 5; pass_relation += 5; intelligentsia_dissentt += 8; workers_z -= 3; coalition_dissent += 1
 
-Our anti-bourgeois rhetoric is popular among the left, but may make it harder to build the coalitions that are necessary for government in the future.
+Our anti-status quo rhetoric is popular among the left, but may make it harder to build the coalitions that are necessary for government in the future.
