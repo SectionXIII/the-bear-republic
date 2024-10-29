@@ -26,7 +26,7 @@ on-arrival: resources -= 1; pass_inter_party_seen += 2
 go-to: pass_blutmai if blutmai = 1; pass_1 if blutmai = 0 and pass_coalition_success = 0 and (pass_relation < 40 or pass_rectifed_history = 1); pass_rectification_of_history if pass_relation >= 40 and pass_rectifed_history = 0; pass_2 if pass_coalition_success = 1 and pass_rectified_history = 1
 
 @pass_1
-on-arrival: pass_relation += 10*(1 - dissent); communist_coalition += 1 if pass_inter_party_seen <= 1; intelligentsia_dissentt += 2; tandist_relation -= 2; business_relation -= 3
+on-arrival: pass_relation += 10*(1 - dissent); communist_coalition += 1 if pass_inter_party_seen <= 1; intelligentsia_dissent += 2; tandist_relation -= 2; business_relation -= 3
 
 The communists are suspicious of our overtures, especially the Stalinist leadership, who persist in calling us "social fascists". However, connections are made at the grassroots and local levels.
 
@@ -40,7 +40,7 @@ For further improvements in KPD relations, it might be necessary to expel Noske,
 - @no_history: No, we have no need to apologize.
 
 @yes_history
-on-arrival: intelligentsia_dissentt += 12; intelligentsia_strength -= 2; old_worlder_dissent += 5; urban_dissent -= 6; left_strength += 5; pass_rectified_history = 1; tandist_relation -= 6; business_relation -= 6; ddp_relation -= 4; pass_relation += 8*(1-dissent); coalition_dissent += 1
+on-arrival: intelligentsia_dissent += 12; intelligentsia_strength -= 2; old_worlder_dissent += 5; urban_dissent -= 6; urban_strength += 5; pass_rectified_history = 1; tandist_relation -= 6; business_relation -= 6; ddp_relation -= 4; pass_relation += 8*(1-dissent); coalition_dissent += 1
 
 As part of normalizing relations with the KPD, we have to acknowledge the wrongdoings of our past. We have expelled Noske, and have held public commemorations for those killed by troops during the uprisings.
 
@@ -53,12 +53,12 @@ We have no need to apologize for the actions of Ebert and Noske; it is the Commu
 
 
 @pass_2
-on-arrival: pass_relation += 15*(1 - dissent); communist_coalition += 1 if pass_inter_party_seen <= 1; intelligentsia_dissentt += 2; tandist_relation -= 3; business_relation -= 3
+on-arrival: pass_relation += 15*(1 - dissent); communist_coalition += 1 if pass_inter_party_seen <= 1; intelligentsia_dissent += 2; tandist_relation -= 3; business_relation -= 3
 
 After the success of the coalition government with the KPD, they are much more amenable to us.
 
 @pass_blutmai
-on-arrival: pass_relation += 3*(1 - dissent); intelligentsia_dissentt += 1
+on-arrival: pass_relation += 3*(1 - dissent); intelligentsia_dissent += 1
 
 After the events of Blütmai, reconciling with the Communists is difficult, if not impossible. Nevertheless, we must try.
 

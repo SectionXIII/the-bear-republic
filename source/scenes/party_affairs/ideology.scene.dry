@@ -37,7 +37,7 @@ if (Q.ideology && Q.ideology != "mutant") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "mutant"; mutant_strength += 10; center_dissent -= 10
+on-departure: ideology = "mutant"; mutant_strength += 10; mutant_strength -= 10
 
 Seeking to integrate and harness the natural strengths of his fellow mutants, Solomon Hide preaches his teachings to any who will listen.
 
@@ -59,11 +59,11 @@ if (Q.ideology && Q.ideology != "reformist") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "reformist"; intelligentsia_strength += 10; democratization += 1; intelligentsia_dissentt -= 5; tandist_relation += 5; business_relation += 5; pass_relation -= 8; moderate_plan_support += 1
+on-departure: ideology = "reformist"; intelligentsia_strength += 10; democratization += 1; intelligentsia_dissent -= 5; tandist_relation += 5; business_relation += 5; pass_relation -= 8; moderate_plan_support += 1
 
 The reformist wing of the party seeks to preserve and expand the institutions of Tandi and the democracy of the Republic, and is most supportive of working with other pro-democracy parties to achive their goals.
 
 @changed
-on-arrival: urban_dissent += 5; mutant_dissent += 5; frontier_dissent += 5; intelligentsia_dissentt += 5
+on-arrival: urban_dissent += 5; mutant_dissent += 5; frontier_dissent += 5; intelligentsia_dissent += 5
 
 We have changed ideologies. Many in the party feel unmoored.

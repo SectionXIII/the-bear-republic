@@ -24,7 +24,7 @@ We maintain our current dues.
 @reduce
 subtitle: [+ dues - 1 +] resources gained.
 choose-if: dues > 1
-on-arrival: dues -= 1; resources += dues; urban_dissent -= 8; center_dissent -= 8; intelligentsia_dissentt -= 8; labor_dissent -= 8
+on-arrival: dues -= 1; resources += dues; urban_dissent -= 8; mutant_strength -= 8; intelligentsia_dissent -= 8; labor_dissent -= 8
 
 Our current members appreciate this, but no one decides to join a party because of the low dues.
 
