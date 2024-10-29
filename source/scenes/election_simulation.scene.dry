@@ -317,7 +317,7 @@ if (Q.pass_r >= Q.spring_r && Q.pass_r >= Q.grizzly_r) {
 }
 
 // coalitions
-Q.weimar_coalition = Q.spring_r + Q.progressive_r + Q.tandist_r - 3;
+Q.republican_coalition = Q.spring_r + Q.progressive_r + Q.tandist_r - 3;
 Q.grand_coalition = Q.spring_r + Q.progressive_r + Q.tandist_r + Q.business_r;
 Q.bourgeois_coalition = Q.progressive_r + Q.tandist_r + Q.business_r + Q.independent_r;
 Q.center_right_coalition = Q.tandist_r + Q.progressive_r + Q.business_r + Q.independent_r + Q.barons_r;
@@ -328,7 +328,7 @@ Q.left_coalition = Q.spring_r + Q.pass_r;
 Q.united_front_coalition = Q.spring_r + Q.pass_r + Q.tandist_r + Q.progressive_r - 3;
 Q.anti_democratic_coalition = Q.pass_r + Q.grizzly_r;
 // aka everyone except natandisti, pass, barons
-Q.neo_weimar_coalition = Q.spring_r + Q.progressive_r + Q.tandist_r + Q.business_r + Q.independent_r;
+Q.neo_republican_coalition = Q.spring_r + Q.progressive_r + Q.tandist_r + Q.business_r + Q.independent_r;
 !}
 
 The electoral system is essentially proportional, with the proportion of Reichstag seats roughly equal to the proportion of votes.
@@ -361,7 +361,7 @@ Independent: [+ independent_r +]
 
 **Potential coalitions:**
 
-Weimar Coalition (SPD + Z + DDP): [+ weimar_coalition +]
+Weimar Coalition (SPD + Z + DDP): [+ republican_coalition +]
 
 Grand Coalition (SPD + Z + BVP + DDP + DVP): [+ grand_coalition +]
 
