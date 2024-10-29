@@ -1,7 +1,7 @@
 title: Party Disunity
 new-page: true
 is-card: true
-view-if: party_disunity_timer = 0 and (dissent >= 0.3 or (intelligentsia_dissent > 30 and not intelligentsias_resign) or (mutant_dissent > 30 and not mutant_resign) or (urban_dissent > 30 and not urban_departure) or (frontier_dissent > 30 and not frontier_independent) or (old_worlder_dissent > 30 and neorevisionism))
+view-if: party_disunity_timer = 0 and (dissent >= 0.3 or (intelligentsia_dissent > 30 and not intelligentsias_resign) or (mutant_dissent > 30 and not mutant_resign) or (urban_dissent > 30 and not urban_departure) or (frontier_dissent > 30 and not frontier_independent) or (old_worlder_dissent > 30 and old_world_blues))
 on-arrival: month_actions += 1; party_disunity_timer = 4
 card-image: img/Reichstagsfraktion_der_SPD.jpg
 frequency: 200
@@ -14,10 +14,10 @@ tags: party_affairs
 The party is being torn apart by internal dissent. Upset at the leadership and general direction, factions have started sabotaging their rivals, hampering our efforts to win votes and carry out our policies.
 
 [? if intelligentsia_dissent > 30 : The intelligentsias are upset at our direction.  ?]
-[? if mutant_dissent > 30 : The centrists are displeased with the direction of our party. ?]
-[? if frontier_dissent > 30 : The trade unions disagree with our present course of action. ?]
-[? if urban_dissent > 30: Leftists are making noises about another party split. ?]
-[? if old_worlder_dissent > 30 and neorevisionism = 1 : Neorevisionists are in disagreement about our political direction. ?]
+[? if mutant_dissent > 30 : The mutants under Hide are displeased with the direction of our party. ?]
+[? if frontier_dissent > 30 : The frontier faction disagree with our present course of action. ?]
+[? if urban_dissent > 30: Urbanites are making noises about another party split. ?]
+[? if old_worlder_dissent > 30 and old_world_blues = 1 : The Old Worlders are in disagreement about our political direction. ?]
 
 Something must be done to reinforce party unity.
 
@@ -26,7 +26,7 @@ Something must be done to reinforce party unity.
 - @concessions_mutant
 - @concessions_urban
 - @concessions_frontier
-- @concessions_neorevisionists
+- @concessions_owb
 - @do_nothing
 
 
@@ -41,39 +41,39 @@ Enforcing party discipline reduces dissent, but it could lead to an exit of diss
 # each party has a concessions action and an expulsions action.
 
 @concessions_intelligentsias
-title: Give concessions to the intelligentsias.
+title: Give concessions to the intelligentsia.
 view-if: intelligentsia_dissent > 30
 on-arrival: intelligentsia_dissent -= 7; urban_dissent += 5
 
 We have promised to adopt a more intelligentsia posture. This may alienate the urban, however.
 
 @concessions_mutant
-title: Give concessions to the centrists.
+title: Give concessions to the mutants.
 view-if: mutant_dissent > 30
 on-arrival: mutant_dissent -= 7; intelligentsia_dissent += 2; urban_dissent += 2; old_worlder_dissent += 2
 
-We have promised to take more policy suggestions from the centrists. Both the urban and intelligentsia wings of the party might be displeased.
+We have promised to take more policy suggestions from the mutant faction. Both the urbanite and intelligentsia wings of the party might be displeased.
 
 @concessions_urban
-title: Give concessions to the urban.
+title: Give concessions to the urbanites.
 view-if: urban_dissent > 30
 on-arrival: urban_dissent -= 7; intelligentsia_dissent += 5
 
-We have promised that we will listen to the urban wing of the party. Of course, this leads to increased dissent from the centrists.
+We have promised that we will listen to the urbanite wing of the party. Of course, this leads to increased dissent from the intelligentsia.
 
 @concessions_frontier
 title: Give concessions to frontier.
 view-if: frontier_dissent > 30
-on-arrival: frontier_dissent -= 7; mutant_dissent += 5
+on-arrival: frontier_dissent -= 7; urban_dissent += 5
 
-The trade unions will be granted more influence in party decision making. This upsets the centrists, who would prefer to centralize political decision making within the party.
+The frontier folk will be granted more influence in party decision making. This upsets the urbanites, who would prefer to centralize political decision making within the party.
 
-@concessions_neorevisionists
-title: Give concessions to the neorevisionists.
-view-if: old_worlder_dissent > 30 and neorevisionism = 1
-on-arrival: old_worlder_dissent -= 7; mutant_dissent += 5;
+@concessions_owb
+title: Give concessions to the old worlders.
+view-if: old_worlder_dissent > 30 and old_world_blues = 1
+on-arrival: old_worlder_dissent -= 7; mutant_dissent += 10; frontier_dissent += 5
 
-Giving the neorevisionists more influence will cause increased dissent from the centrists.
+Giving the Old Worlders more influence will cause increased dissent from the mutant and frontier faction both.
 
 
 @do_nothing
