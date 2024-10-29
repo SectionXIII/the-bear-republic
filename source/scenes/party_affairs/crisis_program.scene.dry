@@ -27,7 +27,7 @@ Meanwhile, moderates and reformists draw up proposals for a limited plan of job 
 
 @support_centrist
 subtitle: Let the depression play itself out.
-on-arrival: mutant_strength += 5; center_dissent -= 5; labor_dissent += 10; wtb_support -= 1; urban_dissent += 10;
+on-arrival: mutant_strength += 5; center_dissent -= 5; labor_dissent += 10; industrialization_support -= 1; urban_dissent += 10;
 
 Woytinsky and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with bourgeois austerity? On the other hand, the centrists criticize Woytinsky for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
 
@@ -38,8 +38,8 @@ Our policy course is currently that nothing can be done to alleviate the depress
 subtitle: Call for increased public works and fiscal stimulus.
 unavailable-subtitle: The Labor faction is not strong enough.
 choose-if: historical_mode == 0 or (labor_strength >= left_strength and labor_strength >= mutant_strength and labor_strength >= intelligentsia_strength)
-on-arrival: center_dissent += 10; urban_dissent += 5; labor_strength += 5; wtb_support += 1;
-go-to: plan_adopted if wtb_support >= 3; plan_support if wtb_support < 3
+on-arrival: center_dissent += 10; urban_dissent += 5; labor_strength += 5; industrialization_support += 1;
+go-to: plan_adopted if industrialization_support >= 3; plan_support if industrialization_support < 3
 
 @plan_support
 

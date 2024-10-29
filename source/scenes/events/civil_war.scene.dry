@@ -174,7 +174,7 @@ While we might want to call for foreign assistance, the foreign powers see the "
 - @game_over: Game over.
 
 @west_aid
-choose-if: west_relation >= 2
+choose-if: nevada_relations >= 2
 unavailable-subtitle: Our relations are not strong enough.
 on-arrival: west_aid += 1
 max-visits: 1

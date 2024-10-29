@@ -28,7 +28,7 @@ if (Q.ideology && Q.ideology != "urban") {
 go-to: changed if changed = 1
 on-departure: ideology = "urban"; urban_strength += 10; populist_coalition += 1; urban_dissent -= 5; tandist_relation -= 3; business_relation -= 5; nationalization_support += 1; pass_relation += 3
 
-The urban workers and workshops are the future, with industrialization following in the footsteps of the old world the true path to prosperity.
+The urban workers and workshops are the future, with industrialization_support following in the footsteps of the old world the true path to prosperity.
 
 @mutant
 on-arrival: {!
@@ -48,7 +48,7 @@ if (Q.ideology && Q.ideology != "frontier") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "frontier"; frontier_strength += 10; wtb_support += 1; frontier_dissent -= 5; pass_relation -= 3
+on-departure: ideology = "frontier"; frontier_strength += 10; industrialization_support += 1; frontier_dissent -= 5; pass_relation -= 3
 
 The frontier wing of the party supports continued particpation in government in order to provide benefits to the people, and the expansion of the Republic's borders for new lands to settle.
 
