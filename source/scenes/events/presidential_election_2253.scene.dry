@@ -248,7 +248,7 @@ Q.election_round += 1;
 !}
 go-to: ruiz_wins if ruiz_majority == 1; throckmorton_wins if throckmorton_majority == 1; kimball_wins if kimball_majority == 1; hide_wins if hide_majority == 1; no_majority_round1 if any_majority == 0 and election_round == 1; round2_results if election_round >= 2
 
-Results:
+**Results:**
 
 Ruiz - [+ ruiz_votes +]%
 
