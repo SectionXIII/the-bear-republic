@@ -1,0 +1,25 @@
+title: Ghosts in Power Armor...
+subtitle: Hard to kill already dead men...
+view-if: year = 2256
+max-visits: 1
+tags: event
+new-page: true
+face-image: # put the location of the image here
+
+= Ghosts in Power Armor...
+
+Rumors persist, of survivors and hidden agents of the long thought dead Enclave, hiding in plain sight. Soldiers with unexplained skills, scientists with no plausible alibi, strange people wishing to fly again. If the rumors are true, then despite their pasts and current enmity, we would be fools to ignore their useful skills. Hide and the Mutant faction of the Long Spring will be apoplectic once they find out, however. Is it worth the risk?
+
+- @search_enclave: Perhaps these ghosts could be useful despite their past sins...
+- @dismiss_rumors: Let these ghosts disappear into the dustbin of history. We have no need of failures.
+
+
+@search_enclave
+on-arrival: enclave_seen += 1; mutant_dissent += 30; frontier_dissent += 15;
+
+Hide won't be happy, but we should begin efforts to find and convince these remnants to assist us in exchange for certain favors and protections.
+
+@dismiss_rumors
+on-arrival: mutant_dissent -= 10; frontier_dissent -= 5;
+
+Let sleeping ghosts lie.
