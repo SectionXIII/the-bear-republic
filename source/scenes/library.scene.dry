@@ -357,13 +357,13 @@ data = data.concat([
         "id": "tandist",
         "legend": "Tandist",
         "name": "Tandist",
-        "seats": (Q.tandist_r - 3)*5,
+        "seats": (Q.tandist_r)*5,
     },
     {
         "id": "tandist_right",
         "legend": "Tandist Right",
         "name": "Tandist Right",
-        "seats": 3*5,
+        "seats": (Q.tandist_right_r)*5,
     },
     {
         "id": "business",

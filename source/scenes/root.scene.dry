@@ -266,7 +266,7 @@ Q.tribal_barons = 0;
 Q.tribal_grizzly = 0;
 Q.tribal_independent = 0;
 
-Q.unemployed_spring = 35;
+Q.unemployed_spring = 25;
 Q.unemployed_pass = 55;
 Q.unemployed_tandist = 0;
 Q.unemployed_tandist_right = 0;
@@ -348,7 +348,7 @@ Q.grizzly_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = Long Spring + Tandist + Progressive
-Q.in_weimar_coalition = 0;
+Q.in_republican_coalition = 0;
 // Grand coalition = Long Spring + Tandist + Tandist Right + Progressive + Business
 // also includes the "new grand coalition" of spring + Tandist + Tandist Right + Progressive + Business + Independent
 Q.in_grand_coalition = 0;
