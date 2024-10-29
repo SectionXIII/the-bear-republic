@@ -13,10 +13,10 @@ The Long Spring is torn between many different ideological currents. What should
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @urban_struggle: The urban struggle and education of the workers.
-- @centrist: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
-- @labor: We should work with the trade unions to improve the lives of workers.
-- @reform: Following Eduard Bernstein, we should work for ethical socialism, strengthen democracy, and expand the party's electorate.
+- @urban_struggle: The urban struggle and education of the workers, under the tender guidance of the workshops of Stillman.
+- @mutant: The support of mutants and their supremacy, while not entirely accepted, remains a key part of the Long Spring.
+- @frontier: We should work with the farmer unions and frontier settlers to improve the lives of the people!
+- @reform: Following the teachings of Granite Senior, the Intelligentsia faction advocates for slow and steady change to the institutions.
 - @easy_discard
 
 @urban_struggle
@@ -28,29 +28,29 @@ if (Q.ideology && Q.ideology != "urban") {
 go-to: changed if changed = 1
 on-departure: ideology = "urban"; urban_strength += 10; populist_coalition += 1; urban_dissent -= 5; tandist_relation -= 3; business_relation -= 5; nationalization_support += 1; pass_relation += 3
 
-The radical urban of the party supports a course of class struggle, and potentially a reconcilliation with the Communists.
+The urban workers and workshops are the future, with industrialization following in the footsteps of the old world the true path to prosperity.
 
-@centrist
+@mutant
 on-arrival: {!
-if (Q.ideology && Q.ideology != "centrist") {
+if (Q.ideology && Q.ideology != "mutant") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "centrist"; mutant_strength += 10; center_dissent -= 10
+on-departure: ideology = "mutant"; mutant_strength += 10; center_dissent -= 10
 
-The Center Marxists, represented by Kautsky and Hilferding, support a middle course of preparing for revolution while building up the consciousness of the working class.
+Seeking to integrate and harness the natural strengths of his fellow mutants, Solomon Hide preaches his teachings to any who will listen.
 
-@labor
+@frontier
 on-arrival: {!
-if (Q.ideology && Q.ideology != "labor") {
+if (Q.ideology && Q.ideology != "frontier") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; pass_relation -= 3
+on-departure: ideology = "frontier"; frontier_strength += 10; wtb_support += 1; frontier_dissent -= 5; pass_relation -= 3
 
-The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
+The frontier wing of the party supports continued particpation in government in order to provide benefits to the people, and the expansion of the Republic's borders for new lands to settle.
 
 @reform
 on-arrival: {!
@@ -61,9 +61,9 @@ if (Q.ideology && Q.ideology != "reformist") {
 go-to: changed if changed = 1
 on-departure: ideology = "reformist"; intelligentsia_strength += 10; democratization += 1; intelligentsia_dissentt -= 5; tandist_relation += 5; business_relation += 5; pass_relation -= 8; moderate_plan_support += 1
 
-The reformist wing of the party seeks to preserve the Republic and the democratic system of government, and is most supportive of coalitions with the other pro-democracy parties.
+The reformist wing of the party seeks to preserve and expand the institutions of Tandi and the democracy of the Republic, and is most supportive of working with other pro-democracy parties to achive their goals.
 
 @changed
-on-arrival: urban_dissent += 5; center_dissent += 5; labor_dissent += 5; intelligentsia_dissentt += 5
+on-arrival: urban_dissent += 5; mutant_dissent += 5; frontier_dissent += 5; intelligentsia_dissentt += 5
 
 We have changed ideologies. Many in the party feel unmoored.
