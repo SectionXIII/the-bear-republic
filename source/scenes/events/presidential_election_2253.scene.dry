@@ -2,8 +2,8 @@ title: Presidential Election
 subtitle: Tibbet vacates the seat...
 view-if: year = 2253 and month = 6 and presidential_election_seen = 0
 frequency: 1000
-max-visits: 10
-priority: -2
+max-visits: 1
+priority: 1
 new-page: true
 on-arrival: presidential_election_seen = 1;
 tags: event
