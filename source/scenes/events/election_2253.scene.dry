@@ -100,10 +100,6 @@ Q.hitler_right_coalition = Q.tandist_r + Q.barons_r + Q.grizzly_r;
 // Progressive coalition isn't going to be implemented as a distinct coalition but it's the coalition that lets you pass improved women's rights/gay rights
 Q.progressive_coalition = Q.spring_r + Q.pass_r + Q.progressive_r;
 
-# if (Q.pass_relation >= 30) {
-#  Q.weimar_coalition += Q.sapd_r;
-# }
-
 Q.leverage = Q.spring_r;
 
 Q.grand_coalition_failed = 0;
