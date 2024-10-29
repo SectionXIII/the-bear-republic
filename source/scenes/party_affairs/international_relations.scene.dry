@@ -52,7 +52,7 @@ The secretive Brotherhood of Steel were allies of the Republic in the past, but 
 @enclave
 subtitle: -4 resources
 choose-if: resources >= 4 and enclave_seen >= 1
-unavailable-subtitle: Not enough resources. [? if not enclave_seen >= 1: Prepostrous. Black clad power armor? Soldiers with long forgotten insignia? The Spring council has dismissed such claims.?]
+unavailable-subtitle: Not enough resources. [? if not enclave_seen >= 1: Prepostorous. Black painted power armor? Soldiers with long forgotten insignia? The Spring council has dismissed such claims.?]
 on-arrival: resources -= 4; enclave_contacted += 1
 
 The Enclave were the greatest threat the nascent Republic ever faced. Advanced, armed to the teeth, and with almost every soldier sheathed in Power Armor, these genocidal supremacists would have been the end of the Republic had the Vault Dweller not intervened. With the destruction of their secret base, however, these ghosts of old America have scattered to the winds. But rumors still persist that some of their members survived, and are even hiding within the Republic. While their xenophobic rhetoric and past actions render them irredeemable, it would be... irresponsible to let their knowledge go to waste.
