@@ -298,11 +298,11 @@ There are some potential coalition arrangements.
 @popular_front_coalition
 title: A new "Popular Front" coalition?
 subtitle: Long Spring + Pass + Tandist + Progressive ([+ popular_front_coalition +]%)
-unavailable-subtitle: Long Spring + Pass + Tandist + Progressive ([+ popular_front_coalition +]%) - [? if ((pass_relation < 65 and pass_party_leader == "Thälmann") or (pass_relation < 45 and pass_party_leader == "Throckmorton")): We do not have good enough relations with the Pass. ?][? if (tandist_relation < 45 and tandist_party_leader == "Ruiz") or (tandist_relation < 65 and tandist_party_leader != "Ruiz" and pass_party_leader != "Throckmorton") or (tandist_relation < 55 and tandist_party_leader != "Ruiz" and pass_party_leader == "Throckmorton"): We do not have good enough relations with the Center Party. ?][? if communist_coalition < 3 : The Communists are unwilling to compromise at all. ?]
+unavailable-subtitle: Long Spring + Pass + Tandist + Progressive ([+ popular_front_coalition +]%) - [? if ((pass_relation < 65 and pass_party_leader == "Thälmann") or (pass_relation < 45 and pass_party_leader == "Throckmorton")): We do not have good enough relations with the Pass. ?][? if (tandist_relation < 45 and tandist_party_leader == "Ruiz") or (tandist_relation < 65 and tandist_party_leader != "Ruiz" and pass_party_leader != "Throckmorton") or (tandist_relation < 55 and tandist_party_leader != "Ruiz" and pass_party_leader == "Throckmorton"): We do not have good enough relations with the Center Party. ?][? if communist_coalition < 3 : The Passers are unwilling to compromise at all. ?]
 view-if: popular_front_coalition >= 50
 choose-if: (((pass_relation >= 65 and pass_party_leader == "Morris") or (pass_relation >= 45 and pass_party_leader == "Throckmorton")) and ((tandist_relation >= 45 and tandist_party_leader == "Ruiz") or (tandist_relation >= 65 and tandist_party_leader != "Ruiz" and pass_party_leader != "Throckmorton") or (tandist_relation >= 55 and tandist_party_leader != "Ruiz" and pass_party_leader == "Throckmorton")) and ddp_relation >= 50 and communist_coalition >= 3) or (tandist_party_leader == "Ruiz" and pass_party_leader == "Throckmorton" and tandist_relation >= 30 and pass_relation >= 30)
 
-Could we really form a coalition that included both the Center and the Communists? It seems like an absurd concept, but given our good relationships with both sides, it is not an impossibility.
+Could we really form a coalition that included both the Center and the Passers? It seems like an absurd concept, but given our good relationships with both sides, it is not an impossibility.
 
 The far-right might attempt a coup, if such a coalition were formed.
 
@@ -312,7 +312,7 @@ The far-right might attempt a coup, if such a coalition were formed.
 @popular_front_2
 view-if: tandist_party_leader != "Ruiz" or pass_party_leader != "Throckmorton"
 
-Somehow, both the Communists and Center are at the very least willing to entertain negotiations. Of course, Pass radicals and Center conservatives derail the negotiations almost immediately. The Pass demands leadership of the coalition for themselves and their chairman Ernst Thälmann, [? if spring_r > pass_r : despite our higher vote share, ?]while the Center is offended by the prospect of helping Bolsheviks enter government. *Something* must be done to restore balance.
+Somehow, both the Passers and Center are at the very least willing to entertain negotiations. Of course, Pass radicals and Center conservatives derail the negotiations almost immediately. The Pass demands leadership of the coalition for themselves and their chairman Ernst Thälmann, [? if spring_r > pass_r : despite our higher vote share, ?]while the Center is offended by the prospect of helping Bolsheviks enter government. *Something* must be done to restore balance.
 
 - @popular_front_resources
 - @popular_front_democracy
@@ -417,7 +417,7 @@ Alternatively, Braun could use the emergency powers of the presidency. Article 4
 @left_coalition
 title: Is a United Left coalition possible?
 subtitle: SPD + KPD ([+ left_coalition +]%)
-unavailable-subtitle: SPD + KPD ([+ left_coalition +]%). [? if pass_relation < 50 : We do not have adequate relations with the KPD. ?][? if communist_coalition < 3 : The Communists are too committed to their radical ways to partake in government. ?]
+unavailable-subtitle: SPD + KPD ([+ left_coalition +]%). [? if pass_relation < 50 : We do not have adequate relations with the KPD. ?][? if communist_coalition < 3 : The Passers are too committed to their radical ways to partake in government. ?]
 view-if: left_coalition >= 50
 choose-if: (pass_relation >= 50 or (pass_party_leader == "Throckmorton" and pass_relation >= 40)) and communist_coalition >= 3
 
@@ -779,10 +779,10 @@ Thus, we have Chancellor-President Otto Braun. He claims that he will resign as 
 - @emergency_no_confidence: The Nazis immediately call a no-confidence vote against us...
 
 @breitscheid_emergency_chancellor
-subtitle: The Communists are warming to him...
+subtitle: The Passers are warming to him...
 on-arrival: chancellor = "Breitscheid"; chancellor_party = "SPD"; spring_in_government = 1; pass_relation += 5; foreign_minister_party = "SPD"; interior_minister_party = "SPD"; justice_minister_party = "SPD"; labor_minister_party = "SPD"; reichswehr_minister_party = "SPD"; economic_minister_party = "SPD"; finance_minister_party = "SPD"; agriculture_minister_party = "SPD"; reichswehr_loyalty -= 0.1;
 
-We have appointed Rudolf Breitscheid as emergency chancellor. The Communists consider him less objectionable than the alternatives, although it is unclear whether they will tolerate this government.
+We have appointed Rudolf Breitscheid as emergency chancellor. The Passers consider him less objectionable than the alternatives, although it is unclear whether they will tolerate this government.
 
 - @far_right_coup
 - @emergency_no_confidence
