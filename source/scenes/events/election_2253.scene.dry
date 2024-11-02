@@ -267,7 +267,7 @@ Grand Coalition (Long Spring + Tandist + Tandist Right + Progressive + Business)
 
 Upper Class Coalition (Tandist + Tandist Right + Business + Independent): [+ bourgeois_coalition +]%
 
-Right-wing Coalition (Tandist + Tandist Right + Business + Independent + Barons): [+ right_coalition +]%
+Right-wing Coalition (Tandist Right + Business + Independent + Barons): [+ right_coalition +]%
 
 [? if grizzly_urgency <= 1 and nsdap_r >= 15 : The rapid rise in NSDAP votes is extremely worrying. Many had believed that the party was moribound; now, some of us consider it to be the greatest threat to democracy in Germany. ?]
 
