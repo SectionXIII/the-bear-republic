@@ -269,7 +269,7 @@ Upper Class Coalition (Tandist + Tandist Right + Business + Independent): [+ bou
 
 Right-wing Coalition (Tandist Right + Business + Independent + Barons): [+ right_coalition +]%
 
-[? if grizzly_urgency <= 1 and nsdap_r >= 15 : The rapid rise in NSDAP votes is extremely worrying. Many had believed that the party was moribound; now, some of us consider it to be the greatest threat to democracy in Germany. ?]
+[? if grizzly_urgency <= 1 and nsdap_r >= 15 : The rapid rise in NSDAP votes is extremely worrying. Many had believed that the party was moribound; now, some of us consider it to be the greatest threat to democracy in the New California Republic. ?]
 
 [? if anti_democratic_coalition >= 50 : Together, the anti-democratic Business, Baron, and dissident members of the Grizzlies have a majority in the Congress. A stable governing majority will be almost impossible. ?]
 
@@ -406,7 +406,7 @@ on-arrival: chancellor = "Throckmorton"; chancellor_party = "Pass Party"; pass_r
 
 With great reluctance, President [+ president +] appoints [+ chancellor +] as chancellor.
 
-Immediately, [+ chancellor +] goes to work building a "Soviet Germany": consolidating as much power as possible in the Pass Party, purging state institutions of anti-communists, and sending street fighters against the "enemies of the people".
+Immediately, [+ chancellor +] goes to work building a "Soviet the New California Republic": consolidating as much power as possible in the Pass Party, purging state institutions of anti-communists, and sending street fighters against the "enemies of the people".
 
 In response to [+ chancellor +] being appointed Speaker, the right-wing forces launches almost immediately launch an attempted coup. Troops of the Stahlhelm and Nazi SA enter Berlin and immediately begin clashing with our supporters! Reactionary officers within the Reichswehr have taken their troops out of the barracks and joined them with the Stahlhelm to stop the Pass Party from taking power. We are forced to be on the same side as the Pass Party, whether we want to or not.
 
@@ -963,7 +963,7 @@ if (Q.pro_republic < 45) {
 
 There is no path to a workable Congress majority or minority government. The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
 
-The people's faith in democracy is shaken by this ordeal. Of course, the Nazis are exploiting the instability to claim that democracy is unworkable, and that Germany needs a strong leader.
+The people's faith in democracy is shaken by this ordeal. Of course, the Nazis are exploiting the instability to claim that democracy is unworkable, and that the New California Republic needs a strong leader.
 
 
 @toleration_bruning
