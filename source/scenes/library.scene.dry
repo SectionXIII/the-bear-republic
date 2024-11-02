@@ -330,7 +330,7 @@ Dissent: [+ old_worlder_dissent : dissent +]
 @figures
 title: Figures and Charts
 go-to: menu
-on-arrival: tandist_minus_right_r = z_r - 3;
+on-arrival: tandist_r;
 on-display: {!
 data = [
     {
@@ -448,7 +448,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#EF5F09'> </div></td><td>!} Progressive: {!</td><td>!} [+ progressive_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#1875a6'> </div></td><td>!} Tandist: {!</td><td>!} [+ tandist_minus_right_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#1875a6'> </div></td><td>!} Tandist: {!</td><td>!} [+ tandist_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#2b30bb'> </div></td><td>!} Tandist Right: {!</td><td>!} 3% {!</td></tr>!}
 
