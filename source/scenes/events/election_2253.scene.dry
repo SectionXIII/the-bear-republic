@@ -282,7 +282,6 @@ There are some potential coalition arrangements.
 - @grand_coalition
 - @new_grand_coalition
 - @unity_government
-- @far_right_coalition
 - @no_majority
 - @brauns_dilemma
 - @populist_coalition
@@ -705,7 +704,6 @@ President Braun faces a dilemma. He desperately desires a socialist or at least 
 - @new_grand_coalition
 - @populist_coalition
 - @popular_front_coalition
-- @far_right_coalition
 
 
 
