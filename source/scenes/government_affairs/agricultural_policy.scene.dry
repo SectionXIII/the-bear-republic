@@ -16,7 +16,7 @@ While agricultural policy has historically not been the domain of the Long Sprin
 - @state_buyer
 - @land_grants
 - @land_grants_barons
-- @land_grants_veteran
+- @land_grants_veterans
 - @root: Do not enact any policies for now.
 - @easy_discard
 
