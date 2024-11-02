@@ -248,8 +248,8 @@ Q.ruiz_plurality = (Q.ruiz_votes >= Q.kimball_votes && Q.ruiz_votes >= Q.hide_vo
 Q.throckmorton_plurality = (Q.throckmorton_votes >= Q.ruiz_votes && Q.throckmorton_votes >= Q.hide_votes && Q.throckmorton_votes >= Q.kimball_votes && Q.throckmorton_votes >= Q.cruz_votes && Q.throckmorton_votes >= Q.greyfield_votes);
 Q.grizzly_plurality = (Q.kimball_votes >= Q.ruiz_votes && Q.kimball_votes >= Q.hide_votes && Q.kimball_votes >= Q.throckmorton_votes && Q.kimball_votes >= Q.cruz_votes && Q.kimball_votes >= Q.greyfield_votes);
 Q.hide_plurality = (Q.hide_votes >= Q.ruiz_votes && Q.hide_votes >= Q.kimball_votes && Q.hide_votes >= Q.throckmorton_votes && Q.hide_votes >= Q.cruz_votes && Q.hide_votes >= Q.greyfield_votes);
-Q.greyfield_plurality = (Q.greyfield_votes >= Q.ruiz_votes && Q.greyfield_votes >= Q.kimball_votes && Q.greyfield_votes >= Q.throckmorton_votes && Q.greyfield_votes >= Q.cruz_votes && Q.greyfield_votes >= Q.hide_votes);
-Q.cruz_plurality = (Q.cruz_votes >= Q.ruiz_votes && Q.cruz_votes >= Q.kimball_votes && && Q.cruz_votes >= Q.throckmorton_votes && Q.cruz_votes >= Q.greyfield_votes && Q.cruz_votes >= Q.hide_votes);
+# Q.greyfield_plurality = (Q.greyfield_votes >= Q.ruiz_votes && Q.greyfield_votes >= Q.kimball_votes && Q.greyfield_votes >= Q.throckmorton_votes && Q.greyfield_votes >= Q.cruz_votes && Q.greyfield_votes >= Q.hide_votes);
+# Q.cruz_plurality = (Q.cruz_votes >= Q.ruiz_votes && Q.cruz_votes >= Q.kimball_votes && && Q.cruz_votes >= Q.throckmorton_votes && Q.cruz_votes >= Q.greyfield_votes && Q.cruz_votes >= Q.hide_votes);
 // If no candidate gets above 50%, then there's a second round. In the second round, a plurality wins. 
 Q.election_round += 1;
 !}
