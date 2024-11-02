@@ -34,7 +34,7 @@ subtitle: Change the vote threshold to 5% for parties to be represented in the R
 on-arrival: {!
 Q.reform_support = Q.spring_normalized;
 if (Q.tandist_relation > 30) {
-    Q.reform_support += Q.z_normalized - 0.03;
+    Q.reform_support += Q.tandist_normalized - 0.03;
 }
 if (Q.pass_relation > 50 && Q.kpd_normalized >= 0.1) {
     Q.reform_support += Q.kpd_normalized;
@@ -74,7 +74,7 @@ subtitle: Votes of no confidence can only be called if an alternative plan for g
 on-arrival: {!
 Q.reform_support = Q.spring_normalized + Q.ddp_normalized;
 if (Q.tandist_relation >= 30) {
-    Q.reform_support += Q.z_normalized - 0.03;
+    Q.reform_support += Q.tandist_normalized - 0.03;
 }
 if (!Q.stresemann_dead) {
     Q.reform_support += Q.dvp_normalized;
@@ -100,9 +100,9 @@ subtitle: The president can no longer dissolve the Reichstag at will, or call a 
 on-arrival: {!
 Q.reform_support = Q.spring_normalized + Q.ddp_normalized + Q.kpd_normalized;
 if (Q.tandist_relation > 49 && (Q.president == "Hindenburg" || Q.president == "Eckener")) {
-    Q.reform_support += Q.z_normalized;
+    Q.reform_support += Q.tandist_normalized;
 } else if (Q.president == "Braun") {
-    Q.reform_support += Q.z_normalized - 0.03;
+    Q.reform_support += Q.tandist_normalized - 0.03;
 }
 !}
 view-if: presidential_powers = 0
