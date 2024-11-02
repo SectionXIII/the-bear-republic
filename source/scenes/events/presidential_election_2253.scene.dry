@@ -29,7 +29,7 @@ Many are calling for us to support the Tandist candidate Maxine Ruiz, despite he
 subtitle: This is our current best option.
 on-arrival: tandist_relation += 20; 
 
-Despite her grudge with the Brotherhood, Ruiz is a forward thinking candidate and very amenable to our aims. She has already promised several Departments of our choice in exchange for our support.
+Despite her grudge with the Brotherhood, Ruiz is a forward thinking candidate and very amenable to our goals. She has already promised several Departments of our choice in exchange for our support.
 
 - @final_election: The final vote...
 
@@ -148,13 +148,13 @@ The Pass Party now endorses Hide in the presidential election! We ask them to ke
 max-visits: 1
 go-to: convince_progressive_success if business_relation >= 50; convince_progressive_fail if business_relation < 50
 
-The progressive vote has been falling over time, so they will probably be of minimal help to us. For what it's worth, the Progressives are already willing to support Hide.
+The Progressives, being some of our closest allies within Congress, are already willing to support Hide.
 
 @convince_progressive_success
 on-arrival: business_support_hide = 1
 go-to: hide_campaign
 
-Thanks to our good relations, the DVP has promised to support Hide in the election.
+Thanks to our good relations, the Business representatives has promised to support Hide in the election.
 
 @convince_progressive_fail
 on-arrival: business_support_hide = 0
@@ -252,7 +252,7 @@ go-to: ruiz_wins if ruiz_majority == 1; throckmorton_wins if throckmorton_majori
 
 Ruiz - [+ ruiz_votes +]%
 
-[+ grizzly_candidate +] - [+ kimball_votes +]%
+Grizzly - [+ kimball_votes +]%
 
 [? if pass_support_hide == 0 : Throckmorton - [+ throckmorton_votes +]% ?]
 
