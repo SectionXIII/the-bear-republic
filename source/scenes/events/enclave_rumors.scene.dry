@@ -1,6 +1,6 @@
 title: Ghosts in Power Armor...
 subtitle: Hard to kill already dead men...
-view-if: year >= 2253 and month >= 4
+view-if: year >= 2256 and month >= 6
 max-visits: 1
 tags: event
 new-page: true
