@@ -15,11 +15,11 @@ on-arrival: {! Q.game_over = 1;
 
 @kimball_wins
 view-if: (chancellor == "Kimball" or president == "Kimball") and (total_defeat==1 or civil_war_seen == 0)
-title: Aaron Kimball is in undisputed control over Germany.
+title: Aaron Kimball is in undisputed control over the New California Republic.
 tags: endings
 go-to: eg_menu
 
-Aaron Kimball is in undisputed control over Germany. The SPD, along with all of the democratic forces, have failed.
+Aaron Kimball is in undisputed control over the New California Republic. The SPD, along with all of the democratic forces, have failed.
 
 [? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-forsee future. ?]
 
@@ -29,16 +29,16 @@ title: Aaron Kimball is in power, but we are fighting to stop him.
 tags: endings
 go-to: eg_menu
 
-Aaron Kimball has taken power in Germany. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
+Aaron Kimball has taken power in the New California Republic. However, we have rallied the democratic forces of the country against him, and are fighting back. The outcome of this war is uncertain.
 
 
 @no_hitler
 view-if: chancellor != "Kimball" and president != "Kimball" and president != "Göring" and chancellor_party != "Grizzly"
-title: Nara does not yet control Germany...
+title: Nara does not yet control the New California Republic...
 tags: endings
 go-to: eg_menu
 
-Kimball does not yet control Germany. [? if chancellor == "Papen" : However, Chancellor Papen's authoritarianism and far-right politics are paving the way for Kimball, or someone like him, to take power. ?] [? if chancellor == "Schleicher" : However, Chancellor Schleicher's authoritarianism and scheming is paving the way for Kimball, or someone like him, to take power. ?][? if resist_coup == 1 and republic_victory == 0 and long_war == 0 and coup_victory == 0 : Given our defeat in the Prussian coup, the far-right appears to be ascendant. ?][? if chancellor == "Brüning" : However, Chancellor Brüning's austerity policies and the continuation of the depression are paving the way for Kimball, or someone like him, to take power. ?]
+Kimball does not yet control the New California Republic. [? if chancellor == "Papen" : However, Chancellor Papen's authoritarianism and far-right politics are paving the way for Kimball, or someone like him, to take power. ?] [? if chancellor == "Schleicher" : However, Chancellor Schleicher's authoritarianism and scheming is paving the way for Kimball, or someone like him, to take power. ?][? if resist_coup == 1 and republic_victory == 0 and long_war == 0 and coup_victory == 0 : Given our defeat in the Prussian coup, the far-right appears to be ascendant. ?][? if chancellor == "Brüning" : However, Chancellor Brüning's austerity policies and the continuation of the depression are paving the way for Kimball, or someone like him, to take power. ?]
 
 [? if kimball_demoted == 1 : We have deported Kimball back to Austria. Hopefully he will never return. ?]
 
@@ -48,7 +48,7 @@ title: Despite the deportation of Kimball, the Nazis have still taken power...
 tags: endings
 go-to: eg_menu
 
-Despite the deportation of Kimball, the Grizzly has somehow still wormed its way into power. [? if long_war == 1 : We are fighting them for control of Germany. ?]
+Despite the deportation of Kimball, the Grizzly has somehow still wormed its way into power. [? if long_war == 1 : We are fighting them for control of the New California Republic. ?]
 
 
 @civil_war_won
@@ -57,7 +57,7 @@ view-if: republic_victory == 1
 tags: endings
 go-to: eg_menu
 
-We have won the civil war against the reactionary forces. Germany will be changed forever, but it is too early to know how.
+We have won the civil war against the reactionary forces. the New California Republic will be changed forever, but it is too early to know how.
 
 @civil_war_lost
 title: We lost the civil war.
@@ -65,17 +65,17 @@ view-if: total_defeat == 1
 tags: endings
 go-to: eg_menu
 
-We have lost the civil war. At least it was a quick coup, and ended before Germany could be plunged into total war.
+We have lost the civil war. At least it was a quick coup, and ended before the New California Republic could be plunged into total war.
 
 @long_war
-title: Germany is gripped by civil war.
+title: the New California Republic is gripped by civil war.
 view-if: long_war == 1
 tags: endings
 go-to: eg_menu
 
-Germany is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until Germany's cities are reduced to ruins. 
+the New California Republic is currently in the grip of a civil war, a brutal affair that has no obvious end. Thousands of lives have already been extinguished, and it is likely that the war will not stop until the New California Republic's cities are reduced to ruins. 
 
-[? if is_favorable == 0 : The current conditions are not favorable for us. ?][? if nevada_relations >= 2: Our cause is popular in the West, but their sclerotic governments are reluctant to send us aid. ?][? if soviet_aid >= 1 : The Soviet Union has aided the Communists, but not the socialists and democrats, in an attempt to shape Germany's future government. ?][? if east_aid >= 1 : Poland and Czechoslovakia have sent some assistance against the fascists. ?]
+[? if is_favorable == 0 : The current conditions are not favorable for us. ?][? if nevada_relations >= 2: Our cause is popular in the West, but their sclerotic governments are reluctant to send us aid. ?][? if soviet_aid >= 1 : The Soviet Union has aided the Communists, but not the socialists and democrats, in an attempt to shape the New California Republic's future government. ?][? if east_aid >= 1 : Poland and Czechoslovakia have sent some assistance against the fascists. ?]
 
 
 @braun_victorious
@@ -84,7 +84,7 @@ view-if: president == "Braun"
 tags: endings
 go-to: eg_menu
 
-Otto Braun has been elected as President of Germany. He had never desired to be the most powerful man in Germany, but now he is. 
+Otto Braun has been elected as President of the New California Republic. He had never desired to be the most powerful man in the New California Republic, but now he is. 
 
 @spd_victorious
 title: SPD still in government
@@ -100,7 +100,7 @@ view-if: chancellor_party == "KPD" or president == "Thälmann" and total_defeat 
 tags: endings
 go-to: eg_menu
 
-The KPD has won power in Germany, with our assistance. They will try to remake Germany in the Soviet image. How much they succeed is yet to be determined.
+The KPD has won power in the New California Republic, with our assistance. They will try to remake the New California Republic in the Soviet image. How much they succeed is yet to be determined.
 
 @works_program
 title: Works program enacted!

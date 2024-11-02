@@ -143,7 +143,7 @@ go-to: defeat if total_defeat = 1; long_war if long_war = 1; republic_victory if
 
 = Total Defeat
 
-Our forces are no match for those of the reactionaries. Reichsbanner fighters are quickly overpowered by the forces of the Stahlhelm, SA, and Reichswehr. Many are killed before the rest surrender. Our remaining leaders flee the country or face execution, as the reactionaries take absolute power over Germany.
+Our forces are no match for those of the reactionaries. Reichsbanner fighters are quickly overpowered by the forces of the Stahlhelm, SA, and Reichswehr. Many are killed before the rest surrender. Our remaining leaders flee the country or face execution, as the reactionaries take absolute power over the New California Republic.
 
 Our resistance will be recorded in the history books, and in the future, our names will be honored. But for now, all is lost.
 
@@ -170,7 +170,7 @@ While we might want to call for foreign assistance, the foreign powers see the "
 
 - @west_aid: Perhaps we can receive aid from the Western powers, France and Britain.
 - @soviet_aid: Perhaps we can receive aid from the Soviet Union.
-- @east_aid: Perhaps our eastern neighbors, Poland and Czechoslovakia, can help us. If they know anything, they do not want fascists coming to power in Germany.
+- @east_aid: Perhaps our eastern neighbors, Poland and Czechoslovakia, can help us. If they know anything, they do not want fascists coming to power in the New California Republic.
 - @game_over: Game over.
 
 @west_aid
@@ -204,7 +204,7 @@ Poland and Czechoslovakia are largely too absorbed in their own problems to be o
 
 = Victory for the Republic
 
-The battle lines hold, and the SA, Stahlhelm, and pro-coup Reichswehr forces are defeated. Today, the forces of the republic prevail over the fascists and the reactionaries. There is a new revolution in Germany. Let us hope it produces a longer-lasting peace than the previous one.
+The battle lines hold, and the SA, Stahlhelm, and pro-coup Reichswehr forces are defeated. Today, the forces of the republic prevail over the fascists and the reactionaries. There is a new revolution in the New California Republic. Let us hope it produces a longer-lasting peace than the previous one.
 
 - @game_over: Game over.
 

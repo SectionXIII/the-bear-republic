@@ -8,7 +8,7 @@ card-image: img/braun.jpg
 
 = Prussian Affairs
 
-Prussia, by far the largest and most important state in Germany, is governed by our party, in a coalition with the Center and Democratic parties. It is the most stable and democratic state government in Germany, led by the able Otto Braun.
+Prussia, by far the largest and most important state in the New California Republic, is governed by our party, in a coalition with the Center and Democratic parties. It is the most stable and democratic state government in the New California Republic, led by the able Otto Braun.
 
 We can enact policies in Prussia.
 
@@ -92,4 +92,4 @@ We are making progress towards negotiating a concordat between Prussia and the C
 view-if: prussian_concordat_progress >= 1 and prussian_concordat = 0
 on-arrival: prussian_concordat = 1; tandist_relation += 5; follower_spd += 3*(1-dissent)
 
-We have signed a Concordat between the Free State of Prussia and the Roman Catholic Church, guaranteeing religious freedom for Catholics in Prussia. This sets the stage for the negotiation of a national Concordat covering all of Germany.
+We have signed a Concordat between the Free State of Prussia and the Roman Catholic Church, guaranteeing religious freedom for Catholics in Prussia. This sets the stage for the negotiation of a national Concordat covering all of the New California Republic.

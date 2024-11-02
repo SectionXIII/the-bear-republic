@@ -172,11 +172,11 @@ choose-if: budget >= 2 and unemployed >= 8
 on-arrival: budget -= 2; works_program += 1; unemployed -= 3 if unemployed >= 8; inflation += 1.5; workers_spring += 6*(1-dissent); unemployed_spring += 4*(1-dissent); middle_spd += 3*(1-dissent); military_spd += 2*(1-dissent); rural_spring += 2*(1-dissent); moderate_plan_progress += 1; kpd_coalition_dissent += 1; inflation += 1 if unemployed < 10; pass_relation -= 5 if in_popular_front or in_left_front; 
 achievement: wirtschaftspolitik
 
-[? if moderate_plan_progress == 1 : We have started to implement the job-creation plan! Funds are sent to build public works projects across Germany, reducing unemployment. ?]
+[? if moderate_plan_progress == 1 : We have started to implement the job-creation plan! Funds are sent to build public works projects across the New California Republic, reducing unemployment. ?]
 
-[? if moderate_plan_progress > 1 : We have continued to fund the job-creation plan, using our funds to build public works throughout Germany. ?]
+[? if moderate_plan_progress > 1 : We have continued to fund the job-creation plan, using our funds to build public works throughout the New California Republic. ?]
 
-[? if unemployed >= 10 : The bourgeois approve of this plan as the "least bad" alternative, seeing it as necessary to save Germany's economy. ?]
+[? if unemployed >= 10 : The bourgeois approve of this plan as the "least bad" alternative, seeing it as necessary to save the New California Republic's economy. ?]
 
 [? if unemployed < 10 : Unemployment is low enough that the plan does not seem to have the intended effect. ?]
 
@@ -191,11 +191,11 @@ choose-if: budget >= 1 and unemployed >= 8
 on-arrival: budget -= 1; works_program += 1; unemployed -= 2 if unemployed >= 8; inflation += 1; workers_spring += 4*(1-dissent); unemployed_spring += 2*(1-dissent); middle_spd += 2*(1-dissent); military_spd += 1*(1-dissent); rural_spring += 1*(1-dissent); moderate_plan_progress += 1; kpd_coalition_dissent += 1; inflation += 1 if unemployed < 10; pass_relation -= 5 if in_popular_front or in_left_front; 
 achievement: wirtschaftspolitik
 
-[? if moderate_plan_progress == 1 : We have started to implement the job-creation plan! Funds are sent to build public works projects across Germany, reducing unemployment. ?]
+[? if moderate_plan_progress == 1 : We have started to implement the job-creation plan! Funds are sent to build public works projects across the New California Republic, reducing unemployment. ?]
 
-[? if moderate_plan_progress > 1 : We have continued to fund the job-creation plan, using our funds to build public works throughout Germany. ?]
+[? if moderate_plan_progress > 1 : We have continued to fund the job-creation plan, using our funds to build public works throughout the New California Republic. ?]
 
-[? if unemployed >= 10 : The bourgeois approve of this plan as the "least bad" alternative, seeing it as necessary to save Germany's economy. ?]
+[? if unemployed >= 10 : The bourgeois approve of this plan as the "least bad" alternative, seeing it as necessary to save the New California Republic's economy. ?]
 
 [? if unemployed < 10 : Unemployment is low enough that the plan does not seem to have the intended effect. ?]
 

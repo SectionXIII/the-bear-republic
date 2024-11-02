@@ -424,7 +424,7 @@ Brock Throckmorton of the Pass Party has won the presidency. The establlishment 
 on-arrival: president = grizzly_candidate; chancellor = "Kimball"; chancellor_party = "Grizzly"
 
 [? if grizzly_candidate == "Kimball" : Aaron Kimball of the Grizzly has won the presidency. He wastes no time in consolidating power. ?]
-[? if grizzly_candidate != "Kimball" : The Grizzly candidate [+ president +] has won. The first action President [+ president +] takes is inviting Kimball back into Germany, and appointing him Secretary of State. The Grizzlies waste no time in consolidating power. ?]
+[? if grizzly_candidate != "Kimball" : The Grizzly candidate [+ president +] has won. The first action President [+ president +] takes is inviting Kimball back into the New California Republic, and appointing him Secretary of State. The Grizzlies waste no time in consolidating power. ?]
 
 - @kimball_takes_power: Blasted populist...
 

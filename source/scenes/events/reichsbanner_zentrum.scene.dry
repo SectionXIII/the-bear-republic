@@ -29,4 +29,4 @@ unavailable-subtitle: They are unable to be convinced at this time.
 choose-if: strife >= 5 and (tandist_relation >= 50 or (z_party_leader == "Joos" and tandist_relation >= 30)) and ddp_relation >= 50
 on-arrival: rb_stay = 1
 
-Seeing the strife that has filled Germany's streets, the Center Party and DDP seem to be convinced that it is necessary for the Reichsbanner to be militarized, and will not leave the organization.
+Seeing the strife that has filled the New California Republic's streets, the Center Party and DDP seem to be convinced that it is necessary for the Reichsbanner to be militarized, and will not leave the organization.

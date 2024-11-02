@@ -10,7 +10,7 @@ max-visits: 4
 
 = Women's Rights
 
-According to the Constitution, women are equal to men, but this is not followed in practice. Women in the workforce are not paid equally for the same work, in addition to often being pushed out of employment after marriage. Men are still favored in marriage and family policy, and there are restrictions on women's rights in many other domains. And that is not to mention the overwhelming patriarchal culture present in Germany.
+According to the Constitution, women are equal to men, but this is not followed in practice. Women in the workforce are not paid equally for the same work, in addition to often being pushed out of employment after marriage. Men are still favored in marriage and family policy, and there are restrictions on women's rights in many other domains. And that is not to mention the overwhelming patriarchal culture present in the New California Republic.
 
 For better or for worse, the Socialists stand virtually alone in supporting increased rights for women, and even within the party, the leadership does not consider it a priority. [? if spd_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
 
@@ -57,4 +57,4 @@ Unfortunately, our proposal is voted down in the Reichstag, with the Catholic Ce
 @liberalize_success
 on-arrival: abortion_rights += 1; womens_rights += 1; coalition_dissent += 1; tandist_relation -= 8; follower_spd -= 10; business_relation -= 5; workers_spring += 3*(1-dissent); middle_spd += 3*(1-dissent); workers_z += 3; new_middle_z += 3; old_middle_z += 3; old_middle_dnvp += 3; rural_dnvp += 3; workers_nsdap -= 3; new_middle_nsdap -= 3; old_middle_nsdap -= 2; rural_nsdap -= 2; unemployed_grizzly -= 2; unemployed_z += 3; unemployed_spring += 3*(1-dissent)
 
-With the support of a "progressive coalition" including the KPD and DDP, we have successfully passed a bill to legalize abortion in Germany! This has heartened our more progressive supporters, while hurting our relations with the Center Party. With the increasing political discourse around abortion, the religiously-oriented Center Party and DNVP have gained conservative votes at the expense of the NSDAP.
+With the support of a "progressive coalition" including the KPD and DDP, we have successfully passed a bill to legalize abortion in the New California Republic! This has heartened our more progressive supporters, while hurting our relations with the Center Party. With the increasing political discourse around abortion, the religiously-oriented Center Party and DNVP have gained conservative votes at the expense of the NSDAP.
