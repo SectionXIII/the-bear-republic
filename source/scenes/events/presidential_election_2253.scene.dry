@@ -175,13 +175,15 @@ on-arrival: {!
 Q.hide_votes = 0;
 Q.ruiz_votes = 0;
 Q.kimball_votes = 0;
+Q.greyfield_votes = 0;
+Q.cruz_votes = 0;
 Q.throckmorton_votes = 0;
 
 // initial phase:
 Q.kimball_votes += Q.grizzly_normalized;
 Q.ruiz_votes += Q.independent_normalized;
-Q.ruiz_votes += Q.tandist_right_normalized;
-Q.ruiz_votes += Q.barons_normalized;
+Q.cruz_votes += Q.tandist_right_normalized;
+Q.greyfield_votes += Q.barons_normalized;
 
 if (Q.hide_campaign) {
     Q.hide_votes += Q.spring_normalized;
@@ -197,7 +199,7 @@ if (Q.hide_campaign) {
     if (Q.business_support_hide) {
         Q.hide_votes += Q.business_normalized;
     } else {
-        Q.ruiz_votes += Q.business_normalized;
+        Q.greyfield_votes += Q.business_normalized;
     }
 } else if (Q.spring_support_throckmorton) {
     Q.throckmorton_votes += Q.pass_normalized;
@@ -209,7 +211,6 @@ if (Q.hide_campaign) {
     Q.ruiz_votes += Q.spring_normalized;
     Q.ruiz_votes += Q.tandist_normalized;
     Q.ruiz_votes += Q.progressive_normalized;
-    Q.ruiz_votes += Q.business_normalized;
     Q.throckmorton_votes += Q.pass_normalized;
 }
 if (Q.kimball_support_ruiz) {
@@ -230,19 +231,25 @@ if (Q.throckmorton_to_hide_bonus) {
 Q.ruiz_votes = Math.round(Q.ruiz_votes*100);
 Q.hide_votes = Math.round(Q.hide_votes*100);
 Q.kimball_votes = Math.round(Q.kimball_votes*100);
+Q.greyfield_votes = Math.round(Q.greyfield_votes*100);
+Q.cruz_votes = Math.round(Q.cruz_votes*100);
 Q.throckmorton_votes = Math.round(Q.throckmorton_votes*100);
 
 Q.ruiz_majority = (Q.ruiz_votes >= 50);
 Q.throckmorton_majority = (Q.throckmorton_votes >= 50);
 Q.kimball_majority = (Q.kimball_votes >= 50);
 Q.hide_majority = (Q.hide_votes >= 50);
-Q.any_majority = Q.ruiz_majority | Q.throckmorton_majority | Q.kimball_majority | Q.hide_majority;
+Q.greyfield_majority = (Q.greyfield_votes >= 50);
+Q.cruz_majority = (Q.cruz_votes >= 50);
+Q.any_majority = Q.ruiz_majority | Q.throckmorton_majority | Q.kimball_majority | Q.hide_majority | Q.greyfield_majority | Q.cruz_majority;
 
 // check for plurality
-Q.ruiz_plurality = (Q.ruiz_votes >= Q.kimball_votes && Q.ruiz_votes >= Q.hide_votes && Q.ruiz_votes >= Q.throckmorton_votes);
-Q.throckmorton_plurality = (Q.throckmorton_votes >= Q.ruiz_votes && Q.throckmorton_votes >= Q.hide_votes && Q.throckmorton_votes >= Q.kimball_votes);
-Q.grizzly_plurality = (Q.kimball_votes >= Q.ruiz_votes && Q.kimball_votes >= Q.hide_votes && Q.kimball_votes >= Q.throckmorton_votes);
-Q.hide_plurality = (Q.hide_votes >= Q.ruiz_votes && Q.hide_votes >= Q.kimball_votes && Q.hide_votes >= Q.throckmorton_votes);
+Q.ruiz_plurality = (Q.ruiz_votes >= Q.kimball_votes && Q.ruiz_votes >= Q.hide_votes && Q.ruiz_votes >= Q.throckmorton_votes && Q.ruiz_votes >= Q.cruz_votes && Q.ruiz_votes >= Q.greyfield_votes);
+Q.throckmorton_plurality = (Q.throckmorton_votes >= Q.ruiz_votes && Q.throckmorton_votes >= Q.hide_votes && Q.throckmorton_votes >= Q.kimball_votes && Q.throckmorton_votes >= Q.cruz_votes && Q.throckmorton_votes >= Q.greyfield_votes);
+Q.grizzly_plurality = (Q.kimball_votes >= Q.ruiz_votes && Q.kimball_votes >= Q.hide_votes && Q.kimball_votes >= Q.throckmorton_votes && Q.kimball_votes >= Q.cruz_votes && Q.kimball_votes >= Q.greyfield_votes);
+Q.hide_plurality = (Q.hide_votes >= Q.ruiz_votes && Q.hide_votes >= Q.kimball_votes && Q.hide_votes >= Q.throckmorton_votes && Q.hide_votes >= Q.cruz_votes && Q.hide_votes >= Q.greyfield_votes);
+Q.greyfield_plurality = (Q.greyfield_votes >= Q.ruiz_votes && Q.greyfield_votes >= Q.kimball_votes && Q.greyfield_votes >= Q.throckmorton_votes && Q.greyfield_votes >= Q.cruz_votes && Q.greyfield_votes >= Q.hide_votes);
+Q.cruz_plurality = (Q.cruz_votes >= Q.ruiz_votes && Q.cruz_votes >= Q.kimball_votes && && Q.cruz_votes >= Q.throckmorton_votes && Q.cruz_votes >= Q.greyfield_votes && Q.cruz_votes >= Q.hide_votes);
 // If no candidate gets above 50%, then there's a second round. In the second round, a plurality wins. 
 Q.election_round += 1;
 !}
@@ -253,6 +260,10 @@ go-to: ruiz_wins if ruiz_majority == 1; throckmorton_wins if throckmorton_majori
 Ruiz - [+ ruiz_votes +]%
 
 Grizzly - [+ kimball_votes +]%
+
+de la Cruz - [+ cruz_votes +]%
+
+Greyfield - [+ greyfield_votes +]%
 
 [? if pass_support_hide == 0 : Throckmorton - [+ throckmorton_votes +]% ?]
 
