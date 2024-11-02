@@ -82,7 +82,7 @@ title: Land Grants
 subtitle: -2 budget - With our focus on rewarding the military for their efforts and sacrifices, we've begun to parcel out land to veterans of 10 or more years.
 choose-if: budget >= 2 and free_land >= 1 and judicial_reform >= 2
 unavailable-subtitle: [? if budget <= 1 : Requires 1 budget. ?] [? if free_land <= 0: We require more lands to hand out in the first place. ?] [? if judicial_reform < 2 : The judiciary would never allow this. ?]
-see-if: army_deal_seen >= 1
+view-if: army_deal_seen >= 1
 on-arrival: budget -= 1; free_land -= 1; urban_dissent -= 5; frontier_dissent -= 5; mutant_dissent += 5; military_spring += 10*(1-dissent); grizzly_relation += 10; tandist_relation -= 10; imperialism += 2;
 max-visits: 2
 
