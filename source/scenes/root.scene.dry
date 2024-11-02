@@ -404,6 +404,7 @@ Q.panzerkreuzer_funded = 0;
 Q.panzerkreuzer_failed = 0;
 Q.unemployment_insurance_seen = 0;
 Q.blutmai = 0;
+Q.army_deal_seen = 0;
 
 // have we reformed these institutions to be more democratic?
 Q.judicial_reform = 0;
@@ -457,6 +458,11 @@ Q.moderate_plan_progress = 0;
 // Tax rates relative to 2253 baseline
 Q.lower_tax_rates = 0;
 Q.upper_tax_rates = 0;
+
+// Development stats
+Q.free_land = 0;
+Q.imperialism = 0;
+Q.xenophobia = 0;
 
 // Mutant rights and scare scale
 Q.mutant_rights = 0;

@@ -11,7 +11,7 @@ title: Campaigning (People's Party)
 
 @campaign_workers
 title: Campaign among the workers, to assuage their doubts about our changes.
-on-arrival: workers_spd += 10*(1-dissent);
+on-arrival: workers_spring += 10*(1-dissent);
 
 The workers are still a key part of our constituency, and we must not alienate them in the transformation of our party.
 
@@ -25,19 +25,19 @@ As a people's party, we represent the employees and small businesspeople of the 
 title: Campaign in rural areas.
 choose-if: rural_policy > 0
 unavailable-subtitle: We have not enacted any rural policies yet.
-on-arrival: rural_spd += 8*(1-dissent)
+on-arrival: rural_spring += 8*(1-dissent)
 
 As a people's party, we represent farmers and rural workers as well, and they are becoming receptive to our messages.
 
 @campaign_unemployed
 title: Campaign among the unemployed.
-on-arrival: unemployed_spd += 8*(1-dissent);
+on-arrival: unemployed_spring += 8*(1-dissent);
 
 As a people's party, the urban poor are still a key part of our constituency.
 
 @campaign_women
 title: Campaign among women of all classes.
-on-arrival: workers_spd += 5*(1-dissent); new_middle_spd += 5*(1-dissent); old_middle_spd += 5*(1-dissent); rural_spd += 5*(1-dissent); unemployed_spd += 5*(1-dissent);
+on-arrival: workers_spring += 5*(1-dissent); new_middle_spd += 5*(1-dissent); old_middle_spd += 5*(1-dissent); rural_spring += 5*(1-dissent); unemployed_spring += 5*(1-dissent);
 
 As a people's party, we represent women of all classes.
 

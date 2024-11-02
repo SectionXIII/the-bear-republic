@@ -103,7 +103,7 @@ title: Rural Campaign
 subtitle: Try to campaign among the rural populace.
 choose-if: advisor_action_timer == 0 and rural_policy > 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if rural_policy == 0 : We have not enacted any rural policies. ?]
-on-arrival: advisor_action_timer = 6; rural_spd += 5*(1-dissent); peoples_party_support += 1
+on-arrival: advisor_action_timer = 6; rural_spring += 5*(1-dissent); peoples_party_support += 1
 
 We have increased our campaigning among farmers and the rural populace.
 
@@ -140,7 +140,7 @@ view-if: not constructive_vonc
 subtitle: Break our current toleration arrangement, and bring down the government via a no-confidence vote.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_toleration == 0 : The SPD is not currently in toleration. ?]
 choose-if: advisor_action_timer == 0 and spd_toleration
-on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; left_strength += 8; pro_republic -= 4; new_middle_spd -= 3; rural_spd -= 3; old_middle_spd -= 3; catholics_spd -= 3; intelligentsia_dissent += 8
+on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; left_strength += 8; pro_republic -= 4; new_middle_spd -= 3; rural_spring -= 3; old_middle_spd -= 3; catholics_spd -= 3; intelligentsia_dissent += 8
 
 We have grown tired of the burdens of toleration, and have called a vote of no confidence in the current minority government.
 
@@ -259,7 +259,7 @@ title: Support Workers' Welfare, our mutual aid organization.
 subtitle: -1 resources
 choose-if: resources > 0 and advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if resources < 0: Not enough resources. ?]
-on-arrival: resources -= 1; workers_aid += 1; unemployed_spd += 5*(1 - dissent); workers_spd += 3*(1-dissent); workers_spd += 2*(1-dissent) if black_thursday_seen; advisor_action_timer = 6;
+on-arrival: resources -= 1; workers_aid += 1; unemployed_spring += 5*(1 - dissent); workers_spring += 3*(1-dissent); workers_spring += 2*(1-dissent) if black_thursday_seen; advisor_action_timer = 6;
 
 We have increased funding to Workers' Welfare. [? if black_thursday_seen > 0 : In an age of economic crisis, this will be helpful for improving our standing among the unemployed. ?]
 
@@ -268,7 +268,7 @@ title: Organizing women
 subtitle: Juchacz's strategies are aimed at more "traditional" women.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: womens_rights += 1; workers_spd += 4*(1-dissent); rural_spd += 3*(1-dissent); old_middle_spd += 3*(1-dissent); advisor_action_timer = 6
+on-arrival: womens_rights += 1; workers_spring += 4*(1-dissent); rural_spring += 3*(1-dissent); old_middle_spd += 3*(1-dissent); advisor_action_timer = 6
 
 Juchacz's strategies for organizing women are aimed at working-class housewives, and acknowledge women's traditional household roles. We argue that our economic welfare programs will improve the livelihoods of women and their families.
 
@@ -277,7 +277,7 @@ title: Rally for democracy
 subtitle: Rally our party and the German people to defend democracy and freedom.
 choose-if: advisor_action_timer == 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; old_worlder_strength += 5; intelligentsia_strength += 3; workers_spd += 4*(1-dissent) if democratization >= 4; new_middle_spd += 3*(1-dissent) if democratization >= 4
+on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; old_worlder_strength += 5; intelligentsia_strength += 3; workers_spring += 4*(1-dissent) if democratization >= 4; new_middle_spd += 3*(1-dissent) if democratization >= 4
 
 Leber helps us to rally the people in defense of democracy.
 
@@ -322,7 +322,7 @@ title: Organizing workers
 subtitle: Improve our standing among the workers.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; workers_spd += 4*(1-dissent); workers_spd += 3*(1-dissent) if industrial_adopted == 1; labor_strength += 2;
+on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); workers_spring += 3*(1-dissent) if industrial_adopted == 1; labor_strength += 2;
 
 We have increased our organizing among the workers.
 
@@ -331,7 +331,7 @@ title: Build up the Iron Front
 subtitle: Increase our propaganda measures to recruit more members into the Reichsbanner. 
 choose-if: advisor_action_timer == 0 and iron_front_formed
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed == 0 : The Iron Front has not yet been formed. ?]
-on-arrival: advisor_action_timer = 6; rb_strength += 200*workers_spd/(workers_spd+workers_kpd+workers_nsdap+workers_z+workers_barons+workers_other);
+on-arrival: advisor_action_timer = 6; rb_strength += 200*workers_spring/(workers_spring+workers_kpd+workers_nsdap+workers_z+workers_barons+workers_other);
 
 We have recruited more members into the Reichsbanner.
 
@@ -400,7 +400,7 @@ title: Rally for class struggle
 subtitle: The core of socialism should be the struggle of the proletariat against the bourgeoisie.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent); workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; urban_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2
+on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); unemployed_spring += 3*(1-dissent); workers_spring += 4*(1-dissent) if nationalization_progress > 0; unemployed_spring += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; urban_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
@@ -410,7 +410,7 @@ title: Support the Socialist Youth
 subtitle: We must end our reputation as a party for old men by increasing funding to the youth organizations. -1 resources
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if resources <= 0 : Not enough resources. ?]
 choose-if: advisor_action_timer = 0 and resources > 0
-on-arrival: advisor_action_timer = 6; resources -= 1; left_strength += 5; urban_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spd += 2*(1-dissent); new_middle_spd += 1;
+on-arrival: advisor_action_timer = 6; resources -= 1; left_strength += 5; urban_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spring += 2*(1-dissent); new_middle_spd += 1;
 
 Seydewitz supports building up the Socialist Youth, which attracts support to the Left and increases the militancy of the Reichsbanner.
 

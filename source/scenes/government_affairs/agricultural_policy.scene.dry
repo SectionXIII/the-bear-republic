@@ -2,46 +2,49 @@ title: Agricultural Policy
 new-page: true
 is-card: true
 on-arrival: agricultural_policy_timer += 6; month_actions += 1
-view-if: spring_in_government = 1 and (agriculture_minister_party = "SPD") and agricultural_policy_timer == 0
+view-if: spring_in_government = 1 and (agriculture_minister_party = "Long Spring") and agricultural_policy_timer == 0
 card-image: img/portraits/BaadeFritz.jpg
 tags: govt_affairs
 
 = Agricultural Policy
 
-While agricultural policy has historically not been the domain of the SPD, there is much need for policy in this area. Our urban constituencies hope for cheaper and more stable food supplies, while small farmers need economic relief. There is also the movement for land reform, to break up the large aristocratic estates and redistribute land to peasants.
+While agricultural policy has historically not been the domain of the Long Spring, there is much need for policy in this area. Our urban constituencies hope for cheaper and more stable food supplies, while small farmers need economic relief. There is also the movement for land reform, to break up the large baron estates and redistribute land to settlers.
 
 - @land_reform
 - @agricultural_finance
 - @pro_consumer
 - @state_buyer
+- @land_grants
+- @land_grants_barons
+- @land_grants_veteran
 - @root: Do not enact any policies for now.
 - @easy_discard
 
 @land_reform
 title: Land Reform
-subtitle: -1 budget - Break up the large aristocratic estates and give land to landless workers.
+subtitle: -1 budget - Break up the large baron estates and give land to landless workers.
 unavailable-subtitle: [? if budget <= 0 : Requires 1 budget. ?] [? if judicial_reform < 2 : The judiciary would never allow this. ?]
 choose-if: judicial_reform >= 2 and budget > 0
-on-arrival: budget -= 1; land_reform += 1; coalition_dissent += 1; rural_spd += 5*(1-dissent); rural_nsdap -= 4*(1-dissent); unemployed -= 1 if unemployed >= 5; business_relation -= 5; tandist_relation -= 4; left_strength += 8; urban_dissent -= 5; rural_sol += 3; rural_policy += 1; coup_progress += 1; agriculture_goal_completed += 1;
+on-arrival: budget -= 1; land_reform += 1; coalition_dissent += 1; rural_spring += 5*(1-dissent); rural_baron -= 4*(1-dissent); unemployed -= 1 if unemployed >= 5; baron_relation -= 5; tandist_relation -= 4; frontier_strength += 8; urban_dissent -= 5; rural_sol += 3; rural_policy += 1; coup_progress += 1; agriculture_goal_completed += 1;
 max-visits: 4
 
-With our policy of land reform, we are acquiring farmland from large estates, and giving the land to farmworkers' associations and small peasants. In essence, this brings class struggle to the countryside, breaking the semi-feudal property relations present in East Prussia and other areas with large estates. The bourgeois parties and large farmers despise our intrusion into the sacredness of private property, while leftists are cautiously optimistic.
+With our policy of land reform, we are acquiring farmland from large ranching estates, and giving the land to farmworkers' associations and small peasants. In essence, we are declaring war upon the brahmin barons of our eastern frontiers, and they will not abide by too many reforms. Push them too far at your own risk.
 
 
 @agricultural_finance
 title: Agricultural Financing
 subtitle: -1 budget - Increase financing for agricultural credit and insurance.
 choose-if: budget >= 1
-on-arrival: budget -= 1; agricultural_finance += 1; rural_spd += 5*(1-dissent); rural_nsdap -= 3*(1-dissent); peoples_party_support += 1; mutant_dissent += 5; urban_dissent += 4; rural_sol += 4; rural_policy += 1;
+on-arrival: budget -= 1; agricultural_finance += 1; rural_spring += 5*(1-dissent); rural_baron -= 3*(1-dissent); peoples_party_support += 1; mutant_dissent += 5; urban_dissent += 4; rural_sol += 4; rural_policy += 1;
 
-We have increased financial support for small farmers, providing access to credit and insurance, saving them from privation. The left and center of our party are opposed to our rural policy, seeing these policies as giveaways to petit-bourgeois farmers.
+We have increased financial support for small farmers, providing access to credit and insurance, saving them from privation. The urban and mutant wings of our party are opposed to our rural policy, seeing these policies as giveaways to petit-bourgeois farmers.
 
 
 @pro_consumer
 title: Food Procurement
 subtitle: -1 budget - Provide inexpensive food for workers.
 choose-if: budget >= 1
-on-arrival: budget -= 1; pro_consumer += 1; workers_spd += 4*(1-dissent); unemployed_spd += 4*(1-dissent); workers_sol += 4; coalition_dissent += 1 if black_thursday_seen
+on-arrival: budget -= 1; pro_consumer += 1; workers_spring += 4*(1-dissent); unemployed_spring += 4*(1-dissent); workers_sol += 4; coalition_dissent += 1 if black_thursday_seen
 
 We have increased state purchasing of food staples to provide to urban workers and the poor. This benefits workers more than it benefits farmers, as we are negotiating for lower purchase prices. [? if black_thursday_seen and (in_republican_coalition or in_grand_coalition) : Our coalition partners consider this policy to be a wasteful handout. ?]
 
@@ -49,7 +52,38 @@ We have increased state purchasing of food staples to provide to urban workers a
 title: State Buyer
 subtitle: -2 budget - Create a state monopoly for grain purchases, guaranteeing prices for farmers and stable prices for consumers. [? if judicial_reform < 2 : The judiciary would never allow this. ?]
 choose-if: budget >= 2 and judicial_reform >= 2
-on-arrival: budget -= 2; state_buyer = 1; rural_spd += 5*(1-dissent); rural_nsdap -= 3*(1-dissent); workers_spd += 4*(1-dissent); unemployed_spd += 5*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or in_republican_coalition); business_relation -= 5; tandist_relation -= 3; peoples_party_support += 1; rural_policy += 2; capital_strike_progress += 1
+on-arrival: budget -= 2; state_buyer = 1; rural_spring += 5*(1-dissent); rural_baron -= 3*(1-dissent); workers_spring += 4*(1-dissent); unemployed_spring += 5*(1-dissent); coalition_dissent += 1 if (in_grand_coalition or in_republican_coalition); business_relation -= 5; baron_relation -= 10; tandist_relation -= 3; peoples_party_support += 1; rural_policy += 2; capital_strike_progress += 1
 max-visits: 1
 
 Our new purchasing agency guarantees fair prices for farmers, while also providing lower food prices for workers and the urban poor. This policy necessitates heavy spending and an unprecedented level of state intervention in the economy, raising the ire of conservative economists.
+
+@land_grants
+title: Land Grants
+subtitle: -2 budget - Create an organized process to allot newly acquired territories to landless workers, drifters, and anyone loyal to the Republic willing to work the land.
+choose-if: budget >= 2 and free_land >= 1
+unavailable-subtitle: [? if budget <= 1 : Requires 2 budget. ?] [? if free_land <= 0: We require more lands to hand out in the first place. ?] [? if judicial_reform < 2 : The judiciary would never allow this. ?]
+on-arrival: budget -= 2; free_land -= 1; frontier_strength += 5; frontier_dissent -= 5; urban_dissent += 5; intelligentsia_dissent += 5; rural_spring += 10*(1-dissent); rural_barons -= 10*(1-dissent); baron_relation -= 10; business_relation -= 5; tandist_relation -= 5;
+max-visits: 3
+
+With the Republic expanding beyond the Californian heartland in every direction, it comes with the acquisition of new lands to be parcelled out to people and interest groups. Making the choice to hand out lands to poor workers, small farmers with large families, and the semi-nomadic population of the NCR, we can both secure these new lands and the loyalty of swathes of our constituents.
+
+@land_grants_barons
+title: Land Grants
+subtitle: -1 budget, +4 resources - Make backroom deals with the Barons behind closed doors.
+choose-if: budget >= 1 and free_land >= 1 and judicial_reform >= 2
+unavailable-subtitle: [? if budget <= 2 : Requires 2 budget. ?] [? if free_land <= 0: We require more lands to hand out in the first place. ?] [? if judicial_reform < 2 : The judiciary would never allow this. ?]
+on-arrival: budget -= 1; resources += 4; free_land -= 1; frontier_dissent += 15; mutant_dissent += 10; intelligentsia_dissent += 10; rural_spring += 10*(1-dissent); rural_barons -= 10*(1-dissent); baron_relation -= 10; business_relation -= 5; tandist_relation -= 5;
+max-visits: 3
+
+We have decided to beging selling newly acquired lands to the brahmin magnates through shell deals and auctions in exchange for monetary gains to the party. Grant and the Frontier faction will not be happy.
+
+@land_grants_veterans
+title: Land Grants
+subtitle: -2 budget - With our focus on rewarding the military for their efforts and sacrifices, we've begun to parcel out land to veterans of 10 or more years.
+choose-if: budget >= 2 and free_land >= 1 and judicial_reform >= 2
+unavailable-subtitle: [? if budget <= 1 : Requires 1 budget. ?] [? if free_land <= 0: We require more lands to hand out in the first place. ?] [? if judicial_reform < 2 : The judiciary would never allow this. ?]
+see-if: army_deal_seen >= 1
+on-arrival: budget -= 1; free_land -= 1; urban_dissent -= 5; frontier_dissent -= 5; mutant_dissent += 5; military_spring += 10*(1-dissent); grizzly_relation += 10; tandist_relation -= 10; imperialism += 2;
+max-visits: 2
+
+This has proved immensely popular with the NCRA, but less so with the Tandists and the mutant faction of the party. But, rightly or wrongly, the policy has many critics. The Californian Tribune has called it the greatest step towards imperialism the Republic has taken, and that it will lead to unjust wars in the future for land to hand out to the NCR Army.
