@@ -2,7 +2,7 @@ title: Old World Blues: an old idea in new times
 new-page: true
 is-card: true
 card-image: img/portraits/MierendorffCarlo.jpg
-view-if: enclave_seen >= 1 and enclave_contacted >= 0
+view-if: enclave_seen >= 1 and enclave_contacted >= 1
 on-arrival: shuffle_leadership_timer = 0;
 tags: party_affairs
 frequency: 200
