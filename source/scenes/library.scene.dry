@@ -287,7 +287,7 @@ Overall dissent: [+ dissent_percent : dissent +]
 
 Many leftists are former members of the USPD (the left-wing, anti-war Independent Social Democratic Party), or are young radicals. Many are interested in closer cooperation with the KPD, and some support extraparliamentary action.
 
-Strength: [+ left_strength : strength +]
+Strength: [+ urban_strength : strength +]
 
 Dissent: [+ urban_dissent : dissent +]
 
@@ -303,9 +303,9 @@ Dissent: [+ mutant_dissent : dissent +]
 
 Many SPD members are also part of the ADGB, the federation of free trade unions. Their goal is economic reform and benefits for organized workers.
 
-Strength: [+ labor_strength : strength +]
+Strength: [+ frontier_strength : strength +]
 
-Dissent: [+ labor_dissent : dissent +]
+Dissent: [+ frontier_dissent : dissent +]
 
 **Intelligentsia**
 

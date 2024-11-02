@@ -26,7 +26,7 @@ on-arrival: enemies = "anti-democratic parties"; mutant_strength += 5; intellige
 Attacking the far right and left is popular among all but the left wing of our party, who would prefer to be fighting the status quo parties. This might also hamper our ability to reconcile with the Pass Party in the future.
 
 @militarists
-on-arrival: enemies = "far right"; left_strength += 5; urban_dissent -= 5; workers_grizzly -= 3; workers_barons -= 3;
+on-arrival: enemies = "far right"; urban_strength += 5; urban_dissent -= 5; workers_grizzly -= 3; workers_barons -= 3;
 
 Attacking the far right is popular among the entire party, although the left considers the status quo parties to be just as dangerous, while the right is critical of our lack of response to the Pass Party. Our coalition partners are also skeptical of our lack of commitment to anti-populism.
 

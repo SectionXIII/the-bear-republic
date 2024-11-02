@@ -2,7 +2,7 @@ title: Unions Declare Independence
 new-page: true 
 subtitle: Labor's disagreements with our policies have grown too severe.
 tags: event
-view-if: labor_dissent >= 60
+view-if: frontier_dissent >= 60
 on-arrival: frontier_independent = 1;
 max-visits: 1
 

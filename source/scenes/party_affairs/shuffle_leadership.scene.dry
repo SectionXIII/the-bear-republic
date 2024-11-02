@@ -117,7 +117,7 @@ Pfülf has been removed as an advisor. The Reformist faction disapproves.
 title: Remove Leipart
 view-if: leipart_advisor = 1
 tags: remove_advisor
-on-arrival: leipart_advisor = 0; labor_dissent += 5; n_advisors -= 1
+on-arrival: leipart_advisor = 0; frontier_dissent += 5; n_advisors -= 1
 go-to: rm_main
 
 Leipart has been removed as an advisor. The Labor faction disapproves.
@@ -323,7 +323,7 @@ subtitle: Paul Levi is a former KPD leader who was purged for criticizing Commun
 is-card: true
 card-image: img/portraits/LeviPaul.jpg
 view-if: levi_advisor = 0 and levi_dead = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: levi_advisor = 1; n_advisors += 1; left_strength += 5
+on-arrival: levi_advisor = 1; n_advisors += 1; urban_strength += 5
 go-to: advisor_menu
 tags: urban_advisor
 
@@ -335,7 +335,7 @@ subtitle: Toni Sender is an anti-war and womens' rights advocate, and Reichstag 
 is-card: true
 card-image: img/portraits/SenderToni.jpg
 view-if: sender_advisor = 0 and n_advisors < 3
-on-arrival: sender_advisor = 1; n_advisors += 1; left_strength += 5
+on-arrival: sender_advisor = 1; n_advisors += 1; urban_strength += 5
 go-to: advisor_menu
 tags: urban_advisor
 
@@ -347,7 +347,7 @@ subtitle: Kurt Rosenfeld is a lawyer, anti-militarist activist, and Reichstag me
 is-card: true
 card-image: img/portraits/RosenfeldKurt.jpg
 view-if: rosenfeld_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: rosenfeld_advisor = 1; n_advisors += 1; left_strength += 5
+on-arrival: rosenfeld_advisor = 1; n_advisors += 1; urban_strength += 5
 go-to: advisor_menu
 tags: urban_advisor
 
@@ -359,7 +359,7 @@ subtitle: Max Seydewitz is a former leader of the youth wing, current supporter 
 is-card: true
 card-image: img/portraits/SeydewitzMax.jpg
 view-if: seydewitz_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: seydewitz_advisor = 1; n_advisors += 1; left_strength += 5
+on-arrival: seydewitz_advisor = 1; n_advisors += 1; urban_strength += 5
 go-to: advisor_menu
 tags: urban_advisor
 
@@ -372,7 +372,7 @@ is-card: true
 card-image: img/portraits/Arcanestomper.png
 tags: urban_advisor
 view-if: arcanestomper_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: arcanestomper_advisor = 1; n_advisors += 1; left_strength += 5
+on-arrival: arcanestomper_advisor = 1; n_advisors += 1; urban_strength += 5
 go-to: advisor_menu
 
 Arcanestomper is now an advisor.
@@ -384,7 +384,7 @@ is-card: true
 card-image: img/portraits/Azel.png
 tags: urban_advisor
 view-if: azel_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: azel_advisor = 1; n_advisors += 1; left_strength += 5
+on-arrival: azel_advisor = 1; n_advisors += 1; urban_strength += 5
 go-to: advisor_menu
 
 Azel Amaling is now an advisor.
@@ -396,7 +396,7 @@ is-card: true
 card-image: img/portraits/TMR.png
 tags: urban_advisor
 view-if: tmr_advisor = 0 and n_advisors < 3 and urban_departure = 0
-on-arrival: tmr_advisor = 1; n_advisors += 1; left_strength += 5
+on-arrival: tmr_advisor = 1; n_advisors += 1; urban_strength += 5
 go-to: advisor_menu
 
 The Masked Reader is now an advisor.
@@ -411,7 +411,7 @@ is-card: true
 card-image: img/portraits/LeipartTheodor.jpg
 tags: frontier_advisor
 view-if: leipart_advisor = 0 and n_advisors < 3 and frontier_independent = 0
-on-arrival: leipart_advisor = 1; n_advisors += 1; labor_strength += 5
+on-arrival: leipart_advisor = 1; n_advisors += 1; frontier_strength += 5
 go-to: advisor_menu
 
 Theodor Leipart is now an advisor.
@@ -423,7 +423,7 @@ is-card: true
 card-image: img/portraits/AufhäuserSiegfried.jpg
 tags: frontier_advisor
 view-if: aufhauser_advisor = 0 and n_advisors < 3
-on-arrival: aufhauser_advisor = 1; n_advisors += 1; labor_strength += 5
+on-arrival: aufhauser_advisor = 1; n_advisors += 1; frontier_strength += 5
 go-to: advisor_menu
 
 Siegfried Aufhäuser is now an advisor.
@@ -435,7 +435,7 @@ is-card: true
 card-image: img/portraits/WoytinskyWladimir.jpg
 tags: frontier_advisor
 view-if: woytinsky_advisor = 0 and n_advisors < 3 and frontier_independent = 0
-on-arrival: woytinsky_advisor = 1; n_advisors += 1; labor_strength += 3
+on-arrival: woytinsky_advisor = 1; n_advisors += 1; frontier_strength += 3
 go-to: advisor_menu
 
 Wladimir Woytinsky is now an advisor.
@@ -447,7 +447,7 @@ is-card: true
 card-image: img/portraits/Spore.jpg
 tags: frontier_advisor
 view-if: spore_advisor = 0 and n_advisors < 3 and frontier_independent = 0
-on-arrival: spore_advisor = 1; n_advisors += 1; labor_strength += 3
+on-arrival: spore_advisor = 1; n_advisors += 1; frontier_strength += 3
 go-to: advisor_menu
 
 Wladimir Woytinsky is now an advisor.
@@ -459,7 +459,7 @@ is-card: true
 card-image: img/portraits/Delramur.jpg
 tags: frontier_advisor
 view-if: delramur_advisor = 0 and n_advisors < 3 and frontier_independent = 0
-on-arrival: delramur_advisor = 1; n_advisors += 1; labor_strength += 3
+on-arrival: delramur_advisor = 1; n_advisors += 1; frontier_strength += 3
 go-to: advisor_menu
 
 Delramur Gyldholm is now an advisor.

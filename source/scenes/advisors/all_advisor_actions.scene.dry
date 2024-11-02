@@ -75,7 +75,7 @@ title: Party Discipline
 subtitle: Reduce dissent across the party.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; urban_dissent -= 5; labor_dissent -= 10; mutant_dissent -= 10; intelligentsia_dissent -= 10; old_worlder_dissent -= 5
+on-arrival: advisor_action_timer = 6; urban_dissent -= 5; frontier_dissent -= 10; mutant_dissent -= 10; intelligentsia_dissent -= 10; old_worlder_dissent -= 5
 
 We have enforced party discipline to reduce dissent across all factions.
 
@@ -112,7 +112,7 @@ title: Addressing the economic crisis
 subtitle: Formulate a plan to rescue us from the economic crisis.
 choose-if: advisor_action_timer <= 0 and industrial_adopted = 0 and black_thursday_seen
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if industrial_adopted > 0 : We have already adopted the WTB-Plan. ?]
-on-arrival: advisor_action_timer = 6; industrialization_support += 2; mutant_dissent += 10; labor_strength += 1
+on-arrival: advisor_action_timer = 6; industrialization_support += 2; mutant_dissent += 10; frontier_strength += 1
 
 The WTB-Plan, standing for its primary supporters Woytinsky, Tarnow, and Baade, has been adopted as the unions' plan for getting us out of the depression. Baade canvasses in favor of this plan throughout the party.
 
@@ -121,7 +121,7 @@ title: Building the Left
 subtitle: Push the SPD to the left.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; left_strength += 6; urban_dissent -= 8; intelligentsia_dissent += 2
+on-arrival: advisor_action_timer = 6; urban_strength += 6; urban_dissent -= 8; intelligentsia_dissent += 2
 
 We have increased the strength of the left faction with the SPD.
 
@@ -130,7 +130,7 @@ title: Cooperation with the KPD
 subtitle: Push the party to be more friendly towards the KPD.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; left_strength += 5; pass_relation += 4*(1-dissent); intelligentsia_dissent += 2; communist_coalition += 1 if kpd_cooperation_seen <= 1; kpd_cooperation_seen += 1
+on-arrival: advisor_action_timer = 6; urban_strength += 5; pass_relation += 4*(1-dissent); intelligentsia_dissent += 2; communist_coalition += 1 if kpd_cooperation_seen <= 1; kpd_cooperation_seen += 1
 
 Through his work, Rosenfeld has defended individual KPD members; this should make some connections possible.
 
@@ -140,7 +140,7 @@ view-if: not constructive_vonc
 subtitle: Break our current toleration arrangement, and bring down the government via a no-confidence vote.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_toleration == 0 : The SPD is not currently in toleration. ?]
 choose-if: advisor_action_timer == 0 and spd_toleration
-on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; left_strength += 8; pro_republic -= 4; new_middle_spd -= 3; rural_spring -= 3; old_middle_spd -= 3; catholics_spd -= 3; intelligentsia_dissent += 8
+on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; urban_strength += 8; pro_republic -= 4; new_middle_spd -= 3; rural_spring -= 3; old_middle_spd -= 3; catholics_spd -= 3; intelligentsia_dissent += 8
 
 We have grown tired of the burdens of toleration, and have called a vote of no confidence in the current minority government.
 
@@ -176,7 +176,7 @@ title: Union-party coordination
 subtitle: Reduce dissent among the unions.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; labor_dissent -= 10;
+on-arrival: advisor_action_timer = 6; frontier_dissent -= 10;
 
 We have reduced tensions with the Labor faction.
 
@@ -225,7 +225,7 @@ title: Against Right and Left
 subtitle: As a Centrist, Hilferding seeks to steer a course between the party's factions.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 5; advisor_action_time = time; mutant_strength += 10; left_strength -= 5; labor_strength -= 5; old_worlder_strength -= 5; mutant_dissent -= 10
+on-arrival: advisor_action_timer = 5; advisor_action_time = time; mutant_strength += 10; urban_strength -= 5; frontier_strength -= 5; old_worlder_strength -= 5; mutant_dissent -= 10
 
 We have reduced the strength of the dissident factions in the party.
 
@@ -322,7 +322,7 @@ title: Organizing workers
 subtitle: Improve our standing among the workers.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); workers_spring += 3*(1-dissent) if industrial_adopted == 1; labor_strength += 2;
+on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); workers_spring += 3*(1-dissent) if industrial_adopted == 1; frontier_strength += 2;
 
 We have increased our organizing among the workers.
 
@@ -383,7 +383,7 @@ title: Left-Center Unity
 subtitle: Encourage cooperation between the left and center wings of the party.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; urban_dissent -= 10; labor_dissent -= 5; mutant_dissent -= 10; intelligentsia_dissent -= 10; old_worlder_dissent -= 5
+on-arrival: advisor_action_timer = 6; urban_dissent -= 10; frontier_dissent -= 5; mutant_dissent -= 10; intelligentsia_dissent -= 10; old_worlder_dissent -= 5
 
 We have reduced dissent among the party's factions.
 
@@ -400,7 +400,7 @@ title: Rally for class struggle
 subtitle: The core of socialism should be the struggle of the proletariat against the bourgeoisie.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); unemployed_spring += 3*(1-dissent); workers_spring += 4*(1-dissent) if nationalization_progress > 0; unemployed_spring += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; urban_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2
+on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); unemployed_spring += 3*(1-dissent); workers_spring += 4*(1-dissent) if nationalization_progress > 0; unemployed_spring += 3*(1-dissent) if nationalization_progress > 0; urban_strength += 5; urban_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
@@ -410,7 +410,7 @@ title: Support the Socialist Youth
 subtitle: We must end our reputation as a party for old men by increasing funding to the youth organizations. -1 resources
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if resources <= 0 : Not enough resources. ?]
 choose-if: advisor_action_timer = 0 and resources > 0
-on-arrival: advisor_action_timer = 6; resources -= 1; left_strength += 5; urban_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spring += 2*(1-dissent); new_middle_spd += 1;
+on-arrival: advisor_action_timer = 6; resources -= 1; urban_strength += 5; urban_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spring += 2*(1-dissent); new_middle_spd += 1;
 
 Seydewitz supports building up the Socialist Youth, which attracts support to the Left and increases the militancy of the Reichsbanner.
 
@@ -466,9 +466,9 @@ Vorwärts prints editorials in support of Old Worlder ideas.
 @plan
 title: Adopt the WTB-plan!
 subtitle: Convincing the rest of the party to support the WTB-plan.
-choose-if: advisor_action_timer <= 0 and industrial_adopted == 0 and industrialization_support >= 3 and black_thursday_seen and (not historical_mode or ((labor_strength >= mutant_strength) and (labor_strength >= left_strength) and (labor_strength >= intelligentsia_strength)))
+choose-if: advisor_action_timer <= 0 and industrial_adopted == 0 and industrialization_support >= 3 and black_thursday_seen and (not historical_mode or ((frontier_strength >= mutant_strength) and (frontier_strength >= urban_strength) and (frontier_strength >= intelligentsia_strength)))
 on-arrival: advisor_action_timer = 6;
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if industrial_adopted > 0 : We have already adopted the WTB-Plan. ?][? if industrialization_support < 3 : There is not enough support for the WTB-Plan. ?][? if (labor_strength < mutant_strength or labor_strength < left_strength or labor_strength < intelligentsia_strength) and historical_mode : The labor faction is not strong enough. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if black_thursday_seen == 0 : We are not currently in an economic crisis. ?][? if industrial_adopted > 0 : We have already adopted the WTB-Plan. ?][? if industrialization_support < 3 : There is not enough support for the WTB-Plan. ?][? if (frontier_strength < mutant_strength or frontier_strength < urban_strength or frontier_strength < intelligentsia_strength) and historical_mode : The labor faction is not strong enough. ?]
 go-to: crisis_program.plan_adopted
 
 @carry_out_policy
