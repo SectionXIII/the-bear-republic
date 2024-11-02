@@ -275,7 +275,7 @@ go-to: round2_menu
 
 There is no majority in this round. In the second round, any candidate who wins a plurality will win overall. What should we do?
 
-[? if hide_plurality or throckmorton_plurality : In order to consolidate the vote for the nationalists, and to prevent a Springer from becoming president, the Grizzlies are no longer running in the second round, and has switched their endorsement to Ruiz. ?]
+[? if hide_plurality or throckmorton_plurality : In order to consolidate the vote for the nationalists, and to prevent a mutant from becoming president, the Grizzlies are no longer running in the second round, and has switched their endorsement to Ruiz. ?]
 
 
 @round2_menu
