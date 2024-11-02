@@ -1,10 +1,10 @@
 title: Ghosts in Power Armor...
 subtitle: Hard to kill already dead men...
-view-if: year >= 2256 and month >= 6
+view-if: year >= 2253 and month >= 4
 max-visits: 1
 tags: event
 new-page: true
-face-image: # put the location of the image here
+face-image: img/EnclaveRumors.jpg
 
 = Ghosts in Power Armor...
 
