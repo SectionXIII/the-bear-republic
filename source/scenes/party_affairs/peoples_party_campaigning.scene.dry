@@ -17,7 +17,7 @@ The workers are still a key part of our constituency, and we must not alienate t
 
 @campaign_middle
 title: Campaign among the middle classes.
-on-arrival: old_middle_spd += 8*(1-dissent); new_middle_spd += 8*(1-dissent)
+on-arrival: military_spd += 8*(1-dissent); middle_spd += 8*(1-dissent)
 
 As a people's party, we represent the employees and small businesspeople of the middle class, and they are becoming receptive to our messages.
 
@@ -37,13 +37,13 @@ As a people's party, the urban poor are still a key part of our constituency.
 
 @campaign_women
 title: Campaign among women of all classes.
-on-arrival: workers_spring += 5*(1-dissent); new_middle_spd += 5*(1-dissent); old_middle_spd += 5*(1-dissent); rural_spring += 5*(1-dissent); unemployed_spring += 5*(1-dissent);
+on-arrival: workers_spring += 5*(1-dissent); middle_spd += 5*(1-dissent); military_spd += 5*(1-dissent); rural_spring += 5*(1-dissent); unemployed_spring += 5*(1-dissent);
 
 As a people's party, we represent women of all classes.
 
 @campaign_catholics
 title: Campaign among political Catholics.
-on-arrival: catholics_spd += 8*(1-dissent);
+on-arrival: follower_spd += 8*(1-dissent);
 
 Catholics have historically been tied to the Center Party, but there is no reason why our party cannot appeal to them. The Prussian Concordat in particular is a sign of our friendship with Catholicism.
 

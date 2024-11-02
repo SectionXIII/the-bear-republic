@@ -2,7 +2,7 @@ title: Dealing with Toleration
 new-page: true
 is-card: true
 card-image: img/portraits/BrüningHeinrich.jpg
-view-if: dealing_with_toleration_timer = 0 and spd_toleration and chancellor_party == "Z"
+view-if: dealing_with_toleration_timer = 0 and spring_toleration and chancellor_party == "Z"
 on-arrival: dealing_with_toleration_timer += 6; month_actions += 1
 tags: govt_affairs
 
@@ -26,7 +26,7 @@ Are we sure about this? A vote of no confidence would trigger new elections, and
 - @stay_course: No, we should stay the course.
 
 @vonc
-on-arrival: spring_in_government = 0; spd_toleration = 0; in_grand_coalition = 0; chancellor = "Brüning"; chancellor_party = "Z"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spd_toleration = 0; urban_strength += 8; pro_republic -= 5; new_middle_spd -= 3; rural_spring -= 3; old_middle_spd -= 3; catholics_spd -= 3; intelligentsia_dissent += 5; urban_dissent -= 5
+on-arrival: spring_in_government = 0; spring_toleration = 0; in_grand_coalition = 0; chancellor = "Brüning"; chancellor_party = "Z"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spring_toleration = 0; urban_strength += 8; pro_republic -= 5; middle_spd -= 3; rural_spring -= 3; military_spd -= 3; follower_spd -= 3; intelligentsia_dissent += 5; urban_dissent -= 5
 
 We have called for a vote of no confidence, and have brought down this government. Chancellor [+ chancellor +] currently rules as acting chancellor.
 
@@ -66,7 +66,7 @@ view-if: neo_republican_coalition >= 50
 choose-if: tandist_relation >= 50 and business_relation >= 30 and resources >= 2
 subtitle: We will need 2 resources to smooth out the process of forming the coalition.
 unavailable-subtitle: [? if tandist_relation < 50 : We do not have adequate relations with the Center Party. ?][? if business_relation < 30 : We do not have adequate relations with the DVP. ?] [? if resources < 2 : We do not have enough resources. ?]
-on-arrival: resources -= 2; spring_in_government = 1; in_grand_coalition = 1; spd_toleration = 0; urban_dissent += 6; intelligentsia_strength += 5; leverage = 20 if leverage >= 20
+on-arrival: resources -= 2; spring_in_government = 1; in_grand_coalition = 1; spring_toleration = 0; urban_dissent += 6; intelligentsia_strength += 5; leverage = 20 if leverage >= 20
 achievement: constitutional_coalition
 
 Our negotiations have succeeded, and the Center Party and DVP have agreed to form a new coalition government with us!

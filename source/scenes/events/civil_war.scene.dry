@@ -46,13 +46,13 @@ if (Q.pass_relation >= 60) {
 // general strike strength
 // maximum (given 25 labor strength) is 400
 // use normalized workers_spring instead of frontier_strength?
-Q.normalized_workers_spring = 100*Q.workers_spring/(Q.workers_spring + Q.workers_kpd + Q.workers_nsdap + Q.workers_other + Q.workers_barons + Q.workers_z);
-Q.normalized_workers_kpd = 100*Q.workers_kpd/(Q.workers_spring + Q.workers_kpd + Q.workers_nsdap + Q.workers_other + Q.workers_barons + Q.workers_z);
+Q.normalized_workers_spring = 100*Q.workers_spring/(Q.workers_spring + Q.workers_pass + Q.workers_nsdap + Q.workers_other + Q.workers_barons + Q.workers_z);
+Q.normalized_workers_pass = 100*Q.workers_pass/(Q.workers_spring + Q.workers_pass + Q.workers_nsdap + Q.workers_other + Q.workers_barons + Q.workers_z);
 Q.normalized_workers_total = Q.normalized_workers_spring;
 if (Q.pass_relation >= 60) {
-    Q.normalized_workers_total += Q.normalized_workers_kpd;
+    Q.normalized_workers_total += Q.normalized_workers_pass;
 } else if (Q.pass_relation >= 45) {
-    Q.normalized_workers_total += Q.normalized_workers_kpd*0.5;
+    Q.normalized_workers_total += Q.normalized_workers_pass*0.5;
 }
 Q.total_power += (2 - Q.frontier_dissent/100)*Q.normalized_workers_total*(2 - Q.unemployed/100)*2.5;
 console.log("Supporter strength:", Q.total_power);

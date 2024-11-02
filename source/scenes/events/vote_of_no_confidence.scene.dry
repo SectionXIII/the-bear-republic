@@ -34,7 +34,7 @@ Fine. We no longer control the government of Prussia. The vote has been called o
 
 @austerity
 view-if: welfare >= 0
-on-arrival: coalition_dissent = 0; workers_spring -= 10; umemployed_spd -= 10; workers_kpd += 7; workers_nsdap += 3; unemployed_kpd += 5; unemployed_nsdap += 5; urban_dissent += 15; mutant_dissent += 10; frontier_dissent += 15; intelligentsia_dissent += 5; welfare -= 2; budget += 1; unemployed += 3; kpd_coalition_dissent += 1; pass_relation -= 10 if in_popular_front
+on-arrival: coalition_dissent = 0; workers_spring -= 10; umemployed_spd -= 10; workers_pass += 7; workers_nsdap += 3; unemployed_pass += 5; unemployed_grizzly += 5; urban_dissent += 15; mutant_dissent += 10; frontier_dissent += 15; intelligentsia_dissent += 5; welfare -= 2; budget += 1; unemployed += 3; kpd_coalition_dissent += 1; pass_relation -= 10 if in_popular_front
 
 Fine. We enacted a massive austerity program to cut welfare, in order to maintain the stability of our coalition. The vote has been called off.
 
@@ -58,7 +58,7 @@ If the Communists abstain, then we essentially can maintain a minority governmen
 - @let_it_happen: Never mind. Let the vote happen.
 
 @support_kpd_2
-on-arrival: communist_coalition += 1; workers_kpd += 3; pass_relation += 5
+on-arrival: communist_coalition += 1; workers_pass += 3; pass_relation += 5
 go-to: support_kpd_weimar if in_republican_coalition; support_kpd_grand if in_grand_coalition
 
 # TODO: this can form an infinite loop
@@ -79,7 +79,7 @@ The KPD is not interested in a "toleration" arrangement; they will only support 
 
 @let_it_happen
 call: set_next_election_time
-on-arrival: time_to_election = 3; spring_in_government = 0; in_grand_coalition = 0; in_republican_coalition = 0; in_popular_front = 0; spd_toleration = 0; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "I"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DDP"; finance_minister_party = "DVP"; agriculture_minister_party = "Z"; labor_minister = "Stegerwald"; interior_minister = "Wirth"; finance_minister = "Moldenhauer"; economic_minister = "Curtius"; justice_minister = "Koch-Weser"; foreign_minister = "Stresemann"; agriculture_minister = "Dietrich"; reichswehr_minister = "Groener";  coalition_dissent = 0; pro_republic -= 5; old_middle_spd -= 3; new_middle_spd -= 2; workers_spring -= 3 if pro_republic < 50; workers_spring -= 4 if pro_republic < 40; old_middle_nsdap += 4 if pro_republic < 50; new_middle_nsdap += 3 if pro_republic < 50
+on-arrival: time_to_election = 3; spring_in_government = 0; in_grand_coalition = 0; in_republican_coalition = 0; in_popular_front = 0; spring_toleration = 0; foreign_minister_party = "DVP"; interior_minister_party = "Z"; justice_minister_party = "I"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DDP"; finance_minister_party = "DVP"; agriculture_minister_party = "Z"; labor_minister = "Stegerwald"; interior_minister = "Wirth"; finance_minister = "Moldenhauer"; economic_minister = "Curtius"; justice_minister = "Koch-Weser"; foreign_minister = "Stresemann"; agriculture_minister = "Dietrich"; reichswehr_minister = "Groener";  coalition_dissent = 0; pro_republic -= 5; military_spd -= 3; middle_spd -= 2; workers_spring -= 3 if pro_republic < 50; workers_spring -= 4 if pro_republic < 40; old_middle_nsdap += 4 if pro_republic < 50; new_middle_nsdap += 3 if pro_republic < 50
 go-to: let_it_happen_hindenburg if president != "Braun"; let_it_happen_braun if president == "Braun"
 
 @let_it_happen_hindenburg

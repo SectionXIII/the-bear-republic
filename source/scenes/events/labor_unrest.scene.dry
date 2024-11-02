@@ -21,12 +21,12 @@ Supporting labor is always popular in the SPD, although many of our coalition pa
 
 @support_employers
 subtitle: This will alienate the workers.
-on-arrival: frontier_dissent += 8; urban_dissent += 8; workers_spring -= 6; coalition_dissent -= 1; business_relation += 5; tandist_relation += 5; coalition_dissent -= 1; workers_kpd += 5; kpd_coalition_dissent += 1; pass_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8
+on-arrival: frontier_dissent += 8; urban_dissent += 8; workers_spring -= 6; coalition_dissent -= 1; business_relation += 5; tandist_relation += 5; coalition_dissent -= 1; workers_pass += 5; kpd_coalition_dissent += 1; pass_relation -= 8; capital_strike_progress -= 1 if capital_strike_progress > 1; capital_strike_progress -= 1 if capital_strike_progress > 8
 
 Even though most workers grudgingly accept the our intervention, there is deep bitterness developing against the SPD, especially among the more radical workers. The Communists stand to gain.
 
 @balance
 subtitle: Both sides need to share the pain in the current crisis.
-on-arrival: frontier_dissent += 4; workers_spring -= 2; kpd_coalition_dissent += 1; pass_relation -= 5; workers_kpd += 2
+on-arrival: frontier_dissent += 4; workers_spring -= 2; kpd_coalition_dissent += 1; pass_relation -= 5; workers_pass += 2
 
 Many workers are unhappy at our compromises, but they will learn to accept that we are all in a shared struggle against economic forces. This is perhaps the best we could do given the present circumstances.
