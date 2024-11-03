@@ -1155,8 +1155,8 @@ We can pick from any number of ministries. Controlling a ministry allows us to d
 - #drop_mins_2253
 
 @labor
-title: Labor Ministry
-subtitle: Taking the Labor Ministry is expected of us.
+title: Labor Department
+subtitle: Taking the Labor Department is expected of us.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 5
@@ -1167,20 +1167,32 @@ go-to: ministries
 Rudolf Wissell of the Long Spring has been appointed labor minister.
 
 @interior
-title: Interior Ministry
-subtitle: Taking the Interior Ministry is expected of us. The Interior Ministry controls domestic security.
+title: Interior Department
+subtitle: The Interior Department controls domestic security.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
-choose-if: leverage >= 5
+choose-if: leverage >= 10
 view-if: interior_minister_party != "Long Spring"
-on-arrival: leverage -= 5; interior_minister_party = "Long Spring"; interior_minister = "Severing"
+on-arrival: leverage -= 10; interior_minister_party = "Long Spring"; interior_minister = "Severing"
 go-to: ministries
 
 Carl Severing of the Long Spring has been appointed Interior Minister.
 
+@infrastructure
+title: Department of Infrastructure
+subtitle: Taking the Department of Infrastructure is expected of us. The Infrastructure Department controls transportation security and construction.
+unavailable-subtitle: We do not have enough leverage.
+tags: mins_2253
+choose-if: leverage >= 5
+view-if: infrastructure_minister_party != "Long Spring"
+on-arrival: leverage -= 5; infrastructure_minister_party = "Long Spring"; infrastructure_minister = "Hide"
+go-to: ministries
+
+Solomon Hide of the Long Spring has been appointed Secretary of Infrastructure.
+
 @finance
-title: Finance Ministry
-subtitle: The Finance Ministry controls the government budget and taxes.
+title: Department of the Treasury
+subtitle: The Treasury Department controls the government budget and taxes.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10 
@@ -1191,8 +1203,8 @@ go-to: ministries
 Rudolf Hilferding of the Long Spring has been appointed Finance Minister.
 
 @economic
-title: Economic Ministry
-subtitle: The Economic Ministry controls broader economic policy.
+title: Department of Economic Planning
+subtitle: The Economic Department controls broader economic policy.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10 
@@ -1203,8 +1215,8 @@ go-to: ministries
 Robert Schmidt of the Long Spring has been appointed Economic Minister.
 
 @justice
-title: Justice Ministry
-subtitle: The Justice Ministry controls the courts.
+title: Department of Justice
+subtitle: The Justice Department controls the courts.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10 
@@ -1215,8 +1227,8 @@ go-to: ministries
 Gustav Radbruch of the Long Spring has been appointed Justice Minister.
 
 @foreign
-title: Foreign Ministry
-subtitle: This is usually the domain of Gustav Stresemann of the Business.
+title: Department of Foreign Affairs.
+subtitle: This is usually the domain of the Tandists.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10 
@@ -1228,28 +1240,28 @@ Rudolf Breitscheid of the Long Spring has been appointed Foreign Minister.
 
 
 @agriculture
-title: Agricultural Ministry
-subtitle: This is not our usual domain.
+title: Department of Agriculture
+subtitle: Taking the Agricultural Department is expected of us. The Agricultural Department controls staple food prices, land grants, and regulations on water.
 unavailable-subtitle: We do not have enough leverage.
-choose-if: leverage >= 10 
+choose-if: leverage >= 5 
 view-if: agriculture_minister_party != "Long Spring"
-on-arrival: leverage -= 10; agriculture_minister_party = "Long Spring"; agriculture_minister = "Baade"
+on-arrival: leverage -= 5; agriculture_minister_party = "Long Spring"; agriculture_minister = "Stillman"
 go-to: ministries
 tags: mins_2253
 
-Fritz Baade of the Long Spring has been appointed Agriculture Minister.
+Jay Stillman of the Long Spring has been appointed Secretary of Agriculture.
 
 @reichswehr
-title: Reichswehr Ministry
-subtitle: The Ministry responsible for the armed forces is not typically our domain; General Groener and the bourgeois-conservatives will be displeased.
+title: Department of Defence
+subtitle: The Ministry responsible for the armed forces is not typically our domain; General Tanner and the Grizzly party will not be pleased.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 15 
 view-if: reichswehr_minister_party != "Long Spring"
-on-arrival: leverage -= 15; reichswehr_minister_party = "Long Spring"; reichswehr_minister = "Leber"
+on-arrival: leverage -= 15; reichswehr_minister_party = "Long Spring"; reichswehr_minister = "Grant"
 go-to: ministries
 
-Julius Leber of the Long Spring has been appointed Reichswehr Minister.
+George Grant of the Long Spring has been appointed Secretary of Defence.
 
 
 
