@@ -478,8 +478,8 @@ Q.bos_relations = 0;
 
 // The Damage the nation has taken from war and bandit.... 0 - 100. 0 = fine, 100 = NCR from the Fallout TV Show
 
-Q.devastation = 0;
-
+Q.devastation_frontier = 0;
+Q.devastation_heartland = 0;
 
 Q.electoral_threshold = 0;
 
