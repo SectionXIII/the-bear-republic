@@ -20,7 +20,7 @@ How do we reduce tensions with the coalition?
 
 
 @promise_cuts
-on-arrival: workers_spring -= 5; unemployed_spring -= 6; workers_pass += 5; unemployed_pass += 3; unemployed_grizzly += 3; urban_dissent += 10; frontier_dissent += 5; welfare -= 1; budget += 1; coalition_dissent = 0
+on-arrival: workers_spring -= 5; unemployed_spring -= 6; workers_pass += 5; unemployed_pass += 6; unemployed_grizzly += 3; urban_dissent += 10; frontier_dissent += 5; welfare -= 1; budget += 1; coalition_dissent -= 1
 
 Fine. By cutting welfare, we have reduced dissent within the coalition.
 
@@ -31,7 +31,7 @@ unavailable-subtitle: Not enough resources (need 2).
 choose-if: resources >= 2
 on-arrival: resources -= 2; coalition_dissent -= 1
 
-By transferring campaign funds to our coalition partners, we can make our policies more acceptable to them. Some would call this corruption, but perhaps it is necessary to save democracy.
+By transferring campaign funds to our coalition partners, we can make our policies more acceptable to them. Some would call this corruption, but perhaps it is necessary to save California.
 
 @no_change
 
@@ -39,7 +39,7 @@ No. We will not do this.
 
 @bring_down
 subtitle: Bring down this government before our opponents do.
-on-arrival: spring_in_government = 0; in_grand_coalition = 0; in_republican_coalition = 0; chancellor = "Brüning"; chancellor_party = "Z"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spring_toleration = 0; urban_strength += 8; pro_republic -= 5; middle_spd -= 3; rural_spring -= 3; military_spd -= 3; follower_spd -= 3; intelligentsia_dissent += 5
+on-arrival: spring_in_government = 0; in_grand_coalition = 0; in_republican_coalition = 0; chancellor = "de la Cruz"; chancellor_party = "Tandist"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spring_toleration = 0; urban_strength += 8; pro_republic -= 5; middle_spd -= 3; rural_spring -= 3; military_spd -= 3; follower_spd -= 3; intelligentsia_dissent += 5
 
 We have called for a vote of no confidence in ourselves, and have brought down this government. Chancellor [+ chancellor +] currently rules as acting chancellor.
 
