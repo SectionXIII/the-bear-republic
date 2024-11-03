@@ -476,10 +476,9 @@ Q.bos_progress = 0;
 Q.bos_desperation = 0;
 Q.bos_relations = 0;
 
-// The Damage the nation has taken from war and bandit rural_tandist
+// The Damage the nation has taken from war and bandit.... 0 - 100. 0 = fine, 100 = NCR from the Fallout TV Show
 
 Q.devastation = 0;
-
 
 
 Q.electoral_threshold = 0;
