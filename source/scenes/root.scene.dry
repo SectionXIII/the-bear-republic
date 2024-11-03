@@ -467,7 +467,7 @@ Q.xenophobia = 0;
 // Mutant rights and scare scale
 Q.mutant_rights = 0;
 Q.mutant_acceptance = 0;
-Q.mutant_scare = 0;
+Q.mutant_scare = 1;
 
 
 // Brotherhood of Steel Variables
