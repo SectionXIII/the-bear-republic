@@ -2,7 +2,7 @@ title: Investigating Domestic Enemies
 new-page: true
 is-card: true
 on-arrival: domestic_enemies_timer = 6; month_actions += 1
-view-if: spring_in_government = 1 and interior_minister_party = "SPD" and domestic_enemies_timer = 0
+view-if: spring_in_government = 1 and interior_minister_party = "Long Spring" and domestic_enemies_timer = 0
 card-image: img/portraits/SeveringCarl.jpg
 # tags: govt_affairs
 
@@ -10,9 +10,8 @@ card-image: img/portraits/SeveringCarl.jpg
 
 = Investigating Domestic Enemies
 
-As we have control over the Interior Ministry, we can direct police and intelligence services to investigate internal enemies. We can proscribe various organizations.
+As we have control over the Department of the Interior, we can direct police and intelligence services to investigate internal enemies. We can proscribe various organizations.
 
-- @deport_hitler
 - @ban_sa: Ban the SA.
 - @unban_sa: Unban the SA.
 - @persecute_sa
