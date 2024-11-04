@@ -1161,10 +1161,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 5
 view-if: labor_minister_party != "Long Spring"
-on-arrival: leverage -= 5; labor_minister_party = "Long Spring"; labor_minister = "Wissell"
+on-arrival: leverage -= 5; labor_minister_party = "Long Spring"; labor_minister = "Jess"
 go-to: ministries
 
-Rudolf Wissell of the Long Spring has been appointed labor minister.
+James Jess of the Long Spring has been appointed Secretary of Labor.
 
 @interior
 title: Interior Department
@@ -1173,10 +1173,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10
 view-if: interior_minister_party != "Long Spring"
-on-arrival: leverage -= 10; interior_minister_party = "Long Spring"; interior_minister = "Severing"
+on-arrival: leverage -= 10; interior_minister_party = "Long Spring"; interior_minister = "Marcu"
 go-to: ministries
 
-Carl Severing of the Long Spring has been appointed Interior Minister.
+Marcus of the Long Spring has been appointed Secretary of the Interior.
 
 @infrastructure
 title: Department of Infrastructure
@@ -1197,10 +1197,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10 
 view-if: finance_minister_party != "Long Spring"
-on-arrival: leverage -= 10; finance_minister_party = "Long Spring"; finance_minister = "Hilferding"
+on-arrival: leverage -= 10; finance_minister_party = "Long Spring"; finance_minister = "Palmer"
 go-to: ministries
 
-Rudolf Hilferding of the Long Spring has been appointed Finance Minister.
+Isla Palmer of the Long Spring has been appointed Secretary of Finance.
 
 @economic
 title: Department of Economic Planning
@@ -1209,10 +1209,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10 
 view-if: economic_minister_party != "Long Spring"
-on-arrival: leverage -= 10; economic_minister_party = "Long Spring"; economic_minister = "Schmidt"
+on-arrival: leverage -= 10; economic_minister_party = "Long Spring"; economic_minister = "Irwin"
 go-to: ministries
 
-Robert Schmidt of the Long Spring has been appointed Economic Minister.
+Bobby Irwin of the Long Spring has been appointed Secretary of Economic Planning.
 
 @justice
 title: Department of Justice
@@ -1221,10 +1221,10 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10 
 view-if: justice_minister_party != "Long Spring"
-on-arrival: leverage -= 10; justice_minister_party = "Long Spring"; justice_minister = "Radbruch"
+on-arrival: leverage -= 10; justice_minister_party = "Long Spring"; justice_minister = "Westwood"
 go-to: ministries
 
-Gustav Radbruch of the Long Spring has been appointed Justice Minister.
+Claire Westwood of the Long Spring has been appointed Secretary of Justice.
 
 @foreign
 title: Department of Foreign Affairs.
@@ -1236,7 +1236,7 @@ view-if: foreign_minister_party != "Long Spring"
 on-arrival: leverage -= 10; foreign_minister_party = "Long Spring"; foreign_minister = "Breitscheid"
 go-to: ministries
 
-Rudolf Breitscheid of the Long Spring has been appointed Foreign Minister.
+Rudolf Breitscheid of the Long Spring has been appointed Secretary of Foreign Affairs.
 
 
 @agriculture
@@ -1253,7 +1253,7 @@ Jay Stillman of the Long Spring has been appointed Secretary of Agriculture.
 
 @reichswehr
 title: Department of Defence
-subtitle: The Ministry responsible for the armed forces is not typically our domain; General Tanner and the Grizzly party will not be pleased.
+subtitle: The Department responsible for the armed forces is not typically our domain; General Tanner and the Grizzly party will not be pleased.
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 15 
@@ -1273,57 +1273,64 @@ tags: mins_2253
 This coalition arrangement is tolerable to all.
 
 @drop_labor
-title: Drop the Labor Ministry.
+title: Drop the Department of Labor.
 view-if: labor_minister_party = "Long Spring"
 on-arrival: labor_minister_party = "Tandist"; labor_minister = "Stegerwald"; leverage += 5;
 tags: drop_mins_2253
 go-to: ministries
 
 @drop_interior
-title: Drop the Interior Ministry.
+title: Drop the Department of the Interior
 view-if: interior_minister_party = "Long Spring"
-on-arrival: interior_minister_party = "Tandist"; interior_minister = "Wirth"; leverage += 5;
+on-arrival: interior_minister_party = "Tandist"; interior_minister = "Jacobs"; leverage += 5;
+tags: drop_mins_2253
+go-to: ministries
+
+@drop_infrastructure
+title: Drop the Department of Infrastructure
+view-if: infrastructure_minister_party = "Long Spring"
+on-arrival: infrastructuer_minister_party = "Business"; interior_minister = "Kaiser"; leverage += 5;
 tags: drop_mins_2253
 go-to: ministries
 
 @drop_finance
-title: Drop the Finance Ministry.
+title: Drop the Department of the Treasury.
 view-if: finance_minister_party = "Long Spring"
 on-arrival: finance_minister_party = "Business"; finance_minister = "Moldenhauer"; leverage += 10; finance_minister_party = "Progressive" if in_republican_coalition or in_popular_front;
 tags: drop_mins_2253
 go-to: ministries
 
 @drop_economic
-title: Drop the Economic Ministry.
+title: Drop the Department of Economic Planning.
 view-if: economic_minister_party = "Long Spring"
 on-arrival: economic_minister_party = "Business"; economic_minister = "Curtius"; leverage += 10; economic_minister_party = "Tandist" if in_republican_coalition or in_popular_front;
 tags: drop_mins_2253
 go-to: ministries
 
 @drop_justice
-title: Drop the Justice Ministry.
+title: Drop the Department of Justice.
 view-if: justice_minister_party = "Long Spring"
 on-arrival: justice_minister_party = "Progressive"; justice_minister = "Koch-Weser"; leverage += 10;
 tags: drop_mins_2253
 go-to: ministries
 
 @drop_foreign
-title: Drop the Foreign Ministry.
+title: Drop the Department of Foreign Affairs.
 view-if: foreign_minister_party = "Long Spring"
 on-arrival: foreign_minister_party = "Business"; foreign_minister = "Stresemann"; foreign_minister = "Curtius" if streseman_dead; leverage += 10; foreign_minister_party = "Tandist" if in_republican_coalition or in_popular_front;
 tags: drop_mins_2253
 go-to: ministries
 
 @drop_agriculture
-title: Drop the Agriculture Ministry.
+title: Drop the Department of Agriculture.
 view-if: agriculture_minister_party = "Long Spring"
-on-arrival: agriculture_minister_party = "Progressive"; agriculture_minister = "Dietrich"; leverage += 10;
+on-arrival: agriculture_minister_party = "Progressive"; agriculture_minister = "Dietrich"; leverage += 5;
 tags: drop_mins_2253
 go-to: ministries
 
 @drop_reichswehr
-title: Drop the Reichswehr Ministry.
+title: Drop the Department of Defense.
 view-if: reichswehr_minister_party = "Long Spring"
-on-arrival: reichswehr_minister_party = "I"; reichswehr_minister = "Groener"; leverage += 15;
+on-arrival: reichswehr_minister_party = "Grizzly"; reichswehr_minister = "Tanner"; leverage += 15;
 tags: drop_mins_2253
 go-to: ministries
