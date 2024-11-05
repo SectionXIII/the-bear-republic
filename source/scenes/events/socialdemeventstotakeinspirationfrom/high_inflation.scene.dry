@@ -1,10 +1,10 @@
-title: High Inflation
-subtitle: Workers are seeing their purchasing power decline.
-view-if: inflation >= 8 and high_inflation_timer = 0 and spring_in_government
-new-page: true
-max-visits: 1
-on-arrival: capital_strike_progress += 1; workers_spring -= 4; military_spd -= 6; middle_spd -= 6; rural_spring -= 5; unemployed_spring -= 4; high_inflation_timer = 6; pro_republic -= 5
-tags: event
+#  title: High Inflation
+#  subtitle: Workers are seeing their purchasing power decline.
+#  view-if: inflation >= 8 and high_inflation_timer = 0 and spring_in_government
+#  new-page: true
+#  max-visits: 1
+#  on-arrival: capital_strike_progress += 1; workers_spring -= 4; military_spd -= 6; middle_spd -= 6; rural_spring -= 5; unemployed_spring -= 4; high_inflation_timer = 6; pro_republic -= 5
+#  tags: event
 
 = High Inflation
 

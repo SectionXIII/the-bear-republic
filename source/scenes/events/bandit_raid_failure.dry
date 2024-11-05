@@ -1,0 +1,10 @@
+title: Bandit Raid Failure
+subtitle: M'lord, bandits have killed everyone!
+tags: event
+priority: -3
+max-visits: 1
+on-arrival:
+
+
+
+M'lord, bandits have killed everyone!
