@@ -22,18 +22,18 @@ Fiscal policy involves issues of taxation and budget.
 subtitle: This does not change overall revenue.
 on-arrival: workers_spring += 6*(1-dissent); military_spring -= 3; middle_spring -= 3; coalition_dissent += 1 if in_grand_coalition; business_relation -= 4; finance_goal_completed += 1; upper_tax_rates += 1; lower_tax_rates -= 1; capital_strike_progress += 1; capital_strike_progress += 1 if upper_tax_rates > 1; capital_strike_progress += 1 if upper_tax_rates > 3;
 
-Making the tax system more progressive is popular among our base, but it upsets our bourgeois coalition partners, as well as our minimal number of bourgeois voters.
+Making the tax system more progressive is popular among our base, but it upsets our business coalition partners, as well as our minimal number of middle class voters.
 
 @raise_rich
 subtitle: +2 budget
 on-arrival: upper_tax_rates += 1; capital_strike_progress += 1; capital_strike_progress += 1 if upper_tax_rates > 1; capital_strike_progress += 1 if upper_tax_rates > 3; workers_spring += 4*(1-dissent); military_spring -= 4; middle_spring -= 4; coalition_dissent += 1 if in_grand_coalition; coalition_dissent += 1 if capital_strike_progress >= 5; budget += 2; business_relation -= 4; unemployed += 1; finance_goal_completed += 1; inflation -= 0.6
 
-Raising taxes on the rich is popular among our base, but it alienates the bourgeoisie. Increasing taxes also decreases economic demand, which may lead to more unemployment.
+Raising taxes on the rich is popular among our base, but it alienates the richer merchant and business interests. Increasing taxes also decreases economic demand, which may lead to more unemployment.
 
 @cut_overall
 subtitle: -2 budget
 choose-if: budget >= 2
-on-arrival: budget -= 2; upper_tax_rates -= 1; lower_tax_rates -= 1; middle_spring += 5*(1-dissent); military_spring += 4*(1-dissent); workers_spring += 3*(1-dissent); business_relation += 5*(1-dissent); tandist_relation += 5*(1-dissent); unemployed -= 1 if unemployed >= 5; capital_strike_progress -= 1 if upper_tax_rates < 0; inflation += 0.4
+on-arrival: budget -= 2; upper_tax_rates -= 1; lower_tax_rates -= 1; middle_spring += 5*(1-dissent); military_spring += 4*(1-dissent); workers_spring += 3*(1-dissent); business_relation += 5*(1-dissent); tandist_relation -= 5*(1-dissent); unemployed -= 1 if unemployed >= 5; capital_strike_progress -= 1 if upper_tax_rates < 0; inflation += 0.4
 
 Cutting taxes benefits most the rich and middle-class, who pay more taxes than the working class. Our coalition partners are happy at our orthodox economic course.
 
@@ -46,6 +46,6 @@ Raising taxes hurts our support among all those who pay taxes. [? if in_grand_co
 @regressive
 title: Lower taxes on the rich, while increasing consumption taxes (which affect the working class more).
 subtitle: This does not change overall revenue.
-on-arrival: workers_spring -= 6; middle_spring += 5*(1-dissent); military_spring += 4*(1-dissent); business_relation += 5; tandist_relation += 4; coalition_dissent -= 1 if in_grand_coalition and coalition_dissent > 0; kpd_coalition_dissent += 1; upper_tax_rates -= 1; lower_tax_rates += 1; workers_spring -= 5 if lower_tax_rates >= 2; capital_strike_progress -= 1 if upper_tax_rates < 0
+on-arrival: workers_spring -= 6; middle_spring += 5*(1-dissent); military_spring += 4*(1-dissent); business_relation += 5; tandist_right_relation += 4; coalition_dissent -= 1 if in_grand_coalition and coalition_dissent > 0; kpd_coalition_dissent += 1; upper_tax_rates -= 1; lower_tax_rates += 1; workers_spring -= 5 if lower_tax_rates >= 2; capital_strike_progress -= 1 if upper_tax_rates < 0
 
 Our regressive taxation policy benefits the rich while hurting the poor and working-class. Our bourgeois coalition partners approve of this orthodox economic course.
