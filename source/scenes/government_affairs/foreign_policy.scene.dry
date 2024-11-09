@@ -88,7 +88,7 @@ Immediately, France and other neighboring countries lodge their protests. The lo
 title: The Nevadans agree to join the Republic!
 subtitle: Our negotiations have been successful.
 view-if: admission_negotiation >= 3 and nevada_relations >= 4
-on-arrival: nevada_relations += 1; economy += 1; trade += 1; coalition_dissent -= 1 if coalition_dissent > 0; workers += 3; middle += 2; rural +=2; workers_spring += 4*(1-dissent); military_spring += 5*(1-dissent); middle_spring += 5*(1-dissent); rural_spring += 5*(1-dissent);
+on-arrival: nevada_relations += 1; economic_health += 1; trade += 1; coalition_dissent -= 1 if coalition_dissent > 0; workers += 3; middle += 2; rural +=2; workers_spring += 4*(1-dissent); military_spring += 5*(1-dissent); middle_spring += 5*(1-dissent); rural_spring += 5*(1-dissent);
 max-visits: 1
 
 Finally, after years of negotiations and treaties, New Reno and Vault City have both agreed to join the NCR as full states in their own right, each bringing their hinterlands into the fold as well. Their entry into the fold of the Bear has created an influx of opportunity as investors, ranchers, and settlers rush to stake their claims or invest in the new land now opened up out east.

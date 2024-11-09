@@ -463,10 +463,10 @@ Q.upper_tax_rates = 0;
 Q.free_land = 0;
 Q.imperialism = 0;
 Q.xenophobia = 0;
+Q.technology_level = 0;
 
 // Economy variables
-
-Q.economy = 0;
+Q.economic_health = 0;
 Q.trade = 0;
 Q.gold_reserves = 0;
 
