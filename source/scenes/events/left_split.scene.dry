@@ -1,9 +1,9 @@
-title: Left-wing Split
+title: Stillman's Split
 new-page: true 
-subtitle: The Left's disagreements with our policies have grown too severe.
+subtitle: The Urbanite's disagreements with our policies have grown too severe.
 tags: event
 view-if: urban_dissent >= 60
-on-arrival: urban_departure = 1; urban_strength = urban_strength/2; workers_spring -= 5; unemployed_spring -= 5; workers_other += 5; workers_pass += 3; n_advisors -= 1 if levi_advisor == 1; levi_advisor = 0; rb_strength -= 300; pass_relation -= 5; rb_militancy -= 0.05 if rb_militancy >= 0.1; n_advisors -= 1 if seydewitz_advisor == 1; seydewitz_advisor = 0; n_advisors -= 1 if rosenfeld_advisor == 1; rosenfeld_advisor = 0;
+on-arrival: urban_departure = 1; urban_strength = urban_strength/2; workers_spring -= 5; unemployed_spring -= 5; workers_other += 5; workers_pass += 3; n_advisors -= 1 if levi_advisor == 1; levi_advisor = 0; rb_strength -= 300; pass_relation -= 5; rb_militancy -= 0.05 if rb_militancy >= 0.1;
 max-visits: 1
 
 = Left-wing members split
