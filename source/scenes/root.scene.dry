@@ -429,8 +429,10 @@ Q.wtb_implemented = 0;
 // Relations with the Western countries (France, UK).
 Q.nevada_relations = 0;
 
-// Relations with the Eastern countries (Poland, Czechoslovakia)
+// Relations with the Nevada thunderdome
+Q.east_explored = 0;
 Q.east_relation = 0;
+
 
 // Relations with the Shi
 Q.shi_relation = 0;
@@ -478,13 +480,11 @@ Q.mutant_scare = 1;
 
 
 // Brotherhood of Steel Variables
-
 Q.bos_progress = 0;
 Q.bos_desperation = 0;
 Q.bos_relation = 0;
 
 // The Damage the nation has taken from war and bandit.... 0 - 100. 0 = fine, 100 = NCR from the Fallout TV Show
-
 Q.devastation_frontier = 0;
 Q.devastation_heartland = 0;
 

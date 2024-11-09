@@ -6,8 +6,8 @@ view-if: (year = 2261 and month >= 12) or year >= 2262
 max-visits: 1
 on-arrival:
 
-It is the end of 2261, and the NSDAP still has not taken power. It appears that we have already passed the worst of the years of crisis. We are turning the corner on the Great Depression, and Nazism's days are numbered.
+It is the end of 2261, and the NCR has not fallen into disrepair, corruption, or civil war. It's territories expand, it's diplomacy reaches ever further, and it's economy grows at a rapid pace. The coming century will be a Californian century, carefully guided by the firm hand of the Long Spring at it's tiller.
 
-Perhaps the New California Republic will finally enter into a new era of genuine peace...
+The world had finally recovered, and war... war could change.
 
 - @game_over: Game over.

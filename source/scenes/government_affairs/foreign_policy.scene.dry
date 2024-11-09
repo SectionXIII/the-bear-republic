@@ -47,7 +47,7 @@ The Shi, who control much of San Francisco, are an elusive group. Though wieldin
 
 @explore_east
 title: Explore the mysteries of southern Nevada.
-on-arrival: east_relation += 2;
+on-arrival: east_explored += 1;
 
 The wastelands north of Shady Sands are ill explored and remain mysterious even to this day. Rumors abound of an order of steel clad warriors guarding a massive pit in the ground, of an exiled Arroyan warlord, an independent group of Rangers unlike California's own, and a band of rogue raiders who aim for the stars. Perhaps we should attempt to uncover the truth of the matter.
 
