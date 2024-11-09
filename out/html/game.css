@@ -494,7 +494,7 @@ img {
   }
   .tools.right {
       float: none;
-      right: 0;
+      right: 0.4em;
   }
   #mid_panel {
       margin: 0 auto;
