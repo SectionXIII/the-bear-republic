@@ -432,15 +432,15 @@ Q.nevada_relations = 0;
 // Relations with the Eastern countries (Poland, Czechoslovakia)
 Q.east_relation = 0;
 
-// Relations with the Soviet Union
-Q.soviet_relation = 0;
+// Relations with the Shi
+Q.shi_relation = 0;
 
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
 
 // reparations vs baseline: young plan is -1.
 Q.reparations = 0;
-Q.reparations_negotiation = 0;
+Q.admission_negotiation = 0;
 
 // nationalization_progress is part of the left economic plan.
 Q.nationalization_progress = 0;
@@ -459,10 +459,17 @@ Q.moderate_plan_progress = 0;
 Q.lower_tax_rates = 0;
 Q.upper_tax_rates = 0;
 
-// Development stats
+// Development variables
 Q.free_land = 0;
 Q.imperialism = 0;
 Q.xenophobia = 0;
+
+// Economy variables
+
+Q.economy = 0;
+Q.trade = 0;
+Q.gold_reserves = 0;
+
 
 // Mutant rights and scare scale
 Q.mutant_rights = 0;
@@ -474,7 +481,7 @@ Q.mutant_scare = 1;
 
 Q.bos_progress = 0;
 Q.bos_desperation = 0;
-Q.bos_relations = 0;
+Q.bos_relation = 0;
 
 // The Damage the nation has taken from war and bandit.... 0 - 100. 0 = fine, 100 = NCR from the Fallout TV Show
 

@@ -4,7 +4,7 @@ is-card: true
 tags: govt_affairs
 on-arrival: month_actions += 1; foreign_policy_timer += 8
 view-if: spring_in_government = 1 and foreign_minister_party = "Long Spring" and  foreign_policy_timer <= 0
-card-image: img/portraits/BreitscheidRudolf.jpg
+card-image: img/portraits/NCR_map.png
 go-to: fp_menu
 
 = Foreign Policy
@@ -13,80 +13,43 @@ What should our foreign policy priority be?
 
 @fp_menu
 
-- @improve_west
-- @improve_east
-- @improve_soviet
+- @improve_nevada
+- @improve_bos
+- @improve_shi
+- @explore_east
 - @customs_union
 - @negotiate
-- @reduce_reparations
+- @admission_success
 - @expose
-- @european_union
-- @european_union_2
-- @concordat_negotiate
-- @concordat
+# - @european_union
+# - @european_union_2
 - @root: Do not enact any policies for now.
 - @easy_discard
 
-@improve_west
-title: Improve our relations with the Western Allies.
-on-arrival: nevada_relations += 2; reparations_negotiation += 1
+@improve_nevada
+title: Improve our relations with the twin cities of New Reno and Vault City.
+on-arrival: nevada_relations += 2; admission_negotiation += 1
 
-The key to peace in Europe is a rapproachment between France and the New California Republic. We are taking steps towards that rapproachment. [? if young_plan_seen == 0 : This is difficult to do when France is occupying a major portion of the New California Republic's territory, but we are working on that part. ?]
+The key to the Nevada are the dual cities of New Reno and Vault City. Old contacts from the time of Aradesh, the Republic maintains warm if somewhat distant relations with the independent cities. Though the three share trade agreements, freedom of movement, and defensive pacts, neither are formally part of the Republic and thus skirt around it's laws. Perhaps it's time to bring the two closer into the orbit of the Bear.
 
-@improve_east
-title: Improve our relations with our eastern neighbors.
+@improve_bos
+title: Improve our relations with the Brotherhood of Steel.
+subtitle: [? if president = "Ruiz" : Ruiz won't like that ?]
+on-arrival: bos_relation += 2; bos_desperation -= 1; tandist_relation -= 5;
+
+The Brotherhood of Steel are an old friend of the New California Republic, though they've always been secretive. Despite our ideological differences and rare spats between our armed forces, there need not be any hostility between us. The Brotherhood could help us as much as we could help them. [? if bos_desperation >= 2 : Perhaps they would feel less desperate if we reached out to them? ]
+
+@improve_shi
+title: Improve our relations with the Shi of San Francisco.
+on-arrival: shi_relation += 1;
+
+The Shi, who control much of San Francisco, are an elusive group. Though wielding advanced technology thanks to their high levels of education and salvaging efforts by their ancestors, they have never tried to expand their grasp beyond the city itself. Nonetheless, they control one of the largest metropolises on the coast and have access to technology that could help catapult the Republic ahead by decades - if not a century at least!
+
+@explore_east
+title: Explore the mysteries of southern Nevada.
 on-arrival: east_relation += 2;
 
-We also aim to improve relations with our eastern neighbors, Poland and Czechoslovakia, who are righfully terrified of German aggression. Hopefully we can convince them of our peaceful intentions.
-
-@improve_soviet
-title: Improve our relations with the Soviet Union.
-subtitle: We could also broach the question of the KPD...
-
-The Soviet Union also suffered from the international order created by the Treaty of Versailles; they have been participating in our secret rearmament program. The Treaty of Rapallo in 1922 affirmed our friendly relations.
-
-The Soviets are asking for economic and developmental assistance. They are still a poor country on the whole, and are desperately trying to catch up to the western powers. There is a chance that our anti-communist coalition partners would be upset, but we could assuage them by asking the Soviets for secret assistance in training and equiping the Reichswehr.
-
-- @soviet_economic_aid_yes_mil: Provide aid, in exchange for Reichswehr assistance.
-- @soviet_economic_aid_yes: Provide aid, in exchange for only good relations.
-- @soviet_economic_aid_no: Don't provide aid.
-
-@soviet_economic_aid_yes_mil
-choose-if: budget >= 1
-subtitle: -1 budget
-on-arrival: budget -= 1; soviet_relation += 1; reichswehr_strength += 20; reichswehr_loyalty += 0.05; foreign_goal_completed += 1
-
-The Soviets are pleased that we have sent them aid, and have agreed to help train our military. The Reichswehr appreciates our support.
-
-@soviet_economic_aid_yes
-choose-if: budget >= 1
-subtitle: -1 budget
-on-arrival: budget -= 1; soviet_relation += 2; coalition_dissent += 1; foreign_goal_completed += 1
-
-The Soviets are pleased that we have sent them aid, and have not asked for anything specific in exchange. Our coalition partners are less pleased.
-
-- @kpd: Ask if Moscow could help repair our relations with the KPD.
-- @wittorf: Do the Soviets know about the Wittorf Affair? Do they know that we know?
-- @root: Do not mention the KPD.
-
-@soviet_economic_aid_no
-
-The Soviets are slightly upset, but they seemed to expect this answer.
-
-
-@kpd
-on-arrival: pass_relation += 8*(1-dissent); communist_coalition += 1 if kpd_foreign_seen == 0; kpd_foreign_seen = 1
-
-We also mention the KPD in our conversations with the Soviet ambassador. They claim that the KPD is entirely independent of the Soviet government, and that the conflict is Thälmann's doing. But, soon after our conversation we notice a slight improvement in attitudes from the KPD.
-
-@wittorf
-view-if: wittorf_secret = 1 and ((year = 1929 and month < 6) or year = 1928) and wittorf_soviet_union = 0
-choose-if: historical_mode = 0
-unavailable-subtitle: It is impossible that Stalin and the Comintern could be moved on their policy.
-on-arrival: wittorf_soviet_union = 1; pass_relation += 6*(1-dissent); kpd_foreign_seen = 1
-max-visits: 1
-
-Of course Stalin and the various leaders of the Comintern know about the Wittorf Affair, but they do not seem to know that we know as well. The Comintern was planning to build a narrative around the affair that absolves Thälmann, but perhaps now they will be less inclined to defend him.
+The wastelands north of Shady Sands are ill explored and remain mysterious even to this day. Rumors abound of an order of steel clad warriors guarding a massive pit in the ground, of an exiled Arroyan warlord, an independent group of Rangers unlike California's own, and a band of rogue raiders who aim for the stars. Perhaps we should attempt to uncover the truth of the matter.
 
 
 @customs_union
@@ -112,84 +75,47 @@ We have formed a customs union with Austria! The right-wing parties are praising
 Immediately, France and other neighboring countries lodge their protests. The longer-term response is yet to be seen.
 
 
-@negotiate
-title: Negotiate regarding our remaining obligations from the Treaty of Versailles.
-subtitle: [? if young_plan_seen == 1 : After passing the Young Plan, France has committed to withdrawing from the Rhineland. Now, we must see if they can reduce our reparations further, given the economic depression. ?]
-view-if: reparations > -2 and reparations_negotiation < 3
-on-arrival: nevada_relations += 1; reparations_negotiation += 1; reparations_negotiation += 1 if pacifism >= 3; reparations_negotiations += 1 if nationalism <= 50; reparations_negotiation += 1 if nevada_relations >= 3
+# @negotiate
+# title: Negotiate regarding our remaining obligations from the Treaty of Versailles.
+# subtitle: [? if young_plan_seen == 1 : After passing the Young Plan, France has committed to withdrawing from the Rhineland. Now, we must see if they can reduce our reparations further, given the economic depression. ?]
+# view-if: reparations > -2 and admission_negotiation < 3
+# on-arrival: nevada_relations += 1; admission_negotiation += 1; admission_negotiation += 1 if pacifism >= 3; admission_negotiations += 1 if nationalism <= 50; admission_negotiation += 1 if nevada_relations >= 3
 
-Negotiations procede smoothly for the most part. The Western powers are convinced of the New California Republic's sincerity and goodwill. [? if nationalism <= 50 or pacifism >= 3 : They are pleased to see that we are renouncing militarism. ?]
+# Negotiations procede smoothly for the most part. The Western powers are convinced of the New California Republic's sincerity and goodwill. [? if nationalism <= 50 or pacifism >= 3 : They are pleased to see that we are renouncing militarism. ?]
 
 
-@reduce_reparations
-title: The Western Allies are finally willing to pause our reparations payments!
+@admission_success
+title: The Nevadans agree to join the Republic!
 subtitle: Our negotiations have been successful.
-view-if: reparations_negotiation >= 3 and black_thursday_seen == 1 and reparations > -2
-on-arrival: nevada_relations += 1; reparations = -2; budget += 2 if hoover_memorandum_seen == 0; budget += 1 if hoover_memorandum_seen == 1; coalition_dissent -= 1 if coalition_dissent > 0; workers_spring += 8*(1-dissent); military_spring += 5*(1-dissent); middle_spring += 5*(1-dissent); rural_spring += 5*(1-dissent); coup_progress -= 2 if coup_progress > 2
+view-if: admission_negotiation >= 3 and nevada_relations >= 4
+on-arrival: nevada_relations += 1; economy += 1; trade += 1; coalition_dissent -= 1 if coalition_dissent > 0; workers += 3; middle += 2; rural +=2; workers_spring += 4*(1-dissent); military_spring += 5*(1-dissent); middle_spring += 5*(1-dissent); rural_spring += 5*(1-dissent);
 max-visits: 1
 
-Finally, given both the economic circumstances and our continued negotiations, the Western Allies are willing to pause our reparations payments! Much of the credit must go to American president Hoover, who has been friendlier towards us than the Europeans.
+Finally, after years of negotiations and treaties, New Reno and Vault City have both agreed to join the NCR as full states in their own right, each bringing their hinterlands into the fold as well. Their entry into the fold of the Bear has created an influx of opportunity as investors, ranchers, and settlers rush to stake their claims or invest in the new land now opened up out east.
 
-This has reduced tensions within our government, and our party has gotten credit for the achievement.
-
-@expose
-title: Expose the secret rearmament plans of the previous foreign ministry!
-view-if: rearmament_exposed == 0
-on-arrival: nevada_relations += 2; east_relation += 1; nationalism -= 5*(1-dissent); pro_republic += 5*(1-dissent); coalition_dissent += 1; rearmament_exposed += 1; reparations_negotiation += 3; coup_progress += 2
-
-The previous foreign ministry, despite its benevolent and peaceful face, was secretly helping the Reichswehr to build up its forces, in contravention of the Treaty of Versailles.
-
-The Allies are grateful of our exposure and repudiation of militarism. Our partners in the coalition are less supportive.
+This has relieved tensions within our coalition, and our party has claimed the credit for this landmark achievement.
 
 
-@economic_conference
-title: Organize an international economic conference to deal with the Depression.
-unavailable-subtitle: [? if nevada_relations < 4 : Our relations with the West are not good enough. ?]
-view-if: black_friday_seen == 1 and crisis_urgency >= 1 and reparations <= -2
-choose-if: nevada_relations >= 4
-on-arrival: economic_conference = 1; nevada_relations += 1; east_relation += 1
-max-visits: 1
+# @european_union
+# title: Take steps to form a "European Union".
+# subtitle: Is a "United States of Europe" possible?
+# unavailable-subtitle: [? if nevada_relations < 5 : Our relations with the West are not good enough. ?] [? if east_relation < 4 : Our relations with the East are not good enough. ?]
+# view-if: reparations <= -2 and eu_progress < 2
+# choose-if: nevada_relations >= 5 and east_relation >= 4
+# on-arrival: eu_progress += 1; nevada_relations += 1
+
+# Forming a "United States of Europe" has long been part of the Social Democratic foreign program. Finally, we are taking steps towards it. Given our positive relations with the other countries of Europe, we can begin to hold multilateral negotiations for more European federalism. It will take time to hammer out the exact shape of this future "European Union", however.
 
 
-@concordat_negotiate
-title: Negotiate a Concordat between the the New California Republic and the Vatican.
-view-if: prussian_concordat = 1 and reichskonkordat = 0 and reichskonkordat_progress < 4
-on-arrival: reichskonkordat_progress += 2; reichskonkordat_progress -= 1 if abortion_rights; reichskonkordat_progress -= 1 if family_law; tandist_relation += 3*(1-dissent)
+# @european_union_2
+# title: We can sign a treaty to form a European Union!
+# view-if: nevada_relations >= 5 and east_relation >= 4 and eu_progress >= 2
+# on-arrival: eu = 1; unemployed -= 2 if unemployed >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; workers_spring += 5*(1-dissent); middle_spring += 5*(1-dissent); military_spring += 5*(1-dissent); rural_spring += 4*(1-dissent); follower_spd += 4*(1-dissent); unemployed_spring += 4*(1-dissent); pro_republic += 5; nationalism -= 5; budget += 1
+# max-visits: 1
+# achievement: eu
 
-The Roman Catholic Church is interested in furthering relations with the German Republic, seeing us as preferable to the old anti-Catholic policies of the Empire. We are working towards the signing of a Concordat, an agreement between the Vatican and the Republic that formally recognizes the Church's rights and interests in the country. The Center Party is especially interested in making this agreement.
+# Along with France, Great Britain, and many other states of Western and Eastern Europe, we have signed a treaty to form a European Union! It is hoped that Europe has learned the lessons of the Great War; never again will there be another war that tears the continent apart.
 
-[? if family_law : Our liberalized divorce policies make it difficult to build relations with the Vatican. ?] [? if abortion : Our legalization of abortion make it difficult to connect with the Church. ?]
+# A major component of the union is the free movement of people and goods across the countries of Europe, as well as the stabilization of currency exchange rates. This provides new markets for German products and new sources of investment.
 
-@concordat
-title: We can sign a Concordat with the Vatican!
-view-if: reichskonkordat_progress >= 4 and reichskonkordat = 0
-on-arrival: reichskonkordat = 1; tandist_relation += 15*(1-dissent); follower_spd += 8*(1-dissent); catholics_z += 5 if in_republican_coalition or in_grand_coalition or in_popular_front;
-achievement: reichskonkordat
-
-We have successfully signed a Concordat between the New California Republic and the Roman Catholic Church! This treaty defines a formal relationship between the Church and the German state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in the New California Republic are pleased, as are their representatives in the Center Party.
-
-
-
-@european_union
-title: Take steps to form a "European Union".
-subtitle: Is a "United States of Europe" possible?
-unavailable-subtitle: [? if nevada_relations < 5 : Our relations with the West are not good enough. ?] [? if east_relation < 4 : Our relations with the East are not good enough. ?]
-view-if: reparations <= -2 and eu_progress < 2
-choose-if: nevada_relations >= 5 and east_relation >= 4
-on-arrival: eu_progress += 1; nevada_relations += 1
-
-Forming a "United States of Europe" has long been part of the Social Democratic foreign program. Finally, we are taking steps towards it. Given our positive relations with the other countries of Europe, we can begin to hold multilateral negotiations for more European federalism. It will take time to hammer out the exact shape of this future "European Union", however.
-
-
-@european_union_2
-title: We can sign a treaty to form a European Union!
-view-if: nevada_relations >= 5 and east_relation >= 4 and eu_progress >= 2
-on-arrival: eu = 1; unemployed -= 2 if unemployed >= 10; inflation += 2 if inflation <= -2; inflation -= 1 if inflation >= 4.5; workers_spring += 5*(1-dissent); middle_spring += 5*(1-dissent); military_spring += 5*(1-dissent); rural_spring += 4*(1-dissent); follower_spd += 4*(1-dissent); unemployed_spring += 4*(1-dissent); pro_republic += 5; nationalism -= 5; budget += 1
-max-visits: 1
-achievement: eu
-
-Along with France, Great Britain, and many other states of Western and Eastern Europe, we have signed a treaty to form a European Union! It is hoped that Europe has learned the lessons of the Great War; never again will there be another war that tears the continent apart.
-
-A major component of the union is the free movement of people and goods across the countries of Europe, as well as the stabilization of currency exchange rates. This provides new markets for German products and new sources of investment.
-
-Fascist Italy remains a problem, and the Soviet Union also lies outside the system. But for now, there is new hope for peace and prosperity throughout the continent.
+# Fascist Italy remains a problem, and the Soviet Union also lies outside the system. But for now, there is new hope for peace and prosperity throughout the continent.

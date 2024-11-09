@@ -8,6 +8,10 @@ Mutant Rights: [+ mutant_rights +]
 
 Tribal Rights:
 
+Roads:
+
+Rails:
+
 Land Grants:
 
 Technology Base:
@@ -53,9 +57,5 @@ Gold Reserves:
 Industry:
 
 Agriculture:
-
-Roads:
-
-Rails:
 
 [? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
