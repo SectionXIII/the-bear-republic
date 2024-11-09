@@ -25,8 +25,6 @@ Long Spring position: [? if spring_toleration : toleration ?][? if spring_in_gov
 
 Internal dissent: [+ dissent_percent : dissent +]
 
----
-
 = Government
 
 President: [+ president +]
@@ -75,8 +73,6 @@ Pass Party: [+ pass_relation : relationships +]
 Barons: [+ barons_relation : relationships +]
 
 Grizzly: [+ grizzly_relation : relationships +]
-
----
 
 = Internal Factions of the Long Sprng
 
@@ -132,8 +128,6 @@ Barons: [+ barons_votes +]%
 Grizzly: [+ grizzly_votes +]%
 
 Independent: [+ independent_votes +]%
-
----
 
 **Detailed results for each demographic**
 
