@@ -1,0 +1,164 @@
+title: Status
+new-page: true
+is-special: true
+on-arrival: {!
+if (Q.unemployed) {
+    Q.unemployed_2 = Q.unemployed.toFixed(1);
+}
+if (Q.inflation) {
+    Q.inflation_2 = Q.inflation.toFixed(1);
+}
+!}
+
+= Status
+
+[+ month : month +] [+ year +]
+
+Resources available: [+ resources +]
+
+Long Spring position: [? if spring_toleration : toleration ?][? if spring_in_government : in government - ?][? if spring_toleration == 0 and spring_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
+[? if in_republican_coalition and spring_in_government: Weimar Coalition ?][? if in_grand_coalition and spring_in_government: Grand Coalition ?][? if in_popular_front and spring_in_government: Popular Front ?][? if in_left_front and spring_in_government: Left Front ?][? if in_spd_majority and spring_in_government: SPD majority ?][? if in_minority_government and spring_in_government: minority government ?][? if in_emergency_government and spring_in_government: emergency government ?]
+
+[? if spring_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+
+[? if spring_in_government and (in_left_front or in_popular_front): Pass Party coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
+
+Internal dissent: [+ dissent_percent : dissent +]
+
+= Government
+
+President: [+ president +]
+
+Speaker: [+ chancellor +] ([+ chancellor_party +])
+
+Congress composition:
+
+# 2253: 30, 1930: 25, 1932: 22
+Long Spring: [+ spring_r +]%
+# 2253: 15, 1930: 15, 1932: 
+Tandist Bloc: [+ (tandist_r + tandist_right_r) +]%
+# 2253: 10, 1930: 13
+Pass Party: [+ pass_r +]%
+# 2253: 5, 1930: 4 (as DstP)
+Progressive: [+ progressive_r +]%
+# 2253: 9, 1930: 5
+Business: [+ business_r +]%
+# 2253: 14, 1930: 7
+Barons: [+ barons_r +]%
+# 2253: 3, 1930: 18
+Grizzly: [+ grizzly_r +]%
+# 2253: 9, 1930: 10
+Independent: [+ independent_r +]%
+
+[? if spring_in_government = 1 : Budget: [+ budget +] ?]
+
+Inflation: [+ inflation_2 +]%
+
+[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+
+Next election: [+ next_election_month : month +] [+ next_election_year +]
+
+
+# = Public Opinion
+
+@politics
+
+= Inter-party Relations
+
+
+Tandist: [+ tandist_relation : relationships +]
+
+Progressive: [+ progressive_relation : relationships +]
+
+Business: [+ business_relation : relationships +]
+
+Pass Party: [+ pass_relation : relationships +]
+
+Barons: [+ barons_relation : relationships +]
+
+Grizzly: [+ grizzly_relation : relationships +]
+
+= Internal Factions of the Long Sprng
+
+Urbanite strength: [+ urban_strength : strength +], dissent: [+ urban_dissent : dissent +]
+
+Mutant strength: [+ mutant_strength : strength +], dissent: [+ mutant_dissent : dissent +]
+
+Frontier strength: [+ frontier_strength : strength +], dissent: [+ frontier_dissent : dissent +]
+
+Intelligentsia strength: [+ intelligentsia_strength : strength +], dissent: [+ intelligentsia_dissent : dissent +]
+
+[? if old_world_blues > 0 : Neorevisionist strength: [+ old_worlder_strength : strength +], dissent: [+ old_worlder_dissent : dissent +] ?]
+
+
+@paramilitaries
+
+= Paramilitaries
+
+Reichsbanner Strength: [+ rb_strength +] thousand
+
+Reichsbanner Militarization: [+ rb_militancy : militancy +]
+
+RFB Strength: [+ rfb_strength +] thousand
+
+RFB Militarization: [+ rfb_militancy : militancy +]
+
+Stahlhelm Strength: [+ sh_strength +] thousand
+
+Stahlhelm Militarization: [+ sh_militancy : militancy +]
+
+SA Strength: [+ sa_strength +] thousand
+
+SA Militarization: [+ sa_militancy : militancy +]
+
+= Official military/paramilitaries
+
+Reichswehr: [+ reichswehr_strength +] thousand troops.
+
+Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
+
+Prussian police: [+ prussian_police_strength +] thousand members.
+
+Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
+
+@polls
+
+= Projected election results
+
+(if the election were to be held now):
+
+Long Spring: [+ spring_votes +]%
+
+Tandist Bloc: [+ (tandist_votes + tandist_right_votes) +]%
+
+Pass Party: [+ pass_votes +]%
+
+Progressive: [+ progressive_votes +]%
+
+Business: [+ business_votes +]%
+
+Barons: [+ barons_votes +]%
+
+Grizzly: [+ grizzly_votes +]%
+
+Independent: [+ independent_votes +]%
+
+**Detailed results for each demographic**
+
+**Urban Workers:** Long Spring: [+ workers_spring_normalized +]%, Tandist: [+ workers_tandist_normalized +]%, Tandist Right: [+ workers_tandist_right_normalized +]%, Pass Party: [+ workers_pass_normalized +]%, Progressive: [+ workers_progressive_normalized +]%, Business: [+ workers_business_normalized +]%, Barons: [+ workers_barons_normalized +]%, Grizzly: [+ workers_grizzly_normalized +]%, Independent: [+ workers_independent_normalized +]%
+
+**Middle Class:** Long Spring: [+ middle_spring_normalized +]%, Tandist: [+ middle_tandist_normalized +]%, Tandist Right: [+ middle_tandist_right_normalized +]%, Pass Party: [+ middle_pass_normalized +]%, Progressive: [+ middle_progressive_normalized +]%, Business: [+ middle_business_normalized +]%; Barons: [+ middle_barons_normalized +]%, Grizzly: [+ middle_grizzly_normalized +]%, Independent: [+ middle_independent_normalized +]%
+
+**Military:** Long Spring: [+ military_spring_normalized +]%, Tandist: [+ military_tandist_normalized +]%, Tandist Right: [+ military_tandist_right_normalized +]%, Pass Party: [+ military_pass_normalized +]%, Progressive: [+ military_progressive_normalized +]%, Business: [+ military_business_normalized +]%; Barons: [+ military_barons_normalized +]%, Grizzly: [+ military_grizzly_normalized +]%, Independent: [+ military_independent_normalized +]% 
+
+**Frontier Folk:** Long Spring: [+ rural_spring_normalized +]%, Tandist: [+ rural_tandist_normalized +]% Tandist Right: [+ rural_tandist_right_normalized +]%,, Pass Party: [+ rural_pass_normalized +]%, Progressive: [+ rural_progressive_normalized +]%, Business: [+ rural_business_normalized +]%; Barons: [+ rural_barons_normalized +]%, Grizzly: [+ rural_grizzly_normalized +]%, Independent: [+ rural_independent_normalized +]% 
+
+**Tribal:**Long Spring: [+ tribal_spring_normalized +]%, Tandist: [+ tribal_tandist_normalized +]%, Tandist Right: [+ tribal_tandist_right_normalized +]%, Pass Party: [+ tribal_pass_normalized +]%, Progressive: [+ tribal_progressive_normalized +]%, Business: [+ tribal_business_normalized +]%; Barons: [+ tribal_barons_normalized +]%, Grizzly: [+ tribal_grizzly_normalized +]%, Independent: [+ tribal_independent_normalized +]% 
+
+**Unemployed:** Long Spring: [+ unemployed_spring_normalized +]%, Tandist: [+ unemployed_tandist_normalized +]%, Tandist Right: [+ unemployed_tandist_right_normalized +]%, Pass Party: [+ unemployed_pass_normalized +]%, Progressive: [+ unemployed_progressive_normalized +]%, Business: [+ unemployed_business_normalized +]%; Barons: [+ unemployed_barons_normalized +]%, Grizzly: [+ unemployed_grizzly_normalized +]%, Independent: [+ unemployed_independent_normalized +]% 
+
+**Follower:** Long Spring: [+ follower_spring_normalized +]%, Tandist: [+ follower_tandist_normalized +]%, Tandist Right: [+ follower_tandist_right_normalized +]%, Pass Party: [+ follower_pass_normalized +]%, Progressive: [+ follower_progressive_normalized +]%, Business: [+ follower_business_normalized +]%; Barons: [+ follower_barons_normalized +]%, Grizzly: [+ follower_grizzly_normalized +]%, Independent: [+ follower_independent_normalized +]%
+
+**Mutant:** Long Spring: [+ mutant_spring_normalized +]%, Tandist: [+ mutant_tandist_normalized +]%, Tandist Right: [+ mutant_tandist_right_normalized +]%, Pass Party: [+ mutant_pass_normalized +]%, Progressive: [+ mutant_progressive_normalized +]%, Business: [+ mutant_business_normalized +]%; Barons: [+ mutant_barons_normalized +]%, Grizzly: [+ mutant_grizzly_normalized +]%, Independent: [+ mutant_independent_normalized +]%
+
+**Support for the Republic: [+ pro_republic +]%**

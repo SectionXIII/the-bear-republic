@@ -20,7 +20,7 @@ How do we reduce tensions with the coalition?
 
 
 @promise_cuts
-on-arrival: workers_spring -= 5; unemployed_spring -= 6; workers_pass += 5; unemployed_pass += 6; unemployed_grizzly += 3; urban_dissent += 10; frontier_dissent += 5; welfare -= 1; budget += 1; coalition_dissent -= 1
+on-arrival: workers_spring -= 5; unemployed_spring -= 6; workers_pass += 5; unemployed_pass += 3; unemployed_grizzly += 3; urban_dissent += 10; frontier_dissent += 5; welfare -= 1; budget += 1; coalition_dissent = 0
 
 Fine. By cutting welfare, we have reduced dissent within the coalition.
 
@@ -31,7 +31,7 @@ unavailable-subtitle: Not enough resources (need 2).
 choose-if: resources >= 2
 on-arrival: resources -= 2; coalition_dissent -= 1
 
-By transferring campaign funds to our coalition partners, we can make our policies more acceptable to them. Some would call this corruption, but perhaps it is necessary to save California.
+By transferring campaign funds to our coalition partners, we can make our policies more acceptable to them. Some would call this corruption, but perhaps it is necessary to save democracy.
 
 @no_change
 
