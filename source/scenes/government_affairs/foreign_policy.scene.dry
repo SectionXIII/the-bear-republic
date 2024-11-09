@@ -37,7 +37,7 @@ title: Improve our relations with the Brotherhood of Steel.
 subtitle: [? if president = "Ruiz" : Ruiz won't like that ?]
 on-arrival: bos_relation += 2; bos_desperation -= 1; tandist_relation -= 5;
 
-The Brotherhood of Steel are an old friend of the New California Republic, though they've always been secretive. Despite our ideological differences and rare spats between our armed forces, there need not be any hostility between us. The Brotherhood could help us as much as we could help them. [? if bos_desperation >= 2 : Perhaps they would feel less desperate if we reached out to them? ]
+The Brotherhood of Steel are an old friend of the New California Republic, though they've always been secretive. Despite our ideological differences and rare spats between our armed forces, there need not be any hostility between us. The Brotherhood could help us as much as we could help them. [? if bos_desperation >= 2 : Perhaps they would feel less desperate if we reached out to them? ?]
 
 @improve_shi
 title: Improve our relations with the Shi of San Francisco.
