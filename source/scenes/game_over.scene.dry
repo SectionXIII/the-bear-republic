@@ -80,7 +80,7 @@ the New California Republic is currently in the grip of a civil war, a brutal af
 
 @braun_victorious
 title: Otto Braun victorious
-view-if: president == "Braun"
+view-if: president == "Hide"
 tags: endings
 go-to: eg_menu
 
