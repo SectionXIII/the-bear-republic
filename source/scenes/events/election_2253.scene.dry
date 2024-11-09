@@ -708,7 +708,7 @@ Our experts have checked the constitution, and have discovered that there is no 
 
 Thus, we have Speaker-President Solomon Hide. He claims that he will resign as soon as the economic-political crisis is over. The right-wing parties, who were once clamoring to replace parliamentary rule with dictatorship or monarchy, are now clamoring for the restoration of democracy.
 
-- @far_right_coup
+# - @far_right_coup
 - @emergency_no_confidence: The Nazis immediately call a no-confidence vote against us...
 
 @breitscheid_emergency_chancellor
@@ -717,7 +717,7 @@ on-arrival: chancellor = "Breitscheid"; chancellor_party = "Long Spring"; spring
 
 We have appointed Rudolf Breitscheid as emergency chancellor. The Passers consider him less objectionable than the alternatives, although it is unclear whether they will tolerate this government.
 
-- @far_right_coup
+# - @far_right_coup
 - @emergency_no_confidence
 
 
@@ -726,7 +726,7 @@ on-arrival: chancellor = "de la Cruz"; chancellor_party = "Tandist"; spring_in_g
 
 The Tandist Party is pleased, and somewhat surprised, that we have appointed [+ chancellor +] as chancellor.
 
-- @far_right_coup
+# - @far_right_coup
 - @emergency_no_confidence
 
 @wirth_emergency_chancellor
