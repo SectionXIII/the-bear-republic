@@ -418,7 +418,7 @@ on-arrival: president = "Throckmorton"; pass_relation = 80;
 
 Brock Throckmorton of the Pass Party has won the presidency. The establlishment parties re-analyze their positions and politics shift in response to the unforeseen Pass and Spring alliance.
 
-- @civil_war: This is civil war.
+# - @civil_war: This is civil war.
 
 @kimball_wins
 on-arrival: president = grizzly_candidate; chancellor = "Kimball"; chancellor_party = "Grizzly"
