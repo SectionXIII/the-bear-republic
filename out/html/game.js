@@ -181,7 +181,7 @@
     $('#qualities_right').append(dendryUI.contentToHTML.convert(displayContent));
 };
 
-  window.changeTab = function(newTab, tabId) {
+  window.changeTab = function(newTab, tabId, isRight) {
       if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
           window.alert('Polls are not available in historical mode.');
           return;
@@ -193,8 +193,12 @@
       }
       tabButton.className += ' active';
       window.statusTab = newTab;
-      window.updateSidebar();
-      window.updateSidebarright();
+      if(isRight){
+        window.updateSidebarright();
+    }
+      else{
+        window.updateSidebar();
+    }
   };
 
   window.onDisplayContent = function() {
