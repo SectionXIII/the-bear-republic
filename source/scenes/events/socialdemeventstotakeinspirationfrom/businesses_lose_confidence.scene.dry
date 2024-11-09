@@ -3,7 +3,7 @@
 #  view-if: (capital_strike_progress >= 6 and capital_strike_progress < 10 and budget > -5) and spring_in_government
 #  new-page: true
 #  max-visits: 1
-#  on-arrival: unemployed += 2; middle_spd -= 6; military_spd -= 6; rural_spring -= 5; workers_spring -= 4; unemployed_spring -= 4; business_relation -= 6
+#  on-arrival: unemployed += 2; middle_spring -= 6; military_spring -= 6; rural_spring -= 5; workers_spring -= 4; unemployed_spring -= 4; business_relation -= 6
 #  tags: event
 #  
 #  = Businesses Lose Confidence
@@ -18,12 +18,12 @@
 #  - @watch: Just watch us. The economy *will* improve.
 #  
 #  @taxes
-#  on-arrival: upper_tax_rates -= 1; budget -= 1; capital_strike_progress -= 1; unemployed -= 1; middle_spd += 5*(1-dissent); military_spd += 4*(1-dissent); kpd_coalition_dissent += 1; pass_relation -= 5; urban_dissent += 5
+#  on-arrival: upper_tax_rates -= 1; budget -= 1; capital_strike_progress -= 1; unemployed -= 1; middle_spring += 5*(1-dissent); military_spring += 4*(1-dissent); kpd_coalition_dissent += 1; pass_relation -= 5; urban_dissent += 5
 #  
 #  Cutting taxes improves our relationship with the capitalists.
 #  
 #  @welfare
-#  on-arrival: welfare -= 1; budget += 1; capital_strike_progress -= 2; middle_spd += 4*(1-dissent); military_spd += 4*(1-dissent); workers_spring -= 5; unemployed_spring -= 5; unemployed -= 1; urban_dissent += 5; frontier_dissent += 5; mutant_dissent += 5; kpd_coalition_dissent += 1; inflation -= 1;
+#  on-arrival: welfare -= 1; budget += 1; capital_strike_progress -= 2; middle_spring += 4*(1-dissent); military_spring += 4*(1-dissent); workers_spring -= 5; unemployed_spring -= 5; unemployed -= 1; urban_dissent += 5; frontier_dissent += 5; mutant_dissent += 5; kpd_coalition_dissent += 1; inflation -= 1;
 #  
 #  Cutting welfare improves our relationship with the capitalists, but it hurts our working-class base.
 #  

@@ -61,7 +61,7 @@ Do we support this policy?
 - @economy_oppose: No, this must be stopped.
 
 @economy_support
-on-arrival: nationalization_progress += 1; capital_strike_progress += 4; unemployed -= 2.5 if unemployed >= 6; unemployed -= 1.2 if works_councils >= 3; budget -= 3; works_program += 1; workers_spring += 4*(1-dissent); workers_pass += 8*(1-dissent); unemployed_pass += 4*(1-dissent); coalition_dissent += 2; business_relation -= 6; tandist_relation -= 4; middle_spd -= 3; military_spd -= 3; economy_goal_completed += 1; kpd_influence += 2
+on-arrival: nationalization_progress += 1; capital_strike_progress += 4; unemployed -= 2.5 if unemployed >= 6; unemployed -= 1.2 if works_councils >= 3; budget -= 3; works_program += 1; workers_spring += 4*(1-dissent); workers_pass += 8*(1-dissent); unemployed_pass += 4*(1-dissent); coalition_dissent += 2; business_relation -= 6; tandist_relation -= 4; middle_spring -= 3; military_spring -= 3; economy_goal_completed += 1; kpd_influence += 2
 
 The KPD has gained credit with the workers for enabling many to keep their jobs. Meanwhile, the bourgeois parties and middle-class voters blame the SPD for enabling the nationalizations.
 

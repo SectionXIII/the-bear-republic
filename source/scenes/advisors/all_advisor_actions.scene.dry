@@ -140,7 +140,7 @@ view-if: not constructive_vonc
 subtitle: Break our current toleration arrangement, and bring down the government via a no-confidence vote.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spring_toleration == 0 : The SPD is not currently in toleration. ?]
 choose-if: advisor_action_timer == 0 and spring_toleration
-on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spring_toleration = 0; urban_strength += 8; pro_republic -= 4; middle_spd -= 3; rural_spring -= 3; military_spd -= 3; follower_spd -= 3; intelligentsia_dissent += 8
+on-arrival: advisor_action_timer = 6; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time + 3; next_election_year = year if next_election_time >= time + 3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spring_toleration = 0; urban_strength += 8; pro_republic -= 4; middle_spring -= 3; rural_spring -= 3; military_spring -= 3; follower_spd -= 3; intelligentsia_dissent += 8
 
 We have grown tired of the burdens of toleration, and have called a vote of no confidence in the current minority government.
 
@@ -167,7 +167,7 @@ title: Organizing white-collar workers
 subtitle: Improve our standing among the new middle class.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: advisor_action_timer = 6; middle_spd += 6*(1-dissent);
+on-arrival: advisor_action_timer = 6; middle_spring += 6*(1-dissent);
 
 We have increased our organizing among white-collar workers.
 
@@ -268,7 +268,7 @@ title: Organizing women
 subtitle: Juchacz's strategies are aimed at more "traditional" women.
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: womens_rights += 1; workers_spring += 4*(1-dissent); rural_spring += 3*(1-dissent); military_spd += 3*(1-dissent); advisor_action_timer = 6
+on-arrival: womens_rights += 1; workers_spring += 4*(1-dissent); rural_spring += 3*(1-dissent); military_spring += 3*(1-dissent); advisor_action_timer = 6
 
 Juchacz's strategies for organizing women are aimed at working-class housewives, and acknowledge women's traditional household roles. We argue that our economic welfare programs will improve the livelihoods of women and their families.
 
@@ -277,7 +277,7 @@ title: Rally for democracy
 subtitle: Rally our party and the German people to defend democracy and freedom.
 choose-if: advisor_action_timer == 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; old_worlder_strength += 5; intelligentsia_strength += 3; workers_spring += 4*(1-dissent) if democratization >= 4; middle_spd += 3*(1-dissent) if democratization >= 4
+on-arrival: advisor_action_timer = 6; pro_republic += 5; democratization += 1; old_worlder_strength += 5; intelligentsia_strength += 3; workers_spring += 4*(1-dissent) if democratization >= 4; middle_spring += 3*(1-dissent) if democratization >= 4
 
 Leber helps us to rally the people in defense of democracy.
 
@@ -400,7 +400,7 @@ title: Rally for class struggle
 subtitle: The core of socialism should be the struggle of the proletariat against the bourgeoisie.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); unemployed_spring += 3*(1-dissent); workers_spring += 4*(1-dissent) if nationalization_progress > 0; unemployed_spring += 3*(1-dissent) if nationalization_progress > 0; urban_strength += 5; urban_dissent -= 5; military_spd -= 3; middle_spd -= 2
+on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); unemployed_spring += 3*(1-dissent); workers_spring += 4*(1-dissent) if nationalization_progress > 0; unemployed_spring += 3*(1-dissent) if nationalization_progress > 0; urban_strength += 5; urban_dissent -= 5; military_spring -= 3; middle_spring -= 2
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
@@ -410,7 +410,7 @@ title: Support the Socialist Youth
 subtitle: We must end our reputation as a party for old men by increasing funding to the youth organizations. -1 resources
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if resources <= 0 : Not enough resources. ?]
 choose-if: advisor_action_timer = 0 and resources > 0
-on-arrival: advisor_action_timer = 6; resources -= 1; urban_strength += 5; urban_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spring += 2*(1-dissent); middle_spd += 1;
+on-arrival: advisor_action_timer = 6; resources -= 1; urban_strength += 5; urban_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spring += 2*(1-dissent); middle_spring += 1;
 
 Seydewitz supports building up the Socialist Youth, which attracts support to the Left and increases the militancy of the Reichsbanner.
 

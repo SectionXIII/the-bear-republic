@@ -32,7 +32,7 @@ Something must be done to reinforce party unity.
 
 @enforce_unity
 title: Enforce party discipline.
-on-arrival: intelligentsia_dissent -= 5; mutant_dissent -= 5; frontier_dissent -= 5; urban_dissent -= 5; old_worlder_dissent -= 5; workers_spring -= 4; middle_spd -= 2; unemployed_spring -= 2
+on-arrival: intelligentsia_dissent -= 5; mutant_dissent -= 5; frontier_dissent -= 5; urban_dissent -= 5; old_worlder_dissent -= 5; workers_spring -= 4; middle_spring -= 2; unemployed_spring -= 2
 
 Enforcing party discipline reduces dissent, but it could lead to an exit of dissenting members.
 

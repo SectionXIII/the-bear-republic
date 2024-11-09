@@ -39,7 +39,7 @@ No. We will not do this.
 
 @bring_down
 subtitle: Bring down this government before our opponents do.
-on-arrival: spring_in_government = 0; in_grand_coalition = 0; in_republican_coalition = 0; chancellor = "de la Cruz"; chancellor_party = "Tandist"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spring_toleration = 0; urban_strength += 8; pro_republic -= 5; middle_spd -= 3; rural_spring -= 3; military_spd -= 3; follower_spd -= 3; intelligentsia_dissent += 5
+on-arrival: spring_in_government = 0; in_grand_coalition = 0; in_republican_coalition = 0; chancellor = "de la Cruz"; chancellor_party = "Tandist"; next_election_time = time + 3 if next_election_time > time+3; next_election_month = month + 3 if next_election_time >= time+3; next_election_year = year if next_election_time >= time+3; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; spring_toleration = 0; urban_strength += 8; pro_republic -= 5; middle_spring -= 3; rural_spring -= 3; military_spring -= 3; follower_spd -= 3; intelligentsia_dissent += 5
 
 We have called for a vote of no confidence in ourselves, and have brought down this government. Chancellor [+ chancellor +] currently rules as acting chancellor.
 
