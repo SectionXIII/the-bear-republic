@@ -1,9 +1,9 @@
 # gold reserves level
 
-(0..0) **Empty**
-(1..1) **Dwindling**
-(2..2) **Middling**
-(3..3) **Half Full**
-(4..4) **Almost Full**
-(5..5) **Full**
-(6..6) **Overflowing**
+(0..0) Empty
+(1..1) Dwindling
+(2..2) Middling
+(3..3) Half Full
+(4..4) Almost Full
+(5..5) Full
+(6..6) Overflowing
