@@ -36,19 +36,19 @@ Shi: [+ shi_relations : international_relations +]
 
 Mojave Settlements: [+ mojave_relations : mojave_relations +]
 
-House:
+[? if house_seen = 1: House: [+ house_relations : international_relations +] ?]
 
 @military
 
 = Military
 
-New California Republica Army: [+ reichswehr_strength +] thousand troops.
+New California Republica Army: [+ ncra_strength +] thousand troops.
 
-NCRA Loyalty: [+ reichswehr_loyalty : loyalty +]
+NCRA Loyalty: [+ ncra_loyalty : loyalty +]
 
-NCR Rangers: [+ prussian_police_strength +] members.
+NCR Rangers: [+ rangers_strength +] members.
 
-NCR Rangers loyalty: [+ prussian_police_loyalty : loyalty +]
+NCR Rangers loyalty: [+ rangers_loyalty : loyalty +]
 
 @economy
 

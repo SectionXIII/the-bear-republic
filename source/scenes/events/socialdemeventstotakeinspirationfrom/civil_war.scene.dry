@@ -27,11 +27,11 @@
 #     Q.rb_power *= (1 - Q.dissent/1.5);
 # }
 # Q.total_power += Q.rb_power;
-# Q.prussian_police_power = Q.prussian_police_strength*Q.prussian_police_militancy*Q.prussian_police_loyalty;
-# if (Q.reichswehr_loyalty < 0) {
-#     Q.reichswehr_loyalty = 0;
+# Q.prussian_police_power = Q.rangers_strength*Q.rangers_militancy*Q.rangers_loyalty;
+# if (Q.ncra_loyalty < 0) {
+#     Q.ncra_loyalty = 0;
 # }
-# Q.loyal_reichswehr_power = Q.reichswehr_strength*Q.reichswehr_militancy*Q.reichswehr_loyalty;
+# Q.loyal_reichswehr_power = Q.ncra_strength*Q.ncra_militancy*Q.ncra_loyalty;
 # if (Q.spring_in_government && Q.chancellor_party == "Long Spring") {
 #     Q.total_power += Q.loyal_reichswehr_power;
 # } else {
@@ -63,7 +63,7 @@
 # Q.enemy_power += Q.sa_power;
 # Q.sh_power = Q.sh_strength*Q.sh_militancy;
 # Q.enemy_power += Q.sh_power;
-# Q.hostile_reichswehr_power = Q.reichswehr_strength*Q.reichswehr_militancy*(1-Q.reichswehr_loyalty);
+# Q.hostile_reichswehr_power = Q.ncra_strength*Q.ncra_militancy*(1-Q.ncra_loyalty);
 # Q.enemy_power += Q.hostile_reichswehr_power;
 # console.log("Enemy strength:", Q.enemy_power);
 
@@ -84,7 +84,7 @@
 
 # = The Array of Forces
 
-# Our enemies are the nationalist Stahlhelm, with [+ sh_strength +] thousand troops, and the Nazi SA, with [+ sa_strength +] thousand troops. The loyalties of the Reichswehr, with its [+ reichswehr_strength +] thousand regular soldiers, and Prussian police, with [+ prussian_police_strength +] thousand members, are unclear.
+# Our enemies are the nationalist Stahlhelm, with [+ sh_strength +] thousand troops, and the Nazi SA, with [+ sa_strength +] thousand troops. The loyalties of the Reichswehr, with its [+ ncra_strength +] thousand regular soldiers, and Prussian police, with [+ rangers_strength +] thousand members, are unclear.
 
 # [? if chancellor_party == "KPD" or president == "Thälmann" : The KPD's paramilitary, the RFB, is leading the battle, and we are their co-combatants. ?]
 
@@ -108,7 +108,7 @@
 # go-to: war_menu
 # on-arrival: war_choices += 1
 
-# We have urged the Reichswehr to stand down, to avoid killing their countrymen. [? if reichswehr_loyalty < 0.2 : Unfortunately, few heed our calls; the Reichswhere detest us. ?][? if reichswehr_loyalty >= 0.2 and reichswehr_loyalty < 0.4 : Some officers and troops heed our calls to not fight against us. Some even join us. ?][? if reichswehr_loyalty >= 0.4 and reichswehr_loyalty < 0.6 : The Reichswehr is split. Many avoid taking a side, or join our side. ?][? if reichswehr_loyalty >= 0.6 : Surprisingly, the majority of the Reichswehr is on our side! Our preparations have worked. ?]
+# We have urged the Reichswehr to stand down, to avoid killing their countrymen. [? if ncra_loyalty < 0.2 : Unfortunately, few heed our calls; the Reichswhere detest us. ?][? if ncra_loyalty >= 0.2 and ncra_loyalty < 0.4 : Some officers and troops heed our calls to not fight against us. Some even join us. ?][? if ncra_loyalty >= 0.4 and ncra_loyalty < 0.6 : The Reichswehr is split. Many avoid taking a side, or join our side. ?][? if ncra_loyalty >= 0.6 : Surprisingly, the majority of the Reichswehr is on our side! Our preparations have worked. ?]
 
 # @kpd_help
 # max-visits: 1

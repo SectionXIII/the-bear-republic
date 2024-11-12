@@ -143,14 +143,14 @@ Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
 Q.interior_police_loyalty = 0.45;
 
-Q.prussian_police_strength = 90;
-Q.prussian_police_militancy = 1;
-Q.prussian_police_loyalty = 0.5;
+Q.rangers_strength = 90;
+Q.rangers_militancy = 1;
+Q.rangers_loyalty = 0.5;
 
-// strength includes actual military and de facto reserves?
-Q.reichswehr_strength = 100;
-Q.reichswehr_militancy = 5;
-Q.reichswehr_loyalty = 0.2;
+// NCR Army stats
+Q.ncra_strength = 100;
+Q.ncra_militancy = 5;
+Q.ncra_loyalty = 0.54;
 
 // The state of the country
 
@@ -439,6 +439,7 @@ Q.shi_relations = 3;
 Q.desran_relations = 2;
 Q.arroyo_relations = 4;
 Q.mojave_relations = -1;
+Q.house_relations = 1;
 
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
