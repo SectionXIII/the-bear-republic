@@ -487,7 +487,7 @@ Q.mutant_scare = 1;
 // Brotherhood of Steel Variables
 Q.bos_progress = 0;
 Q.bos_desperation = 0;
-Q.bos_relation = 3;
+Q.bos_relations = 3;
 
 // The Damage the nation has taken from war and bandit.... 0 - 100. 0 = fine, 100 = NCR from the Fallout TV Show
 Q.devastation_frontier = 0;
