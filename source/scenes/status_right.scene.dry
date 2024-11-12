@@ -24,15 +24,15 @@ Education: [+ education : education +]
 
 = Diplomatic Relations
 
-New Reno & Vault City: [+ nevada_relations : nevada_relations +]
+New Reno & Vault City: [+ nevada_relations : international_relations +]
 
-Brotherhood of Steel: [+ bos_relations : bos_relations +]
+Brotherhood of Steel: [+ bos_relations : international_relations +]
 
-Desert Rangers: [+ desran_relations : desran_relations +]
+Desert Rangers: [+ desran_relations : international_relations +]
 
-Arroyo: [+ arroyo_relations : arroyo_relations +]
+Arroyo: [+ arroyo_relations : international_relations +]
 
-Shi: [+ shi_relations : shi_relations +]
+Shi: [+ shi_relations : international_relations +]
 
 Mojave Settlements: [+ mojave_relations : mojave_relations +]
 
@@ -42,13 +42,13 @@ House:
 
 = Military
 
-Reichswehr: [+ reichswehr_strength +] thousand troops.
+New California Republica Army: [+ reichswehr_strength +] thousand troops.
 
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
+NCRA Loyalty: [+ reichswehr_loyalty : loyalty +]
 
-Prussian police: [+ prussian_police_strength +] thousand members.
+NCR Rangers: [+ prussian_police_strength +] members.
 
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
+NCR Rangers loyalty: [+ prussian_police_loyalty : loyalty +]
 
 @economy
 
