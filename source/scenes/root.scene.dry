@@ -426,16 +426,19 @@ Q.hide_plan_implemented = 0;
 Q.education_plan_implemented = 0;
 
 // Relations with the Nevada cities.
-Q.nevada_relations = 0;
+Q.nevada_relations = 5;
 Q.admission_negotiation = 0;
 
 // Relations with the Nevada thunderdome
 Q.east_explored = 0;
-Q.east_relation = 0;
+
 Q.east_seen = 0;
 
-// Relations with the Shi
-Q.shi_relation = 0;
+// Diplomatic Relations
+Q.shi_relation = 3;
+Q.desran_relation = 2;
+Q.arroyo_relation = 4;
+Q.mojave_relation = -1;
 
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
@@ -484,7 +487,7 @@ Q.mutant_scare = 1;
 // Brotherhood of Steel Variables
 Q.bos_progress = 0;
 Q.bos_desperation = 0;
-Q.bos_relation = 0;
+Q.bos_relation = 3;
 
 // The Damage the nation has taken from war and bandit.... 0 - 100. 0 = fine, 100 = NCR from the Fallout TV Show
 Q.devastation_frontier = 0;
