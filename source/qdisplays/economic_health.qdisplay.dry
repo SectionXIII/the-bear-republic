@@ -1,0 +1,7 @@
+# economic health descriptions
+
+(..4.999) Abyssmal
+(4.999..9.999) Poor
+(9.999..14.999) Normal
+(19.999..24.999) Good
+(24.999..) Excellent!

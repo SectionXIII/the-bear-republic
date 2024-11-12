@@ -1,0 +1,7 @@
+# trade descriptions
+
+(..4.999) <span style="color: #FF0000;">Almost Non-existent</span>
+(4.999..9.999) <span style="color: #FF6A00;">Sluggish</span>
+(9.999..14.999) <span style="color: #FFD800;">Normal</span>
+(19.999..24.999) <span style="color: #4CFF00;">Increased</span>
+(24.999..) <span style="color: #00FF21;">Booming!</span>

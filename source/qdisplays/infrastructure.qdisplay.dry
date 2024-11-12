@@ -1,0 +1,7 @@
+# infratructure descriptions
+
+(..4.999) Local
+(4.999..9.999) Municipal
+(9.999..14.999) Regional
+(19.999..24.999) Statewide
+(24.999..) Nationwide
