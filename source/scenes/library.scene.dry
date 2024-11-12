@@ -112,7 +112,7 @@ Justice: [+ justice_department_party +]
 
 Foreign: [+ state_department_party +]
 
-Reichswehr: [+ military_minister_party +]
+Reichswehr: [+ defence_department_party +]
 
 Agriculture: [+ agriculture_department_party +]
 

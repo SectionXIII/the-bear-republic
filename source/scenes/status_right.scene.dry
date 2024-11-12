@@ -50,6 +50,8 @@ NCR Rangers: [+ rangers_strength +] members.
 
 NCR Rangers loyalty: [+ rangers_loyalty : loyalty +]
 
+NCR Rangers militization: [+ rangers_militancy : militancy +]
+
 @economy
 
 = Economy

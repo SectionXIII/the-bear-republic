@@ -120,7 +120,7 @@ Q.state_department_party = 'Business';
 Q.interior_department_party = 'Tandist';
 Q.justice_department_party = 'Independent';
 Q.labor_department_party = 'Tandist';
-Q.military_minister_party = 'Independent';
+Q.defence_department_party = 'Independent';
 Q.economic_department_party = 'Progressive';
 Q.finance_department_party = 'Business';
 Q.agriculture_department_party = 'Tandist';
@@ -418,7 +418,7 @@ Somehow, surprisingly, the left coalition is successfully formed, without appoin
 # just raise the coup limit, don't immediately go to civil war
 
 # @populist_coalition_no_civil_war
-# on-arrival: pass_goals_seen = 0; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; military_minister_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring"; ncra_loyalty -= 0.05
+# on-arrival: pass_goals_seen = 0; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; defence_department_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring"; ncra_loyalty -= 0.05
 
 # In response to the Pass Party's entrance into the government, the right-wing takes a "wait-and-see" approach for now. They expect that our government will be unstable and incompetent, and will collapse of its own accord, discrediting the left and eventually enabling the destruction of the Weimar Republic. Our task is to prove them wrong.
 
@@ -462,7 +462,7 @@ go-to: right_coalition_2
 unavailable-subtitle: The Barons is not interested in a coalition with the Tandist.
 view-if: right_coalition >= 50
 choose-if: year < 1929
-on-arrival: spring_in_government = 0; spring_toleration = 0; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Barons"; justice_department_party = "Barons"; labor_department_party = "Tandist"; military_minister_party = "I"; economic_department_party = "Business"; finance_department_party = "Tandist"; agriculture_department_party = "Barons"; in_right_coalition = 1;
+on-arrival: spring_in_government = 0; spring_toleration = 0; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Barons"; justice_department_party = "Barons"; labor_department_party = "Tandist"; defence_department_party = "I"; economic_department_party = "Business"; finance_department_party = "Tandist"; agriculture_department_party = "Barons"; in_right_coalition = 1;
 
 Even though the Barons are very reluctant to participate in such a coalition, they still accede to President Tibbet's wishes. Thus, a majority center-right coalition is formed, with de la Cruz as chancellor.
 
@@ -590,7 +590,7 @@ Our rejection of the unity government has hurt our relations with the bourgeois 
 view-if: tandist_party_leader = "Ruiz"
 choose-if: president == "Hide"
 unavailable-subtitle: President Hindenburg will not support a minority government led by Joseph Wirth.
-on-arrival: chancellor = "Wirth"; chancellor_party = "Tandist"; spring_in_government = 0; spring_toleration = 1; tandist_relation += 5; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "I"; labor_department_party = "Tandist"; military_minister_party = "I"; economic_department_party = "Progressive"; finance_department_party = "Business"; agriculture_department_party = "Tandist"; pro_republic -= 2;
+on-arrival: chancellor = "Wirth"; chancellor_party = "Tandist"; spring_in_government = 0; spring_toleration = 1; tandist_relation += 5; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "I"; labor_department_party = "Tandist"; defence_department_party = "I"; economic_department_party = "Progressive"; finance_department_party = "Business"; agriculture_department_party = "Tandist"; pro_republic -= 2;
 
 We have supported a minority government led by the Tandist Party under Speaker Joseph Wirth.
 
@@ -633,7 +633,7 @@ There is no path to a majority government for now. The scheming around President
 title: Long Spring majority alone
 subtitle: Long Spring: [+ spring_r +]%
 view-if: spring_r >= 50
-on-arrival: chancellor = "Hide"; chancellor_party = "Long Spring"; spring_in_government = 1; in_spring_majority = 1; pro_republic += 5; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; military_minister_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring"; ncra_loyalty -= 0.05; 
+on-arrival: chancellor = "Hide"; chancellor_party = "Long Spring"; spring_in_government = 1; in_spring_majority = 1; pro_republic += 5; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; defence_department_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring"; ncra_loyalty -= 0.05; 
 achievement: majority_party
 
 Finally, the Long Spring can govern alone! Our long campaign of electioneering has paid off. We do not need to worry about coalition government; anything is possible. 
@@ -702,7 +702,7 @@ Yes, an emergency minority government, with the support of the Long Spring. Who 
 @braun_emergency_chancellor
 subtitle: This is unprecedented.
 view-if: not historical_mode or not spring_prussia
-on-arrival: chancellor = "Hide"; chancellor_party = "Long Spring"; spring_in_government = 1; pro_republic -= 5; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; military_minister_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring"; ncra_loyalty -= 0.1; 
+on-arrival: chancellor = "Hide"; chancellor_party = "Long Spring"; spring_in_government = 1; pro_republic -= 5; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; defence_department_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring"; ncra_loyalty -= 0.1; 
 
 Our experts have checked the constitution, and have discovered that there is no specific prohibition against the Speaker also being the President (the President may not be a member of the Congress; there is no law saying that the Speaker *must* be a member of the Congress).
 
@@ -713,7 +713,7 @@ Thus, we have Speaker-President Solomon Hide. He claims that he will resign as s
 
 @breitscheid_emergency_chancellor
 subtitle: The Passers are warming to him...
-on-arrival: chancellor = "Breitscheid"; chancellor_party = "Long Spring"; spring_in_government = 1; pass_relation += 5; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; military_minister_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring"; ncra_loyalty -= 0.1;
+on-arrival: chancellor = "Breitscheid"; chancellor_party = "Long Spring"; spring_in_government = 1; pass_relation += 5; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; defence_department_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring"; ncra_loyalty -= 0.1;
 
 We have appointed Rudolf Breitscheid as emergency chancellor. The Passers consider him less objectionable than the alternatives, although it is unclear whether they will tolerate this government.
 
@@ -722,7 +722,7 @@ We have appointed Rudolf Breitscheid as emergency chancellor. The Passers consid
 
 
 @bruning_emergency_chancellor
-on-arrival: chancellor = "de la Cruz"; chancellor_party = "Tandist"; spring_in_government = 1; tandist_relation += 10; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; military_minister_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring" 
+on-arrival: chancellor = "de la Cruz"; chancellor_party = "Tandist"; spring_in_government = 1; tandist_relation += 10; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; defence_department_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring" 
 
 The Tandist Party is pleased, and somewhat surprised, that we have appointed [+ chancellor +] as chancellor.
 
@@ -731,7 +731,7 @@ The Tandist Party is pleased, and somewhat surprised, that we have appointed [+ 
 
 @wirth_emergency_chancellor
 view-if: tandist_party_leader == "Ruiz"
-on-arrival: chancellor = "Wirth"; chancellor_party = "Tandist"; spring_in_government = 1; tandist_relation += 10; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; military_minister_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring" 
+on-arrival: chancellor = "Wirth"; chancellor_party = "Tandist"; spring_in_government = 1; tandist_relation += 10; state_department_party = "Long Spring"; interior_department_party = "Long Spring"; justice_department_party = "Long Spring"; labor_department_party = "Long Spring"; defence_department_party = "Long Spring"; economic_department_party = "Long Spring"; finance_department_party = "Long Spring"; agriculture_department_party = "Long Spring" 
 
 The Tandist Party is pleased that we have appointed [+ chancellor +] as chancellor.
 
@@ -875,13 +875,13 @@ de la Cruz is not opposed to a coalition with us. Alternatively, we could enter 
 
 @join_bruning
 view-if: grand_coalition >= 50 or neo_republican_coalition >= 50
-on-arrival: spring_in_government = 1; spring_toleration = 0; in_grand_coalition = 1; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "Tandist"; labor_department_party = "Tandist"; military_minister_party = "I"; economic_department_party = "Tandist"; finance_department_party = "Tandist"; agriculture_department_party = "Tandist"; leverage = 25 if leverage >= 25;
+on-arrival: spring_in_government = 1; spring_toleration = 0; in_grand_coalition = 1; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "Tandist"; labor_department_party = "Tandist"; defence_department_party = "I"; economic_department_party = "Tandist"; finance_department_party = "Tandist"; agriculture_department_party = "Tandist"; leverage = 25 if leverage >= 25;
 go-to: ministries
 
 Heinrich de la Cruz welcomes us into his new cabinet. Now, we have our pick of ministries.
 
 @bruning_oppo
-on-arrival: spring_in_government = 0; spring_toleration = 0; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "Tandist"; labor_department_party = "Tandist"; military_minister_party = "I"; economic_department_party = "Tandist"; finance_department_party = "Tandist"; agriculture_department_party = "Tandist"; grand_coalition_failed = 1
+on-arrival: spring_in_government = 0; spring_toleration = 0; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "Tandist"; labor_department_party = "Tandist"; defence_department_party = "I"; economic_department_party = "Tandist"; finance_department_party = "Tandist"; agriculture_department_party = "Tandist"; grand_coalition_failed = 1
 
 By refusing to join the grand coalition or tolerating it, we essentially throw the balance of government to the right wing. [? if right_coalition >= 50 : There are enough votes to form a right-wing coalition that includes the Barons. However, the Barons leader, Hugenberg, is opposed to a coalition with the "November criminals" of the Tandist Party. And of course, the NSDAP is not interested in coalition government. This means that there will not be enough votes to form a majority coalition. ?][? if right_coalition < 50 : There are not enough votes to form a right-wing coalition that includes the Barons, and they are not interested in joining in a coalition with the "November criminals" of the Tandist Party, anyhow. And of course, the NSDAP is not interested in coalition government. This means that there is no route to a majority coalition. ?]
 
@@ -949,7 +949,7 @@ The people's faith in democracy is shaken by this ordeal. Of course, the Nazis a
 @toleration_bruning
 choose-if: neo_republican_coalition >= 50
 unavailable-subtitle: The parties supporting de la Cruz do not have a majority.
-on-arrival: spring_in_government = 0; spring_toleration = 1; minority_government = 1; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "I"; labor_department_party = "Tandist"; military_minister_party = "I"; economic_department_party = "Progressive"; finance_department_party = "Business"; agriculture_department_party = "Tandist"; pro_republic -= 4; new_middle_dvp -= 5; new_middle_ddp -= 5; old_middle_dvp -= 5; old_middle_ddp -= 5; old_middle_nsdap += 5; new_middle_nsdap += 5; rural_barons -= 5;
+on-arrival: spring_in_government = 0; spring_toleration = 1; minority_government = 1; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "I"; labor_department_party = "Tandist"; defence_department_party = "I"; economic_department_party = "Progressive"; finance_department_party = "Business"; agriculture_department_party = "Tandist"; pro_republic -= 4; new_middle_dvp -= 5; new_middle_ddp -= 5; old_middle_dvp -= 5; old_middle_ddp -= 5; old_middle_nsdap += 5; new_middle_nsdap += 5; rural_barons -= 5;
 
 We have decided to tolerate de la Cruz's government. This means that we will vote against no-confidence votes to make sure they fail, but also that we will not be directly participating as ministers in the government. Thus, we can prevent a new election and stop the far right from entering government.
 
@@ -1129,7 +1129,7 @@ We are seen as responsible for the failure to form a government, and many of our
 
 @ministries
 
-We can pick from any number of ministries. Controlling a department allows us to directly effect policy in that area. [? if in_left_front : Any department that we do not take will be given to the Pass Party. ?] [? if in_left_front and military_minister_party == "Pass Party" : If the Pass Party controls the Department of Defence, the army will most likely revolt. ?]
+We can pick from any number of ministries. Controlling a department allows us to directly effect policy in that area. [? if in_left_front : Any department that we do not take will be given to the Pass Party. ?] [? if in_left_front and defence_department_party == "Pass Party" : If the Pass Party controls the Department of Defence, the army will most likely revolt. ?]
 
 - #mins_2253
 - #drop_mins_2253
@@ -1237,8 +1237,8 @@ subtitle: The Department responsible for the armed forces is not typically our d
 unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 15 
-view-if: military_minister_party != "Long Spring"
-on-arrival: leverage -= 15; military_minister_party = "Long Spring"; defence_secretary = "Grant"
+view-if: defence_department_party != "Long Spring"
+on-arrival: leverage -= 15; defence_department_party = "Long Spring"; defence_secretary = "Grant"
 go-to: ministries
 
 George Grant of the Long Spring has been appointed Secretary of Defence.
@@ -1310,7 +1310,7 @@ go-to: ministries
 
 @drop_reichswehr
 title: Drop the Department of Defense.
-view-if: military_minister_party = "Long Spring"
-on-arrival: military_minister_party = "Grizzly"; defence_secretary = "Tanner"; leverage += 15;
+view-if: defence_department_party = "Long Spring"
+on-arrival: defence_department_party = "Grizzly"; defence_secretary = "Tanner"; leverage += 15;
 tags: drop_mins_2253
 go-to: ministries
