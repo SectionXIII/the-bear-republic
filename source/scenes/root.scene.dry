@@ -435,10 +435,10 @@ Q.east_explored = 0;
 Q.east_seen = 0;
 
 // Diplomatic Relations
-Q.shi_relation = 3;
-Q.desran_relation = 2;
-Q.arroyo_relation = 4;
-Q.mojave_relation = -1;
+Q.shi_relations = 3;
+Q.desran_relations = 2;
+Q.arroyo_relations = 4;
+Q.mojave_relations = -1;
 
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
