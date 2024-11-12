@@ -183,7 +183,7 @@ Q.nsdap_banned = 0;
 Q.coup_progress = 0;
 Q.capital_strike_progress = 0;
 
-Q.budget = 5;
+Q.budget = 7;
 
 // Proportion of different social groups
 // source: I happened across an oily blackstone upon the hollows of the earth which revealed the truth of the demographic situation of the New Californian Republic circa 2253 to me and nothing else.
