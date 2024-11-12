@@ -54,6 +54,8 @@ Inflation: [+ inflation_2 +]%
 
 [? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
 
+Economic Health: [+ economic_health : economic_health +]
+
 Gold Reserves: [+ gold_reserves : gold_reserves +]
 
 Industry: [+ industrial_level : industrial_level +]
