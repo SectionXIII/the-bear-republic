@@ -1,7 +1,7 @@
 # economic health descriptions
 
-(..4.999) <span style="color: #FF7F7F;">Abyssmal</span>
-(4.999..9.999) <span style="color: #FFB27F;">Poor</span>
-(9.999..14.999) <span style="color: #FFE97F;">Normal</span>
-(19.999..24.999) <span style="color: #A5FF7F;">Good</span>
-(24.999..) <span style="color: #7FFF8E;">Excellent!</span>
+(..4.999) <span style="color: #BF2A2A;">Abyssmal</span>
+(4.999..9.999) <span style="color: #BC6A32;">Poor</span>
+(9.999..14.999) <span style="color: #CCAE2A;">Normal</span>
+(19.999..24.999) <span style="color: #9DCE23;">Good</span>
+(24.999..) <span style="color: #63CC37;">Excellent!</span>

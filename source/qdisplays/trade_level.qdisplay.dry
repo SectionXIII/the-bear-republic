@@ -1,7 +1,7 @@
 # trade descriptions
 
-(..4.999) <span style="color: #FF7F7F;">Almost Non-existent</span>
-(4.999..9.999) <span style="color: #FFB27F;">Sluggish</span>
-(9.999..14.999) <span style="color: #FFE97F;">Normal</span>
-(19.999..24.999) <span style="color: #A5FF7F;">Increased</span>
-(24.999..) <span style="color: #7FFF8E;">Booming!</span>
+(..4.999) <span style="color: #BF2A2A;">Almost Non-existent</span>
+(4.999..9.999) <span style="color: #BC6A32;">Sluggish</span>
+(9.999..14.999) <span style="color: #CCAE2A;">Normal</span>
+(19.999..24.999) <span style="color: #9DCE23;">Increased</span>
+(24.999..) <span style="color: #63CC37;">Booming!</span>
