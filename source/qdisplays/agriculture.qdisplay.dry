@@ -1,7 +1,7 @@
-# economic health descriptions
+# agricultural descriptions
 
-(..4.999) Agricultural
-(4.999..9.999) Semi-Agricultural
-(9.999..14.999) Semi-Industrialized
-(19.999..24.999) Industrialized
-(24.999..) Modern Industry
+(..4.999) Subsistence
+(4.999..9.999) Centralized Farming
+(9.999..14.999) Semi-Mechanized
+(19.999..24.999) Mass Mechanization
+(24.999..) Modern Agriculture
