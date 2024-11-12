@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 tags: govt_affairs
 on-arrival: economic_policy_timer += 12; month_actions += 1;
-view-if: spring_in_government = 1 and (economic_minister_party == "Long Spring" or finance_minister_party == "Long Spring") and economic_policy_timer <= 0 and economic_plan > 0
+view-if: spring_in_government = 1 and (economic_department_party == "Long Spring" or finance_department_party == "Long Spring") and economic_policy_timer <= 0 and economic_plan > 0
 card-image: img/portraits/SchmidtRobert.jpg
 
 = Economic Policy

@@ -1,7 +1,7 @@
 #  title: KPD policy
 #  subtitle: The KPD ministers are carrying out their policy portfolios.
 #  new-page: true
-#  view-if: (in_popular_front or in_left_front) and (labor_minister_party = "KPD" or economy_minister_party = "KPD" or finance_minister_party = "KPD") and (kpd_policy_timer = 0)
+#  view-if: (in_popular_front or in_left_front) and (labor_department_party = "KPD" or economy_minister_party = "KPD" or finance_department_party = "KPD") and (kpd_policy_timer = 0)
 #  on-arrival: kpd_policy_timer = 5
 #tags: event
 #max-choices: 1
@@ -29,7 +29,7 @@
 @labor
 title: Labor Ministry
 subtitle: The Labor Ministry is giving significant concessions to organized labor.
-view-if: labor_minister_party = "KPD"
+view-if: labor_department_party = "KPD"
 
 The KPD-controlled Labor Ministry is taking a policy of supporting labor in every dispute between workers and employees, leading to a proliferation of strikes across the country. Given the economic circumstances, there are worries that this could harm any potential economic recovery, not to mention the conflicts this may engender with the bourgeois parties.
 
@@ -73,7 +73,7 @@ After opposing the nationalization policy, the KPD has commenced a propaganda ca
 @finance
 title: Finance Ministry
 subtitle: The Finance Ministry is increasing taxes on the rich.
-view-if: finance_minister_party = "KPD"
+view-if: finance_department_party = "KPD"
 
 The KPD-controlled Finance Ministry
 
@@ -87,7 +87,7 @@ The KPD-controlled Finance Ministry
 @foreign
 title: Foreign Ministry
 subtitle: The Foreign Ministry is aiding the Soviet Union.
-view-if: foreign_minister_party = "KPD"
+view-if: state_department_party = "KPD"
 
 The KPD-controlled Foreign Ministry is planning to send economic aid to the Soviet Union.
 
@@ -101,7 +101,7 @@ The KPD-controlled Foreign Ministry is planning to send economic aid to the Sovi
 @interior
 title: Interior Ministry
 subtitle: The Interior Ministry is engaged in a purge of the security services.
-view-if: interior_minister_party = "KPD"
+view-if: interior_department_party = "KPD"
 
 - @interior_support: Yes, we support purging the security services.
 - @interior_oppose: No, this seems to be a pretext for a KPD power grab.

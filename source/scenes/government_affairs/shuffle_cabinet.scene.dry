@@ -10,21 +10,21 @@ Do we wish to shuffle our cabinet? This might upset our current coalition.
 
 Current cabinet:
 
-Labor: [+ labor_minister_party +]
+Labor: [+ labor_department_party +]
 
-Interior: [+ interior_minister_party +]
+Interior: [+ interior_department_party +]
 
-Finance: [+ finance_minister_party +]
+Finance: [+ finance_department_party +]
 
-Economic: [+ economic_minister_party +]
+Economic: [+ economic_department_party +]
 
-Justice: [+ justice_minister_party +]
+Justice: [+ justice_department_party +]
 
-Foreign: [+ foreign_minister_party +]
+Foreign: [+ state_department_party +]
 
-Reichswehr: [+ reichswehr_minister_party +]
+Reichswehr: [+ military_minister_party +]
 
-Agriculture: [+ agriculture_minister_party +]
+Agriculture: [+ agriculture_department_party +]
 
 - @shuffle: Yes, do it.
 - @root: No, there is no need.

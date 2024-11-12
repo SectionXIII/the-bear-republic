@@ -17,8 +17,8 @@ Grant is a former Ranger and anti-slavery activist with a burning hatred for Vau
 @military_affairs
 title: Military affairs
 subtitle: We can set our military policy.
-choose-if: advisor_action_timer == 0 and spring_in_government and reichswehr_minister_party == "Long Spring"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if reichswehr_minister_party != "Long Spring": The SPD does not have the Reichswehr ministry. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government and military_minister_party == "Long Spring"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if military_minister_party != "Long Spring": The SPD does not have the Reichswehr ministry. ?]
 on-arrival: advisor_action_timer = 6;
 go-to: military_policy
 

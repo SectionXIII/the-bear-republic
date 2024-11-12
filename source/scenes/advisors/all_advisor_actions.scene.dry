@@ -92,8 +92,8 @@ We have gained +[+ dues +] resources.
 @agriculture
 title: Agricultural Policy
 subtitle: Baade is the Minister of Agriculture.
-choose-if: advisor_action_timer <= 0 and spring_in_government and agriculture_minister_party == "Long Spring"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if agriculture_minister_party != "Long Spring": The SPD does not have the Agriculture Ministry. ?]
+choose-if: advisor_action_timer <= 0 and spring_in_government and agriculture_department_party == "Long Spring"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if agriculture_department_party != "Long Spring": The SPD does not have the Agriculture Ministry. ?]
 on-arrival: advisor_action_timer = 6; agricultural_policy_timer -= 6
 go-to: agricultural_policy
 
@@ -215,8 +215,8 @@ on-arrival: advisor_action_timer = 6; international_relations_timer -= 12;
 @breitscheid_foreign
 title: Foreign Policy
 subtitle: As Foreign Minister, Breitscheid can set our foreign policy.
-unavailable-subtitle: [? if not spring_in_government: The SPD is not in government. ?] [? if foreign_minister_party != "Long Spring" : The SPD does not control the Foreign Ministry. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-choose-if: advisor_action_timer == 0 and spring_in_government and foreign_minister_party == "Long Spring"
+unavailable-subtitle: [? if not spring_in_government: The SPD is not in government. ?] [? if state_department_party != "Long Spring" : The SPD does not control the Foreign Ministry. ?][? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government and state_department_party == "Long Spring"
 on-arrival: advisor_action_timer = 6; foreign_policy_timer -= 8;
 go-to: foreign_policy
 
@@ -241,16 +241,16 @@ We have reduced dissent among the anti-toleration factions.
 @finance_ministry_
 title: Fiscal Policy
 subtitle: As Finance Minister, Hilferding can enact tax policies.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spring_in_government = 0 : SPD not in government: ?] [? if finance_minister_party != "Long Spring" : The SPD does not control the finance ministry. ?]
-choose-if: advisor_action_timer == 0 and spring_in_government == 1 and finance_minister_party == "Long Spring"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spring_in_government = 0 : SPD not in government: ?] [? if finance_department_party != "Long Spring" : The SPD does not control the finance ministry. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government == 1 and finance_department_party == "Long Spring"
 on-arrival: advisor_action_timer = 6; fiscal_policy_timer -= 6
 go-to: fiscal_policy
 
 @economic_democracy_
 title: Economic Democracy
 subtitle: Enact policies to build a more democratic economy.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spring_in_government = 0 : SPD not in government: ?] [? if labor_minister_party != "Long Spring" or (finance_minister_party != "Long Spring" and economic_minister_party != "Long Spring") : We do not have the necessary government ministers. ?]
-choose-if: advisor_action_timer == 0 and spring_in_government == 1 and (economic_minister_party == "Long Spring" or finance_minister_party == "Long Spring") and (labor_minister_party == "Long Spring")
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spring_in_government = 0 : SPD not in government: ?] [? if labor_department_party != "Long Spring" or (finance_department_party != "Long Spring" and economic_department_party != "Long Spring") : We do not have the necessary government ministers. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government == 1 and (economic_department_party == "Long Spring" or finance_department_party == "Long Spring") and (labor_department_party == "Long Spring")
 on-arrival: advisor_action_timer = 6; economic_democracy_timer -= 10
 go-to: economic_democracy
 
@@ -284,8 +284,8 @@ Leber helps us to rally the people in defense of democracy.
 @military_affairs
 title: Military affairs
 subtitle: We can set our military policy.
-choose-if: advisor_action_timer == 0 and spring_in_government and reichswehr_minister_party == "Long Spring"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if reichswehr_minister_party != "Long Spring": The SPD does not have the Reichswehr ministry. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government and military_minister_party == "Long Spring"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if military_minister_party != "Long Spring": The SPD does not have the Reichswehr ministry. ?]
 on-arrival: advisor_action_timer = 6;
 go-to: military_policy
 
@@ -364,8 +364,8 @@ go-to: womens_rights
 @judiciary_
 title: Judicial Affairs
 subtitle: Enact judicial reforms.
-choose-if: advisor_action_timer = 0 and spring_in_government and justice_minister_party = "Long Spring"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not currently in government. ?][? if justice_minister_party != "Long Spring" : We do not have the Justice Ministry. ?]
+choose-if: advisor_action_timer = 0 and spring_in_government and justice_department_party = "Long Spring"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not currently in government. ?][? if justice_department_party != "Long Spring" : We do not have the Justice Ministry. ?]
 on-arrival: advisor_action_timer = 6; judiciary_timer -= 6
 go-to: judiciary
 
@@ -373,8 +373,8 @@ go-to: judiciary
 @constitutional_reform_
 title: Constitutional Reform
 subtitle: Pursue reforms of the inadequate Weimar Constitution.
-choose-if: advisor_action_timer = 0 and spring_in_government and justice_minister_party = "Long Spring" and neorevisionism and ((in_republican_coalition) or (in_spd_majority) or (in_left_front) or (in_popular_front))
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not currently in government. ?] [? if justice_minister_party != "Long Spring" : We do not have the Justice Ministry. ?] [? if not neorevisionism: We do not have ideological support for constitutional reform yet - new ideas are needed. ?] [? if not ((in_republican_coalition) or (in_spd_majority) or (in_left_front) or (in_popular_front)) : Our current governing coalition will not support constitutional reforms. ?]
+choose-if: advisor_action_timer = 0 and spring_in_government and justice_department_party = "Long Spring" and neorevisionism and ((in_republican_coalition) or (in_spd_majority) or (in_left_front) or (in_popular_front))
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not currently in government. ?] [? if justice_department_party != "Long Spring" : We do not have the Justice Ministry. ?] [? if not neorevisionism: We do not have ideological support for constitutional reform yet - new ideas are needed. ?] [? if not ((in_republican_coalition) or (in_spd_majority) or (in_left_front) or (in_popular_front)) : Our current governing coalition will not support constitutional reforms. ?]
 on-arrival: advisor_action_timer = 6
 go-to: constitutional_reform
 
@@ -390,8 +390,8 @@ We have reduced dissent among the party's factions.
 @police_affairs
 title: Police affairs 
 subtitle: We can set our police policy. 
-choose-if: advisor_action_timer == 0 and spring_in_government and interior_minister_party == "Long Spring"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if interior_minister_party != "Long Spring": The SPD does not have the Interior ministry. ?]
+choose-if: advisor_action_timer == 0 and spring_in_government and interior_department_party == "Long Spring"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spring_in_government : The SPD is not in government. ?][? if interior_department_party != "Long Spring": The SPD does not have the Interior ministry. ?]
 on-arrival: advisor_action_timer = 6; police_timer -= 6
 go-to: police
 

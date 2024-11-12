@@ -1,10 +1,10 @@
-title: The Prussian Bulwark
+title: Ranger Affairs
 new-page: true
 is-card: true
 view-if: spd_prussia = 1 and prussian_affairs_timer <= 0
 on-arrival: prussian_affairs_timer += 6; month_actions += 1
 tags: govt_affairs
-card-image: img/braun.jpg
+card-image: img/RangerAffairs.jpg
 
 = Prussian Affairs
 
