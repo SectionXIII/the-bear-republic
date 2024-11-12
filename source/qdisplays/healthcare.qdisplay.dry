@@ -1,7 +1,7 @@
 # healthcare level descriptions
 
-(..4.999) Makeshift Healthcare
-(5..9.999) Rudimentary Healthcare
-(10..14.999) Nascent Healthcare
-(15..19.999) Developed Healthcare
+(..4.999) **Makeshift Healthcare**
+(5..9.999) **Rudimentary Healthcare**
+(10..14.999) **Nascent Healthcare**
+(15..19.999) **Developed Healthcare**
 (20..) **Advanced Healthcare**
