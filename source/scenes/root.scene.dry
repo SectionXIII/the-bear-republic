@@ -464,7 +464,10 @@ Q.upper_tax_rates = 0;
 Q.free_land = 0;
 Q.imperialism = 0;
 Q.xenophobia = 0;
-Q.technology_level = 0;
+Q.tech_base = 10;
+Q.tribal_rights = 3;
+Q.rail_level = 4;
+Q.infrastructure = 10;
 
 // Economy variables
 Q.economic_health = 10;
@@ -473,7 +476,7 @@ Q.gold_reserves = 5;
 
 
 // Mutant rights and scare scale
-Q.mutant_rights = 0;
+Q.mutant_rights = 2;
 Q.mutant_acceptance = 0;
 Q.mutant_scare = 1;
 

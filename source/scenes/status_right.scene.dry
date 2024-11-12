@@ -4,17 +4,21 @@ is-special: true
 
 = Development
 
-Mutant Rights: [+ mutant_rights +]
+Mutant Rights: [+ mutant_rights : mutant_rights +]
 
-Tribal Rights:
+Tribal Rights: [+ tribal_rights : tribal_rights +]
 
-Roads:
+Roads: [+ infrastructure : infrastructure +]
 
-Rails:
+Rails: [+ rail_level : rail_level +]
 
 Land Grants:
 
-Technology Base:
+Technology Base: [+ tech_base : tech_base +]
+
+Healthcare: [+ healthcare : healthcare +]
+
+Education: [+ education : education +]
 
 @diplomatic
 
