@@ -399,11 +399,7 @@ Q.agriculture_minister = 'Kim';
 Q.agriculture_minister_party = 'Barons';
 
 // Events: what has occurred?
-Q.panzerkreuzer_seen = 0;
-Q.panzerkreuzer_funded = 0;
-Q.panzerkreuzer_failed = 0;
 Q.unemployment_insurance_seen = 0;
-Q.blutmai = 0;
 Q.army_deal_seen = 0;
 
 // have we reformed these institutions to be more democratic?
@@ -424,15 +420,19 @@ Q.tribal_policy = 0;
 
 // works-creation programs (i.e. WTB-plan) - how much have they implemented?
 Q.works_program = 0;
-Q.wtb_implemented = 0;
+Q.industrial_plan_implemented = 0;
+Q.agricultural_plan_implemented = 0;
+Q.hide_plan_implemented = 0;
+Q.education_plan_implemented = 0;
 
-// Relations with the Western countries (France, UK).
+// Relations with the Nevada cities.
 Q.nevada_relations = 0;
+Q.admission_negotiation = 0;
 
 // Relations with the Nevada thunderdome
 Q.east_explored = 0;
 Q.east_relation = 0;
-
+Q.east_seen = 0;
 
 // Relations with the Shi
 Q.shi_relation = 0;
@@ -442,7 +442,7 @@ Q.rearmament_exposed = 0;
 
 // reparations vs baseline: young plan is -1.
 Q.reparations = 0;
-Q.admission_negotiation = 0;
+
 
 // nationalization_progress is part of the left economic plan.
 Q.nationalization_progress = 0;

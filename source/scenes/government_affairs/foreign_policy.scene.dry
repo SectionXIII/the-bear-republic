@@ -17,7 +17,6 @@ What should our foreign policy priority be?
 - @improve_bos
 - @improve_shi
 - @explore_east
-- @customs_union
 # - @negotiate
 - @admission_success
 # - @expose
@@ -47,32 +46,28 @@ The Shi, who control much of San Francisco, are an elusive group. Though wieldin
 
 @explore_east
 title: Explore the mysteries of southern Nevada.
+on-arrival: east_seen += 1;
+
+The wastelands east of Shady Sands are ill explored and remain mysterious even to this day. Rumors abound of an order of steel clad warriors guarding a massive pit in the ground, of an exiled Arroyan warlord, an independent group of Rangers like California's own, and a band of rogue raiders who aim for the stars. Perhaps we should attempt to uncover the truth of the matter.
+
+- @contact_east
+- @fp_menu: Perhaps our focus is better spent elsewhere.
+
+
+@contact_east
+title: Raging Storms, Blurry Forms
 on-arrival: east_explored += 1;
 
-The wastelands north of Shady Sands are ill explored and remain mysterious even to this day. Rumors abound of an order of steel clad warriors guarding a massive pit in the ground, of an exiled Arroyan warlord, an independent group of Rangers unlike California's own, and a band of rogue raiders who aim for the stars. Perhaps we should attempt to uncover the truth of the matter.
+Our scouts bring back reports of a hidden valley sometimes bracketed by fierce storms, hiding a slow brewing conflict in the area.
 
+First is the obvious Brotherhood presence. There is a group of power armored mystics holed up in a... hole. Not a proper bunker, but a gaping maw whose bottom disappears into the darkness at it's bottom. Despite their strange iconography, it's clear that this is dissident group of the Brotherhood - and talks with locals have confirmed as much. Tech raids, tribute, the works. These 'Guardians' claim to be steward of technology and defenders of humanity from it's wickedness, but they appear to largely use their power to keep the rest of the region down. [? if president = "Ruiz": President Ruiz will relish a chance to bring down an isolated group of Brotherhood, should we decide to abide by her wishes. ?]
 
-@customs_union
-title: Form a customs union with Austria?
-subtitle: This will likely incur the wrath of France.
-unavailable-subtitle: This is superseded by the European Union.
-choose-if: eu = 0
-view-if: black_thursday_seen = 1 and customs_union = 0
+Secondly, there are reports of a strange group of tribals who have taken to wearing *un*powered armor as... simple body armor, wielding rusting guns and power mauls in equal measure, as they charge across battlefields for one they call 'Kaga'. The Chosen One of Arroyo, they claim. But we know that can't be true, as the Chosen One had no name, left no trace, but we know of their legacy. The Republic wouldn't be alive were it not for their intervention. Whatever the case may be, should we investigate their claims?
 
-The right has long desired closer ties with Austria, with the eventual goal of the merger of the two German-speaking countries. A customs union with Austria is the first step towards this goal. Additionally, many believe that a union with Austria would improve our current economic circumstances.
+Thirdly, there are a group of prolific raiders in the area with dynamite and crude energy weapons as their mainstay. These '215th' mainly raid across the southwest of Nevada, frequently clashing with the Guardians, Sons of Kaga, and the Desert Rangers for control of the roads and towns. Despite being uncouth raiders, they're not entirely unreasonable. Perhaps a deal could be struck?
 
-However, the Allies, especially France, are likely to object. This agreement would break the terms of the Versailles Treaty, and could lead to economic sanctions, further hurting our economy.
+Then there are the mysterious Desert Rangers. Much like the New Californian Rangers, they are descended from former US Army Engineers and Ranger Corps that survived the bombs. They fight to keep order in the Esmerelda Valley, frequently facing off against the raiders, cultists, and crazed warlords that settled into the area. While there are obvious doctrinal differences between our Rangers and theirs, both fight for the same old world values of democracy, freedom, and the pursuit of happiness. Perhapse we 
 
-- @customs_union_2: Yes, do it!
-- @fp_menu: No, we should do something else.
-
-@customs_union_2
-on-arrival: banking_crisis_timer = 2; customs_union = 1; nevada_relations -= 2; east_relation -= 2; tandist_relation += 6; business_relation += 6; coalition_dissent -= 1 if coalition_dissent > 0; coup_progress -= 1
-max-visits: 1
-
-We have formed a customs union with Austria! The right-wing parties are praising us for this unexpected turn of events.
-
-Immediately, France and other neighboring countries lodge their protests. The longer-term response is yet to be seen.
 
 
 # @negotiate

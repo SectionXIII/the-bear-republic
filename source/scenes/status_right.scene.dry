@@ -52,10 +52,10 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 Inflation: [+ inflation_2 +]%
 
+[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+
 Gold Reserves:
 
-Industry:
+Industry: [? economic_health : economic_health ?]
 
 Agriculture:
-
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
