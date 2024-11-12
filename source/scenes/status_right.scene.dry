@@ -24,17 +24,17 @@ Education: [+ education : education +]
 
 = Diplomatic Relations
 
-New Reno & Vault City: [+ nevada_relations +]
+New Reno & Vault City: [+ nevada_relations : nevada_relations +]
 
-Brotherhood of Steel: [+ bos_relations +]
+Brotherhood of Steel: [+ bos_relations : bos_relations +]
 
-Desert Rangers:
+Desert Rangers: [+ desran_relations : desran_relations +]
 
-Arroyo:
+Arroyo: [+ arroyo_relations : arroyo_relations +]
 
-Shi:
+Shi: [+ shi_relations : shi_relations +]
 
-Mojave Settlements:
+Mojave Settlements: [+ mojave_relations : mojave_relations +]
 
 House:
 
