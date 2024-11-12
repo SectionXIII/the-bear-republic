@@ -443,7 +443,6 @@ Q.rearmament_exposed = 0;
 // reparations vs baseline: young plan is -1.
 Q.reparations = 0;
 
-
 // nationalization_progress is part of the left economic plan.
 Q.nationalization_progress = 0;
 
@@ -470,7 +469,7 @@ Q.technology_level = 0;
 // Economy variables
 Q.economic_health = 0;
 Q.trade = 0;
-Q.gold_reserves = 0;
+Q.gold_reserves = 6;
 
 
 // Mutant rights and scare scale

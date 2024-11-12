@@ -56,6 +56,6 @@ Inflation: [+ inflation_2 +]%
 
 Gold Reserves: [+ gold_reserves : gold_reserves +]
 
-Industry: [+ economic_health : economic_health +]
+Industry: [+ industrial_level : industrial_level +]
 
 Agriculture: [+ agriculture : agriculture +]
