@@ -42,7 +42,7 @@ Mojave Settlements: [+ mojave_relations : mojave_relations +]
 
 = Military
 
-New California Republica Army: [+ ncra_strength +] thousand troops.
+NCR Army Strength: [+ ncra_strength +] thousand troops.
 
 NCRA Loyalty: [+ ncra_loyalty : loyalty +]
 
