@@ -56,6 +56,8 @@ Inflation: [+ inflation_2 +]%
 
 Economic Health: [+ economic_health : economic_health +]
 
+Trade: [+ trade_level : trade_level +]
+
 Gold Reserves: [+ gold_reserves : gold_reserves +]
 
 Industry: [+ industrial_level : industrial_level +]
