@@ -143,12 +143,12 @@ Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
 Q.interior_police_loyalty = 0.45;
 
-Q.rangers_strength = 90;
+Q.rangers_strength = 300;
 Q.rangers_militancy = 1;
 Q.rangers_loyalty = 0.5;
 
 // NCR Army stats
-Q.ncra_strength = 100;
+Q.ncra_strength = 40;
 Q.ncra_militancy = 5;
 Q.ncra_loyalty = 0.54;
 
