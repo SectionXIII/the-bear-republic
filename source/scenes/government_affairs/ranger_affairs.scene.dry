@@ -19,7 +19,7 @@ Rangers, the deadliest single force available to the New California Republic. De
 
 @ranger_loyalty
 view-if: rangers_loyalty < 1
-on-arrival: rangers_loyalty += 0.1
+on-arrival: rangers_loyalty += 0.05
 
 # increase ranger loyalty
 The Rangers are very independent minded, and while all loyal to the Republic, there are degrees to this loyalty. We can increase their loyalty to both the Spring and the State by strategically interfering with the Rangers.
@@ -32,7 +32,7 @@ on-arrival: rangers_strength += 20
 We have increased the size of the Ranger corps.
 
 @ranger_militarization
-on-arrival: rangers_militancy += 0.058
+on-arrival: rangers_militancy += 0.05
 
 @ranger_missions
 # on-arrival:
