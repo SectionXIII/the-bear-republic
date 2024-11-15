@@ -2,9 +2,7 @@ title: Regualar Bandit Raid
 new-page: true 
 subtitle: The Frontier is under attack by bandits again!
 tags: event
-view-if: early_game_bandit_raid_timer = 0
-on-arrival: intelligentsia_strength *= 0.3; workers_spring -= 10; workers_others += 5; n_advisors -= 1 if braun_advisor == 1; n_advisors -= 1 if severing_advisor == 1; braun_advisor = 0; severing_advisor = 0; rb_strength -= 250; reformists_resign = 1
-
+view-if: early_game_bandit_raid_timer >= 0
 
 = Ghosts in Power Armor...
 
