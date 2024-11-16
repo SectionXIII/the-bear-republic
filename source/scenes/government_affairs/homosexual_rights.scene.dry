@@ -7,7 +7,7 @@ max-visits: 3
 view-if: spring_in_government == 1 and (progressive_coalition >= 50) and chancellor_party == "Long Spring" and homosexual_rights_timer == 0 and homosexual_rights < 3
 on-arrival: homosexual_rights_timer += 11; month_actions += 1
 tags: govt_affairs
-
+ 
 = Homosexual Rights
 
 There is a constellation of different groups that have grown up around divergences in gender and sexuality, including homosexuals, lesbians, transsexuals, transvestites, inverts, etc. Our party's policy is to support their right to live freely and free from persecution; Magnus Hirschfeld, the founder of the Institut für Sexualwissenschaft, is a member of our party and a major advocate for homosexual rights. 
