@@ -15,11 +15,11 @@ Poggers, this fluff text is so poggers. OML FR POG
 
 
 @Employ_the_Army
-on-arrival: frontier_dissent -= 5; early_game_bandit_raid_timer += 6
+on-arrival: frontier_dissent -= 5; paltry_bandit_raid_timer += 6
 
 Our Soliders die trying to flush these bandits out, we aren't equiped to handle such small scale raids byt the frontier is safe for another day. However this does keep the bandits away for longer than usual.
 
 @Let_it_happen
-on-arrival: frontier_dissent += 5; early_game_bandit_raid_timer += 3
+on-arrival: frontier_dissent += 5; paltry_bandit_raid_timer += 3
 
 Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
