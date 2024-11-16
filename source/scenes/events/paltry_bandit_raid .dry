@@ -2,7 +2,7 @@ title: Paltry Bandit Raid
 new-page: true 
 subtitle: The Frontier is under attack by bandits again!
 tags: event
-view-if: paltry_bandit_raid >= 0
+view-if: paltry_bandit_raid = 0
 
 
 
