@@ -3,9 +3,6 @@ new-page: true
 subtitle: The Frontier is under attack by bandits again!
 tags: event
 view-if: paltry_bandit_raid_timer = 0
-#is-hand: true
-#max-cards: 3
-
 
 = Paltry Bandit Raid
 
