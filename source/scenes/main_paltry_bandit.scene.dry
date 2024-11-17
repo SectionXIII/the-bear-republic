@@ -1,0 +1,13 @@
+title: Military Action Against the Bandits
+new-page: true 
+subtitle: The Frontier is under attack by bandits again! We have been shooed into a room with our best and greatest as we debate ideas on how to deal with this issue
+is-hand: true
+max-cards: 6
+
+@Military Response
+title: Military Response
+#card-image: img/LongSpring.png
+is-deck: true
+
+- #Paltry_Bandit_affairs
+
