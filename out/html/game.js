@@ -167,7 +167,7 @@
   // TODO: have some code for tabbed sidebar browsing.
   window.updateSidebar = function() {
       $('#qualities').empty();
-      var scene = dendryUI.game.scenes[window.statusTab];
+      var scene = dendryUI.game.scenes[window.statusTabLeft];
       dendryUI.dendryEngine._runActions(scene.onArrival);
       var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
       $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
@@ -175,7 +175,7 @@
 
   window.updateSidebarright = function() {
     $('#qualities_right').empty();
-    var scene = dendryUI.game.scenes[window.statusTab];
+    var scene = dendryUI.game.scenes[window.statusTabRight];
     dendryUI.dendryEngine._runActions(scene.onArrival);
     var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
     $('#qualities_right').append(dendryUI.contentToHTML.convert(displayContent));
@@ -192,11 +192,12 @@
         tabButtons[i].className = tabButtons[i].className.replace(' active', '');
       }
       tabButton.className += ' active';
-      window.statusTab = newTab;
       if(isRight){
+        window.statusTabRight = newTab;
         window.updateSidebarright();
     }
       else{
+        window.statusTabLeft = newTab;
         window.updateSidebar();
     }
   };
@@ -239,16 +240,17 @@
 
 
   window.justLoaded = true;
-  window.statusTab = "status";
+  window.statusTabLeft = "status";
+  window.statusTabRight = "status_right";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
   window.onload = function() {
     window.dendryUI.loadSettings({show_portraits: false});
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
-    window.statusTab = "status";
+    window.statusTabLeft = "status";
     window.updateSidebar();
-    window.statusTab = "status_right";
+    window.statusTabRight = "status_right";
     window.updateSidebarright();
   };
 
