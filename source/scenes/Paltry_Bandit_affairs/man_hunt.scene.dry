@@ -22,7 +22,7 @@ on-arrival: resources -=2; paltry_bandit_raid_timer += 6;
 
 FLUFF
 
-@middle
+@A_quick_patrol
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
