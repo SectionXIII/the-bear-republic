@@ -27,10 +27,10 @@ on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; 
 Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
 
 
-@party
-title: Party Affairs
-card-image: img/LongSpring.png
-is-deck: true
-on-arrival: paltry_bandit_raid_timer += 3
-
-- #party_affairs
+#@party
+#title: Party Affairs
+#card-image: img/LongSpring.png
+#is-deck: true
+#on-arrival: paltry_bandit_raid_timer += 3
+#
+#- #party_affairs
