@@ -4,10 +4,9 @@ subtitle: The Frontier is under attack by bandits again! We have been shooed int
 is-hand: true
 max-cards: 6
 
-@Military Response
+@Military_Response
 title: Military Response
 #card-image: img/LongSpring.png
 is-deck: true
-
 - #Paltry_Bandit_affairs
 
