@@ -12,6 +12,7 @@ Poggers, this fluff text is so poggers. OML FR POG
 
 - @Employ_the_Army: Repel them right away!
 - @Let_it_happen: We are too few and too poor to waste our armed forces on bandit raids.
+- @party
 
 
 @Employ_the_Army
@@ -23,3 +24,11 @@ Our Soliders die trying to flush these bandits out, we aren't equiped to handle 
 on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; paltry_bandit_raid_timer += 3
 
 Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
+
+
+@party
+title: Party Affairs
+card-image: img/LongSpring.png
+is-deck: true
+
+- #party_affairs
