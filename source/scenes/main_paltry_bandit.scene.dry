@@ -5,10 +5,19 @@ is-hand: true
 max-cards: 6
 
 - @Military_Response
+- @party
 
 @Military_Response
 title: Military Response
 #card-image: img/LongSpring.png
 is-deck: true
+
 - #Paltry_Bandit_affairs
 
+
+@party
+title: Party Affairs
+card-image: img/LongSpring.png
+is-deck: true
+
+- #party_affairs
