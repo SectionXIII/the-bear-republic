@@ -5,6 +5,8 @@ is-hand: true
 max-cards: 6
 
 @Military_Response
+
+@Military_Response
 title: Military Response
 #card-image: img/LongSpring.png
 is-deck: true
