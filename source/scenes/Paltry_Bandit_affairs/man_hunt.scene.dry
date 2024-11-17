@@ -4,17 +4,17 @@ max-visits: 36
 is-card: true
 card-image: img/Skirmish.jpeg
 frequency: 100
-tags: Paltry_Bandit_affairs
+tags: paltry_bandit_affairs
 
 = Man Hunt
 
 We have decided to allocate soliders to the issue, the question is a show of force or a merger pr stunt?
 
-- @Inch_by_inch: We will explore every inch of this hellscape of a wasteland to put down these bandits.
+- @inch_by_inch: We will explore every inch of this hellscape of a wasteland to put down these bandits.
 - @A_quick_patrol: By the time we arrive they'll be gone, do a minor patrol as a show of force.
-- @easy_discard
+- @dismiss_thought
 
-@Inch_by_inch
+@inch_by_inch
 subtitle: -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
@@ -29,3 +29,9 @@ unavailable-subtitle: Not enough resources.
 on-arrival: resources -=1; paltry_bandit_raid_timer += 6;
 
 FLUFF
+
+@dismiss_thought
+subtitle; +1 resources
+on-arrival: resources +=1; paltry_bandit_raid_timer += 3;
+
+Fluff - We have decided we dislike this line of thought and won't be going  ahead with it - Fluff

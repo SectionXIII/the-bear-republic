@@ -16,7 +16,7 @@ Poggers, this fluff text is so poggers. OML FR POG
 @employ_the_army
 on-arrival: frontier_dissent += 5; ncra_strength -= 2; ncra_militancy -= 2; paltry_bandit_raid_timer += 6
 
-Our Soliders die trying to flush these bandits out, we aren't equiped to handle such small scale raids byt the frontier is safe for another day. However this does keep the bandits away for longer than usual.
+Our Soliders die trying to flush these bandits out, we aren't equiped to handle such small scale raids but the frontier is safe for another day. However this does keep the bandits away for longer than usual.
 
 @Let_it_happen
 on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; paltry_bandit_raid_timer += 3
@@ -31,3 +31,6 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -=1; 
 go-to: @main_paltry_bandit
+on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05;
+
+We won't respond to this with a knee jerked reaction, we shall consult with our commanders and generals on how to stop this issue in the long term. However if we are ordering the commanders back to the capital that means they aren't stopping the bandits. 
