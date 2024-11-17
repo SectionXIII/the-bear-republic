@@ -33,4 +33,4 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -=1; 
-go-to: main_paltry_bandit.scene.dry
+go-to: @main_paltry_bandit
