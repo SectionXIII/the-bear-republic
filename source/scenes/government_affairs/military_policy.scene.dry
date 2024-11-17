@@ -4,7 +4,7 @@ is-card: true
 tags: govt_affairs
 on-arrival: military_policy_timer += 6; month_actions += 1
 view-if: spring_in_government = 1 and defence_department_party = "Long Spring" and military_policy_timer <= 0
-card-image: img/portraits/LeberJulius.jpg
+card-image: img/MilitaryAffairs.jpg
 
 = Military Policy
 
