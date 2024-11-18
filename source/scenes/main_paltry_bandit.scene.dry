@@ -5,7 +5,7 @@ is-hand: true
 max-cards: 6
 
 - @Military_Response
-- @party
+# - @party
 
 @Military_Response
 title: Military Response
