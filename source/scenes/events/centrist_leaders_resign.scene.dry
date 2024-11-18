@@ -1,12 +1,12 @@
-title: Centrist leaders resign
+title: Mutant leaders resign
 new-page: true 
-subtitle: Centrist disagreements with our policies have grown too severe.
+subtitle: Mutant disagreements with our policies have grown too severe.
 tags: event
 view-if: mutant_dissent >= 60
-on-arrival: mutant_strength *= 0.3; workers_spring -= 5; n_advisors -= 1 if hide_advisor == 1; hide_advisor = 0; rb_strength -= 100; mutant_resign = 1
+on-arrival: mutant_strength *= 0.3; workers_spring -= 5; n_advisors -= 1 if hide_advisor == 1; hide_advisor = 0; road_warden_strength *= 0; mutant_resign = 1
 max-visits: 1
 
-= Centrist leaders resign
+= Mutant leaders resign
 
 Our policy choices have greatly offended the Mutant faction. Many of our most experienced leaders have resigned.
 
