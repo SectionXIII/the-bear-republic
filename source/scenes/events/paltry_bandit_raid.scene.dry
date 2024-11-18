@@ -29,8 +29,7 @@ title: Arrange a Military Meeting
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -=1; 
 go-to: @main_paltry_bandit
-on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05;
+on-arrival: resources -=1; frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05
 
 We won't respond to this with a knee jerked reaction, we shall consult with our commanders and generals on how to stop this issue in the long term. However if we are ordering the commanders back to the capital that means they aren't stopping the bandits. 
