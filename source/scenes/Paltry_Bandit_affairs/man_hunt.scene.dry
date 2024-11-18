@@ -31,7 +31,7 @@ on-arrival: resources -=1; paltry_bandit_raid_timer += 6;
 FLUFF
 
 @dismiss_thought
-subtitle; +1 resources
+subtitle: +1 resources
 on-arrival: resources +=1; paltry_bandit_raid_timer += 3;
 
 Fluff - We have decided we dislike this line of thought and won't be going  ahead with it - Fluff
