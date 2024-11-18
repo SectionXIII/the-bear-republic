@@ -15,11 +15,11 @@ is-deck: true
 - #Paltry_Bandit_affairs
 
 
-#@party
-#title: Party Affairs
-#card-image: img/LongSpring.png
-#is-deck: true
+# @party
+# title: Party Affairs
+# card-image: img/LongSpring.png
+# is-deck: true
 
-#- #party_affairs
+# - #party_affairs
 
-#This was just here to be used as an example. Don't let players put party affair cards into the military deck scene
+# This was just here to be used as an example. Don't let players put party affair cards into the military deck scene
