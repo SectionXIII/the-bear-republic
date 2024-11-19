@@ -62,10 +62,10 @@ on-arrival: agricultural_plan_implemented = 1
 
 Grant sighed, palming his forehead as he sat behind his desk at the Californian Eye. Despite his headache, he couldn't suppress a small chuckle. 
 
-- @gold
-- @budget
+- @gold_agri
+- @budget_agri
 
-@gold
+@gold_agri
 title: Use the Republic's gold reserves.
 subtitle: The gold reserves will take a hit. Hide and Granite won't be happy. Our coalition won't be happy with our pet project.
 unavailable-subtitle: There isn't enough gold in the reserves. One level of reserves.
@@ -74,7 +74,7 @@ on-arrival: agricultural_level += 5; gold_reserves -= 1; coalition_dissent += 1;
 
 Grant convinced the rest of the party to use the gold reserves of the Republic, buying new farm tools, tractors, building fences, and expanding them across the board. The new low interest loans are especially welcomed by small time farmers, helping them to settle their debts and buy their farms back from consolidated estates and the Barons. The latter are less than enthused that their farmhands are leaving the ranches and starting their own farms.
 
-@budget
+@budget_agri
 title: Use the surplus budget. -3 budget.
 unavailable-subtitle: Not enough budget.
 choose-if: budget > 0
