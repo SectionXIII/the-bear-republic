@@ -131,8 +131,8 @@ Q.road_warden_banned = 0;
 Q.doorkickers_strength = 20;
 Q.doorkickers_militancy = 0.10;
 Q.doorkickers_banned = 0;
-# Q.golden_circle_strength = deputy_strength + road_warden_strength + doorkickers_strength;
-# Q.golden_circle_militancy = deputy_militancy + road_warden_militancy + doorkickers_militancy;
+Q.golden_circle_strength = deputy_strength + road_warden_strength + doorkickers_strength;
+Q.golden_circle_militancy = deputy_militancy + road_warden_militancy + doorkickers_militancy;
 
 Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
