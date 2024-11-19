@@ -44,7 +44,7 @@ on-arrival: workers_spring += 8*(1-dissent); unemployed_spring += 8*(1-dissent);
 
 The WTB-Plan is the rallying point for the entire SPD and its affiliated organizations, including the Iron Front.
 
-@antisracism
+@antiracism
 title: Rally against antiracism and in defense of our mutant population.
 view-if: confronting_mutant_racism > 1
 on-arrival: nationalism -= 4*(1-dissent); pro_republic += 3*(1-dissent); confronting_mutant_racism += 1; workers_barons -= 4*(1-dissent); unemployed_barons -= 4*(1-dissent);
