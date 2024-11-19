@@ -78,4 +78,4 @@ Gold Reserves: [+ gold_reserves : gold_reserves +]
 
 Industry: [+ industrial_level : industrial_level +]
 
-Agriculture: [+ agriculture : agriculture +]
+Agriculture: [+ agricultural_level : agriculture +]

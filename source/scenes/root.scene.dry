@@ -474,6 +474,8 @@ Q.infrastructure = 10;
 Q.economic_health = 10;
 Q.trade_level = 12;
 Q.gold_reserves = 5;
+Q.industrial_level = 4;
+Q.agricultural_level = 4;
 
 
 // Mutant rights and scare scale

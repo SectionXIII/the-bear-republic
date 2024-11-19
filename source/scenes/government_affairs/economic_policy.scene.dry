@@ -3,12 +3,12 @@ new-page: true
 is-card: true
 tags: govt_affairs
 on-arrival: economic_policy_timer += 12; month_actions += 1;
-view-if: spring_in_government = 1 and (economic_department_party == "Long Spring" or finance_department_party == "Long Spring") and economic_policy_timer <= 0 and economic_plan > 0
-card-image: img/portraits/SchmidtRobert.jpg
+view-if: spring_in_government = 1 and (economic_department_party == "Long Spring" or finance_department_party == "Long Spring") and economic_policy_timer <= 0 and industrial_plan_implemented == 0 and agricultural_plan_implemented == 0 and hide_plan_implemented == 0 and education_plan_implemented == 0
+card-image: img/portraits/FinanceMinistry.jpg
 
 = Economic Policy
 
-With control of one or more of the economic levers of the Republic, the Long Spring has an unprecedented opportunity: to use the wealth of funds leftover from the Tibbet administration to start down the path of one of many economic development.
+With control of one or more of the economic levers of the Republic, the Long Spring has an unprecedented opportunity: to use the wealth of funds leftover from the Tibbet administration to start down the path of one of many towards economic development.
 
 Though the Long Spring is entirely enthusiastic about sweeping work plans and government spending, the factionalism of the party rears its head once more. Representative Stillman of the Urban faction argues for centralization of investment within the cities, kickstarting the Boneyard's workshops, Shady Sand's consumer industry, Dayglow's refineries and steel mills, and Sac City's nascent motor industry. The fires of industry will burn a path to the future.
 
@@ -25,20 +25,77 @@ The Intelligentsia faction, headed by former mercenary turned academic Granite S
 
 @industrial_plan
 title: The Industrial Plan
+subtitle: Stillman has plans for the cities.
+choose-if: agricultural_plan_implemented == 0 and hide_plan_implemented == 0 and education_plan_implemented == 0
+on-arrival: industrial_plan_implemented = 1
 
-Blah Blah
+Stillman stood at the center of the Long Spring's headquarters, pleased as plumm. He'd been hungrily waiting for this moment ever since he'd signed onto Hide's platform and worked with the Long Spring to campaign for the elections. The others could think what they wished, but he'd *won.* The Industrial Plan was a part of the party platform now, and finally, he could see his beloved Boneyard restored to the glory it deserved. He would see the Republic's industry prosper, he swore it.
+
+But the question now was: how would they finance it?
+
+- @gold
+- @budget
+
+@gold
+title: Use the Republic's gold reserves.
+subtitle: The gold reserves will take a hit. Hide and Granite won't be happy. Our coalition won't be happy with our pet project.
+unavailable-subtitle: There isn't enough gold in the reserves. One level of reserves.
+choose-if: gold_reserves > 0
+on-arrival: industrial_level += 5; gold_reserves -= 1; coalition_dissent += 1; mutant_dissent += 10; intelligentsia_dissent += 10; urban_dissent -=20; urban_strength += 10; workers += 2; workers_spring += 5(1*dissent); business_relation += 5
+
+Stillman successfully convinced the rest of the party to use the [? if gold_reserves > 3 : substantial ?] gold reserves of the Republic to finance the projects, selling and lending out gold at favorable rates to business and industrial centers of the NCR. Business interests and fellow industrialists are quite happy with us, as a result.
+
+@budget
+title: Use the surplus budget. -3 budget.
+unavailable-subtitle: Not enough budget.
+choose-if: budget > 0
+subtitle: The Republic is flush with funds, we should make use of these instead. Our coalition won't be happy with our pet project.
+on-arrival: industrial_level += 5; budget -= 3; coalition_dissent += 1; mutant_dissent += 5; frontier_dissent += 10; urban_dissent -=20; urban_strength += 10; workers += 2; workers_spring += 5(1*dissent); business_relation += 5
+
+Bowing to Hide and Granite's arguments, Stillman compromised. They'd make use of the funds leftover from Tandi and Tibbet's administrations, liberally subsidizing plants, factories, and supporting infrastructure. Business interests and fellow industrialists are quite happy with us, as a result.
 
 @agricultural_plan
 title: The Agricultural Plan
+subtitle: Grant's always wanted to help the frontier.
+choose-if: industrial_plan_implemented == 0 and hide_plan_implemented == 0 and education_plan_implemented == 0
+on-arrival: agricultural_plan_implemented = 1
 
-Blah Blah
+Grant sighed, palming his forehead as he sat behind his desk at the Californian Eye. Despite his headache, he couldn't suppress a small chuckle. 
+
+- @gold
+- @budget
+
+@gold
+title: Use the Republic's gold reserves.
+subtitle: The gold reserves will take a hit. Hide and Granite won't be happy. Our coalition won't be happy with our pet project.
+unavailable-subtitle: There isn't enough gold in the reserves. One level of reserves.
+choose-if: gold_reserves > 0
+on-arrival: agricultural_level += 5; gold_reserves -= 1; coalition_dissent += 1; mutant_dissent += 10; intelligentsia_dissent += 10; frontier_dissent -=20; frontier_strength += 10; rural += 2; rural_spring += 5(1*dissent); barons_relation -= 5
+
+Grant convinced the rest of the party to use the gold reserves of the Republic, buying new farm tools, tractors, building fences, and expanding them across the board. The new low interest loans are especially welcomed by small time farmers, helping them to settle their debts and buy their farms back from consolidated estates and the Barons. The latter are less than enthused that their farmhands are leaving the ranches and starting their own farms.
+
+@budget
+title: Use the surplus budget. -3 budget.
+unavailable-subtitle: Not enough budget.
+choose-if: budget > 0
+subtitle: The Republic is flush with funds, we should make use of these instead. Our coalition won't be happy with our pet project.
+on-arrival: agricultural_level += 5; budget -= 3; coalition_dissent += 1; mutant_dissent += 5; urban_dissent += 10; frontier_dissent -=20; frontier_strength += 10; rural += 2; rural_spring += 5(1*dissent); barons_relation -= 5
+
+Conceding the point, Grant took the advice of his fellows and instead made use of the surplus budget. Directly subsidizing small to medium farms and farming manufacturers, the government props up failing farms and expands the already succesful ones. The Barons are none too pleased that their opportunity to aquire more ranching land has been foiled.
+
 
 @hide_plan
 title: The Hide Plan
+subtitle: Hide's always looking out for his fellow mutants.
+choose-if: agricultural_plan_implemented == 0 and industrial_plan_implemented == 0 and education_plan_implemented == 0
+on-arrival: hide_plan_implemented = 1
 
 Blah Blah
 
 @education_plan
 title: The Education Plan
+subtitle: Granite wants everyone to be able to read and write.
+choose-if: agricultural_plan_implemented == 0 and hide_plan_implemented == 0 and industrial_plan_implemented == 0
+on-arrival: education_plan_implemented = 1
 
 Blah Blah
