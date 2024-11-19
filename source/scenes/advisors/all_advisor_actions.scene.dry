@@ -38,8 +38,8 @@ Wels is the long-time chairman of the SPD. He is a gifted organizer and a member
 - @build_peoples_party
 - @campaigning_peoples_party
 - @organizing
-- @golden_circle_buildup
-- @form_golden_circle
+- @iron_front_buildup
+- @form_iron_front
 - @grizzly_urgency
 - @womens_rights_
 - @judiciary_
@@ -326,22 +326,22 @@ on-arrival: advisor_action_timer = 6; workers_spring += 4*(1-dissent); workers_s
 
 We have increased our organizing among the workers.
 
-@golden_circle_buildup
-title: Build up the Golden Circle
-subtitle: Increase our propaganda measures to recruit more members into the Circle. 
-choose-if: advisor_action_timer == 0 and golden_circle_formed
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if golden_circle_formed == 0 : The Iron Front has not yet been formed. ?]
+@iron_front_buildup
+title: Build up the Iron Front
+subtitle: Increase our propaganda measures to recruit more members into the Reichsbanner. 
+choose-if: advisor_action_timer == 0 and iron_front_formed
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed == 0 : The Iron Front has not yet been formed. ?]
 on-arrival: advisor_action_timer = 6; rb_strength += 200*workers_spring/(workers_spring+workers_pass+workers_nsdap+workers_z+workers_barons+workers_other);
 
-We have recruited more members into the Circle.
+We have recruited more members into the Reichsbanner.
 
 
-@form_golden_circle
-title: Forming the Golden Circle
-choose-if: advisor_action_timer == 0 and golden_circle_formed == 0 and grizzly_urgency >= 2
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if golden_circle_formed : The Iron Front has already been formed. ?][? if grizzly_urgency < 2 : The party does not yet see the danger of the Nazis. ?]
+@form_iron_front
+title: Forming the Iron Front
+choose-if: advisor_action_timer == 0 and iron_front_formed == 0 and grizzly_urgency >= 2
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if iron_front_formed : The Iron Front has already been formed. ?][? if grizzly_urgency < 2 : The party does not yet see the danger of the Nazis. ?]
 on-arrival: advisor_action_timer = 6; rb_strength += 50; grizzly_urgency += 1
-go-to: confronting_grizzly.golden_circle 
+go-to: confronting_grizzly.iron_front 
 
 
 @grizzly_urgency

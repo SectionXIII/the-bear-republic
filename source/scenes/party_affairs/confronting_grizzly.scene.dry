@@ -1,9 +1,9 @@
 title: Confronting the Nazis
 new-page: true
 is-card: true
-view-if: (grizzly_r >= 20 and grizzly_urgency > 1) and confronting_grizzly_timer == 0 and golden_circle_formed == 0
+view-if: (grizzly_r >= 20 and grizzly_urgency > 1) and confronting_grizzly_timer == 0 and iron_front_formed == 0
 on-arrival: confronting_grizzly_seen += 1; confronting_grizzly_timer = 5; month_actions += 1
-card-image: img/golden_circle.png
+card-image: img/iron_front.png
 tags: party_affairs; antimilitarism
 
 # Forming the Iron Front
@@ -15,7 +15,7 @@ Many in our party are calling for urgent action. The "neorevisionist" faction, l
 - @not_a_big_deal: The Nazis' moment will pass. Let's not get too hasty.
 - @economic_crisis
 - @major_crisis: We must do something to confront the Nazis.
-- @golden_circle
+- @iron_front
 
 
 @not_a_big_deal
@@ -35,11 +35,11 @@ on-arrival: grizzly_urgency += 1; old_worlder_dissent -= 5; old_worlder_strength
 
 The Nazis are one of the foremost threats to the German republic. However, we are still formulating a strategy to confront them, and still trying to build up consensus within our party for action. Check back on this later.
 
-@golden_circle
+@iron_front
 title: Form the Iron Front!
 subtitle: The Iron Front consists of the SPD, the trade unions, and the Reichsbanner.
-view-if: grizzly_urgency >= 3 and golden_circle_formed == 0
-on-arrival: golden_circle_formed = 1; radicalization += 1; grizzly_urgency += 1; workers_spring += 5*(1-dissent); pro_republic += 5*(1-dissent); urban_dissent -= 8; old_worlder_dissent -= 10; old_worlder_strength += 5
+view-if: grizzly_urgency >= 3 and iron_front_formed == 0
+on-arrival: iron_front_formed = 1; radicalization += 1; grizzly_urgency += 1; workers_spring += 5*(1-dissent); pro_republic += 5*(1-dissent); urban_dissent -= 8; old_worlder_dissent -= 10; old_worlder_strength += 5
 achievement: eiserne_front
 
 The Nazi threat can no longer be ignored. We must build a new organization to confront them - the Iron Front - consisting of the SPD, the ADGB trade union federation, and the *Reichsbanner Schwarz-Rot-Gold*. We have a new symbol - the Three Arrows, pointing down towards the left.

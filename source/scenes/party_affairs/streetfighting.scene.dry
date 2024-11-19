@@ -39,7 +39,7 @@ We have increased training and purchased more armaments for the Reichsbanner.
 
 
 @if_training
-view-if: golden_circle_formed == 1
+view-if: iron_front_formed == 1
 on-arrival: rb_militancy += 0.03; rb_strength += 200; sa_strength += 50; 
 max-visits: 2
 

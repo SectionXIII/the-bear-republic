@@ -1,15 +1,17 @@
-title: The Golden Circle
+title: The Iron Front
 new-page: true
 is-card: true
-view-if: golden_circle_formed == 1 and golden_circle_timer = 0
-on-arrival: golden_circle_timer = 7; month_actions += 1; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
-card-image: img/golden_circle.png
+view-if: iron_front_formed == 1 and iron_front_timer = 0
+on-arrival: iron_front_timer = 7; month_actions += 1; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
+card-image: img/iron_front.png
 frequency: 200
-tags: party_affairs
+tags: party_affairs, antiracism
 
-= The Golden Circle
+= The Iron Front
 
-The Golden Circle is our new anti-authoritarian coordination front, consisting of the Long Spring, independent militias, and our paramilitaries. How should we use the Golden Circle?
+The Iron Front is our new antifascist coordination front, consisting of the SPD, the trade unions, and the Reichsbanner. How should we use the Iron Front?
+
+The Golden Circle is our new anti-authoritarian coordination front, consisting of the Long Spring, independent caravans, and our paramilitaries. How should we use the Golden Circle?
 
 - @defense: Rally for defense against the authoritarians with the Long Spring forces.
 - @pacifism: Rally for pacifism, against nationalism and war.
