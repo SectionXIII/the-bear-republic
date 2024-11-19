@@ -1,14 +1,6 @@
 title: Status
 new-page: true
 is-special: true
-on-arrival: {!
-if (Q.unemployed) {
-    Q.unemployed_2 = Q.unemployed.toFixed(1);
-}
-if (Q.inflation) {
-    Q.inflation_2 = Q.inflation.toFixed(1);
-}
-!}
 
 = Status
 
@@ -91,21 +83,21 @@ Intelligentsia strength: [+ intelligentsia_strength : strength +], dissent: [+ i
 
 = Paramilitaries
 
-Reichsbanner Strength: [+ rb_strength +] thousand
+Deputy Strength: [+ deputy_strength +] hundred
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+Deputy Militarization: [+ deputy_militancy : militancy +]
 
-RFB Strength: [+ rfb_strength +] thousand
+Road Warden Strength: [+ road_warden_strength +] hundred
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+Road Warden Militarization: [+ road_warden_militancy : militancy +]
 
-Stahlhelm Strength: [+ sh_strength +] thousand
+Doorkickers Strength: [+ doorkickers_strength +] hundred
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+Doorkickers Militarization: [+ doorkickers_militancy : militancy +]
 
-[? if golden_circle_formed == 1 : **Golden Circle Strength:** [+ golden_circle_strength+] hundred ?]
+# [? if golden_circle_formed == 1 : **Golden Circle Strength:** [+ golden_circle_strength+] hundred ?]
 
-[? if golden_circle_formed == 1 : **Golden Circle Militarization:** [+ golden_circle_militancy : militancy +] ?]
+# [? if golden_circle_formed == 1 : **Golden Circle Militarization:** [+ golden_circle_militancy : militancy +] ?]
 
 @polls
 
