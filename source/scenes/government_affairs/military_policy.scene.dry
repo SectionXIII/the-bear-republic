@@ -40,14 +40,14 @@ Many demobilized soldiers have joined mercenary outfits and caravan guards, but 
 
 @strengthen_doorkickers
 subtitle: -1 resources. Business won't be happy.
-unavailabe-subtitle: We don't have the resources.
+unavailable-subtitle: We don't have the resources.
 on-arrival: resources -= 1; doorkickers_strength += 10; doorkickers_militancy += 0.05; business_relation -= 3
 
 The soldiers have some initial difficulties integrating into the various cover gangs that make up Stillman's Doorkickers, but they get used to it quickly enough. Stillman tests his new recruits in several raids on rival businesses in the Boneyard, to decent effect.
 
 @strengthen_deputy
 subtitle: -1 resources. The Barons grow uneasy.
-unavailabe-subtitle: We don't have the resources.
+unavailable-subtitle: We don't have the resources.
 on-arrival: resources -= 1; deputy_strength += 15; deputy_militancy += 0.05; barons_relation -= 4
 
 Long patrols out in the deserts and frontiers isn't what any of the soldiers wanted, but the prospect of a homestead and relative freedom to do as they pleased so long as they did their work does wonders for their integration. Grant is pleased, but the Barons grow worried at the size of the Deputies.
