@@ -1,7 +1,7 @@
 #  title: Banking Crisis
 #  subtitle: The collapse of the German banking system...
 #  new-page: true
-#  on-arrival: banking_crisis_seen = 1; workers_pass += 5; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 4; rural_nsdap += 3; unemployed += 3; crisis_urgency += 1; workers_spring -= 4 if spring_in_government; middle_spring -= 5 if spring_in_government; military_spring -= 5 if spring_in_government; rural_spring -= 4 if spring_in_government
+#  on-arrival: banking_crisis_seen = 1; workers_pass += 5; workers_grizzly += 3; middle_grizzly += 3; military_grizzly += 4; rural_nsdap += 3; unemployed += 3; crisis_urgency += 1; workers_spring -= 4 if spring_in_government; middle_spring -= 5 if spring_in_government; military_spring -= 5 if spring_in_government; rural_spring -= 4 if spring_in_government
 #  tags: event
 #  view-if: customs_union = 1 and banking_crisis_timer = 0
 #  max-visits: 1
@@ -28,7 +28,7 @@
 #  view-if: spring_in_government = 1
 #  subtitle: -1 budget
 #  choose-if: budget >= 1
-#  on-arrival: workers_spring += 3*(1-dissent); middle_spring += 3*(1-dissent); military_spring += 2*(1-dissent); rural_spring += 2*(1-dissent); unemployed -= 2; inflation += 1 if inflation < 0; budget -= 1; workers_nsdap -= 3
+#  on-arrival: workers_spring += 3*(1-dissent); middle_spring += 3*(1-dissent); military_spring += 2*(1-dissent); rural_spring += 2*(1-dissent); unemployed -= 2; inflation += 1 if inflation < 0; budget -= 1; workers_grizzly -= 3
 #  
 #  In the face of the banking crisis, we have taken emergency action to stabilize the economy. It might not be not enough.
 #  

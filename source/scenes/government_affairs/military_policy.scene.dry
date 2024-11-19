@@ -8,11 +8,11 @@ card-image: img/MilitaryAffairs.jpg
 
 = Military Policy
 
-The Reichswehr is a deeply reactionary institution that has been generally hostile to any notion of socialism or democracy. However, we now control the military as part of the government. What should we do to reform it?
+The New California Republic Army is the single largest force in the wasteland, organized into dozens of regiments and deployed to all corners of the nation to defend it from outside threats. It is no surprise, then, that the NCRA is somewhat reactionary and largely dominated by officers and soldiery sympathetic or outright loyal to the NCRA. What should we do to reform it?
 
 - @increase_funding: Increase funding for the military to purchase its loyalty.
 - @decrease_funding: Reduce funding for the military so we have more for social spending.
-- @reform: Conduct a thorough reform of the ranks, reducing the influence of reactionaries and making it more hospitable to us.
+- @reform: Conduct a thorough reform of the ranks, reducing the influence of reactionaries and making it more favorable to the Spring.
 - @root: No change to military policy.
 - @easy_discard
 
@@ -20,26 +20,44 @@ The Reichswehr is a deeply reactionary institution that has been generally hosti
 subtitle: -1 budget
 choose-if: budget >= 1
 unavailable-subtitle: We do not have the budget.
-on-arrival: budget -= 1; coalition_dissent -= 1 if coalition_dissent > 0; ncra_loyalty += 0.1; ncra_strength += 20; kpd_coalition_dissent += 1; nevada_relations -= 1; east_relation -= 1; reparations_negotiation -= 1
+on-arrival: budget -= 1; coalition_dissent -= 1 if coalition_dissent > 0; ncra_loyalty += 0.1; ncra_strength += 20; kpd_coalition_dissent += 1; nevada_relations -= 1; east_relation -= 1; bos_desperation += 1; bos_relations -= 1
 
-The military and the center-right parties are pleasantly surprised that we would increase military funding. Our membership tends to be anti-military, and is less enthused. the New California Republic's neighbors are watching our military buildup with worry. [? if reparations >= 0 : This is not good for the reparations negotiations. ?]
+The military and the center-right parties are pleasantly surprised that we would increase military funding. Some of our membership tends to be anti-military, and is less enthused. The Republic's neighbors are watching our military buildup with worry.
 
 @decrease_funding
 subtitle: +1 budget
 unavailable-subtitle: There is nothing left to cut.
 choose-if: ncra_strength > 0
-on-arrival: budget += 1; coalition_dissent += 1 if in_grand_coalition == 1; business_relation -= 8; ncra_militancy -= 1; ncra_strength -= 20; sh_strength += 15; sa_strength += 5; sh_militancy += 0.05; ncra_loyalty -= 0.05 if ncra_loyalty > 0; coup_progress += 1; coup_progress += 1 if ncra_loyalty < 0.2; coup_progress += 1 if ncra_loyalty < 0.1; coup_progress += 1 if ncra_loyalty <= 0; reichswehr_goal_completed = 1;
+on-arrival: budget += 1; coalition_dissent += 1 if in_grand_coalition == 1; grizzly_relation -= 8; tandist_right_relation -= 5; ncra_militancy -= 1; ncra_strength -= 20; ncra_loyalty -= 0.05 if ncra_loyalty > 0; reichswehr_goal_completed = 1;
 
 The military has fewer guns and fewer soldiers. There is no hint of a coup yet, but we do not know where the line will be drawn. The center-right parties are committed to the military and deeply opposed to our budget cuts.
 
-Many demobilized soldiers have joined the right-wing paramilitaries such as the Stahlhelm and SA, and weapons are missing from our stockpiles.
+Many demobilized soldiers have joined mercenary outfits and caravan guards, but Stillman and Grant have both argued against the demilitarization of the NCRA. Perhaps there's an opportunity for the Spring to strengthen it's paramilitaries?
+
+- @strengthen_doorkickers: Stillman eagerly snaps up the fired soldiers.
+- @strengthen_deputy: Grant creates new posses out on the frontier.
+- @root: We have no need for more soldiers.
+
+@strengthen_doorkickers
+subtitle: -1 resources. Business won't be happy.
+unavailabe-subtitle: We don't have the resources.
+on-arrival: resources -= 1; doorkickers_strength += 10; doorkickers_militancy += 0.05; business_relation -= 3
+
+The soldiers have some initial difficulties integrating into the various cover gangs that make up Stillman's Doorkickers, but they get used to it quickly enough. Stillman tests his new recruits in several raids on rival businesses in the Boneyard, to decent effect.
+
+@strengthen_deputy
+subtitle: -1 resources. The Barons grow uneasy.
+unavailabe-subtitle: We don't have the resources.
+on-arrival: resources -= 1; deputy_strength += 15; deputy_militancy += 0.05; barons_relation -= 4
+
+Long patrols out in the deserts and frontiers isn't what any of the soldiers wanted, but the prospect of a homestead and relative freedom to do as they pleased so long as they did their work does wonders for their integration. Grant is pleased, but the Barons grow worried at the size of the Deputies.
 
 @reform
 subtitle: -1 budget
 choose-if: budget >= 1
 unavailable-subtitle: We do not have the budget.
-on-arrival: coalition_dissent += 1 if in_grand_coalition == 1; ncra_loyalty += 0.15; ncra_militancy -= 1; budget -= 1; coup_progress += 1; business_relation -= 5
+on-arrival: coalition_dissent += 1 if in_grand_coalition == 1; ncra_loyalty += 0.15; ncra_militancy -= 1; budget -= 1; grizzly_relation -= 5
 
-Our efforts are at least somewhat successful; we have changed the recruiting and training patterns so that more soldiers from non-reactionary backgrounds can join, hopefully changing the culture of the forces. We have also removed some of the officers who supported the previous Kapp putsch.
+Our efforts are at least somewhat successful; we have changed the recruiting and training patterns so that more soldiers from non-reactionary backgrounds can join, hopefully changing the culture of the forces. We have also removed some of the officers loyal to General Tanner and the Grizzlies.
 
 The center-right parties are committed to the military and deeply suspicious of our efforts to reform it.

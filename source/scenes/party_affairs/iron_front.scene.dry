@@ -42,7 +42,7 @@ The Iron Front rallies in defense of the democratic republic and against dictato
 view-if: industrial_adopted == 1
 on-arrival: workers_spring += 8*(1-dissent); unemployed_spring += 8*(1-dissent); middle_spring += 5*(1-dissent); military_spring += 3*(1-dissent); rural_spring += 3*(1-dissent);
 
-The WTB-Plan is the rallying point for the entire SPD and its affiliated organizations, including the Iron Front.
+The Industrial Plan is the rallying point for the entire Long Spring and its affiliated organizations, including the Golden Circle.
 
 @antiracism
 title: Rally against antiracism and in defense of our mutant population.

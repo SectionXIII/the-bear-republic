@@ -34,7 +34,7 @@ Fine. We no longer control the government of Prussia. The vote has been called o
 
 @austerity
 view-if: welfare >= 0
-on-arrival: coalition_dissent = 0; workers_spring -= 10; umemployed_spd -= 10; workers_pass += 7; workers_nsdap += 3; unemployed_pass += 5; unemployed_grizzly += 5; urban_dissent += 15; mutant_dissent += 10; frontier_dissent += 15; intelligentsia_dissent += 5; welfare -= 2; budget += 1; unemployed += 3; kpd_coalition_dissent += 1; pass_relation -= 10 if in_popular_front
+on-arrival: coalition_dissent = 0; workers_spring -= 10; umemployed_spd -= 10; workers_pass += 7; workers_grizzly += 3; unemployed_pass += 5; unemployed_grizzly += 5; urban_dissent += 15; mutant_dissent += 10; frontier_dissent += 15; intelligentsia_dissent += 5; welfare -= 2; budget += 1; unemployed += 3; kpd_coalition_dissent += 1; pass_relation -= 10 if in_popular_front
 
 Fine. We enacted a massive austerity program to cut welfare, in order to maintain the stability of our coalition. The vote has been called off.
 
@@ -79,7 +79,7 @@ The KPD is not interested in a "toleration" arrangement; they will only support 
 
 @let_it_happen
 call: set_next_election_time
-on-arrival: time_to_election = 3; spring_in_government = 0; in_grand_coalition = 0; in_republican_coalition = 0; in_popular_front = 0; spring_toleration = 0; state_department_party = "DVP"; interior_department_party = "Z"; justice_department_party = "I"; labor_department_party = "Z"; defence_department_party = "I"; economic_department_party = "DDP"; finance_department_party = "DVP"; agriculture_department_party = "Z"; labor_secretary = "Stegerwald"; interior_secretary = "Wirth"; finance_secretary = "Moldenhauer"; economic_secretary = "Curtius"; justice_secretary = "Koch-Weser"; foreign_secretary = "Stresemann"; agriculture_secretary = "Dietrich"; defence_secretary = "Groener";  coalition_dissent = 0; pro_republic -= 5; military_spring -= 3; middle_spring -= 2; workers_spring -= 3 if pro_republic < 50; workers_spring -= 4 if pro_republic < 40; old_middle_nsdap += 4 if pro_republic < 50; new_middle_nsdap += 3 if pro_republic < 50
+on-arrival: time_to_election = 3; spring_in_government = 0; in_grand_coalition = 0; in_republican_coalition = 0; in_popular_front = 0; spring_toleration = 0; state_department_party = "DVP"; interior_department_party = "Z"; justice_department_party = "I"; labor_department_party = "Z"; defence_department_party = "I"; economic_department_party = "DDP"; finance_department_party = "DVP"; agriculture_department_party = "Z"; labor_secretary = "Stegerwald"; interior_secretary = "Wirth"; finance_secretary = "Moldenhauer"; economic_secretary = "Curtius"; justice_secretary = "Koch-Weser"; foreign_secretary = "Stresemann"; agriculture_secretary = "Dietrich"; defence_secretary = "Groener";  coalition_dissent = 0; pro_republic -= 5; military_spring -= 3; middle_spring -= 2; workers_spring -= 3 if pro_republic < 50; workers_spring -= 4 if pro_republic < 40; military_grizzly += 4 if pro_republic < 50; middle_grizzly += 3 if pro_republic < 50
 go-to: let_it_happen_hindenburg if president != "Hide"; let_it_happen_braun if president == "Hide"
 
 @let_it_happen_hindenburg

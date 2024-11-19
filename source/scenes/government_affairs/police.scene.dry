@@ -4,17 +4,18 @@ is-card: true
 tags: govt_affairs
 on-arrival: police_timer += 6; month_actions += 1
 view-if: spring_in_government = 1 and interior_department_party = "Long Spring" and police_timer <= 0
-card-image: img/portraits/SeveringCarl.jpg
+card-image: img/portraits/InteriorDeparment.jpeg
 
 = Internal Security
 
-The Interior Ministry controls internal security throughout the New California Republic. While most police work is delegated to the states, the national security agency can perform special investigations.
+The Department of the Interior controls internal security throughout the New California Republic. While most police work is delegated to the states, the national security agency can perform special investigations.
 
-As with the state police units and the Reichswehr, the internal police tends to be reactionary, and has serious issues with loyalty to the elected government of the Republic.
+As with the state police units and the NCRA, the internal police tends to be independent, and has some issues in regards to proper discipline.
 
-- @loyalty: Improve the loyalty of the Interior Ministry forces.
-- @investigate_corruption: Investigate corruption by big businesses.
-- @investigate_far_right: Investigate illegal activity among the far right.
+- @loyalty: Improve the loyalty of the Department of Interior forces.
+- @investigate_corruption: Investigate corruption by big businesses. The Business represenatives won't like it.
+- @investigate_barons: Investigate claims of small farmers and tribal villages being exploited and abused by the Brahmin Barons.
+- @investigate_far_right: Investigate illegal activity among the right.
 - @domestic_enemies: Investigate or ban our domestic enemies.
 - @root: Take no action for now.
 - @easy_discard
@@ -22,7 +23,7 @@ As with the state police units and the Reichswehr, the internal police tends to 
 @loyalty
 on-arrival: interior_police_loyalty += 0.1
 
-As with the Prussian state police, there are measures we can take to root out reactionary and anti-democratic sentiment in the police. We can improve training and recruiting procedures, and identify and remove known fascists and the like.
+There are measures we can take to root out racist and independent sentiment in the police. We can improve training and recruiting procedures, and identify and remove known corrupt police and the like.
 
 Current interior police loyalty: [+ interior_police_loyalty : loyalty +]
 
@@ -31,20 +32,33 @@ Current interior police loyalty: [+ interior_police_loyalty : loyalty +]
 go-to: investigate_corruption_success if interior_police_loyalty >= 0.5; investigate_corruption_failure if interior_police_loyalty < 0.5
 
 @investigate_corruption_success
-on-arrival: investigate_corruption += 1; workers_spring += 5*(1-dissent); inflation -= 0.1 if inflation > 3; inflation -= 0.2 if inflation >= 8
+on-arrival: investigate_corruption += 1; workers_spring += 3*(1-dissent); inflation -= 0.1 if inflation > 3; inflation -= 0.2 if inflation >= 8; business_relation -= 5;
 
-Corruption in big business is rampant, of course. We have uncovered a number of scandals, and publicizing them brings new attention to the work of Interior Minister [+ interior_secretary +], building up his popular appeal and that of the SPD.
-
+Corruption in big business is rampant, of course. We have uncovered a number of scandals, and publicizing them brings new attention to the work of Interior Minister [+ interior_secretary +], building up his popular appeal and that of the Long Spring.
 
 @investigate_corruption_failure
 
-Unfortunately, our investigations have failed to turn up anything. Rumors are that the targets of our investigation were tipped off by infiltrators within the police.
+Unfortunately, our investigations have failed to turn up anything. Rumors are that the targets of our investigation were tipped off by infiltrators within the police. Frustrated, Marcus returns to his planned reforms of the Department.
+
+@investigate_barons
+subtitle: Grant is very enthusiastic about this.
+go-to: investigate_barons_success if interior_police_loyalty >= 0.6; investigate_barons_failure if interior_police_loyalty < 0.59
+
+@investigate_barons_success
+on_arrival: rural_spring += 3*(1-dissent); tribal_spring += 3*(1-dissent); barons_relation -= 6
+
+The abuses of the Brahmin Barons are an open secret, but it's one thing to be barely aware of it and one to see it firsthand. Marcus, a first generation supermutant, was no stranger to abuse from those in power. But the casual cruelty of some of the Barons boiled even his blood.
+
+@investigate_barons_failure
+on-arrival: barons_relation -= 3; rural_spring -= 2; tribal_spring -= 2
+
+Looks like there are enough holes in the Interior's security that you could dig up molerats for years to come. The Barons were tipped off by informants, and whatever crimes they committed appears to have been hidden ahead of time, with the evidence removed and witnesses scared into silence. Marcus sighs, disappointed, but now he knew he had work to do.
 
 @investigate_far_right
 go-to: investigate_far_right_success if interior_police_loyalty >= 0.55; investigate_far_right_failure if interior_police_loyalty < 0.55
 
 @investigate_far_right_success
-on-arrival: investigate_far_right += 1; sa_strength -= 20; workers_nsdap -= 3; new_middle_nsdap -= 3; grizzly_urgency += 1 if investigate_far_right == 2; grizzly_urgency += 2 if investigate_far_right == 3; workers_nsdap -= 3 if investigate_far_right == 3; new_middle_nsdap -= 3 if investigate_far_right == 3; old_middle_nsdap -= 3 if investigate_far_right == 3; unemployed_spring -= 3 if investigate_far_right == 3; coup_progress -= 1 if coup_progress >= 7
+on-arrival: investigate_far_right += 1; sa_strength -= 20; workers_grizzly -= 3; middle_grizzly -= 3; grizzly_urgency += 1 if investigate_far_right == 2; grizzly_urgency += 2 if investigate_far_right == 3; workers_grizzly -= 3 if investigate_far_right == 3; middle_grizzly -= 3 if investigate_far_right == 3; military_grizzly -= 3 if investigate_far_right == 3; unemployed_spring -= 3 if investigate_far_right == 3; coup_progress -= 1 if coup_progress >= 7
 
 [? if investigate_far_right == 1 : We have discovered collusion between Hjalmar Schacht, president of the Reichsbank, and the Nazis. This is very useful information. ?]
 [? if investigate_far_right == 2 : We have discovered illegal arms smuggling by the SA, the Nazi paramilitary. ?]
