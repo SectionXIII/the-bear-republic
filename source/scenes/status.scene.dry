@@ -95,9 +95,9 @@ Doorkickers Strength: [+ doorkickers_strength +] hundred
 
 Doorkickers Militarization: [+ doorkickers_militancy : militancy +]
 
-# [? if golden_circle_formed == 1 : **Golden Circle Strength:** [+ golden_circle_strength+] hundred ?]
+[? if golden_circle_formed == 1 : **Golden Circle Strength:** [+ golden_circle_strength+] hundred ?]
 
-# [? if golden_circle_formed == 1 : **Golden Circle Militarization:** [+ golden_circle_militancy : militancy +] ?]
+[? if golden_circle_formed == 1 : **Golden Circle Militarization:** [+ golden_circle_militancy : militancy +] ?]
 
 @polls
 
