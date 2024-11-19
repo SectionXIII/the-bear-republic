@@ -101,12 +101,12 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.tandist_relation = 50;
+Q.tandist_right_relation = 30;
 Q.pass_relation = 25;
 Q.progressive_relation = 60;
 Q.business_relation = 35;
-// Barons and Grizzly are invariably hostile
-Q.barons_relation = 10;
-Q.grizzly_relation = 0;
+Q.barons_relation = 25;
+Q.grizzly_relation = 35;
 
 Q.pass_leader = "Morris";
 // alternative is Brock Throckmorton as party leader

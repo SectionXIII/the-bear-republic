@@ -56,6 +56,8 @@ Next election: [+ next_election_month : month +] [+ next_election_year +]
 
 Tandist: [+ tandist_relation : relationships +]
 
+Tandist Right: [+ tandist_right_relation : relationships +]
+
 Progressive: [+ progressive_relation : relationships +]
 
 Business: [+ business_relation : relationships +]
