@@ -14,7 +14,7 @@ The Golden Circle is our new anti-authoritarian coordination front, consisting o
 - @defense: Rally for defense against the authoritarians with the Long Spring forces.
 - @pacifism: Rally for pacifism, against nationalism and war.
 - @republic: Rally to save the democratic republic against dictatorship.
-- @wtb: Rally for economic change and the Industrial Plan.
+- @industrial: Rally for economic change and the Industrial Plan.
 - @antiracism
 - @easy_discard
 
@@ -38,7 +38,7 @@ on-arrival: pro_republic += 5*(1-dissent); democratization += 1; workers_spring 
 
 The Iron Front rallies in defense of the democratic republic and against dictatorship.
 
-@wtb
+@industrial
 view-if: industrial_adopted == 1
 on-arrival: workers_spring += 8*(1-dissent); unemployed_spring += 8*(1-dissent); middle_spring += 5*(1-dissent); military_spring += 3*(1-dissent); rural_spring += 3*(1-dissent);
 
