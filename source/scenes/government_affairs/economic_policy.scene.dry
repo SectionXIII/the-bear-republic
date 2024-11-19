@@ -41,7 +41,7 @@ title: Use the Republic's gold reserves.
 subtitle: The gold reserves will take a hit. Hide and Granite won't be happy. Our coalition won't be happy with our pet project.
 unavailable-subtitle: There isn't enough gold in the reserves. One level of reserves.
 choose-if: gold_reserves > 0
-on-arrival: industrial_level += 5; gold_reserves -= 1; coalition_dissent += 1; mutant_dissent += 10; intelligentsia_dissent += 10; urban_dissent -= 20; urban_strength += 10; workers += 2; workers_spring += 5(1*dissent); business_relation += 5
+on-arrival: industrial_level += 5; gold_reserves -= 1; coalition_dissent += 1; mutant_dissent += 10; intelligentsia_dissent += 10; urban_dissent -= 20; urban_strength += 10; workers += 2; workers_spring += 5*(1-dissent); business_relation += 5
 
 Stillman successfully convinced the rest of the party to use the [? if gold_reserves > 3 : substantial ?] gold reserves of the Republic to finance the projects, selling and lending out gold at favorable rates to business and industrial centers of the NCR. Business interests and fellow industrialists are quite happy with us, as a result.
 
@@ -50,7 +50,7 @@ title: Use the surplus budget. -3 budget.
 unavailable-subtitle: Not enough budget.
 choose-if: budget > 0
 subtitle: The Republic is flush with funds, we should make use of these instead. Our coalition won't be happy with our pet project.
-on-arrival: industrial_level += 5; budget -= 3; coalition_dissent += 1; mutant_dissent += 5; frontier_dissent += 10; urban_dissent -= 20; urban_strength += 10; workers += 2; workers_spring += 5(1*dissent); business_relation += 5
+on-arrival: industrial_level += 5; budget -= 3; coalition_dissent += 1; mutant_dissent += 5; frontier_dissent += 10; urban_dissent -= 20; urban_strength += 10; workers += 2; workers_spring += 5*(1-dissent); business_relation += 5
 
 Bowing to Hide and Granite's arguments, Stillman compromised. They'd make use of the funds leftover from Tandi and Tibbet's administrations, liberally subsidizing plants, factories, and supporting infrastructure. Business interests and fellow industrialists are quite happy with us, as a result.
 
@@ -70,7 +70,7 @@ title: Use the Republic's gold reserves.
 subtitle: The gold reserves will take a hit. Hide and Granite won't be happy. Our coalition won't be happy with our pet project.
 unavailable-subtitle: There isn't enough gold in the reserves. One level of reserves.
 choose-if: gold_reserves > 0
-on-arrival: agricultural_level += 5; gold_reserves -= 1; coalition_dissent += 1; mutant_dissent += 10; intelligentsia_dissent += 10; frontier_dissent -= 20; frontier_strength += 10; rural += 2; rural_spring += 5(1*dissent); barons_relation -= 5
+on-arrival: agricultural_level += 5; gold_reserves -= 1; coalition_dissent += 1; mutant_dissent += 10; intelligentsia_dissent += 10; frontier_dissent -= 20; frontier_strength += 10; rural += 2; rural_spring += 5*(1-dissent); barons_relation -= 5
 
 Grant convinced the rest of the party to use the gold reserves of the Republic, buying new farm tools, tractors, building fences, and expanding them across the board. The new low interest loans are especially welcomed by small time farmers, helping them to settle their debts and buy their farms back from consolidated estates and the Barons. The latter are less than enthused that their farmhands are leaving the ranches and starting their own farms.
 
@@ -79,7 +79,7 @@ title: Use the surplus budget. -3 budget.
 unavailable-subtitle: Not enough budget.
 choose-if: budget > 0
 subtitle: The Republic is flush with funds, we should make use of these instead. Our coalition won't be happy with our pet project.
-on-arrival: agricultural_level += 5; budget -= 3; coalition_dissent += 1; mutant_dissent += 5; urban_dissent += 10; frontier_dissent -= 20; frontier_strength += 10; rural += 2; rural_spring += 5(1*dissent); barons_relation -= 5
+on-arrival: agricultural_level += 5; budget -= 3; coalition_dissent += 1; mutant_dissent += 5; urban_dissent += 10; frontier_dissent -= 20; frontier_strength += 10; rural += 2; rural_spring += 5*(1-dissent); barons_relation -= 5
 
 Conceding the point, Grant took the advice of his fellows and instead made use of the surplus budget. Directly subsidizing small to medium farms and farming manufacturers, the government props up failing farms and expands the already succesful ones. The Barons are none too pleased that their opportunity to aquire more ranching land has been foiled.
 
