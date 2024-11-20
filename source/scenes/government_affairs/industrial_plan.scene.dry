@@ -1,0 +1,74 @@
+title: The Industrial Plan
+new-page: true
+is-card: true
+view-if: spring_in_government = 1 and (economic_department_party == "Long Spring" or finance_department_party == "Long Spring") and economic_policy_timer <= 0 and industrial_plan_implemented == 1
+on-arrival: economic_policy_timer += 12; month_actions += 1
+tags: govt_affairs
+card-image: img/RangerAffairs.jpg
+
+= The Industrial Plan
+
+With the funds squared away and the beginning of the plan taking shape, Stillman was no tasked with the choice of exactly *where* to invest in first. There were several options presented to his desk, of course, and almost every single one biased to some degree.
+
+His cousin, Jameson, presented the case for Shady Sands, his home city, where a burgeoning consumer goods manufacturing center was emerging. Cigarettes, microwaves, radios, the works. As it stood now, it only had enough production to provide for the state of Shady Sands, but if expanded it could cover the needs of large portions of the Republic - maybe even create a trade surplus!
+
+Bobby Irwin, an old ganger from up north in Sac City, wanted more money and investments to turbocharge the city's nascent motor industry. The 80s may have been driven away, but not every motorsmith and artisan went with them. The ones that remained operate small workshops, fixing the odd car wreck or salvaging working engines, gears, motors, and other parts to put more vehicles on the Great Road. Given resources, manpower, and incentive, these workshops could be expanded to proper factories, assembly lines, and their expertise shared among larger numbers of people. Not to mention, it would allow for faster travel times across the wastes.
+
+Isla Palmer, the party treasurer, is a ghoul from Dayglow that remembers the city that was. She dearly wishes for the city to become a center of industry once again, though it's unlikely that it'll become a premier naval hub once again. Despite that, however, there is a wealth of steel mills and forges that could be refurbished to provide the Republic with cheap steel for any number of uses. 
+
+And there was Stillman's own bugbear. Everyone knew it, he never made it a secret or thought to hide it. The Boneyard certainly lived up to it's name, a veritable forest of stripped and crumbling concrete towers. But at it's base, on the streets he used to run around, scrounging for food, was a bustling hub for trade, artisanal crafts, small tooling and weapons workshops - and of course - it was the home of the Gun Runners. A series of confederated workshops loosely united to provide security, the Gun Runners are some of the Republic's most productive organizations and a major source of arms and ammunition for the NCRA. Even the Californian Rangers swear by Gun Runner weapons. Stillman knew he could ignore the complaints of his lieutenants and swing it by the party, after all, it'd make arming their paramilitaries easier and make the NCRA's expansion even cheaper.
+
+But he had a choice to make, daylight burning past the empty towers of the Boneyard, and a blank document waiting for ink before him. What should the focus of the Plan be?
+
+- @shady_sands: Shady Sands and Toasters!
+- @sac-city: Sac City and Burning Rubber!
+- @dayglow: Dayglow and Steel!
+- @boneyard: The Boneyard and the Gun Runners!
+- @shady_sands_2: The Crown Jewel.
+- @sac-city_2: The City That Always Roars.
+- @dayglow_2: Steel Heart of the Republic.
+- @boneyard_2: A Bone, Chambered in 5.56.
+
+@shady_sands
+subtitle: The capital's worth some political capital. Requires 3 budget or a level of gold reserves.
+unavailable-subtitle: [? if budget < 3 : Not enough budget. ?] [? if gold_reserves == 0 : The Republic does not have the gold to finance this. ?]
+choose-if: budget >= 3 or gold_reserves >= 0
+on-arrival: tandist_relation += 10; tandist_right_relation += 10; business_relation -= 10
+
+@sac-city
+subtitle: Nothing like a good road rage. Requires 3 budget or a level of gold reserves.
+unavailable-subtitle: [? if budget < 3 : Not enough budget. ?] [? if gold_reserves == 0 : The Republic does not have the gold to finance this. ?]
+choose-if: budget >= 3 or gold_reserves >= 0
+on-arrival: tandist_relation += 5; business_relation -= 5; baron_relation -= 5
+
+@dayglow
+subtitle: Steel's stronger than a brotherhood. Requires 3 budget or a level of gold reserves.
+unavailable-subtitle: [? if budget < 3 : Not enough budget. ?] [? if gold_reserves == 0 : The Republic does not have the gold to finance this. ?]
+choose-if: budget >= 3 or gold_reserves >= 0
+on-arrival: tandist_relation += 5; 
+
+@boneyard
+subtitle: The bonny boy returns home. Requires 3 budget or a level of gold reserves.
+unavailable-subtitle: [? if budget < 3 : Not enough budget. ?] [? if gold_reserves == 0 : The Republic does not have the gold to finance this. ?]
+choose-if: budget >= 3 or gold_reserves >= 0
+
+
+@shady_sands_2
+subtitle: The shade that shines. Requires 3 budget or a level of gold reserves.
+unavailable-subtitle: [? if budget < 3 : Not enough budget. ?] [? if gold_reserves == 0 : The Republic does not have the gold to finance this. ?]
+choose-if: budget >= 3 or gold_reserves >= 0
+
+@sac-city_2
+subtitle: Since ye distemper and defile... Requires 3 budget or a level of gold reserves.
+unavailable-subtitle: [? if budget < 3 : Not enough budget. ?] [? if gold_reserves == 0 : The Republic does not have the gold to finance this. ?]
+choose-if: budget >= 3 or gold_reserves >= 0
+
+@dayglow_2
+subtitle: Heart of steel rusting slow. Requires 3 budget or a level of gold reserves.
+unavailable-subtitle: [? if budget < 3 : Not enough budget. ?] [? if gold_reserves == 0 : The Republic does not have the gold to finance this. ?]
+choose-if: budget >= 3 or gold_reserves >= 0
+
+@boneyard_2
+subtitle: A symphony of bones, forever sown. Requires 3 budget or a level of gold reserves.
+unavailable-subtitle: [? if budget < 3 : Not enough budget. ?] [? if gold_reserves == 0 : The Republic does not have the gold to finance this. ?]
+choose-if: budget >= 3 or gold_reserves >= 0

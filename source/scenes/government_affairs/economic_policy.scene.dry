@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 tags: govt_affairs
 on-arrival: economic_policy_timer += 12; month_actions += 1;
-view-if: spring_in_government = 1 and (economic_department_party == "Long Spring" or finance_department_party == "Long Spring") and economic_policy_timer <= 0 and industrial_plan_implemented == 0 or industrial_plan_implemented == 4 or agricultural_plan_implemented == 0 or agricultural_plan_implemented == 4 or hide_plan_implemented == 0 or hide_plan_implemented == 4 or education_plan_implemented == 0 or education_plan_implemented == 4
+view-if: spring_in_government = 1 and (economic_department_party == "Long Spring" or finance_department_party == "Long Spring") and economic_policy_timer <= 0 and (industrial_plan_implemented == 0 or industrial_plan_implemented == 4) or (agricultural_plan_implemented == 0 or agricultural_plan_implemented == 4) or (hide_plan_implemented == 0 or hide_plan_implemented == 4) or (education_plan_implemented == 0 or education_plan_implemented == 4)
 card-image: img/portraits/FinanceMinistry.jpg
 
 = Economic Policy
