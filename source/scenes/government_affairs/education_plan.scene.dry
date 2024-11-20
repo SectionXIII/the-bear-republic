@@ -1,0 +1,38 @@
+title: Ranger Affairs
+new-page: true
+is-card: true
+view-if: spring_in_government = 1 and defence_department_party = "Long Spring" and military_policy_timer <= 0
+on-arrival: military_policy_timer += 6; month_actions += 1
+tags: govt_affairs
+card-image: img/RangerAffairs.jpg
+
+= Ranger Affairs
+
+Rangers, the deadliest single force available to the New California Republic. Despite their small size, the Rangers are able to carry out a ride range of actions to serve the interests of the Republic, from scouting, to eliminating threats, to more... clandestine actions if the need arises.
+
+- @ranger_loyalty: Bolster the loyalty of the Rangers.
+- @ranger_strength: Recruit additional Rangers.
+- @ranger_militarization: Militarize the Rangers further.
+- @ranger_missions: Send the Rangers out on missions.
+- @root: No new policies are needed.
+- @easy_discard
+
+@ranger_loyalty
+view-if: rangers_loyalty < 1
+on-arrival: rangers_loyalty += 0.05
+
+# increase ranger loyalty
+The Rangers are very independent minded, and while all loyal to the Republic, there are degrees to this loyalty. We can increase their loyalty to both the Spring and the State by strategically interfering with the Rangers.
+
+Current Ranger loyalty: [+ rangers_loyalty : loyalty +].
+
+@ranger_strength
+on-arrival: rangers_strength += 20
+
+We have increased the size of the Ranger corps.
+
+@ranger_militarization
+on-arrival: rangers_militancy += 0.05
+
+@ranger_missions
+# on-arrival:

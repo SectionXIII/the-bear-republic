@@ -597,7 +597,7 @@ We have supported a minority government led by the Tandist Party under Speaker J
 
 
 @no_majority_papen
-on-arrival: pro_republic -= 10; next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; workers_nsdap += 6; unemployed_grizzly += 6; old_middle_nsdap += 5; new_middle_nsdap += 5; rural_nsdap += 5; no_majority_papen_elections += 1; workers_spring -= 8 if pro_republic < 45; workers_spring *= 0.85 if pro_republic < 40; workers_nsdap += 5 if pro_republic < 40;
+on-arrival: pro_republic -= 10; next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; workers_grizzly += 6; unemployed_grizzly += 6; military_grizzly += 5; middle_grizzly += 5; rural_nsdap += 5; no_majority_papen_elections += 1; workers_spring -= 8 if pro_republic < 45; workers_spring *= 0.85 if pro_republic < 40; workers_grizzly += 5 if pro_republic < 40;
 
 After the elections, Papen is still deeply unpopular, without any hint of coalition support, and there is a vote of no confidence called against him almost immediately. No matter how we vote, the measure would pass. The Congress is dissolved once more.
 
@@ -605,7 +605,7 @@ New elections have been set for [+ next_election_month : month +] [+ next_electi
 
 
 @no_majority_papen_2
-on-arrival: chancellor = "Schleicher"; pro_republic -= 10; next_election_time = time+5; next_election_month = month + 5; next_election_year = year; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; workers_nsdap += 5; unemployed_grizzly += 10; old_middle_nsdap += 5; new_middle_nsdap += 5; rural_nsdap += 10; workers_spring -= 8 if pro_republic < 45; workers_spring *= 0.85 if pro_republic < 40; workers_nsdap += 5 if pro_republic < 40; finance_department_party = "I"; interior_department_party = "I"; economy_minister_party = "I"; labor_department_party = "I"; state_department_party = "I"; agriculture_department_party = "I"; defence_secretary = "I";
+on-arrival: chancellor = "Schleicher"; pro_republic -= 10; next_election_time = time+5; next_election_month = month + 5; next_election_year = year; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; workers_grizzly += 5; unemployed_grizzly += 10; military_grizzly += 5; middle_grizzly += 5; rural_nsdap += 10; workers_spring -= 8 if pro_republic < 45; workers_spring *= 0.85 if pro_republic < 40; workers_grizzly += 5 if pro_republic < 40; finance_department_party = "I"; interior_department_party = "I"; economy_minister_party = "I"; labor_department_party = "I"; state_department_party = "I"; agriculture_department_party = "I"; defence_secretary = "I";
 
 There is no path to a majority government. Hindenburg is displeased with Papen, and calls on him to resign. Now, former army general Kurt von Schleicher has been appointed chancellor, again as part of a presidential government.
 
@@ -949,7 +949,7 @@ The people's faith in democracy is shaken by this ordeal. Of course, the Nazis a
 @toleration_bruning
 choose-if: neo_republican_coalition >= 50
 unavailable-subtitle: The parties supporting de la Cruz do not have a majority.
-on-arrival: spring_in_government = 0; spring_toleration = 1; minority_government = 1; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "I"; labor_department_party = "Tandist"; defence_department_party = "I"; economic_department_party = "Progressive"; finance_department_party = "Business"; agriculture_department_party = "Tandist"; pro_republic -= 4; new_middle_dvp -= 5; new_middle_ddp -= 5; old_middle_dvp -= 5; old_middle_ddp -= 5; old_middle_nsdap += 5; new_middle_nsdap += 5; rural_barons -= 5;
+on-arrival: spring_in_government = 0; spring_toleration = 1; minority_government = 1; chancellor = "de la Cruz"; chancellor_party = "Tandist"; state_department_party = "Business"; interior_department_party = "Tandist"; justice_department_party = "I"; labor_department_party = "Tandist"; defence_department_party = "I"; economic_department_party = "Progressive"; finance_department_party = "Business"; agriculture_department_party = "Tandist"; pro_republic -= 4; new_middle_dvp -= 5; new_middle_ddp -= 5; old_middle_dvp -= 5; old_middle_ddp -= 5; military_grizzly += 5; middle_grizzly += 5; rural_barons -= 5;
 
 We have decided to tolerate de la Cruz's government. This means that we will vote against no-confidence votes to make sure they fail, but also that we will not be directly participating as ministers in the government. Thus, we can prevent a new election and stop the far right from entering government.
 
@@ -1153,7 +1153,7 @@ unavailable-subtitle: We do not have enough leverage.
 tags: mins_2253
 choose-if: leverage >= 10
 view-if: interior_department_party != "Long Spring"
-on-arrival: leverage -= 10; interior_department_party = "Long Spring"; interior_secretary = "Marcu"
+on-arrival: leverage -= 10; interior_department_party = "Long Spring"; interior_secretary = "Marcus"
 go-to: ministries
 
 Marcus of the Long Spring has been appointed Secretary of the Interior.

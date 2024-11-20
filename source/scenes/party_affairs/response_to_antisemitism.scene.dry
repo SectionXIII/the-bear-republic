@@ -1,9 +1,9 @@
 title: Confronting Anti-mutant Sentiments
 new-page: true
 is-card: true
-view-if: iron_front_formed == 1 and grizzly_urgency >= 3
+view-if: golden_circle_formed == 1 and grizzly_urgency >= 3
 on-arrival: confronting_mutant_racism += 1; month_actions += 1
-card-image: img/iron_front.png
+card-image: img/golden_circle.png
 tags: party_affairs, antiracism
 max-visits: 1
 

@@ -1,6 +1,14 @@
 title: Status
 new-page: true
 is-special: true
+on-arrival: {!
+if (Q.unemployed) {
+    Q.unemployed_2 = Q.unemployed.toFixed(1);
+}
+if (Q.inflation) {
+    Q.inflation_2 = Q.inflation.toFixed(1);
+}
+!}
 
 = Development
 
@@ -70,4 +78,4 @@ Gold Reserves: [+ gold_reserves : gold_reserves +]
 
 Industry: [+ industrial_level : industrial_level +]
 
-Agriculture: [+ agriculture : agriculture +]
+Agriculture: [+ agricultural_level : agriculture +]

@@ -1,31 +1,29 @@
-title: The Iron Front
+title: The Golden Circle
 new-page: true
 is-card: true
-view-if: iron_front_formed == 1 and iron_front_timer = 0
-on-arrival: iron_front_timer = 7; month_actions += 1; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
-card-image: img/iron_front.png
+view-if: golden_circle_formed == 1 and golden_circle_timer = 0
+on-arrival: golden_circle_timer = 7; month_actions += 1; rb_militarization_cost = 2 if rb_militancy > 0.1 else rb_militarization_cost = 1; rb_militarization_cost = 3 if rb_militancy > 0.25
+card-image: img/golden_circle.png
 frequency: 200
-tags: party_affairs, antiracism
+tags: party_affairs
 
-= The Iron Front
+= The Golden Circle
 
-The Iron Front is our new antifascist coordination front, consisting of the SPD, the trade unions, and the Reichsbanner. How should we use the Iron Front?
+The Golden Circle is our new anti-authoritarian coordination front, consisting of the Long Spring, independent militias, and our paramilitaries. How should we use the Golden Circle?
 
-[? if workers_spring < 45 or workers_spring < workers_nsdap or workers_spring < workers_pass : Unfortunately, the Iron Front's effectiveness is dragged down by the SPD's unpopularity, as the SPD is no longer the dominant party among the workers. Many Reichsbanner members have left, and many workers are not interested. ?]
-
-- @defense: Rally for defense against the fascists with the Reichsbanner.
+- @defense: Rally for defense against the authoritarians with the Long Spring forces.
 - @pacifism: Rally for pacifism, against nationalism and war.
 - @republic: Rally to save the democratic republic against dictatorship.
-- @wtb: Rally for economic change and the WTB-Plan.
-- @antisemitism
+- @industrial: Rally for economic change and the Industrial Plan.
+- @antiracism
 - @easy_discard
 
 @defense
 subtitle: -[+ rb_militarization_cost +] resources
 choose-if: resources >= rb_militarization_cost
-on-arrival: resources -= rb_militarization_cost; rb_strength += 50; rb_militancy += 0.05; tandist_relation -= 5 if historical_mode
+on-arrival: resources -= rb_militarization_cost; road_warden_strength += 20; doorkickers_strength += 10; deputy_strength += 15; rb_militancy += 0.05; tandist_relation -= 5 if historical_mode
 
-The Iron Front rallies for the militant defense of the republic against the fascist paramilitaries, strengthening the Reichsbanner.
+The Golden Circle rallies for the militant defense of the republic against the subsersive paramilitaries, strengthening the Long Spring paramilitaries.
 
 [? if historical_mode : The Center Party decries the militarization of the Reichsbanner and Iron Front, and its members are leaving the republican organization. ?]
 
@@ -40,16 +38,15 @@ on-arrival: pro_republic += 5*(1-dissent); democratization += 1; workers_spring 
 
 The Iron Front rallies in defense of the democratic republic and against dictatorship.
 
-@wtb
+@industrial
 view-if: industrial_adopted == 1
 on-arrival: workers_spring += 8*(1-dissent); unemployed_spring += 8*(1-dissent); middle_spring += 5*(1-dissent); military_spring += 3*(1-dissent); rural_spring += 3*(1-dissent);
 
-The WTB-Plan is the rallying point for the entire SPD and its affiliated organizations, including the Iron Front.
+The Industrial Plan is the rallying point for the entire Long Spring and its affiliated organizations, including the Golden Circle.
 
-@antisemitism
-title: Rally against antisemitism and in defense of Jewish Germans.
+@antiracism
+title: Rally against antiracism and in defense of our mutant population.
 view-if: confronting_mutant_racism > 1
-on-arrival: nationalism -= 4*(1-dissent); pro_republic += 3*(1-dissent); confronting_mutant_racism += 1; workers_nsdap -= 4*(1-dissent); unemployed_grizzly -= 4*(1-dissent);
+on-arrival: nationalism -= 4*(1-dissent); pro_republic += 3*(1-dissent); confronting_mutant_racism += 1; workers_barons -= 4*(1-dissent); unemployed_barons -= 4*(1-dissent);
 
-# TODO
-The Nazis and other far-right political movements are increasingly turning their hatred against the Jewish community of Germany. The Iron Front rallies in defense of individual Jews and the broader community against violence.
+The forces of reaction and established powers have increasingly turned their hatred upon our mutant comrades. The Golden Circle rallies it's forces in defence of our fellow Californians, because be they green or rotten, all are sons and daughters of this new world same as any of us.

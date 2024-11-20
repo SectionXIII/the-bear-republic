@@ -51,7 +51,7 @@ Fine. If the bourgeoisie wish to blow up the government, let them do so. Sociali
 New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
 @accept
-on-arrival: workers_spring -= 0.15*workers_spring; umemployed_spd -= 0.3*unemployed_spring; workers_pass += 7; workers_nsdap += 7; unemployed_pass += 5; unemployed_grizzly += 5; urban_dissent += 15; mutant_dissent += 10; frontier_dissent += 15; intelligentsia_dissent += 5; welfare -= 2; budget += 1; unemployed += 3; month += 1; pro_republic -= 4; pass_relation -= 8; inflation -= 2
+on-arrival: workers_spring -= 0.15*workers_spring; umemployed_spd -= 0.3*unemployed_spring; workers_pass += 7; workers_grizzly += 7; unemployed_pass += 5; unemployed_grizzly += 5; urban_dissent += 15; mutant_dissent += 10; frontier_dissent += 15; intelligentsia_dissent += 5; welfare -= 2; budget += 1; unemployed += 3; month += 1; pro_republic -= 4; pass_relation -= 8; inflation -= 2
 
 Unfortunately, we must accept this ultimatum if we are to maintain this coalition. The Nazis and Communists are waiting in the wings for us to fail, ready to pounce upon the instability that would result from a breakup of the governing coalition.
 

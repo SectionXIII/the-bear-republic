@@ -46,8 +46,8 @@
 # // general strike strength
 # // maximum (given 25 labor strength) is 400
 # // use normalized workers_spring instead of frontier_strength?
-# Q.normalized_workers_spring = 100*Q.workers_spring/(Q.workers_spring + Q.workers_pass + Q.workers_nsdap + Q.workers_other + Q.workers_barons + Q.workers_z);
-# Q.normalized_workers_pass = 100*Q.workers_pass/(Q.workers_spring + Q.workers_pass + Q.workers_nsdap + Q.workers_other + Q.workers_barons + Q.workers_z);
+# Q.normalized_workers_spring = 100*Q.workers_spring/(Q.workers_spring + Q.workers_pass + Q.workers_grizzly + Q.workers_other + Q.workers_barons + Q.workers_z);
+# Q.normalized_workers_pass = 100*Q.workers_pass/(Q.workers_spring + Q.workers_pass + Q.workers_grizzly + Q.workers_other + Q.workers_barons + Q.workers_z);
 # Q.normalized_workers_total = Q.normalized_workers_spring;
 # if (Q.pass_relation >= 60) {
 #     Q.normalized_workers_total += Q.normalized_workers_pass;
