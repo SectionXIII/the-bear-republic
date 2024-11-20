@@ -22,7 +22,7 @@ choose-if: spring_in_government = 1 and defence_department_party = "Long Spring"
 As the military readys it's approach to the bandits, we must decide exactly how we will deal with this issue. We can send thousands into the harsh wasteland to find the bandits at their very source. We can scare bandits away with a show of force or we can focus on helping rebuild ruined communities.
 
 - @manhunt
-- @show_of_force
+- @toothless_show_of_force
 - @hearts_and_minds
 
 
