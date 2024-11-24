@@ -494,35 +494,7 @@ Q.devastation_frontier = 0;
 Q.devastation_heartland = 0;
 
 
-// Arc 1 events
 
-    // Paltry bandits Event Chain      
-
-        Q.paltry_bandit_raid_timer = 2;             
-        // The Event will trigger 2 turns into the game
-
-        Q.paltry_bandit_timeout = 26;               
-        // After 26 months/turns the event chain is over
-
-        Q.paltry_bandit_successes = 0;              
-        //Once this reaches 3 the paltry bandits win
-
-        Q.ncr_paltry_bandit_successes = 0;          
-         //Once this reaches 3 the NCR wins this event chain
-
-        Q.paltry_bandit_tie? = 0;                   
-        //If neither side wins this is 1, it causes a change in fluff text depending how close either side got to winning.
-
-        Q.paltry_bandit_business_solutions  = 0;    
-        Q.paltry_bandit_pass_solutions = 0;         
-        Q.paltry_bandit_progressive_solutions = 0;  
-        Q.paltry_bandit_barons_solutions = 0;       
-        Q.paltry_bandit_grizzly_solutions = 0;      
-        Q.paltry_bandit_tandist_solutions = 0;      
-        Q.brotherhood_solution = 0;                 
-        Q.ranger_solution = 0;                      
-
-// End of Arc 1
 
 
 
