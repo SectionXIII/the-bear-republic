@@ -38,11 +38,15 @@ title: Toothless Show of Force
 subtitle: A quick in and out. We will show our weapons, fire some shots and quickly dart back to the capital. It should keep the bandits away for some time.
 on-arrival: frontier_dissent += 3; ncra_strength -= 1; ncra_militancy -= 1; paltry_bandit_raid_timer += 3
 
+toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - 
+
 
 @hearts_and_minds
 title: Heart and Minds
 subtitle: We focus on rebuilding the ruined homes of the frontier, this lack of dealing with the bandits will bite us later but the locals are glad for our help.
 on-arrival: frontier_dissent += 8; ncra_strength -= 1; ncra_militancy -= 0; paltry_bandit_raid_timer += 2
+
+Hearts and Minds Fluff Text - Hearts and Minds Fluff Text - Hearts and Minds Fluff Text
 
 
 # ------------------- ^ Everything above is apart of the "Employ the Army" Event chain. Everything Below is apart of the @send_road_wardens event chain ------------- #
