@@ -25,22 +25,14 @@ Speaker: [+ chancellor +] ([+ chancellor_party +])
 
 Congress composition:
 
-# 2253: 30, 1930: 25, 1932: 22
 <span style="color: #dada35;">**Long Spring**</span>: [+ spring_r +]%
-# 2253: 15, 1930: 15, 1932: 
 <span style="color: #1875a6;">Tandist Bloc</span>: [+ (tandist_r + tandist_right_r) +]%
-# 2253: 10, 1930: 13
 <span style="color: #8f8b8b;">Pass Party</span>: [+ pass_r +]%
-# 2253: 5, 1930: 4 (as DstP)
 <span style="color: #fa6914;">Progressive/span>: [+ progressive_r +]%
-# 2253: 9, 1930: 5
 <span style="color: #1B9621;">Business</span>: [+ business_r +]%
-# 2253: 14, 1930: 7
 <span style="color: #bb1a18;">Barons</span>: [+ barons_r +]%
-# 2253: 3, 1930: 18
 <span style="color: #7A4525;">Grizzly</span>: [+ grizzly_r +]%
-# 2253: 9, 1930: 10
-<span style="color: ##4b4b4b;">Independent</span>: [+ independent_r +]%
+<span style="color: #4b4b4b;">Independent</span>: [+ independent_r +]%
 
 [? if spring_in_government = 1 : Budget: [+ budget +] ?]
 
