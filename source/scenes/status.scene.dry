@@ -36,7 +36,7 @@ Congress composition:
 
 [? if spring_in_government = 1 : Budget: [+ budget +] ?]
 
-Inflation: [+ inflation_2 +]%
+Inflation: [+ inflation_2 +]% 
 
 [? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
 
