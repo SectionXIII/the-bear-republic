@@ -333,6 +333,7 @@ Q.economic_records = [];
 // State of the government
 Q.president = "Tibbet";
 // starting vice president: Wendell Peterson
+Q.president_party = 'Tandist';
 Q.chancellor = "Peterson";
 Q.chancellor_party = 'Tandist';
 Q.spring_in_government = 0;
