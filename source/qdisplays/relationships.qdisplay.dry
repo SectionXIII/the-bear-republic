@@ -1,9 +1,9 @@
 
-(..5) <span style="color:rgb(232, 84, 84);">Hostile</span>
-(5..14.9) <span style="color:rgb(228, 107, 50);">Frigid</span>
-(14.9..29.9) <span style="color:rgb(224, 155, 60);">Cold</span>
-(29.9..39.9) <span style="color:rgb(201, 215, 44);">Cool</span>
-(39.9..54.9) <span style="color:rgb(188, 188, 188);">Neutral</span>
-(54.9..64.9) <span style="color:rgb(135, 212, 102);">Warm</span>
-(64.9..74.9) <span style="color:rgb(31, 225, 47);">Friendly</span>
-(74.9..) <span style="color: #1fa142;">Very friendly</span>
+(..5) <span style="color:rgb(182, 65, 65);">Hostile</span>
+(5..14.9) <span style="color:rgb(179, 84, 40);">Frigid</span>
+(14.9..29.9) <span style="color:rgb(183, 127, 49);">Cold</span>
+(29.9..39.9) <span style="color:rgb(162, 173, 36);">Cool</span>
+(39.9..54.9) <span style="color:rgb(170, 170, 170);">Neutral</span>
+(54.9..64.9) <span style="color:rgb(120, 190, 91);">Warm</span>
+(64.9..74.9) <span style="color:rgb(49, 160, 55);">Friendly</span>
+(74.9..) <span style="color:rgb(26, 150, 98);">Very friendly</span>
