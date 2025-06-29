@@ -26,7 +26,7 @@ Speaker: [+ chancellor +] ([+ chancellor_party +])
 Congress composition:
 
 # 2253: 30, 1930: 25, 1932: 22
-Long Spring: [+ spring_r +]%
+<span style="color: #f7f735;">**Long Spring**</span>: [+ spring_r +]%
 # 2253: 15, 1930: 15, 1932: 
 Tandist Bloc: [+ (tandist_r + tandist_right_r) +]%
 # 2253: 10, 1930: 13
