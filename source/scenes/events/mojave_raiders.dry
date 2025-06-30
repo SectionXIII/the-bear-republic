@@ -1,3 +1,8 @@
+title: Mojave Raiders
+new-page: true 
+subtitle: Our citizens in the Mojave are under attack again!
+tags: event
+view-if: mojave_raiders_timer = 0
 
 # // 38 NCR citizens are massacred by Mojave raiders.[551] President Joanna Tibbett's reaction is considered timid by NCR Congress, and she is soon voted out, replaced by Wendell Peterson.[551]
 # // TLDR: Mojave raiders killed 38 people in the Mojave borderlands in 2253. 1 year before the game start. This event line follows those raiders. 
@@ -8,13 +13,6 @@
 # // Send the private paramilitary of the New Spring party to win some real political favour on the borderlands but the paramilitary will take some hefty losses unless it's well equiped which is unlikely
 # // Do nothing and piss the frontier folk off a lot, and embolded the Mojave raiders. If the raiders are embolded too many times special events will start triggering
 # // TO DO: an NPC will respond themselves based on a number of conditions
-
-
-title: Mojave Raiders
-new-page: true 
-subtitle: Our citizens in the Mojave are under attack again!
-tags: event
-view-if: mojave_raiders_timer = 0
 
 
 = Mojave Raiders
