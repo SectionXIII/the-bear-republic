@@ -497,7 +497,7 @@ Q.devastation_heartland = 0;
 
 // Arc 1 Variables
 
-    // paltry bandit event varaibles
+    // Mojave Raiders varaibles
 
         Q.mojave_raiders = 26;               // After 26 months the event chain is over
         Q.mojave_raiders_successes = 0;              // Once this reaches 3 the paltry bandits win
