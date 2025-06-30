@@ -608,6 +608,11 @@ Q.mojave_raiders_timer = 2;
 
 
 
+// Test_Features
+Q.test_number = <<set $number to rand(10) + 1>>
+
+
+
 
 // all the initial advisors
 Q.stillman_advisor = 1; // Jay Stillman

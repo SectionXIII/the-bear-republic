@@ -134,3 +134,4 @@ Independent: [+ independent_votes +]%
 **Mutant:** Long Spring: [+ mutant_spring_normalized +]%, Tandist: [+ mutant_tandist_normalized +]%, Tandist Right: [+ mutant_tandist_right_normalized +]%, Pass Party: [+ mutant_pass_normalized +]%, Progressive: [+ mutant_progressive_normalized +]%, Business: [+ mutant_business_normalized +]%; Barons: [+ mutant_barons_normalized +]%, Grizzly: [+ mutant_grizzly_normalized +]%, Independent: [+ mutant_independent_normalized +]%
 
 **Support for the Republic: [+ pro_republic +]%**
+
