@@ -80,9 +80,12 @@ Industry: [+ industrial_level : industrial_level +]
 
 Agriculture: [+ agricultural_level : agriculture +]
 
+Mojave Raiders Timer: [+ mojave_raiders_timer +]
+
 
 @debug
 
 = debug
 
 Mojave Raiders Timer: [+ mojave_raiders_timer +]
+
