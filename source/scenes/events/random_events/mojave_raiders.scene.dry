@@ -84,7 +84,8 @@ Farms are burnt, lives are ruined however we didn't waste our military manpower 
 - @continue
 
 @continue
-go-to: mojave_raiders.grizzly_statement if spring_in_government = 0 and grizzly_in_government = 0
+title: continue
+go-to: mojave_raiders.grizzly_statement if grizzly_in_government = 0
 
 @grizzly_statement
 title: Grizzly state_department_party
