@@ -1,16 +1,25 @@
-title: Paltry Bandit Raid
+// 38 NCR citizens are massacred by Mojave raiders.[551] President Joanna Tibbett's reaction is considered timid by NCR Congress, and she is soon voted out, replaced by Wendell Peterson.[551]
+// TLDR: Mojave raiders killed 38 people in the Mojave borderlands in 2253. 1 year before the game start. This event line follows those raiders. 
+// This event line should only trigger in arc one and mostly follows how the government responds to the threat at the Mojave border.
+// This event line has been changed from it's previous form which was about random bandit raids, I didn't like it.
+
+
+
+
+
+title: Mojave Raiders
 new-page: true 
-subtitle: The Frontier is under attack by bandits again!
+subtitle: Our citizens in the Mojave are under attack again!
 tags: event
 view-if: paltry_bandit_raid_timer = 0
 
 = Paltry Bandit Raid
 
-Poggers, this fluff text is so poggers. OML FR POG
+The Mojave Raiders seem to operate on a tempo, they don't constantly pressure our citizens in the Mojave which makes it difficult to justify a long term allocation of forces. Yet, if we don't respond to them the tempo of raiding only grows more violent. A token response at least is usually a must but the expense to both life, political and the treasury to send soliders so far from their homes is a hard one to justify. Citizens are home often belief that living on the borderlands brings a life of risk that they should come to expect and not demand hands outs from the urbanites.
 
-- @employ_the_army: The Offical Army of the NCR shall be used against the bandit threat.
+- @employ_the_army: Despite the cost, we will send the army to secure the Mojave for this month, we'll scare the raiders off with the might of the republic.
 - @send_road_wardens: Our own organised military loyal to the party will be sent out to win the hearts and minds of the sufferers.
-- @Let_it_happen: We are too few and too poor to waste our armed forces on bandit raids.
+- @Let_it_happen: Living on the borderlands is cheap on life and land, they knew what they were signing up for.
 
 
 @employ_the_army
