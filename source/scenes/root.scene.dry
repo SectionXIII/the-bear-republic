@@ -499,17 +499,16 @@ Q.devastation_heartland = 0;
 
     // paltry bandit event varaibles
 
-
-        Q.paltry_bandit_timeout = 26;               // After 26 months the event chain is over
-        Q.paltry_bandit_successes = 0;              // Once this reaches 3 the paltry bandits win
-        Q.ncr_paltry_bandit_successes = 0;          // Once this reaches 3 the NCR wins this event chain
-        Q.paltry_bandit_tie = 0;                    // If neither side wins this is 1, it causes a change in fluff text depending how close either side got to winning.
-        Q.paltry_bandit_business_solutions  = 0;    // How many times you used pro-business party methods to deal with the bandits - Changes Flavour Text 
-        Q.paltry_bandit_pass_solutions = 0;         // How many times you used pro-pass party methods to deal with the bandits - ""
-        Q.paltry_bandit_progressive_solutions = 0;  // How many times you used pro-progressive party methods to deal with the bandits - ""
-        Q.paltry_bandit_barons_solutions = 0;       // How many times you used pro-baron party methods to deal with the bandits - ""
-        Q.paltry_bandit_grizzly_solutions = 0;      // How many times you used pro-grizzly party methods to deal with the bandits - ""
-        Q.paltry_bandit_tandist_solutions = 0;      // How many times you used pro-tandist party methods to deal with the bandits - ""
+        Q.mojave_raiders = 26;               // After 26 months the event chain is over
+        Q.mojave_raiders_successes = 0;              // Once this reaches 3 the paltry bandits win
+        Q.ncr_mojave_raiders_successes = 0;          // Once this reaches 3 the NCR wins this event chain
+        Q.mojave_raiders_tie = 0;                    // If neither side wins this is 1, it causes a change in fluff text depending how close either side got to winning.
+        Q.mojave_raiders_business_solutions  = 0;    // How many times you used pro-business party methods to deal with the bandits - Changes Flavour Text 
+        Q.mojave_raiders_pass_solutions = 0;         // How many times you used pro-pass party methods to deal with the bandits - ""
+        Q.mojave_raiders_progressive_solutions = 0;  // How many times you used pro-progressive party methods to deal with the bandits - ""
+        Q.mojave_raiders_barons_solutions = 0;       // How many times you used pro-baron party methods to deal with the bandits - ""
+        Q.mojave_raiders_grizzly_solutions = 0;      // How many times you used pro-grizzly party methods to deal with the bandits - ""
+        Q.mojave_raiders_tandist_solutions = 0;      // How many times you used pro-tandist party methods to deal with the bandits - ""
         Q.brotherhood_solution = 0;                 // A secret path where the brotherhood deals with the issue after using diplo and tricks to get them to help - ""
         Q.ranger_solution = 0;                      // A secret path where the rangers deals with the issue after using diplo and tricks to get them to help - ""
 
@@ -552,7 +551,7 @@ Q.timers = ['advisor_action', 'confronting_grizzly', 'crisis_program',
             'emergency_cuts', 'unemployment_insurance',
             'sa_ban', 'sh_ban',
             'passpolicy', 'pass_ultimatum', 'popular_front_dispute',
-            'high_inflation', 'banking_crisis', 'paltry_bandit_raid',];
+            'high_inflation', 'banking_crisis', 'mojave_raiders',];
 Q.advisor_action_timer = 0;
 // party affairs timers
 Q.confronting_grizzly_timer = 0;
@@ -605,7 +604,7 @@ Q.sh_ban_timer = 0;
 Q.kpd_ultimatum_timer = 0;
 
 // War Timers
-Q.paltry_bandit_raid_timer = 2;
+Q.mojave_raiders_timer = 2;
 
 
 
