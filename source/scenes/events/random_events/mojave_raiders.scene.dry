@@ -2,7 +2,7 @@ title: Mojave Raiders
 new-page: true 
 subtitle: Our citizens in the Mojave are under attack again!
 tags: event
-view-if: mojave_raiders_timer = 0
+view-if: mojave_raiders_timer = 0 and mojave_raiders > 0
 
 # // 38 NCR citizens are massacred by Mojave raiders.[551] President Joanna Tibbett's reaction is considered timid by NCR Congress, and she is soon voted out, replaced by Wendell Peterson.[551]
 # // TLDR: Mojave raiders killed 38 people in the Mojave borderlands in 2253. 1 year before the game start. This event line follows those raiders. 
@@ -40,9 +40,10 @@ As the military readys it's approach to the bandits, we must decide exactly how 
 @manhunt
 title: Bloody Manhunt
 subtitle: Every inch is covered, every rock and cave checked. Thousands die but we push the bandits back, if we keep this up they might become a non-factor in due time.
-on-arrival: frontier_dissent += 5; ncra_strength -= 2; ncra_militancy -= 2; mojave_raiders_timer += 4
+on-arrival: frontier_dissent += 5; ncra_strength -= 2; ncra_militancy -= 2; mojave_raiders_timer += 4 
 
 Our Soliders die trying to flush these bandits out, we aren't equiped to handle such small scale raids yet the frontier is safe for another day and this does keep the bandits away for longer than usual.
+
 
 @toothless_show_of_force
 title: Toothless Show of Force
@@ -50,6 +51,7 @@ subtitle: A quick in and out. We will show our weapons, fire some shots and quic
 on-arrival: frontier_dissent += 3; ncra_strength -= 1; ncra_militancy -= 1; mojave_raiders_timer += 3
 
 toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - 
+
 
 
 @hearts_and_minds
@@ -76,6 +78,11 @@ Test
 
 @Let_it_happen
 on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; mojave_raiders_timer += 3
+on-departure: if spring_in_government = 0 and grizzly_in_government = 0; @grizzly_statement
 
 Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
 
+
+@grizzly_statement
+title: Grizzly state_department_party
+Subtile: The Grizzly's have denounced the rest of the parties and the government for not doing anything, gathering a lot of popular appeal in the process.
