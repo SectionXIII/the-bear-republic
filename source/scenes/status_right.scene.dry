@@ -79,3 +79,5 @@ Gold Reserves: [+ gold_reserves : gold_reserves +]
 Industry: [+ industrial_level : industrial_level +]
 
 Agriculture: [+ agricultural_level : agriculture +]
+
+Test Number: [+ test_number +]
