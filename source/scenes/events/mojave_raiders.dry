@@ -14,7 +14,7 @@ title: Mojave Raiders
 new-page: true 
 subtitle: Our citizens in the Mojave are under attack again!
 tags: event
-view-if: paltry_bandit_raid_timer = 0
+view-if: mojave_raiders_timer = 0
 
 
 = Mojave Raiders
@@ -42,14 +42,14 @@ As the military readys it's approach to the bandits, we must decide exactly how 
 @manhunt
 title: Bloody Manhunt
 subtitle: Every inch is covered, every rock and cave checked. Thousands die but we push the bandits back, if we keep this up they might become a non-factor in due time.
-on-arrival: frontier_dissent += 5; ncra_strength -= 2; ncra_militancy -= 2; paltry_bandit_raid_timer += 4
+on-arrival: frontier_dissent += 5; ncra_strength -= 2; ncra_militancy -= 2; mojave_raiders_timer += 4
 
 Our Soliders die trying to flush these bandits out, we aren't equiped to handle such small scale raids yet the frontier is safe for another day and this does keep the bandits away for longer than usual.
 
 @toothless_show_of_force
 title: Toothless Show of Force
 subtitle: A quick in and out. We will show our weapons, fire some shots and quickly dart back to the capital. It should keep the bandits away for some time.
-on-arrival: frontier_dissent += 3; ncra_strength -= 1; ncra_militancy -= 1; paltry_bandit_raid_timer += 3
+on-arrival: frontier_dissent += 3; ncra_strength -= 1; ncra_militancy -= 1; mojave_raiders_timer += 3
 
 toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - 
 
@@ -57,7 +57,7 @@ toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - toothl
 @hearts_and_minds
 title: Heart and Minds
 subtitle: We focus on rebuilding the ruined homes of the frontier, this lack of dealing with the bandits will bite us later but the locals are glad for our help.
-on-arrival: frontier_dissent += 8; ncra_strength -= 1; ncra_militancy -= 0; paltry_bandit_raid_timer += 2
+on-arrival: frontier_dissent += 8; ncra_strength -= 1; ncra_militancy -= 0; mojave_raiders_timer += 2
 
 Hearts and Minds Fluff Text - Hearts and Minds Fluff Text - Hearts and Minds Fluff Text
 
@@ -77,7 +77,7 @@ Test
 
 
 @Let_it_happen
-on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; paltry_bandit_raid_timer += 3
+on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; mojave_raiders_timer += 3
 
 Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
 
