@@ -78,13 +78,16 @@ Test
 
 @Let_it_happen
 on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; mojave_raiders_timer += 3; 
-go-to: @grizzly_statement 
+go-to: @grizzly_statement if grizzly_in_government = 0; @pass_statement if pass_in_government = 0
 
-# if grizzly_in_government = 0
 
 Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
 
 
 @grizzly_statement
 title: Grizzly statement
-Subtitle: The Grizzly's have denounced the rest of the parties and the government for not doing anything, gathering a lot of popular appeal in the process.
+subtitle: The Grizzly's have denounced the rest of the parties and the government for not doing anything, gathering a lot of popular appeal in the process.
+
+@pass_statement
+title: Pass statement
+subtitle: "Poggers am I right, less welfare to pay out!!!!!"
