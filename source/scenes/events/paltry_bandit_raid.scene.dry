@@ -1,10 +1,8 @@
-// 38 NCR citizens are massacred by Mojave raiders.[551] President Joanna Tibbett's reaction is considered timid by NCR Congress, and she is soon voted out, replaced by Wendell Peterson.[551]
-// TLDR: Mojave raiders killed 38 people in the Mojave borderlands in 2253. 1 year before the game start. This event line follows those raiders. 
-// This event line should only trigger in arc one and mostly follows how the government responds to the threat at the Mojave border.
-// This event line has been changed from it's previous form which was about random bandit raids, I didn't like it.
 
-
-
+# // 38 NCR citizens are massacred by Mojave raiders.[551] President Joanna Tibbett's reaction is considered timid by NCR Congress, and she is soon voted out, replaced by Wendell Peterson.[551]
+# // TLDR: Mojave raiders killed 38 people in the Mojave borderlands in 2253. 1 year before the game start. This event line follows those raiders. 
+# // This event line should only trigger in arc one and mostly follows how the government responds to the threat at the Mojave border.
+# // This event line has been changed from it's previous form which was about random bandit raids, I didn't like it.
 
 
 title: Mojave Raiders
@@ -12,6 +10,7 @@ new-page: true
 subtitle: Our citizens in the Mojave are under attack again!
 tags: event
 view-if: paltry_bandit_raid_timer = 0
+
 
 = Paltry Bandit Raid
 
