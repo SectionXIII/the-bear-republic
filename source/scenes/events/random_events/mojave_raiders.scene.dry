@@ -78,7 +78,7 @@ Test
 
 @Let_it_happen
 on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; mojave_raiders_timer += 3; 
-go-to: mojave_raiders.grizzly_statement 
+go-to: @grizzly_statement 
 
 # if grizzly_in_government = 0
 
