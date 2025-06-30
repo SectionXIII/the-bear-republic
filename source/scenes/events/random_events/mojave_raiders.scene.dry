@@ -77,8 +77,7 @@ Test
 
 
 @Let_it_happen
-on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; mojave_raiders_timer += 3
-on-departure: grizzly_statement if spring_in_government = 0 and grizzly_in_government = 0;
+on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; mojave_raiders_timer += 3; if spring_in_government = 0 and grizzly_in_government = 0 grizzly_statement
 
 Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
 
