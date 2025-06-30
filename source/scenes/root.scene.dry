@@ -609,7 +609,7 @@ Q.mojave_raiders_timer = 2;
 
 
 // Test_Features
-Q.test_number = <<set $number to rand(10) + 1>>
+Q.test_number =  rand(10) + 1;
 
 
 
