@@ -88,8 +88,8 @@ Our partners have connections and resources that we may lack, or perhaps it is j
 - @a_progressive_response
 - @the_business_party
 - @baron_retaliation 
-- @don't_pass_go
-- @the_grizzly's_bite
+- @dont_pass_go
+- @the_grizzlys_bite
 - @maybe_not...
 
 
@@ -123,7 +123,7 @@ choose-if: barons_in_government = 1;
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
 
-@don't_pass_go
+@dont_pass_go
 title: Don't Pass go
 subtitle: I truly don't understand the pass party, someone change this fluff text later
 choose-if: pass_in_government = 1;
@@ -131,7 +131,7 @@ choose-if: pass_in_government = 1;
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
 
-@the_grizzly's_bite
+@the_grizzlys_bite
 title: The Grizzly bites back
 subtitle: Prob like they'd just send in some sorta paramilitary or army unit they control. These are the hyper imperialists after all?
 choose-if: grizzly_in_government = 1;
