@@ -108,7 +108,7 @@ choose-if: progressive_in_government = 1
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
 @the_business_party
-title: A progressive response
+title: Contracts and Death
 subtitle: The Business Party has connections to gangs in the region and mercs from New Reno, a dangerous lot that know how to crack some heads
 choose-if: business_in_government = 1
 
