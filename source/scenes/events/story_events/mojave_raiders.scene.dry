@@ -90,7 +90,7 @@ Our partners have connections and resources that we may lack, or perhaps it is j
 - @baron_retaliation 
 - @dont_pass_go
 - @the_grizzlys_bite
-- @maybe_not...
+- @maybe_not
 
 
 @tandist_solutions
@@ -139,8 +139,8 @@ choose-if: grizzly_in_government = 1;
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
 
-@maybe_not...
-title: in hindsight...
+@maybe_not
+title: In hindsight...
 subtitle: maybe we shouldn't ask them to help.
 go-to: mojave_raiders
 
