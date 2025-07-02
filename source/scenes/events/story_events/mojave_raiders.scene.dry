@@ -80,7 +80,7 @@ Test
 @let_our_coalition_partners_handle_it
 title: Our coalition partners have a suggestion
 subtitle: A friend in need?
-choose-if: spring_in_government = 1;
+choose-if: spring_in_government = 1
 
 Our partners have connections and resources that we may lack, or perhaps it is just better to expend their resources instead of ours. They'll enjoy the limelight nonetheless for it will certainly win them the attention of voters.
 
@@ -96,21 +96,21 @@ Our partners have connections and resources that we may lack, or perhaps it is j
 @tandist_solutions
 title: The Tandists firm response.
 subtitle: Tandists always knew how to deal with raiders, rarely peacefully...
-choose-if: tandist_in_government = 1;
+choose-if: tandist_in_government = 1
 
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
 @a_progressive_response
 title: A progressive response
 subtitle: The progressives suggest a new approach to the raider issue to finally seal the deal
-choose-if: progressive_in_government = 1;
+choose-if: progressive_in_government = 1
 
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
 @the_business_party
 title: A progressive response
 subtitle: The Business Party has connections to gangs in the region and mercs from New Reno, a dangerous lot that know how to crack some heads
-choose-if: business_in_government = 1;
+choose-if: business_in_government = 1
 
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
@@ -118,7 +118,7 @@ I will need to understand more about the faction before I can write fluff here a
 @baron_retaliation
 title: Baron Retaliation
 subtitle: I truly don't understand the baron party, someone change this fluff text later
-choose-if: barons_in_government = 1;
+choose-if: barons_in_government = 1
 
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
@@ -126,7 +126,7 @@ I will need to understand more about the faction before I can write fluff here a
 @dont_pass_go
 title: Don't Pass go
 subtitle: I truly don't understand the pass party, someone change this fluff text later
-choose-if: pass_in_government = 1;
+choose-if: pass_in_government = 1
 
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
@@ -134,7 +134,7 @@ I will need to understand more about the faction before I can write fluff here a
 @the_grizzlys_bite
 title: The Grizzly bites back
 subtitle: Prob like they'd just send in some sorta paramilitary or army unit they control. These are the hyper imperialists after all?
-choose-if: grizzly_in_government = 1;
+choose-if: grizzly_in_government = 1
 
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
 
