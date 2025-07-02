@@ -22,6 +22,7 @@ The Mojave Raiders seem to operate on a tempo, they don't constantly pressure ou
 - @employ_the_army: Despite the cost, we will send the army to secure the Mojave for this month, we'll scare the raiders off with the might of the republic.
 - @send_road_wardens: Our own organised military loyal to the party will be sent out to win the hearts and minds of the sufferers.
 - @Let_it_happen: Living on the borderlands is cheap on life and land, they knew what they were signing up for.
+- @let_our_coalition_partners_handle_it: We don't have the ability to handle this at the moment, but our partners have their own connections which we can call in.
 
  
 @employ_the_army
@@ -73,6 +74,75 @@ unavailable-subtitle: Test
 
 Test
 
+
+# ------------------ ^ Everything above is apart of the "road wardens" Event chain. Everything below is @let_our_coalition_partners_handle_it
+
+@let_our_coalition_partners_handle_it
+title: Our coalition partners have a suggestion
+subtitle: A friend in need?
+choose-if: spring_in_government = 1;
+
+Our partners have connections and resources that we may lack, or perhaps it is just better to expend their resources instead of ours. They'll enjoy the limelight nonetheless for it will certainly win them the attention of voters.
+
+- @tandist_solutions
+- @a_progressive_response
+- @the_business_party's_connections
+- @baron_retaliation 
+- @don't_pass_go
+- @the_grizzly's_bite
+- @maybe_not...
+
+
+@tandist_solutions
+title: The Tandists firm response.
+subtitle: Tandists always knew how to deal with raiders, rarely peacefully...
+choose-if: tandist_in_government = 1;
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+@a_progressive_response
+title: A progressive response
+subtitle: The progressives suggest a new approach to the raider issue to finally seal the deal
+choose-if: progressive_in_government = 1;
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+@the_business_party's_connections
+title: A progressive response
+subtitle: The Business Party has connections to gangs in the region and mercs from New Reno, a dangerous lot that know how to crack some heads
+choose-if: business_in_government = 1;
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+
+@baron_retaliation
+title: Baron Retaliation
+subtitle: I truly don't understand the baron party, someone change this fluff text later
+choose-if: barons_in_government = 1;
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+
+@don't_pass_go
+title: Don't Pass go
+subtitle: I truly don't understand the pass party, someone change this fluff text later
+choose-if: pass_in_government = 1;
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+
+@the_grizzly's_bite
+title: The Grizzly bites back
+subtitle: Prob like they'd just send in some sorta paramilitary or army unit they control. These are the hyper imperialists after all?
+choose-if: grizzly_in_government = 1;
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+
+@maybe_not...
+title: in hindsight...
+subtitle: maybe we shouldn't ask them to help.
+go-to: mojave_raiders
 
 
 
