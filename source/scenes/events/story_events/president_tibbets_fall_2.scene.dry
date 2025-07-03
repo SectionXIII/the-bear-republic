@@ -1,0 +1,66 @@
+title: Coalition Chaos
+new-page: true 
+subtitle: The Tandist Coalition has long been one of business and corporate interests but now with the uncertainity of the upcoming election...
+tags: event
+view-if: president_tibbets_fall_visits = 1
+max-visits: 1
+
+The Baron and Business party are falling out of favour with the Tandist parties. Whilst we could use this opportunity to align ourselves with the government or opponents, some of our supports might cry out if we attempt to foster favour with those who commonly crush the working class.
+
+- @first_response
+
+# ------------------
+
+@first_response
+title: Rats on a sinking ship.
+subtitle: Supporting President Tibbet in his downfall is political suicide. Barons and Business elites are fleeing like the rats they are.
+
+This development of course gives us the opportunity to either poach support from the Barons or Business party. We could also go after the tribal voters of the Tandist Parties and attempt to collapse the base of Tandist power.
+
+- @support_tandist_parties
+- @reach_out_baron_business
+- @tribal_poaching
+- @critical_opposition
+- @make_no_noise
+
+
+@support_tandist_parties
+title: Support the Tandist Parties
+subtitle: Moderation is in fact the proper response to political crisis.
+on-arrival: tandist_relation += 10; tandist_right_relation += 10; president_tibbets_fall_visits += 1; rural_spring -= 10; workers_spring -= 10
+
+Despite the risk of being associated with the Tandist parties, we believe that we have more in common with them than the rest of the congress. A moderate approach is only reasonable even if it causes our working class and frontier voters to cry about us taking a too passive approach. 
+
+@reach_out_baron_business
+title: Baron and Business meetings
+subtitle: The Barons and the Business may be rats but they're rich rats
+on-arrival: barons_relation +=10; business_relation +=10; president_tibbets_fall_visits += 1; workers_spring -= 15; resources += 1
+
+The Barons and the Business parties easily represent most of the wealth and investment that currently exist in the republic. By arranging meetings with them and easing tensions between our political parties before the next major election. We can ensure that they don't act against the Spring party or better yet we may even be able to convince them to allocate that wealth to more helpful causes. The working class however is in shock horror that we are making an agreement with their oppressors.
+
+@tribal_poaching
+title: Tribal Poaching
+subtitle: Our pro-worker message has never managed to reach the Tribal members of the republic but considering recent events.
+on-arrival: president_tibbets_fall_visits += 1; tribal_spring += 10; tribal_tandist -= 5; tribal_tandist_right -=5; tandist_relation -= 5; tandist_right_relation -= 5
+
+Whilst worker unity doesn't quite exist in the tribal communities to the extend that it does in the cities and unions of the New California Republic. The complete collapse of order and the shame that the Tandist Parties have been exposed too recently has made it easier to poach tribal voters from those parties much to their displeasure.
+
+
+@critical_opposition
+title: Critical Opposition
+subtitle: By publicly and actively denouncing the coalition, we can win support and hate in equal measure.
+on-arrival: president_tibbets_fall_visits += 1; workers_spring += 10; rural_spring += 10; military_spring +=5; barons_relation -=5; business_relation -=5; tandist_relation -=5; tandist_right_relation -=5
+
+
+@make_no_noise
+title: Make no noise
+subtitle: We have more respect for ourselves and our rivals than to cause a scene in Congress.
+on-arrival: president_tibbets_fall_visits += 1
+
+This may have been one of the best opportunities in years to cerment our position yet any action we would have taken would have been remembered forever. Instead we will passively watch the situation.
+
+
+
+
+
+
