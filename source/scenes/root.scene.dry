@@ -512,6 +512,10 @@ Q.devastation_heartland = 0;
         Q.brotherhood_solution = 0;                 // A secret path where the brotherhood deals with the issue after using diplo and tricks to get them to help - ""
         Q.ranger_solution = 0;                      // A secret path where the rangers deals with the issue after using diplo and tricks to get them to help - ""
 
+    // president_tibbets_fall_variables 
+
+        Q.president_tibbets_fall_visits = 0; // This tracks how many times the event line has triggered for view if and go-to-if is failing me
+
 // Arc 1 Variables end
 
 
