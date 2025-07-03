@@ -7,6 +7,9 @@ count-visits-max: 2
 max-visits: 2
 go to: first_response if @president_tibbets_fall = 0; second_response if @president_tibbets_fall = 1; third_response if president_tibbets_fall = 2
 
+- @first_response
+- @second_response
+- @third_response
 
 # ------------------
 
