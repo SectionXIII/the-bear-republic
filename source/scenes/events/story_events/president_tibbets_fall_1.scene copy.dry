@@ -2,7 +2,7 @@ title: President Tibbet's Fall
 new-page: true 
 subtitle: President Tibbet has long fallen out of favour with the NCR congress due the Mojave situtation. How should we respond...
 tags: event
-view-if: year = 2253 and month <= 12 and president_tibbets_fall_visits = 0
+view-if: president_tibbets_fall_visits = 0
 max-visits: 1
 
 
