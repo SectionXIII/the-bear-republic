@@ -515,6 +515,8 @@ Q.devastation_heartland = 0;
     // president_tibbets_fall_variables 
 
         Q.president_tibbets_fall_visits = 0; // This tracks how many times the event line has triggered for view if and go-to-if is failing me
+        Q.president_tibbets_fall_timer = 0; // This stops all the presidental events happening on the same turn.
+        Q.president_tibbets_fall_spring_promise = 0; // The Spring Party can promise to not act against / support the President, breaking this promise is a bad idea.
 
 // Arc 1 Variables end
 
@@ -555,7 +557,9 @@ Q.timers = ['advisor_action', 'confronting_grizzly', 'crisis_program',
             'emergency_cuts', 'unemployment_insurance',
             'sa_ban', 'sh_ban',
             'passpolicy', 'pass_ultimatum', 'popular_front_dispute',
-            'high_inflation', 'banking_crisis', 'mojave_raiders',];
+            'high_inflation', 'banking_crisis', 'mojave_raiders',
+            'president_tibbets_fall',];
+            
 Q.advisor_action_timer = 0;
 // party affairs timers
 Q.confronting_grizzly_timer = 0;
