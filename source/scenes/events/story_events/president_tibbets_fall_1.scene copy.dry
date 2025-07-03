@@ -15,8 +15,6 @@ President Tibbet has long fallen out of favour with the NCR congress due the Moj
 @first_response
 title: The crumbling facade
 subtitle: Weak, unpopular and indecisive. President Tibbet has little going for themselves. 
-choose-if: president_tibbets_fall = 0 and month = 2
-view-if: president_tibbets_fall = 0 and month = 2
 
 With the new election merely months away, President Tibbet is trying everything in his power to try and keep control over the New Californian Republic yet the support it just not there. This is our chance to make major inroads with either the Taddist party by promising to support them or to break the status quo and make a future for ourselves.
 
