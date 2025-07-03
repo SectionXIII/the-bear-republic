@@ -21,19 +21,19 @@ With the new election merely months away, President Tibbet is trying everything 
 
 
 @support_president_tibbet
-on-arrival: tandist_relation + 10; tandist_right_relation + 10
+on-arrival: Q_tandist_relation + 10; Q_tandist_right_relation + 10
 
 The President personally thanks us for the support bonding our parties together in these difficult times.
 
 
 @oppose_president_tibbet
-on-arrival: tandist_relation - 10; tandist_right_relation - 10; tribal_spring -5; military_spring +5; rural_spring +10
+on-arrival: Q_tandist_relation - 10; Q_tandist_right_relation - 10; Q_tribal_spring -5; Q_military_spring +5; Q_rural_spring +10
 
 Publicly opposing the President destorys our relations with the Tandist parties and makes coalition partners grumble. Tribal voters are also disgusted by our actions but in return we manage to muster frontier, rural and military voters to believe in us.
 
 
 @remain_unaligned
-on-arrival: workers_spring +10; resources +1; urban_dissent -5; frontier_dissent -5; intelligentsia_dissent -5; old_worlder_dissent -5
+on-arrival: Q_workers_spring +10; Q_resources +1; Q_urban_dissent -5; Q_frontier_dissent -5; Q_intelligentsia_dissent -5; Q_old_worlder_dissent -5
 
 Instead of involing ourselves into this affair, we decide to focus on campaigning and internal party dissent to prepare us for the up coming election. After all if we win we cannot afford to waste time settling grudges.
 
