@@ -1,13 +1,13 @@
 title: President Tibbet's Fall
 new-page: true 
-subtitle: President Tibbet has long fallen out of favour with the NCR congress due the Mojave situtation in a satifying way. How should we respond...
+subtitle: President Tibbet has long fallen out of favour with the NCR congress due the Mojave situtation. How should we respond...
 tags: event
 view-if: year == 2253 and month <= 12
 count-visits-max: 3
 max-visits: 3
-go to: first_response if @count-visits-max == 0; second_response if @count-visits-max == 1; third_response if count-visits-max == 2
+#go to: first_response if @count-visits-max == 0; second_response if @count-visits-max == 1; third_response if count-visits-max == 2
 
-President Tibbet has long fallen out of favour with the NCR congress due the Mojave situtation in a satifying way. How should we respond...
+President Tibbet has long fallen out of favour with the NCR congress due the Mojave situtation. How should we respond...
 
 - @The crumbling facade
 
