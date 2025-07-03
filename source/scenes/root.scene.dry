@@ -500,7 +500,7 @@ Q.devastation_heartland = 0;
     // Mojave Raiders varaibles
 
         Q.mojave_raiders = 26;               // After 26 months the event chain is over
-        Q.mojave_raiders_successes = 0;              // Once this reaches 3 the paltry bandits win
+        Q.mojave_raiders_successes = 0;              // Once this reaches 3 the mojave_raiders win
         Q.ncr_mojave_raiders_successes = 0;          // Once this reaches 3 the NCR wins this event chain
         Q.mojave_raiders_tie = 0;                    // If neither side wins this is 1, it causes a change in fluff text depending how close either side got to winning.
         Q.mojave_raiders_business_solutions  = 0;    // How many times you used pro-business party methods to deal with the bandits - Changes Flavour Text 
