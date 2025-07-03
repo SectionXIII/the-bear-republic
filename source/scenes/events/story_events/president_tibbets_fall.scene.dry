@@ -52,8 +52,8 @@ Instead of involving  ourselves into this affair, we decide to focus on campaign
 @second_response
 title: "Fluff"
 subtitle: "Fluff" 
-choose-if: @president_tibbets_fall = 1
-view-if: @president_tibbets_fall = 1
+choose-if: president_tibbets_fall = 1
+view-if: president_tibbets_fall = 1
 
 fluff
 
@@ -62,8 +62,8 @@ fluff
 @third_response
 title: "Fluff"
 subtitle: Weak, unpopular and indecisive. President Tibbet has little going for themselves. 
-choose-if: @president_tibbets_fall = 2
-view-if: @president_tibbets_fall = 2
+choose-if: president_tibbets_fall = 2
+view-if: president_tibbets_fall = 2
 
 fluff
 
