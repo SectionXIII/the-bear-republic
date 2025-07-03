@@ -3,8 +3,8 @@ new-page: true
 subtitle: President Tibbet has long fallen out of favour with the NCR congress due the Mojave situtation in a satifying way. How should we respond...
 tags: event
 view-if: year = 2253 and month <= 12
-count-visits-max: 2
-max-visits: 2
+count-visits-max: 3
+max-visits: 3
 #go to: first_response if @president_tibbets_fall = 0; second_response if @president_tibbets_fall = 1; third_response if president_tibbets_fall = 2
 
 - @first_response
