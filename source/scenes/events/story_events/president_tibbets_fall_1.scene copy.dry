@@ -2,18 +2,22 @@ title: President Tibbet's Fall
 new-page: true 
 subtitle: President Tibbet has long fallen out of favour with the NCR congress due the Mojave situtation. How should we respond...
 tags: event
-view-if: president_tibbets_fall_visits = 0 and president_tibbets_fall_timer = 0
-max-visits: 1
+view-if: year = 2253 and month <= 12
+count-visits-max: 3
+max-visits: 3
+go to: first_response if @count-visits-max = 0; second_response if @count-visits-max = 1; third_response if count-visits-max = 2
 
 President Tibbet has long fallen out of favour with the NCR congress due the Mojave situtation. How should we respond...
 
-- @first_response
+- @The crumbling facade
 
 # ------------------
 
 @first_response
 title: The crumbling facade
 subtitle: Weak, unpopular and indecisive. President Tibbet has little going for themselves. 
+choose-if: president_tibbets_fall = 0 and month = 2
+view-if: president_tibbets_fall = 0 and month = 2
 
 With the new election merely months away, President Tibbet is trying everything in his power to try and keep control over the New Californian Republic yet the support it just not there. This is our chance to make major inroads with either the Taddist party by promising to support them or to break the status quo and make a future for ourselves.
 
@@ -24,42 +28,35 @@ With the new election merely months away, President Tibbet is trying everything 
 
 @support_president_tibbet
 title: Support President Tibbet
-on-arrival: tandist_relation += 10; tandist_right_relation += 10; president_tibbets_fall_visits += 1; president_tibbets_fall_timer += 1
+on-arrival: tandist_relation += 10; tandist_right_relation += 10
 
 The President personally thanks us for the support bonding our parties together in these difficult times.
-
-- @promise_support
-- @that_is_enough
-
-@promise_support
-title: Promise our support
-subtitle: President Tibbet could use our help over the next few months, we could earn even more support by promising to not oppose the party.
-on-arrival: president_tibbets_fall_spring_promise = 1
-
-President Tibbet could use our help over the next few months, we could earn even more support by promising to not oppose the party. The promise was made privately but if we turn against the Tardists before the next election, we can only assume they will drag us down with them.
-
-
-@that_is_enough
-title: Support is enough...
-subtitle: Let's not align ourselves too closely to the President known for not protecting our citizens.
-on-arrival: president_tibbets_fall_spring_promise = 0
-
-Offering promises to help  the Tandist party is equivalent to tying ourselves to a sinking boat. We may not want the Tandist to crash and burn but we certainly don't want to go down with them.
 
 
 @oppose_president_tibbet
 title: Oppose President Tibbet
-on-arrival: tandist_relation -= 10; tandist_right_relation -= 10; tribal_spring -= 5; military_spring += 5; rural_spring += 10; president_tibbets_fall_visits += 1; president_tibbets_fall_timer += 1
+on-arrival: tandist_relation -= 10; tandist_right_relation -= 10; tribal_spring -= 5; military_spring += 5; rural_spring += 10
 
 Publicly opposing the President destorys our relations with the Tandist parties and makes coalition partners grumble. Tribal voters are also disgusted by our actions but in return we manage to muster frontier, rural and military voters to believe in us.
 
 
 @remain_unaligned
 title: Remain Unaligned
-on-arrival: workers_spring += 10; resources += 1; urban_dissent -= 5; frontier_dissent -= 5; intelligentsia_dissent -= 5; old_worlder_dissent -= 5; president_tibbets_fall_visits += 1; president_tibbets_fall_timer += 1
+on-arrival: workers_spring += 10; resources += 1; urban_dissent -= 5; frontier_dissent -= 5; intelligentsia_dissent -= 5; old_worlder_dissent -= 5
 
 Instead of involving  ourselves into this affair, we decide to focus on campaigning and internal party dissent to prepare us for the up coming election. After all if we win we cannot afford to waste time settling grudges.
 
 # --------------
+
+@second_response
+title: Second Response
+
+
+
+
+
+@third_response
+title: Third Response
+
 
 
