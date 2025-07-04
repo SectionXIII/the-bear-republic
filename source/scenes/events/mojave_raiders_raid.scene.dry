@@ -90,7 +90,6 @@ Our partners have connections and resources that we may lack, or perhaps it is j
 - @baron_retaliation 
 - @dont_pass_go
 - @the_grizzlys_bite
-- @maybe_not
 
 
 @tandist_solutions
@@ -137,28 +136,3 @@ subtitle: Prob like they'd just send in some sorta paramilitary or army unit the
 choose-if: grizzly_in_government = 1
 
 I will need to understand more about the faction before I can write fluff here about what they do exactly-
-
-
-@maybe_not
-title: In hindsight...
-subtitle: maybe we shouldn't ask them to help.
-go-to: mojave_raiders
-
-
-
-@Let_it_happen
-on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; mojave_raiders_timer += 3; 
-go-to: mojave_raiders.grizzly_statement if grizzly_in_government = 0; mojave_raiders.pass_statement if pass_in_government = 0
-
-
-Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
-
-
-@grizzly_statement
-title: Grizzly statement
-subtitle: The Grizzly's have denounced the rest of the parties and the government for not doing anything, gathering a lot of popular appeal in the process.
-
-
-@pass_statement
-title: Pass statement
-subtitle: "Poggers am I right, less welfare to pay out!!!!!"
