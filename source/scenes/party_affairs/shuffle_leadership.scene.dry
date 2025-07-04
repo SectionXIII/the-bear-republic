@@ -34,97 +34,20 @@ tags: remove_advisor
 
 # mutants here
 
-@remove_hilferding
-title: Remove Hilferding
-view-if: hilferding_advisor = 1
-on-arrival: hilferding_advisor = 0; mutant_strength += 5; n_advisors -= 1
+@remove_hide
+title: Remove Hide
+view-if: hide_advisor = 1
 tags: remove_advisor
+on-arrival: hide_advisor = 0; mutant_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Hilferding has been removed as an advisor. The Centrist faction disapproves.
+Hide has been removed as an advisor. The Mutant faction disapproves.
 
-@remove_wels
-title: Remove Wels
-view-if: wels_advisor = 1
-tags: remove_advisor
-on-arrival: wels_advisor = 0; mutant_strength += 5; n_advisors -= 1
-go-to: rm_main
+# intelligentsia
 
-Wels has been removed as an advisor. The Centrist faction disapproves.
-
-@remove_muller
-title: Remove Müller
-view-if: muller_advisor = 1
-tags: remove_advisor
-on-arrival: muller_advisor = 0; mutant_strength += 5; n_advisors -= 1
-go-to: rm_main
-
-Müller has been removed as an advisor. The Centrist faction disapproves.
-
-
-@remove_breitscheid
-title: Remove Breitscheid
-view-if: breitscheid_advisor = 1
-tags: remove_advisor
-on-arrival: breitscheid_advisor = 0; mutant_strength += 5; n_advisors -= 1
-go-to: rm_main
-
-Breitscheid has been removed as an advisor. The Centrist faction disapproves.
-
-# reformists
-
-
-@remove_severing
-title: Remove Severing
-view-if: severing_advisor = 1
-tags: remove_advisor
-on-arrival: severing_advisor = 0; intelligentsia_dissent += 5; n_advisors -= 1
-go-to: rm_main
-
-Severing has been removed as an advisor. The Reformist faction disapproves.
-
-@remove_braun
-title: Remove Braun
-view-if: braun_advisor = 1
-tags: remove_advisor
-on-arrival: braun_advisor = 0; intelligentsia_dissent += 5; n_advisors -= 1
-go-to: rm_main
-
-Braun has been removed as an advisor. The Reformist faction disapproves.
-
-@remove_juchacz
-title: Remove Juchacz
-view-if: juchacz_advisor = 1
-tags: remove_advisor
-on-arrival: juchacz_advisor = 0; intelligentsia_dissent += 5; n_advisors -= 1
-go-to: rm_main
-
-Juchacz has been removed as an advisor. The Reformist faction disapproves.
-
-@remove_pfulf
-title: Remove Pfülf
-view-if: pfulf_advisor = 1
-tags: remove_advisor
-on-arrival: pfulf_advisor = 0; intelligentsia_dissent += 5; n_advisors -= 1
-go-to: rm_main
-
-Pfülf has been removed as an advisor. The Reformist faction disapproves.
-
-
-# labor
-
-@remove_leipart
-title: Remove Leipart
-view-if: leipart_advisor = 1
-tags: remove_advisor
-on-arrival: leipart_advisor = 0; frontier_dissent += 5; n_advisors -= 1
-go-to: rm_main
-
-Leipart has been removed as an advisor. The Labor faction disapproves.
 
 
 # urbanite
-
 
 @remove_stillman
 title: Remove Stillman
@@ -136,29 +59,18 @@ go-to: rm_main
 Stillman has been removed as an advisor. The Urbanite faction disapproves.
 
 
-# old worlders here
+# frontier
 
-@remove_section
-title: Remove Section
-view-if: section_advisor = 1
+@remove_grant
+title: Remove Grant
+view-if: grant_advisor = 1
 tags: remove_advisor
-on-arrival: section_advisor = 0; old_worlder_dissent += 3; n_advisors -= 1
+on-arrival: grant_advisor = 0; frontier_dissent += 3; n_advisors -= 1
 go-to: rm_main
 
-Section has been removed as an advisor. The Administrative faction disapproves.
-
+Grant has been removed as an advisor. The Frontier faction disapproves.
 
 ## nonfactional
-
-@remove_sprout
-title: Remove Sprout
-view-if: sprout_advisor = 1
-tags: remove_advisor
-on-arrival: sprout_advisor = 0; n_advisors -= 1
-go-to: rm_main
-
-Sprout has been removed as an advisor.
-
 
 
 ####################### adding advisors
