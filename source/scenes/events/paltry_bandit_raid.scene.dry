@@ -1,18 +1,30 @@
-title: Paltry Bandit Raid
+title: Mojave Raiders
 new-page: true 
-subtitle: The Frontier is under attack by bandits again!
+subtitle: Our citizens in the Mojave are under attack again!
 tags: event
-view-if: paltry_bandit_raid_timer = 0
+view-if: mojave_raiders_timer = 0 and mojave_raiders > 0
 
-= Paltry Bandit Raid
+# // 38 NCR citizens are massacred by Mojave raiders.[551] President Joanna Tibbett's reaction is considered timid by NCR Congress, and she is soon voted out, replaced by Wendell Peterson.[551]
+# // TLDR: Mojave raiders killed 38 people in the Mojave borderlands in 2253. 1 year before the game start. This event line follows those raiders. 
+# // This event line should only trigger in arc one and mostly follows how the government responds to the threat at the Mojave border.
+# // This event line has been changed from it's previous form which was about random bandit raids, I didn't like it.
 
-Poggers, this fluff text is so poggers. OML FR POG
+# // So, basically the event can be split into 4 "paths". Send the army itself and make everyone happy including those at home but risk losing army strength + Money.
+# // Send the private paramilitary of the New Spring party to win some real political favour on the borderlands but the paramilitary will take some hefty losses unless it's well equiped which is unlikely
+# // Do nothing and piss the frontier folk off a lot, and embolded the Mojave raiders. If the raiders are embolded too many times special events will start triggering
+# // TO DO: an NPC will respond themselves based on a number of conditions
 
-- @employ_the_army: The Offical Army of the NCR shall be used against the bandit threat.
+
+= Mojave Raiders
+
+The Mojave Raiders seem to operate on a tempo, they don't constantly pressure our citizens in the Mojave which makes it difficult to justify a long term allocation of forces. Yet, if we don't respond to them the tempo of raiding only grows more violent. A token response at least is usually a must but the expense to both life, political capital and the treasury to send soliders so far from their homes is a hard one to justify. Citizens at home often believe that living on the borderlands brings a life of risk that they should come to expect and not demand hands outs from the urbanites.
+
+- @employ_the_army: Despite the cost, we will send the army to secure the Mojave for this month, we'll scare the raiders off with the might of the republic.
 - @send_road_wardens: Our own organised military loyal to the party will be sent out to win the hearts and minds of the sufferers.
-- @Let_it_happen: We are too few and too poor to waste our armed forces on bandit raids.
+- @Let_it_happen: Living on the borderlands is cheap on life and land, they knew what they were signing up for.
+- @let_our_coalition_partners_handle_it: We don't have the ability to handle this at the moment, but our partners have their own connections which we can call in.
 
-
+ 
 @employ_the_army
 title: The NCR Army Marches East
 subtitle: Thousands are sent however what exact tactics will be taken against this bandit threat?
@@ -29,22 +41,24 @@ As the military readys it's approach to the bandits, we must decide exactly how 
 @manhunt
 title: Bloody Manhunt
 subtitle: Every inch is covered, every rock and cave checked. Thousands die but we push the bandits back, if we keep this up they might become a non-factor in due time.
-on-arrival: frontier_dissent += 5; ncra_strength -= 2; ncra_militancy -= 2; paltry_bandit_raid_timer += 4
+on-arrival: frontier_dissent += 5; ncra_strength -= 2; ncra_militancy -= 2; mojave_raiders_timer += 4 
 
 Our Soliders die trying to flush these bandits out, we aren't equiped to handle such small scale raids yet the frontier is safe for another day and this does keep the bandits away for longer than usual.
+
 
 @toothless_show_of_force
 title: Toothless Show of Force
 subtitle: A quick in and out. We will show our weapons, fire some shots and quickly dart back to the capital. It should keep the bandits away for some time.
-on-arrival: frontier_dissent += 3; ncra_strength -= 1; ncra_militancy -= 1; paltry_bandit_raid_timer += 3
+on-arrival: frontier_dissent += 3; ncra_strength -= 1; ncra_militancy -= 1; mojave_raiders_timer += 3
 
 toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - toothless_show_of_force Fluff Text - 
+
 
 
 @hearts_and_minds
 title: Heart and Minds
 subtitle: We focus on rebuilding the ruined homes of the frontier, this lack of dealing with the bandits will bite us later but the locals are glad for our help.
-on-arrival: frontier_dissent += 8; ncra_strength -= 1; ncra_militancy -= 0; paltry_bandit_raid_timer += 2
+on-arrival: frontier_dissent += 8; ncra_strength -= 1; ncra_militancy -= 0; mojave_raiders_timer += 2
 
 Hearts and Minds Fluff Text - Hearts and Minds Fluff Text - Hearts and Minds Fluff Text
 
@@ -61,10 +75,90 @@ unavailable-subtitle: Test
 Test
 
 
+# ------------------ ^ Everything above is apart of the "road wardens" Event chain. Everything below is @let_our_coalition_partners_handle_it
+
+@let_our_coalition_partners_handle_it
+title: Our coalition partners have a suggestion
+subtitle: A friend in need?
+choose-if: spring_in_government = 1
+
+Our partners have connections and resources that we may lack, or perhaps it is just better to expend their resources instead of ours. They'll enjoy the limelight nonetheless for it will certainly win them the attention of voters.
+
+- @tandist_solutions
+- @a_progressive_response
+- @the_business_party
+- @baron_retaliation 
+- @dont_pass_go
+- @the_grizzlys_bite
+- @maybe_not
+
+
+@tandist_solutions
+title: The Tandists firm response.
+subtitle: Tandists always knew how to deal with raiders, rarely peacefully...
+choose-if: tandist_in_government = 1
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+@a_progressive_response
+title: A progressive response
+subtitle: The progressives suggest a new approach to the raider issue to finally seal the deal
+choose-if: progressive_in_government = 1
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+@the_business_party
+title: Contracts and Death
+subtitle: The Business Party has connections to gangs in the region and mercs from New Reno, a dangerous lot that know how to crack some heads
+choose-if: business_in_government = 1
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+
+@baron_retaliation
+title: Baron Retaliation
+subtitle: I truly don't understand the baron party, someone change this fluff text later
+choose-if: barons_in_government = 1
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+
+@dont_pass_go
+title: Don't Pass go
+subtitle: I truly don't understand the pass party, someone change this fluff text later
+choose-if: pass_in_government = 1
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+
+@the_grizzlys_bite
+title: The Grizzly bites back
+subtitle: Prob like they'd just send in some sorta paramilitary or army unit they control. These are the hyper imperialists after all?
+choose-if: grizzly_in_government = 1
+
+I will need to understand more about the faction before I can write fluff here about what they do exactly-
+
+
+@maybe_not
+title: In hindsight...
+subtitle: maybe we shouldn't ask them to help.
+go-to: mojave_raiders
+
 
 
 @Let_it_happen
-on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; paltry_bandit_raid_timer += 3
+on-arrival: frontier_dissent += 10; mutant_dissennt += 5; ncra_loyalty -= 0.05; mojave_raiders_timer += 3; 
+go-to: mojave_raiders.grizzly_statement if grizzly_in_government = 0; mojave_raiders.pass_statement if pass_in_government = 0
+
 
 Farms are burnt, lives are ruined however we didn't waste our military manpower on minor matters. However the Bandits are embolded by our lack of defences.
 
+
+@grizzly_statement
+title: Grizzly statement
+subtitle: The Grizzly's have denounced the rest of the parties and the government for not doing anything, gathering a lot of popular appeal in the process.
+
+
+@pass_statement
+title: Pass statement
+subtitle: "Poggers am I right, less welfare to pay out!!!!!"
