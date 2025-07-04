@@ -516,8 +516,6 @@ Q.devastation_heartland = 0;
 // Arc 1 Variables end
 
 
-Q.president_tibbets_fall_visits = 0;
-Q.president_tibbets_fall_timer = 0;
 Q.president_tibbets_fall_spring_promise =0 ;
 
 
@@ -554,7 +552,7 @@ Q.timers = ['advisor_action', 'confronting_grizzly', 'crisis_program',
             'emergency_cuts', 'unemployment_insurance',
             'sa_ban', 'sh_ban',
             'passpolicy', 'pass_ultimatum', 'popular_front_dispute',
-            'high_inflation', 'banking_crisis', 'mojave_raiders_raid', 'president_tibbets_fall',];
+            'high_inflation', 'banking_crisis', 'mojave_raiders_raid',];
 Q.advisor_action_timer = 0;
 // party affairs timers
 Q.confronting_grizzly_timer = 0;
