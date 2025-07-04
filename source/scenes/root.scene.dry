@@ -184,12 +184,12 @@ Q.budget = 7;
 // source: I happened across an oily blackstone upon the hollows of the earth which revealed the truth of the demographic situation of the New Californian Republic circa 2253 to me and nothing else.
 Q.workers = 20; // industry and trade
 Q.military = 10; // "military vote"
-Q.middle = 11; // "general middle class"
+Q.middle = 13; // "general middle class"
 Q.rural = 22; // agriculture and forestry employment... but many of those are proletarians so...
 Q.tribal = 8; // 
 Q.unemployed = 2.2;
 Q.follower = 15; // politically active follower supporters
-Q.mutant = 14; // the mutant portion of the NCR, mostly covering the ghoul population of the the Necropolis, the nomadic super mutant population, and the minority of mutants in the other big cities
+Q.mutant = 10; // the mutant portion of the NCR, mostly covering the ghoul population of the the Necropolis, the nomadic super mutant population, and the minority of mutants in the other big cities
 
 // unemployment: Initial gold crash - 13.3, Second phase - 22.7, Third phase - 34.3, Fourth phase - 43.8 (same source as above)
 
@@ -214,21 +214,21 @@ Q.parties = ['spring', 'pass', 'tandist', 'tandist_right', 'progressive', 'busin
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_spring = 35;
+Q.workers_spring = 15;
 Q.workers_pass = 20;
-Q.workers_tandist = 15;
-Q.workers_tandist_right = 5;
-Q.workers_progressive = 5;
+Q.workers_tandist = 25;
+Q.workers_tandist_right = 10;
+Q.workers_progressive = 10;
 Q.workers_business = 10;
 Q.workers_barons = 0;
 Q.workers_grizzly = 0;
 Q.workers_independent = 10;
 
-Q.military_spring = 0;
+Q.military_spring = 5;
 Q.military_pass = 0;
 Q.military_tandist = 10;
 Q.military_tandist_right = 15;
-Q.military_progressive = 10;
+Q.military_progressive = 5;
 Q.military_business = 10;
 Q.military_barons = 5;
 Q.military_grizzly = 35;
@@ -244,9 +244,9 @@ Q.middle_barons = 0;
 Q.middle_grizzly = 5;
 Q.middle_independent = 15;
 
-Q.rural_spring = 20;
+Q.rural_spring = 15;
 Q.rural_pass = 0;
-Q.rural_tandist = 5;
+Q.rural_tandist = 10;
 Q.rural_tandist_right = 15;
 Q.rural_progressive = 0;
 Q.rural_business = 0;
@@ -274,11 +274,11 @@ Q.unemployed_barons = 5;
 Q.unemployed_grizzly = 15;
 Q.unemployed_independent = 0;
 
-Q.follower_spring = 15;
+Q.follower_spring = 5;
 Q.follower_pass = 0;
 Q.follower_tandist = 60;
 Q.follower_tandist_right = 5;
-Q.follower_progressive = 5;
+Q.follower_progressive = 15;
 Q.follower_business = 0;
 Q.follower_barons = 0;
 Q.follower_grizzly = 0;
